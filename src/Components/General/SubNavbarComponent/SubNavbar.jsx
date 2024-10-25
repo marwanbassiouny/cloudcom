@@ -1,11 +1,11 @@
 import React from 'react';
-import phoneIcon from '../../../Assets/Icons/HomeScreen/SubNavbarComponent/phone.png';
-import emailIcon from '../../../Assets/Icons/HomeScreen/SubNavbarComponent/email.png';
-import facebookIcon from '../../../Assets/Icons/HomeScreen/SubNavbarComponent/facebook.png';
-import linkedinIcon from '../../../Assets/Icons/HomeScreen/SubNavbarComponent/linkedin.png';
-import twitterIcon from '../../../Assets/Icons/HomeScreen/SubNavbarComponent/twitter.png';
-import youtubeIcon from '../../../Assets/Icons/HomeScreen/SubNavbarComponent/youtube.png';
-import textContent from '../../../Assets/Data/HomeScreen/SubNavbarComponent/SubNavbarComponent.json'
+import phoneIcon from '../../../Assets/Icons/General/SubNavbarComponent/phone.png';
+import emailIcon from '../../../Assets/Icons/General/SubNavbarComponent/email.png';
+import facebookIcon from '../../../Assets/Icons/General/SubNavbarComponent/facebook.png';
+import linkedinIcon from '../../../Assets/Icons/General/SubNavbarComponent/linkedin.png';
+import twitterIcon from '../../../Assets/Icons/General/SubNavbarComponent/twitter.png';
+import youtubeIcon from '../../../Assets/Icons/General/SubNavbarComponent/youtube.png';
+import textContent from '../../../Assets/Data/General/SubNavbarComponent/SubNavbarComponent.json'
 import './SubNavbar.css'
 
 const SubNavbar = () => {

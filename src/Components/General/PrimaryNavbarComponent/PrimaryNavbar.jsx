@@ -1,8 +1,8 @@
 import React from 'react';
 import './PrimaryNavbar.css';
-import logo from '../../../Assets/Icons/HomeScreen/PrimaryNavbarComponent/CloudcomLogo.png';
-import signupIcon from '../../../Assets/Icons/HomeScreen/PrimaryNavbarComponent/signup.svg'
-import textContent from '../../../Assets/Data/HomeScreen/PrimaryNavbarComponent/PrimaryNavbarComponent.json'
+import logo from '../../../Assets/Icons/General/PrimaryNavbarComponent/CloudcomLogo.png';
+import signupIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/signup.svg'
+import textContent from '../../../Assets/Data/General/PrimaryNavbarComponent/PrimaryNavbarComponent.json'
 
 const PrimaryNavbar = () => {
   return (
