@@ -1,5 +1,5 @@
 import MainFooter from './Components/General/MainFooterComponent/MainFooter';
-import './Components/General/style/MainStyle.css';
+
 
 function App() {
   return (
