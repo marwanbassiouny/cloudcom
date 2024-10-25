@@ -1,0 +1,65 @@
+.primary-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left .Cloudcom_Logo {
+  height: 40px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links li {
+  font-size: 16px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+.navbar-right .signup-btn {
+  padding: 10px 20px;
+  background-color: #0000FF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sign-up-btn {
+  display: inline-flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #0056D2; /* Blue color */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-right .signup-btn:hover {
+  background-color: #0041a6;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center;
+}
