@@ -1,0 +1,38 @@
+.clients-container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .clients-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .clients-container h2::after {
+    content: '';
+    display: block;
+    width: 200%; /* Increase the width to extend beyond the heading */
+    height: 2px;
+    background-color: #ccc; /* Gray color */
+    margin: 10px auto;
+    position: relative;
+    left: -50%; /* Adjust to center the line */
+  }
+  
+  .clients-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .clients-logos img {
+    max-width: 120px;
+    height: auto;
+  }
+  

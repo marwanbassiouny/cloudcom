@@ -2,6 +2,7 @@ import React from 'react';
 import SubNavbar from '../General/SubNavbarComponent/SubNavbar';
 import PrimaryNavbar from '../General/PrimaryNavbarComponent/PrimaryNavbar';
 import Intro from './IntroComponent/Intro';
+import Clients from './ClientsComponent/Clients';
 
 const HomeScreen = () => {
   return (
@@ -9,6 +10,7 @@ const HomeScreen = () => {
       <SubNavbar />
       <PrimaryNavbar />
       <Intro />
+      <Clients />
     </div>
   );
 };
