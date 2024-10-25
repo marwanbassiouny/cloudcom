@@ -1,0 +1,119 @@
+/* Footer Container */
+.footer {
+  background-color: #1b1b1b;
+  color: #fff;
+  padding: 40px;
+  width: 100%; 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px; 
+   
+}
+
+/* Logo and Newsletter Section */
+.logo-section{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.logo-section p{
+  text-align: start;
+}
+
+.logo-section .logo {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.newsletter {
+  margin-top: 14px;
+  text-align: start;
+}
+
+form {
+  display: flex;
+  margin-top: 5px;
+}
+
+.email-input {
+  padding: 8px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  width: 200px;
+}
+
+.submit-btn {
+  background-color: #0000FF;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;  
+  padding: 10px;
+}
+
+.send-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Contact Section */
+.contact-section p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+
+/* Links Section */
+.links-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.links-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0;
+}
+
+.links-section ul li {
+  margin: 5px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Add space between icons */
+}
+
+.social-icons .icon {
+  width: 20px; /* Icon size */
+  cursor: pointer;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #A5A5B0;
+  margin: 0;
+}

@@ -1,52 +1,64 @@
 import React from "react";
-import '../style/MainFooter.css'; 
+import './MainFooter.css'; 
+import logo from "../../../Assets/Icons/HomeScreen/MainFooterComponent/cloud.png"
+import arrow from "../../../Assets/Icons/HomeScreen/MainFooterComponent/arrow.png"
+import location from "../../../Assets/Icons/HomeScreen/MainFooterComponent/location.png"
+import phone from "../../../Assets/Icons/HomeScreen/MainFooterComponent/phone.png"
+import email from "../../../Assets/Icons/HomeScreen/MainFooterComponent/email.png"
+import facebook from "../../../Assets/Icons/HomeScreen/MainFooterComponent/facebook.png"
+import linkedin from "../../../Assets/Icons/HomeScreen/MainFooterComponent/linkedin.png"
+import twitter from "../../../Assets/Icons/HomeScreen/MainFooterComponent/twitter.png"
+import youtube from "../../../Assets/Icons/HomeScreen/MainFooterComponent/youtube.png"
+import textContent from '../../../Assets/Data/HomeScreen/MainFooterComponent/MainFooterComponent.json'
 
 const MainFooter = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-section logo-section">
-          <img src="logo.png" alt="cloudcom logo" className="logo" />
-          <p>The Starting Point of customer engagement</p>
-          <div className="newsletter">
-            <p>Subscribe for our newsletter</p>
-            <form>
-              <input type="email" placeholder="Email" className="email-input" />
-              <button type="submit" className="submit-btn">✈️</button>
-            </form>
-          </div>
+        <div className="footer-section ">
+            <div className="logo-section">
+                <img src={logo} alt="cloudcom logo" className="logo" />
+                <p>{textContent.cloud}</p>
+            </div>
+            <div className="newsletter">
+                <p>{textContent.Subscribe }</p>
+                <form>
+                <input type="email" placeholder="Email" className="email-input" />
+                <button type="submit" className="submit-btn"><img src={arrow} alt="cloudcom logo" className="send-icon" /></button>
+                </form>
+            </div>
         </div>
 
         <div className="footer-section contact-section">
-          <h4>Get in touch</h4>
-          <p>📍 euismod sed diam nonummy nibh</p>
-          <p>📞 +1234567891011</p>
-          <p>✉️ info@cloudcom.io</p>
+          <p>Get in touch</p>
+          <p><img style={{marginRight:"8px",width:"20px"}} src={location} alt="cloudcom logo"/>{textContent.address}</p>
+          <p><img style={{marginRight:"8px",width:"20px"}} src={phone} alt="cloudcom logo"/>{textContent.number}</p>
+          <p><img style={{marginRight:"8px",width:"20px"}} src={email} alt="cloudcom logo"/>{textContent.email}</p>
         </div>
 
         <div className="footer-section links-section">
           <ul>
-            <li>Our Product</li>
-            <li>Who We Are</li>
-            <li>FAQ</li>
+            <li>{textContent.OurProduct}</li>
+            <li>{textContent.Who}</li>
+            <li>{textContent.FAQ}</li>
           </ul>
         </div>
-        
+
         <div className="footer-section links-section">
           <ul>
-            <li>Pricing</li>
-            <li>Testimonials</li>
-            <li>Contact Us</li>
+            <li>{textContent.Pricing}</li>
+            <li>{textContent.Testimonials}</li>
+            <li>{textContent.Contact}</li>
           </ul>
         </div>
       </div>
 
       <div className="footer-bottom">
         <div className="social-icons">
-          <i className="fab fa-facebook"></i>
-          <i className="fab fa-linkedin"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-youtube"></i>
+          <img style={{marginRight:"8px",width:"25px"}} src={facebook} alt="cloudcom logo"/>
+          <img style={{marginRight:"8px",width:"25px"}} src={linkedin} alt="cloudcom logo"/>
+          <img style={{marginRight:"8px",width:"25px"}} src={twitter} alt="cloudcom logo"/>
+          <img style={{marginRight:"8px",width:"25px"}} src={youtube} alt="cloudcom logo"/>
         </div>
         <p>© Copyright 2024 - cloudcom</p>
       </div>
