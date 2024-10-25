@@ -1,5 +1,0 @@
-{
-  "greeting": "Welcome to My App!",
-  "description": "This is a simple React component with text content from a JSON file.",
-  "buttonText": "Click Me"
-}
