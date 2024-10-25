@@ -1,0 +1,63 @@
+.data-management-container {
+    padding: 50px;
+  }
+  
+  .top-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .top-section h1 {
+    font-size: 2rem;
+    color: #ccc;
+  }
+  
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-section {
+    max-width: 30%;
+  }
+  
+  .left-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .left-section p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056D2;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+  
+  .middle-section img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .ellipse {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  
+  
