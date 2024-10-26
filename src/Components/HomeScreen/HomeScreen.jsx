@@ -5,6 +5,7 @@ import Intro from './IntroComponent/Intro';
 import Clients from './ClientsComponent/Clients';
 import MainFooter from '../General/MainFooterComponent/MainFooter';
 import WaitingListComponent from './WaitingListComponent/WaitingListComponent';
+import DataManagement from './DataManagementComponent/DataManagement';
 
 const HomeScreen = () => {
   return (
@@ -14,6 +15,7 @@ const HomeScreen = () => {
       <Intro />
       <Clients />
       <WaitingListComponent/>
+      <DataManagement />
       <MainFooter/>
     </div>
   );
