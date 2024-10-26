@@ -1,0 +1,80 @@
+.experience-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: white;
+}
+
+.experience-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.number-image {
+  width: 100px; /* Adjust the size as needed */
+}
+
+.experience-text h2 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  position: relative;
+}
+
+.experience-text h2::before {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 50px;
+  background-color: #ccc; /* Gray line color */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.experience-text p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.get-in-touch-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0056D2;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.experience-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0; /* No gap between items */
+  max-width: 50%;
+}
+
+.stat-item {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  border-bottom: 1px solid #ccc; /* Bottom border */
+  border-right: 1px solid #ccc; /* Right border */
+}
+
+.stat-item:nth-child(2) {
+  border-right: none; /* Remove right border on the top-right item */
+}
+
+.stat-item:nth-child(3),
+.stat-item:nth-child(4) {
+  border-bottom: none; /* Remove bottom border on bottom row items */
+}
+
+.stat-item:nth-child(4) {
+  border-right: none; /* Remove right border on the top-right item */
+}

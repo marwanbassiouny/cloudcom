@@ -7,6 +7,7 @@ import MainFooter from '../General/MainFooterComponent/MainFooter';
 import WaitingListComponent from './WaitingListComponent/WaitingListComponent';
 import DataManagement from './DataManagementComponent/DataManagement';
 import FaqsComponent from './FaqsComponent/FaqsComponent';
+import Experience from './ExperienceComponent/Experience';
 
 const HomeScreen = () => {
   return (
@@ -16,6 +17,7 @@ const HomeScreen = () => {
       <Intro />
       <Clients />
       <DataManagement />
+      <Experience />
       <FaqsComponent/>
       <WaitingListComponent/>
       <MainFooter/>
