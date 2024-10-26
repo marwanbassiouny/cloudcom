@@ -1,27 +1,40 @@
 .topic-example-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px;
     background-color: white;
   }
   
   .example-item {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0; /* Optional: light divider between rows */
   }
   
-  .example-item img {
-    width: 50px;
-    margin-bottom: 10px;
+  .example-text {
+    max-width: 50%;
   }
   
-  .example-item h3 {
+  .example-text h3 {
     font-size: 1.2rem;
-    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
   }
   
-  .example-item p {
-    font-size: 0.9rem;
+  .example-text p {
+    font-size: 1rem;
     color: #666;
+    margin: 5px 0 0;
+    line-height: 1.5;
+  }
+  
+  .example-icon img {
+    width: 300px;
+    height: auto;
   }
   

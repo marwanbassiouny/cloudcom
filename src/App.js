@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SubNavbar from './Components/General/SubNavbarComponent/SubNavbar'
 import PrimaryNavbar from '../src/Components/General/PrimaryNavbarComponent/PrimaryNavbar'
 import MainFooter from './Components/General/MainFooterComponent/MainFooter'
+import MultiChannelCampaignManagerScreen from './Components/MultiChannelCampaignManagerScreen/MultiChannelCampaignManagerScreen';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomeScreen />} />
       <Route path="/customerDataManagement" element={<CustomerDataManagementScreen />} />
+      <Route path="/multiChannelCampaign" element={<MultiChannelCampaignManagerScreen />} />
     </Routes>
     <MainFooter/>
     </Router>
