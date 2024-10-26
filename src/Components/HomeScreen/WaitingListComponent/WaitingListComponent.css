@@ -1,0 +1,63 @@
+/* WaitingList Section */
+.WaitingList-section {
+    background-image: url('../../../Assets/Icons/HomeScreen/JoinWaitingListComponent/backgroung.png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Center the background image */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+  }
+  
+  /* Content inside the WaitingList Section */
+  .WaitingList-content {
+    text-align: left;
+    margin: 0 30px 0 30px;
+  }
+  
+  /* Heading */
+  .WaitingList-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+  }
+  
+  /* Subheading */
+  .WaitingList-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+  
+  /* Buttons */
+  .WaitingList-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .button {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  
+  .primary-button {
+    background-color: white;
+    color: #0047ff;
+  }
+  
+  .secondary-button {
+    background-color: #0062ff;
+    color: white;
+  }
+  
