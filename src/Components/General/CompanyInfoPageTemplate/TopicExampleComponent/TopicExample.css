@@ -1,0 +1,27 @@
+.topic-example-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: white;
+  }
+  
+  .example-item {
+    text-align: center;
+  }
+  
+  .example-item img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .example-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .example-item p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
