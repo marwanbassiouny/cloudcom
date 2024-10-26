@@ -21,7 +21,7 @@ function App() {
       <Route path="/" element={<HomeScreen />} />
       <Route path="/customerDataManagement" element={<CustomerDataManagementScreen />} />
       <Route path="/multiChannelCampaign" element={<MultiChannelCampaignManagerScreen />} />
-      <Route path="/AIPoweredSegmantation" element={<AIPoweredSegmantationScreen />} />
+      <Route path="/ai-PoweredSegmantation" element={<AIPoweredSegmantationScreen />} />
       <Route path="/chatManagement" element={<ChatManagementScreen />} />
       <Route path="/verify" element={<VerifyScreen />} />
       <Route path="/flowBuilder" element={<FlowBuilderScreen />} />
