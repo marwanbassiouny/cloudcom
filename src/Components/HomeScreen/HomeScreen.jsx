@@ -14,8 +14,7 @@ import SuccessStories from './SuccessStoriesComponent/SuccessStories';
 const HomeScreen = () => {
   return (
     <div>
-      <SubNavbar />
-      <PrimaryNavbar />
+     
       <Intro />
       <Clients />
       <DataManagement />
@@ -24,7 +23,7 @@ const HomeScreen = () => {
       <SuccessStories />
       <FaqsComponent/>
       <WaitingListComponent/>
-      <MainFooter/>
+
     </div>
   );
 };
