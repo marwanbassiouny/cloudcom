@@ -6,6 +6,7 @@ import Clients from './ClientsComponent/Clients';
 import MainFooter from '../General/MainFooterComponent/MainFooter';
 import WaitingListComponent from './WaitingListComponent/WaitingListComponent';
 import DataManagement from './DataManagementComponent/DataManagement';
+import FaqsComponent from './FaqsComponent/FaqsComponent';
 
 const HomeScreen = () => {
   return (
@@ -14,8 +15,9 @@ const HomeScreen = () => {
       <PrimaryNavbar />
       <Intro />
       <Clients />
-      <WaitingListComponent/>
       <DataManagement />
+      <FaqsComponent/>
+      <WaitingListComponent/>
       <MainFooter/>
     </div>
   );

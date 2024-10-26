@@ -1,0 +1,83 @@
+/* Main FAQ Section Styles */
+.faq-section {
+    background-color:#6F6F6F; 
+    color: white;
+    padding: 40px;
+    text-align: left;
+  }
+  
+  .faq-header {
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .faq-header h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .faq-header h1 {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .faq-header p {
+    font-size: 16px;
+    color: #cccccc; /* Light gray for the paragraph */
+    margin-top: 10px;
+  }
+  
+  /* FAQ Item Styles */
+  .faq-list {
+    display: flex;
+    flex-direction: Row;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .faq-item {
+    background-color: #6e7174;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+  }
+  
+  .faq-item.open {
+    background-color: 979797;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-question h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .toggle-icon {
+    font-size: 20px;
+    color: #ccc;
+  }
+  
+  /* FAQ Answer */
+  .faq-answer {
+    margin-top: 15px;
+    color: #e0e0e0;
+  }
+  
+  .faq-answer ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .faq-answer li {
+    margin-bottom: 8px;
+  }
+  
