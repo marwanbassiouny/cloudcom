@@ -1,0 +1,55 @@
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: white;
+  }
+  
+  .about-text {
+    max-width: 50%;
+    text-align: left;
+    margin-left: 20px; /* Adjust this for exact alignment */
+  }
+  
+  .about-text h2 {
+    font-size: 1.8rem;
+    color: #0056D2; /* Blue color */
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  
+  .about-text h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056D2;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .about-image {
+    max-width: 40%; /* Adjust as needed */
+  }
+  
+  .about-image .profile-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  

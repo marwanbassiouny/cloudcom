@@ -8,6 +8,8 @@ import WaitingListComponent from './WaitingListComponent/WaitingListComponent';
 import DataManagement from './DataManagementComponent/DataManagement';
 import FaqsComponent from './FaqsComponent/FaqsComponent';
 import Experience from './ExperienceComponent/Experience';
+import About from './AboutComponent/About';
+import SuccessStories from './SuccessStoriesComponent/SuccessStories';
 
 const HomeScreen = () => {
   return (
@@ -18,6 +20,8 @@ const HomeScreen = () => {
       <Clients />
       <DataManagement />
       <Experience />
+      <About />
+      <SuccessStories />
       <FaqsComponent/>
       <WaitingListComponent/>
       <MainFooter/>
