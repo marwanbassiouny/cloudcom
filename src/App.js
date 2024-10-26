@@ -8,6 +8,7 @@ import PrimaryNavbar from '../src/Components/General/PrimaryNavbarComponent/Prim
 import MainFooter from './Components/General/MainFooterComponent/MainFooter'
 import MultiChannelCampaignManagerScreen from './Components/MultiChannelCampaignManagerScreen/MultiChannelCampaignManagerScreen';
 import AIPoweredSegmantationScreen from './Components/AIPoweredSegmantationScreen/AIPoweredSegmantationScreen';
+import ChatManagementScreen from './Components/ChatManagementScreen/ChatManagementScreen';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/customerDataManagement" element={<CustomerDataManagementScreen />} />
       <Route path="/multiChannelCampaign" element={<MultiChannelCampaignManagerScreen />} />
       <Route path="/AIPoweredSegmantation" element={<AIPoweredSegmantationScreen />} />
+      <Route path="/chatManagement" element={<ChatManagementScreen />} />
     </Routes>
     <MainFooter/>
     </Router>
