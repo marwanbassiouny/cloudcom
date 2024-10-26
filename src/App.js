@@ -9,6 +9,7 @@ import MainFooter from './Components/General/MainFooterComponent/MainFooter'
 import MultiChannelCampaignManagerScreen from './Components/MultiChannelCampaignManagerScreen/MultiChannelCampaignManagerScreen';
 import AIPoweredSegmantationScreen from './Components/AIPoweredSegmantationScreen/AIPoweredSegmantationScreen';
 import ChatManagementScreen from './Components/ChatManagementScreen/ChatManagementScreen';
+import VerifyScreen from './Components/VerifyScreen/VerifyScreen';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/multiChannelCampaign" element={<MultiChannelCampaignManagerScreen />} />
       <Route path="/AIPoweredSegmantation" element={<AIPoweredSegmantationScreen />} />
       <Route path="/chatManagement" element={<ChatManagementScreen />} />
+      <Route path="/verify" element={<VerifyScreen />} />
     </Routes>
     <MainFooter/>
     </Router>
