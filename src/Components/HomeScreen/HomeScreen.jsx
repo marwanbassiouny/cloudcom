@@ -10,6 +10,8 @@ import FaqsComponent from './FaqsComponent/FaqsComponent';
 import Experience from './ExperienceComponent/Experience';
 import About from './AboutComponent/About';
 import SuccessStories from './SuccessStoriesComponent/SuccessStories';
+import TestimonialsCarousel from './TestimonialsComponent/Testimonials';
+
 
 const HomeScreen = () => {
   return (
@@ -21,6 +23,7 @@ const HomeScreen = () => {
       <Experience />
       <About />
       <SuccessStories />
+      <TestimonialsCarousel/>
       <FaqsComponent/>
       <WaitingListComponent/>
 
