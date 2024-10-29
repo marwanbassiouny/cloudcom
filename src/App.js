@@ -11,6 +11,9 @@ import AIPoweredSegmantationScreen from './Components/AIPoweredSegmantationScree
 import ChatManagementScreen from './Components/ChatManagementScreen/ChatManagementScreen';
 import VerifyScreen from './Components/VerifyScreen/VerifyScreen';
 import FlowBuilderScreen from './Components/FlowBuilderScreen/FlowBuilderScreen';
+import ClientTestimonialsScreen from './Components/ClientTestimonialsScreen/ClientTestimonialsComponent/ClientTestimonials';
+import CaseStudyScreen from './Components/CaseStudiesScreen/CaseStudyScreen';
+import NewsAndArticlesScreenComponent from './Components/NewsAndArticlesScreen/NewsAndArticlesScreenComponent';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
       <Route path="/chatManagement" element={<ChatManagementScreen />} />
       <Route path="/verify" element={<VerifyScreen />} />
       <Route path="/flowBuilder" element={<FlowBuilderScreen />} />
+      <Route path="/ClientTestimonials" element={<ClientTestimonialsScreen />} />
+      <Route path="/CaseStudies" element={<CaseStudyScreen />} />
+      <Route path="/newsandarticles" element={<NewsAndArticlesScreenComponent />} />
     </Routes>
     <MainFooter/>
     </Router>

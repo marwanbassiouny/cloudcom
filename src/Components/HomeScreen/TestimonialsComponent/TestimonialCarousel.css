@@ -1,4 +1,4 @@
-/* Main Carousel Container */
+
 .testimonial-carousel {
   text-align: center;
 
@@ -6,10 +6,10 @@
 
 .carousel-title {
   font-size: 24px;
-  color: #1a1a1a;
+  color: #0000FF
 }
 
-.swiper{
+.testimonial-carousel .swiper{
   padding: 10px;
   overflow: visible;
 }

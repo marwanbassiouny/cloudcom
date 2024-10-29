@@ -1,0 +1,116 @@
+/* Section Styles */
+.why-cloudcom-section {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+  }
+  
+  .why-cloudcom-section-title {
+    font-size: 24px;
+    color: #0000FF;
+    margin-bottom: 10px;
+  }
+  
+  .why-cloudcom-section-subtitle {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 30px;
+  }
+  
+  /* Swiper Custom Container */
+  .swiper-container-custom {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  /* Pagination Position */
+  .swiper-pagination {
+    z-index: 10;
+  }
+  
+  /* Active Card - Full Content Displayed */
+  .card-active {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    position: relative;
+    transform: translateY(0);
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  /* Inactive Cards - Only Title and Description Displayed */
+  .card-inactive {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    transform: translateY(250%);
+    transition: transform 1.5s ease, opacity 1.5s ease;
+  }
+  
+  /* Title Styling */
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0047ff;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  /* Minimized Title Styling for Inactive Card */
+  .minimized-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0047ff;
+    text-align: left;
+  }
+  
+  /* Description Styling - Only shown in active card */
+  .card-description {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  /* Minimized Description for Inactive Card */
+  .minimized-description {
+    font-size: 13px;
+    color: #666666;
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  /* Image Styling - Only shown in active card */
+  .card-image {
+    width: 320px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Pagination Bullet Styling */
+  .swiper-pagination-bullet {
+    background-color: #0047ff;
+    opacity: 0.7;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #0047ff;
+    opacity: 1;
+  }
+  

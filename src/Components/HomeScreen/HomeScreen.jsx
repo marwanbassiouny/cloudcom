@@ -1,9 +1,6 @@
 import React from 'react';
-import SubNavbar from '../General/SubNavbarComponent/SubNavbar';
-import PrimaryNavbar from '../General/PrimaryNavbarComponent/PrimaryNavbar';
 import Intro from './IntroComponent/Intro';
 import Clients from './ClientsComponent/Clients';
-import MainFooter from '../General/MainFooterComponent/MainFooter';
 import WaitingListComponent from './WaitingListComponent/WaitingListComponent';
 import DataManagement from './DataManagementComponent/DataManagement';
 import FaqsComponent from './FaqsComponent/FaqsComponent';
@@ -11,6 +8,7 @@ import Experience from './ExperienceComponent/Experience';
 import About from './AboutComponent/About';
 import SuccessStories from './SuccessStoriesComponent/SuccessStories';
 import TestimonialsCarousel from './TestimonialsComponent/Testimonials';
+import WhyCloud from './WhyCloudComponent/WhyCloud';
 
 
 const HomeScreen = () => {
@@ -23,6 +21,7 @@ const HomeScreen = () => {
       <Experience />
       <About />
       <SuccessStories />
+      <WhyCloud/>
       <TestimonialsCarousel/>
       <FaqsComponent/>
       <WaitingListComponent/>
