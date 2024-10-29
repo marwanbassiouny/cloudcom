@@ -1,0 +1,41 @@
+.blog-intro {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.blog-intro-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.blog-intro-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.share-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.share-icon:hover {
+    transform: scale(1.1); /* Slightly increase icon size on hover */
+}
+
+.blog-intro-image {
+    margin-top: 20px;
+}
+
+.blog-intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

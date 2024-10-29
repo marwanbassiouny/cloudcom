@@ -1,0 +1,57 @@
+.blog-body-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .paragraph {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .quote-section {
+    background-color: #f5f9ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .quote-section blockquote {
+    font-size: 1.2rem;
+    color: #0056D2;
+    margin: 0;
+  }
+  
+  .quote-author {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .main-image {
+    width: 100%;
+
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  

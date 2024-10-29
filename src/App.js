@@ -15,6 +15,7 @@ import WhoAreWeScreen from './Components/WhoWeAreScreen/WhoWeAreScreen';
 import ClientTestimonialsScreen from './Components/ClientTestimonialsScreen/ClientTestimonialsComponent/ClientTestimonials';
 import CaseStudyScreen from './Components/CaseStudiesScreen/CaseStudyScreen';
 import NewsAndArticlesScreenComponent from './Components/NewsAndArticlesScreen/NewsAndArticlesScreenComponent';
+import BlogSingleScreen from './Components/BlogSingleScreen/BlogSingleScreen';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path="/ClientTestimonials" element={<ClientTestimonialsScreen />} />
       <Route path="/CaseStudies" element={<CaseStudyScreen />} />
       <Route path="/newsandarticles" element={<NewsAndArticlesScreenComponent />} />
+      <Route path="/blog" element={<BlogSingleScreen />} />
     </Routes>
     <MainFooter/>
     </Router>
