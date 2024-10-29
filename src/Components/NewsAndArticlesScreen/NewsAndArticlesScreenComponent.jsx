@@ -3,6 +3,7 @@ import NewsAndArticlesHeader from './NewsAndArticlesHeader/NewsAndArticlesHeader
 import { newsArticles } from './NewsAndArticlesData';
 import NewsAndArticlesCard from './NewsAndArticlesCard/NewsAndArticlesCard';
 import "./NewsAndArticlesScreenComponent.css"
+import StayInTheKnow from '../General/StayInTheKnowComponent/StayInTheKnow';
 
 const NewsAndArticlesScreenComponent = () => {
   return (
@@ -20,6 +21,7 @@ const NewsAndArticlesScreenComponent = () => {
           />
         ))}
       </div>
+      <StayInTheKnow />
     </div>
   )
 }

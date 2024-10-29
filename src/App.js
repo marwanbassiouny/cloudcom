@@ -16,6 +16,7 @@ import ClientTestimonialsScreen from './Components/ClientTestimonialsScreen/Clie
 import CaseStudyScreen from './Components/CaseStudiesScreen/CaseStudyScreen';
 import NewsAndArticlesScreenComponent from './Components/NewsAndArticlesScreen/NewsAndArticlesScreenComponent';
 import BlogSingleScreen from './Components/BlogSingleScreen/BlogSingleScreen';
+import ReportsScreen from './Components/ReportsScreen/ReportsScreen';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Route path="/CaseStudies" element={<CaseStudyScreen />} />
       <Route path="/newsandarticles" element={<NewsAndArticlesScreenComponent />} />
       <Route path="/blog" element={<BlogSingleScreen />} />
+      <Route path="/reports" element={<ReportsScreen />} />
     </Routes>
     <MainFooter/>
     </Router>
