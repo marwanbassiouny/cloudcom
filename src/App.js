@@ -11,6 +11,7 @@ import AIPoweredSegmantationScreen from './Components/AIPoweredSegmantationScree
 import ChatManagementScreen from './Components/ChatManagementScreen/ChatManagementScreen';
 import VerifyScreen from './Components/VerifyScreen/VerifyScreen';
 import FlowBuilderScreen from './Components/FlowBuilderScreen/FlowBuilderScreen';
+import WhoAreWeScreen from './Components/WhoWeAreScreen/WhoWeAreScreen';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <PrimaryNavbar />
     <Routes>
       <Route path="/" element={<HomeScreen />} />
+      <Route path="/who-we-are" element={<WhoAreWeScreen />} />
       <Route path="/customerDataManagement" element={<CustomerDataManagementScreen />} />
       <Route path="/multiChannelCampaign" element={<MultiChannelCampaignManagerScreen />} />
       <Route path="/ai-PoweredSegmantation" element={<AIPoweredSegmantationScreen />} />

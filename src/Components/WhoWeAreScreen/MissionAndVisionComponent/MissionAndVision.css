@@ -1,0 +1,59 @@
+.mission-vision-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 50%;
+  }
+  
+  .purpose-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .purpose-section h3,
+  .mission-text h3,
+  .vision-text h3 {
+    color: #0056D2;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .purpose-section p,
+  .mission-text p,
+  .vision-text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .mission-text,
+  .vision-text {
+    margin-top: 20px;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
