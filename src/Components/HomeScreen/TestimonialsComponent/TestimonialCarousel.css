@@ -1,0 +1,131 @@
+
+.testimonial-carousel {
+  text-align: center;
+
+}
+
+.carousel-title {
+  font-size: 24px;
+  color: #0000FF
+}
+
+.testimonial-carousel .swiper{
+  padding: 10px;
+  overflow: visible;
+}
+
+.carousel-subtitle {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+/* Testimonial Card Styles */
+.testimonial-wrapper {
+  overflow: visible;
+  padding: 10px; /* Adjust padding as necessary to keep the card within the slide */
+}
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  position: relative; /* Needed for absolute positioning of the image */
+  text-align: left;
+}
+
+.testimonial-card::before {
+  content: "“"; /* Add quote character */
+  font-family: Arial, sans-serif;
+  font-size: 100px; /* Adjust size as needed */
+  color: #e0e0e0; /* Light gray color for subtle effect */
+  position: absolute;
+  bottom: 43%;
+  right: 15px;
+  z-index: 0; /* Behind other content */
+  opacity: 0.5; /* Slight transparency */
+}
+
+/* Image Positioned on Top Left Edge */
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -15%; /* Adjust this to control vertical positioning */
+  left: 15px; /* Adjust this to control horizontal positioning */
+  border: 3px solid #f9f9f9;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Wrapper for the Card Content */
+.testimonial-content {
+  padding-top: 20px; /* Space for the image overlap */
+}
+
+/* Quote Text */
+.testimonial-quote {
+  font-size: 14px;
+  color: #333333;
+  margin: 15px 0;
+  font-style: italic;
+  line-height: 1.5;
+  color: #888;
+  position: relative;
+}
+
+/* Info Section: Name, Rating */
+.testimonial-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0 5px;
+}
+
+.testimonial-info strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.testimonial-rating {
+  font-size: 16px;
+  color: #ffb400;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Job Title */
+.testimonial-job {
+  font-size: 13px;
+  color: #888888;
+  margin-top: 5px;
+}
+
+/* Divider Line Below Quote */
+.testimonial-quote::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 15px 0;
+}
+
+/* Pagination Styling */
+.swiper-pagination {
+  position: relative;
+  margin-top: 35px; /* Add space between cards and pagination */
+}
+
+.swiper-pagination-bullet {
+  background-color: #888888 !important;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0047ff !important;
+}
