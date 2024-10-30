@@ -17,6 +17,8 @@ import CaseStudyScreen from './Components/CaseStudiesScreen/CaseStudyScreen';
 import NewsAndArticlesScreenComponent from './Components/NewsAndArticlesScreen/NewsAndArticlesScreenComponent';
 import BlogSingleScreen from './Components/BlogSingleScreen/BlogSingleScreen';
 import ReportsScreen from './Components/ReportsScreen/ReportsScreen';
+import ContactUsScreen from './Components/ContactUsScreen/ContactUsScreen';
+import BookYourDemoScreen from './Components/BookYourDemoScreen/BookYourDemoScreen';
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
       <Route path="/newsandarticles" element={<NewsAndArticlesScreenComponent />} />
       <Route path="/blog" element={<BlogSingleScreen />} />
       <Route path="/reports" element={<ReportsScreen />} />
+      <Route path="/ContactUs" element={<ContactUsScreen />} />
+      <Route path="/BookYourDemo" element={<BookYourDemoScreen />} />
     </Routes>
     <MainFooter/>
     </Router>

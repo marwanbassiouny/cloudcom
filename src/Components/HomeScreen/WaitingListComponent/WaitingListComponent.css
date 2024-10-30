@@ -1,13 +1,13 @@
 /* WaitingList Section */
 .WaitingList-section {
-    background-image: url('../../../Assets/Icons/HomeScreen/JoinWaitingListComponent/backgroung.png'); /* Replace with the path to your image */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Center the background image */
+    background-image: url('../../../Assets/Icons/HomeScreen/JoinWaitingListComponent/backgroung.png'); 
+    background-size: cover;
+    background-position: center; 
     color: white;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh; /* Full viewport height */
+    height: 70vh; 
     padding: 20px;
   }
   

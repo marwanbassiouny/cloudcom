@@ -15,7 +15,7 @@ const PrimaryNavbar = () => {
         <li><a href="#">{textContent.ourProducts}</a></li>
         <li><a href="#">{textContent.pricing}</a></li>
         <li><a href="/ClientTestimonials">{textContent.testimonials}</a></li>
-        <li><a href="#">{textContent.contactUs}</a></li>
+        <li><a href="/ContactUs">{textContent.contactUs}</a></li>
       </ul>
       <div className="navbar-right">
         <a href="#" className="signup-btn">{textContent.signUp}  </a>

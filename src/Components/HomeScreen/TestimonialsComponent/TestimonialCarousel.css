@@ -11,7 +11,7 @@
 
 .testimonial-carousel .swiper{
   padding: 10px;
-  overflow: visible;
+  /* overflow: visible; */
 }
 
 .carousel-subtitle {

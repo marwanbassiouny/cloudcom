@@ -1,0 +1,103 @@
+.book-demo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 30px;
+    background-color: #f9f9f9;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    color: #000;
+}
+
+.form-info h2 {
+    color: #0056f7;
+    font-size: 28px;
+}
+
+.form-info p {
+    color: #434343;
+    width: 80%;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.form-info h3 {
+    color: #0056f7;
+    font-size: 28px;
+    margin: 20px 0 10px;
+}
+
+.checkmark {
+    color: #0056f7;
+    font-weight: bold;
+}
+
+.form-section {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.demo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+}
+
+input, select, textarea {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.submit-button {
+    background-color: #0056f7;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #003bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-demo-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form-info, .form-section {
+        width: 100%;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}

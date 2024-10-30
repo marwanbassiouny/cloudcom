@@ -1,19 +1,26 @@
 /* Main FAQ Section Styles */
 .faq-section {
-    background-color:#6F6F6F; 
-    color: white;
-    padding: 40px;
-    text-align: left;
+  background-image: url('../../../Assets/Images/HomeScreen/FaqsComponent/Frame\ 1000005195.png'); 
+  background-size: contain; 
+  background-position: center; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding:5% 10% 5% 10%;
   }
   
   .faq-header {
     max-width: 600px;
     margin-bottom: 30px;
+    
   }
   
   .faq-header h2 {
+    text-align: left;
     font-size: 24px;
     margin: 0;
+    color: white;
   }
   
   .faq-header h1 {
@@ -23,7 +30,7 @@
   
   .faq-header p {
     font-size: 16px;
-    color: #cccccc; /* Light gray for the paragraph */
+    color: white; 
     margin-top: 10px;
   }
   
@@ -32,7 +39,7 @@
     display: flex;
     flex-direction: Row;
     gap: 15px;
-    margin-top: 15px;
+    margin-top: 35px;
   }
   
   .faq-item {
@@ -80,4 +87,40 @@
   .faq-answer li {
     margin-bottom: 8px;
   }
+
+  @media (max-width: 768px) {
+    .faq-section {
+        background-size: cover;
+    }
+    .faq-item {
+        font-size: 16px;
+        padding: 15px;
+        width: 100%;
+    }
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+    }
+    .faq-question h3 {
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+  .faq-section {
+      background-size: cover;
+  }
+  .faq-item {
+      font-size: 14px;
+      padding: 10px;
+      width: 100%;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-question h3 {
+    font-size: 14px;
+  }
+}
   
