@@ -19,6 +19,8 @@ import BlogSingleScreen from './Components/BlogSingleScreen/BlogSingleScreen';
 import ReportsScreen from './Components/ReportsScreen/ReportsScreen';
 import ContactUsScreen from './Components/ContactUsScreen/ContactUsScreen';
 import BookYourDemoScreen from './Components/BookYourDemoScreen/BookYourDemoScreen';
+import PackagesAndPricesScreen from './Components/PackagesAndPricesScreen/PackagesAndPricesScreen';
+import InnerCaseStudyScreen from './Components/InnerCaseStudyScreen/InnerCaseStudyScreen';
 
 function App() {
   return (
@@ -27,10 +29,10 @@ function App() {
     <PrimaryNavbar />
     <Routes>
       <Route path="/" element={<HomeScreen />} />
-      <Route path="/who-we-are" element={<WhoAreWeScreen />} />
+      <Route path="/whoWeAre" element={<WhoAreWeScreen />} />
       <Route path="/customerDataManagement" element={<CustomerDataManagementScreen />} />
-      <Route path="/multiChannelCampaign" element={<MultiChannelCampaignManagerScreen />} />
-      <Route path="/ai-PoweredSegmantation" element={<AIPoweredSegmantationScreen />} />
+      <Route path="/multiChannelCampaignManager" element={<MultiChannelCampaignManagerScreen />} />
+      <Route path="/AIPoweredSegmantation" element={<AIPoweredSegmantationScreen />} />
       <Route path="/chatManagement" element={<ChatManagementScreen />} />
       <Route path="/verify" element={<VerifyScreen />} />
       <Route path="/flowBuilder" element={<FlowBuilderScreen />} />
@@ -41,6 +43,8 @@ function App() {
       <Route path="/reports" element={<ReportsScreen />} />
       <Route path="/ContactUs" element={<ContactUsScreen />} />
       <Route path="/BookYourDemo" element={<BookYourDemoScreen />} />
+      <Route path="/packagesAndPrices" element={<PackagesAndPricesScreen />} />
+      <Route path="/innerCaseStudy" element={<InnerCaseStudyScreen />} />
     </Routes>
     <MainFooter/>
     </Router>

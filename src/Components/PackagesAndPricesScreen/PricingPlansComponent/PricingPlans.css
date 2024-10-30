@@ -1,0 +1,133 @@
+.pricing-plans-container {
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background-section {
+    background-image: url('../../../Assets/Icons/PackagesAndPricesScreen/PricingPlansComponent/background.svg');
+    background-size: cover;
+    padding: 60px;
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .pricing-text {
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+
+  .pricing-text h2,h3{
+    color : white;
+  }
+
+  .pricing-button {
+    background-color: #0000FF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .empty-white-section {
+    background-color: white;
+    height: 50vh;
+  }
+  
+  .pricing-cards {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, 0);
+    display: flex;
+    width: 60%;
+    z-index: 2;
+    height: 600px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  }
+  
+  .cardTitle {
+    color: #0000FF;
+    font-weight: bolder;
+    font-size: 27px;
+  }
+
+  .card h3 {
+    color: #0000FF;
+  }
+  
+  .card h4 {
+    color: #0000FF;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .card li {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .card button {
+    background-color: #D3D3D3;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    background-color: #0000FF;
+    color: white;
+    transform: translateY(-10px);
+  }
+  
+  .card:hover button {
+    background-color: white;
+    color: #0000FF;
+  }
+
+  .listContainer {
+    padding: 0;          
+    margin: 0;          
+    }
+
+    .cardText{
+        color: #6F6F6F;
+    }
+    
+  .listItem {
+        padding-left: 0;    
+        margin-left: 0;     
+        list-style-position: inside; 
+    }
+
+  .tickIcon{
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+  }
+  

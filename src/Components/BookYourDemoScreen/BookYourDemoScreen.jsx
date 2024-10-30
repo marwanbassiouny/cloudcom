@@ -1,9 +1,10 @@
 import React from 'react';
 import './BookYourDemoScreen.css';
-
+import SuccessStoriesBanner from '../ClientTestimonialsScreen/ClientTestimonialsComponent/SuccessStoriesBanner '
 const BookYourDemoScreen = () => {
     return (
-        <div className="book-demo-section">
+        <div>
+<div className="book-demo-section">
             <div className="form-info">
                 <h2>Complete the form below</h2>
                 <p>
@@ -42,6 +43,9 @@ const BookYourDemoScreen = () => {
                 </form>
             </div>
         </div>
+        <SuccessStoriesBanner/>
+        </div>
+        
     );
 };
 

@@ -1,0 +1,58 @@
+.plans-promotion {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-radius: 12px;
+    color: white;
+    height: 450px;
+    position: relative;
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .content p {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .get-started-btn, .book-demo-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+  }
+  
+  .get-started-btn {
+    background-color: #0000FF;
+    color: white;
+  }
+  
+  .book-demo-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  

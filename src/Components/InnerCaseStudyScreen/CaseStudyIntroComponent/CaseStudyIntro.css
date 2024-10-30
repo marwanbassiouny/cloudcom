@@ -1,0 +1,74 @@
+.case-study-intro {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 30px;
+  }
+  
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding-right: 30px;
+    border-right: 1px solid #d1d1d1;
+  }
+  
+  .case-study-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .client-info {
+    text-align: center;
+  }
+  
+  .client-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .client-info span {
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .right-section {
+    flex: 1;
+    padding-left: 30px;
+  }
+  
+  .right-section h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .metrics {
+    display: flex;
+    align-items: center;
+  }
+  
+  .metric {
+    text-align: center;
+  }
+  
+  .metric .percentage {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0056d2;
+  }
+  
+  .metric p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .divider {
+    height: 40px;
+    width: 1px;
+    background-color: #d1d1d1;
+    margin: 0 20px;
+  }
+  
