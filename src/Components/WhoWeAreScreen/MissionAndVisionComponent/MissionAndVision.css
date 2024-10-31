@@ -70,11 +70,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50%; /* Adjusted to give the image section appropriate width */
+  max-width: 50%; 
 }
 
 .main-image {
   width: 100%;
-  max-width: 450px; /* Controls the maximum width of the image */
-
+  max-width: 450px; 
 }

@@ -46,20 +46,20 @@
     left: 70%;
     transform: translate(-50%, 0);
     display: flex;
-    width: 60%;
+    width: 65%;
     z-index: 3;
     height: auto;
     background-color: white;
     border-radius: 25px;
   }
   
-  .card {
+  .card_plan {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
-    width: 30%;
+    width: 35%;
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
     display: flex; 
     flex-direction: column;
@@ -87,28 +87,28 @@
     margin : 0px 5px;
   }
 
-  .card h3 {
+  .card_plan h3 {
     color: #0000FF;
   }
   
-  .card h4 {
+  .card_plan h4 {
     color: #0000FF;
     font-weight: bold;
     margin-top: 10px;
   }
   
-  .card ul {
+  .card_plan ul {
     list-style-type: none;
     padding: 0px;
     margin: 5px 0;
   }
   
-  .card li {
-    font-size: 14px;
+  .card_plan li {
+    font-size: 12px;
     margin: 5px 0;
   }
   
-  .card button {
+  .card_plan button {
     background-color: #D3D3D3;
     color : white;
     padding: 10px;
@@ -120,26 +120,27 @@
     margin-top: auto;
   }
   
-  .card:hover {
+  .card_plan:hover {
     background-color: #0000FF;
     color: white;
     transform: translateY(-80px);
     cursor: pointer;
   }
 
-  .card:hover .cardTitle {
+  .card_plan:hover .cardTitle {
     color: #ffffff; 
   }
 
-  .card:hover .cardSubTitle {
+  .card_plan:hover .cardSubTitle {
     color: #ffffff; 
   }
 
-  .card:hover  .cardText {
+  .card_plan:hover  .cardText {
     color: #ffffff; 
+    font-size: 12;
   }
   
-  .card:hover button {
+  .card_plan:hover button {
     background-color: white;
     color: #0000FF;
   }

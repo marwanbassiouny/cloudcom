@@ -21,6 +21,7 @@ import ContactUsScreen from './Components/ContactUsScreen/ContactUsScreen';
 import BookYourDemoScreen from './Components/BookYourDemoScreen/BookYourDemoScreen';
 import PackagesAndPricesScreen from './Components/PackagesAndPricesScreen/PackagesAndPricesScreen';
 import InnerCaseStudyScreen from './Components/InnerCaseStudyScreen/InnerCaseStudyScreen';
+import GetStartedScreen from './Components/GetStartedScreen/GetStartedScreen';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       <Route path="/BookYourDemo" element={<BookYourDemoScreen />} />
       <Route path="/packagesAndPrices" element={<PackagesAndPricesScreen />} />
       <Route path="/innerCaseStudy" element={<InnerCaseStudyScreen />} />
+      <Route path="/getStarted" element={<GetStartedScreen />} />
     </Routes> 
      <MainFooter/>
     </Router>

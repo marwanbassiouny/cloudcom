@@ -2,7 +2,7 @@ import React from "react";
 import ClientTestimonialCard from "../ClientTestimonialCardComponent/TestimonialCard";
 import "./ClientTestimonials.css";
 import img from "../../../Assets/Images/HomeScreen/TestimonialsComponent/Intersect.png"
-import SuccessStoriesBanner from "./SuccessStoriesBanner ";
+import SuccessStoriesBanner from "../../General/SuccessStoriesBanner/SuccessStoriesBanner "
 
 const ClientTestimonialsScreen = () => {
 
@@ -65,19 +65,22 @@ const ClientTestimonialsScreen = () => {
   ];
 
   return (
-    <div className="testimonials-section">
-      <h2 className="testimonials-title">Client Testimonials</h2>
-      <h3 className="testimonials-subtitle">What our clients say about us?</h3>
-      <p className="testimonials-description">
-        Hear from businesses that have transformed their customer engagement with cloudcom.
-      </p>
-      <div className="testimonials-container">
-        {testimonials.map((testimonial) => (
-          <ClientTestimonialCard key={testimonial.id} {...testimonial} />
-        ))}
+    <div>
+      <div className="testimonials-section">
+        <h2 className="testimonials-title">Client Testimonials</h2>
+        <h3 className="testimonials-subtitle">What our clients say about us?</h3>
+        <p className="testimonials-description">
+          Hear from businesses that have transformed their customer engagement with cloudcom.
+        </p>
+        <div className="testimonials-container">
+          {testimonials.map((testimonial) => (
+            <ClientTestimonialCard key={testimonial.id} {...testimonial} />
+          ))}
+        </div>
       </div>
       <SuccessStoriesBanner/>
     </div>
+
   );
 };
 

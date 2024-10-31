@@ -1,6 +1,6 @@
 import React from 'react';
 import './BookYourDemoScreen.css';
-import SuccessStoriesBanner from '../ClientTestimonialsScreen/ClientTestimonialsComponent/SuccessStoriesBanner '
+import SuccessStoriesBanner from '../General/SuccessStoriesBanner/SuccessStoriesBanner '
 const BookYourDemoScreen = () => {
     return (
         <div>

@@ -2,10 +2,10 @@ import React from 'react';
 import './CloudComButton.css';
 import arrowIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/signup.svg';
 
-const CloudComButton = ({ text }) => {
+const CloudComButton = ({ text, link }) => {
   return (
     <div >
-         <a href="#" className="cloudcom-btn">
+         <a href={link} className="cloudcom-btn">
           {text}
           <img className="arrow" src={arrowIcon} alt="icon" />
         </a>

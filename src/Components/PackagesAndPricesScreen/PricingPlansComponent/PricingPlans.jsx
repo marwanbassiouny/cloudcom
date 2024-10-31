@@ -20,7 +20,7 @@ const PricingPlans = () => {
       <div className="empty-white-section"></div>
 
       <div className="pricing-cards">
-        <div className="card essential">
+        <div className="card_plan essential">
           <div className="cardTitleContainer">
             <h3 className="cardTitle">$40</h3>
             <p className="cardSubTitle">/month</p>
@@ -39,7 +39,7 @@ const PricingPlans = () => {
           <button>Choose plan</button>
         </div>
 
-        <div className="card pro">
+        <div className="card_plan pro">
           <div className="cardTitleContainer">
             <h3 className="cardTitle">$54</h3>
             <p className="cardSubTitle">/month</p>
@@ -59,7 +59,7 @@ const PricingPlans = () => {
           <button>Choose plan</button>
         </div>
 
-        <div className="card enterprise">
+        <div className="card_plan enterprise">
           <div className="cardTitleContainer">
               <h3 className="cardTitle">$89</h3>
               <p className="cardSubTitle">/month</p>

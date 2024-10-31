@@ -7,7 +7,7 @@ const ClientTestimonialCard = ({ image, name, job, review, rating }) => {
       <div className="testimonial-card">
         <img src={image} alt={name} className="testimonial-image" />
         <div className="testimonial-content">
-            <p className="testimonial-quote">“”</p>
+            <p className="testimonial-quote">“{review}”</p>
             <div className="testimonial-info">
             <strong>{name}</strong>
             <div className="testimonial-rating">

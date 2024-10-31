@@ -22,8 +22,8 @@ const BlogBody = () => {
 
       <h2>Moreover, cloudcom caters to a diverse range of industries</h2>
 
-      <div className="image-section">
-        <img src={mainImage} alt="Diverse Industries" className="main-image" />
+      <div className="blog-image-section">
+        <img src={mainImage} alt="Diverse Industries" className="blog_image" />
       </div>
 
       <p className="paragraph">

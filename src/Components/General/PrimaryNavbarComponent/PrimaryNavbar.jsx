@@ -43,7 +43,7 @@ const PrimaryNavbar = () => {
         <li><a href="/ContactUs">{textContent.contactUs}</a></li>
       </ul>
       <div className="navbar-right">
-        <CloudComButton text="Signup" />
+        <CloudComButton text="Signup" link="/getStarted"/>
       </div>
     </nav>
   );

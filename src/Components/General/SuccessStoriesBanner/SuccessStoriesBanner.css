@@ -1,7 +1,12 @@
+.SuccessStoriesBanner{
+  padding: 5%;
+  background-color: #F3F0F0;
+}
+
 /* Main Container Styling */
 .success-stories-banner {
     position: relative;
-    width: 97%;
+    width: 90%;
     height: 500px; 
     background-image: url("../../../Assets/Images/HomeScreen/TestimonialsComponent/womenbg.png"); 
     background-size: cover;
@@ -18,7 +23,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 60%;
     background: rgba(0, 0, 0, 0.2); 
     display: flex;
     align-items: center;
@@ -153,3 +158,4 @@
     }
   }
   
+
