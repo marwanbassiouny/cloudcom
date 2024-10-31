@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactUsScreen.css';
-import image from "../../Assets/Images/ContactUsScreen/Background (1).png"
+import image from "../../Assets/Images/ContactUsScreen/Background (1).svg"
 const ContactUsScreen = () => {
     return (
         <div className="contactus-section">

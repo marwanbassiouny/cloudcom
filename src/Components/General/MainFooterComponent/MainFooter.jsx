@@ -1,14 +1,14 @@
 import React from "react";
 import './MainFooter.css'; 
-import logo from "../../../Assets/Icons/HomeScreen/MainFooterComponent/cloud.png"
-import arrow from "../../../Assets/Icons/HomeScreen/MainFooterComponent/arrow.png"
-import location from "../../../Assets/Icons/HomeScreen/MainFooterComponent/location.png"
-import phone from "../../../Assets/Icons/HomeScreen/MainFooterComponent/phone.png"
-import email from "../../../Assets/Icons/HomeScreen/MainFooterComponent/email.png"
-import facebook from "../../../Assets/Icons/HomeScreen/MainFooterComponent/facebook.png"
-import linkedin from "../../../Assets/Icons/HomeScreen/MainFooterComponent/linkedin.png"
-import twitter from "../../../Assets/Icons/HomeScreen/MainFooterComponent/twitter.png"
-import youtube from "../../../Assets/Icons/HomeScreen/MainFooterComponent/youtube.png"
+import logo from "../../../Assets/Icons/HomeScreen/MainFooterComponent/cloud.svg"
+import arrow from "../../../Assets/Icons/HomeScreen/MainFooterComponent/arrow.svg"
+import location from "../../../Assets/Icons/HomeScreen/MainFooterComponent/location.svg"
+import phone from "../../../Assets/Icons/HomeScreen/MainFooterComponent/phone.svg"
+import email from "../../../Assets/Icons/HomeScreen/MainFooterComponent/email.svg"
+import facebook from "../../../Assets/Icons/HomeScreen/MainFooterComponent/facebook.svg"
+import linkedin from "../../../Assets/Icons/HomeScreen/MainFooterComponent/linkedin.svg"
+import twitter from "../../../Assets/Icons/HomeScreen/MainFooterComponent/twitter.svg"
+import youtube from "../../../Assets/Icons/HomeScreen/MainFooterComponent/youtube.svg"
 import textContent from '../../../Assets/Data/HomeScreen/MainFooterComponent/MainFooterComponent.json'
 
 const MainFooter = () => {

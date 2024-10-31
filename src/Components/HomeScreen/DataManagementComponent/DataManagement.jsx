@@ -3,6 +3,7 @@ import './DataManagement.css';
 import dataManagementImage from '../../../Assets/Icons/HomeScreen/DataManagementComponent/DataManagementImage.svg'; 
 import blueElipseIcon from '../../../Assets/Icons/HomeScreen/DataManagementComponent/bluElipse.svg'; 
 import whiteElipseIcon from '../../../Assets/Icons/HomeScreen/DataManagementComponent/whiteElipse.svg'; 
+import titleIcon from '../../../Assets/Icons/HomeScreen/DataManagementComponent/titleIcon.svg'; 
 import textContent from '../../../Assets/Data/HomeScreen/DataManagementComponent/DataManagement.json'
 
 const DataManagement = () => {
@@ -17,6 +18,7 @@ const DataManagement = () => {
       <div className="bottom-section">
         {/* Left Section: Title and Description */}
         <div className="left-section">
+          <img src={titleIcon} className=""/>
           <h2>{textContent.headline1}</h2>
           <p>{textContent.description}</p>
           <a href="#" className="explore-btn">{textContent.exploreButton} ↗</a>

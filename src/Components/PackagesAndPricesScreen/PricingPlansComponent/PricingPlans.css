@@ -6,22 +6,21 @@
   .background-section {
     background-image: url('../../../Assets/Icons/PackagesAndPricesScreen/PricingPlansComponent/background.svg');
     background-size: cover;
-    padding: 60px;
+    padding: 40px;
     color: white;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     align-items: flex-start;
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
   
   .pricing-text {
     width: 25%;
-    margin-top: 2%;
     margin-left: 2%;
   }
 
-  .pricing-text h2,h3{
+  .pricing-text h3{
     color : white;
   }
 
@@ -48,8 +47,10 @@
     transform: translate(-50%, 0);
     display: flex;
     width: 60%;
-    z-index: 2;
-    height: 600px;
+    z-index: 3;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
   }
   
   .card {
@@ -57,15 +58,33 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
     width: 30%;
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
   }
   
+  .cardTitleContainer {
+    display: flex;
+    align-items: center;
+  }
+
   .cardTitle {
     color: #0000FF;
     font-weight: bolder;
     font-size: 27px;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .cardSubTitle {
+    display: inline-block;
+    vertical-align: middle;
+    margin : 0px 5px;
   }
 
   .card h3 {
@@ -80,29 +99,44 @@
   
   .card ul {
     list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+    padding: 0px;
+    margin: 5px 0;
   }
   
   .card li {
     font-size: 14px;
-    margin: 10px 0;
+    margin: 5px 0;
   }
   
   .card button {
     background-color: #D3D3D3;
+    color : white;
     padding: 10px;
     width: 100%;
     border-radius: 20px;
     border: none;
     font-weight: bold;
     cursor: pointer;
+    margin-top: auto;
   }
   
   .card:hover {
     background-color: #0000FF;
     color: white;
-    transform: translateY(-10px);
+    transform: translateY(-80px);
+    cursor: pointer;
+  }
+
+  .card:hover .cardTitle {
+    color: #ffffff; 
+  }
+
+  .card:hover .cardSubTitle {
+    color: #ffffff; 
+  }
+
+  .card:hover  .cardText {
+    color: #ffffff; 
   }
   
   .card:hover button {

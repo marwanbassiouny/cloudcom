@@ -9,9 +9,9 @@ const CaseStudyCharts = () => {
       <div className="chart-container">
         <img src={leftChartImage} alt="Left Chart" className="chart-image" />
       </div>
-      <div className="chart-container">
+      {/* <div className="chart-container">
         <img src={rightChartImage} alt="Right Line Chart" className="chart-image" />
-      </div>
+      </div> */}
     </div>
   );
 };

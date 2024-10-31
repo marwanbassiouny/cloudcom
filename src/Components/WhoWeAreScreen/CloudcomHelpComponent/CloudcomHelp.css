@@ -22,8 +22,8 @@
 }
 
 .cloudcom-help__header .learn {
-  color: #0073e6; /* Example color, adjust to match design */
-  text-decoration: underline;
+  color: #0000FF; /* Example color, adjust to match design */
+  text-decoration: none;
 }
 
 .cloudcom-help__content {
@@ -42,8 +42,6 @@
 
 .cloudcom-help__image {
   width: 100%;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .values-card {

@@ -8,6 +8,8 @@ const PlansPromotion = () => {
       <div className="content">
         <h1>Curious to try<br />Join the waiting list</h1>
         <p>Learn. Segment. Connect. Engage. Analyze. Support. Your customer.</p>
+        <br />
+        <br />
         <div className="buttons">
           <button className="book-demo-btn">Get Started <span>→</span></button>
           <button className="book-demo-btn">Book a demo <span>→</span></button>

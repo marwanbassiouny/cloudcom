@@ -7,7 +7,7 @@
   }
   
   .content-section {
-    max-width: 50%;
+    width: 60%;
   }
   
   .content-section h1 {
@@ -17,7 +17,18 @@
   }
   
   .highlight-text {
-    color: #0056D2; /* Blue color */
+    font-size: 7rem;
+    color: black;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+
+  .gradient-text{
+    background: linear-gradient(to right, #55AEFF, #727BFF, #0000FF); /* Define your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
   }
   
   .content-section p {
@@ -38,11 +49,13 @@
   }
   
   .image-section {
-    max-width: 40%;
+    width: 40%;
   }
   
   .support-image {
     width: 100%;
     border-radius: 10px;
   }
+
+  
   

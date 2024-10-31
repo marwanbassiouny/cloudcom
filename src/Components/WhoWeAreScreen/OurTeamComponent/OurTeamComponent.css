@@ -1,7 +1,7 @@
 .team-container {
     text-align: center;
     background-color: #f0f2f5; /* Matches the background color */
-    padding: 2rem;
+    padding: 5rem;
   }
   
   .team-header {
@@ -26,19 +26,32 @@
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    min-height: 800px;
+    min-height: 350px;
+    cursor: pointer;
+  }
+
+  .team-card:hover {
+    transform: translateY(-5px);
+    /* color : white; */
   }
   
   .team-card.active {
-    background-color: #594c9e; /* Active card color */
+    background-color: #0000FF; /* Active card color */
+  }
+
+  .team-card.active h4 {
+    color: #ffffff;
+  }
+
+  .team-card.active p {
     color: #ffffff;
   }
   
-  .team-card:hover {
+  .team-card.active:hover {
     transform: translateY(-5px);
   }
   

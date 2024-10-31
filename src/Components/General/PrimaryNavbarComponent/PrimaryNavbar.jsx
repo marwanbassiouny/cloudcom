@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './PrimaryNavbar.css';
-import logo from '../../../Assets/Icons/General/PrimaryNavbarComponent/CloudcomLogo.png';
-import signupIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/signup.svg';
+import logo from '../../../Assets/Icons/General/PrimaryNavbarComponent/CloudcomLogo.svg';
 import textContent from '../../../Assets/Data/General/PrimaryNavbarComponent/PrimaryNavbarComponent.json';
 import CustomerDataManagementIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/CustomerDataManagement.svg';
 import verifyIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/verifyIcon.svg';
@@ -9,6 +8,7 @@ import campaignManagerIcon from '../../../Assets/Icons/General/PrimaryNavbarComp
 import aiSegmantationIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/aiSegmantationIcon.svg';
 import chatManagementIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/chatManagementIcon.svg'
 import flowIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/flowIcon.svg';
+import CloudComButton from '../CloudComButton/CloudComButton';
 
 const PrimaryNavbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -16,7 +16,7 @@ const PrimaryNavbar = () => {
   return (
     <nav className="primary-navbar">
       <div className="navbar-left">
-        <img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" />
+        <a href="/"><img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" /></a>
       </div>
       <ul className="navbar-links">
         <li><a href="/">Home</a></li>
@@ -43,10 +43,7 @@ const PrimaryNavbar = () => {
         <li><a href="/ContactUs">{textContent.contactUs}</a></li>
       </ul>
       <div className="navbar-right">
-        <a href="#" className="signup-btn">
-          {textContent.signUp}
-          <img className="arrow" src={signupIcon} alt="signupIcon" />
-        </a>
+        <CloudComButton text="Signup" />
       </div>
     </nav>
   );

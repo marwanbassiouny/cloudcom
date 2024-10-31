@@ -8,7 +8,7 @@ const NewsAndArticlesCard = ({ image, title, description, buttonLabel, size }) =
       <div className="news-card-content">
         <h3 className="news-card-title">{title}</h3>
         <p className="news-card-description">{description}</p>
-        <button className="news-card-button">{buttonLabel}</button>
+        <a href="/blog" className="news-card-button">{buttonLabel}</a>
       </div>
     </div>
   );

@@ -45,8 +45,8 @@ function App() {
       <Route path="/BookYourDemo" element={<BookYourDemoScreen />} />
       <Route path="/packagesAndPrices" element={<PackagesAndPricesScreen />} />
       <Route path="/innerCaseStudy" element={<InnerCaseStudyScreen />} />
-    </Routes>
-    <MainFooter/>
+    </Routes> 
+     <MainFooter/>
     </Router>
   );
 }

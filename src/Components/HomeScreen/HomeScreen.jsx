@@ -9,6 +9,7 @@ import About from './AboutComponent/About';
 import SuccessStories from './SuccessStoriesComponent/SuccessStories';
 import TestimonialsCarousel from './TestimonialsComponent/Testimonials';
 import WhyCloud from './WhyCloudComponent/WhyCloud';
+import ContactUsScreen from '../ContactUsScreen/ContactUsScreen';
 
 
 const HomeScreen = () => {
@@ -17,14 +18,15 @@ const HomeScreen = () => {
      
       <Intro />
       <Clients />
-      <DataManagement />
-      <Experience />
       <About />
+      <Experience />
+      <DataManagement />
       <SuccessStories />
       <WhyCloud/>
       <TestimonialsCarousel/>
       <FaqsComponent/>
-      <WaitingListComponent/>
+      {/* <WaitingListComponent/> */}
+      <ContactUsScreen />
 
     </div>
   );
