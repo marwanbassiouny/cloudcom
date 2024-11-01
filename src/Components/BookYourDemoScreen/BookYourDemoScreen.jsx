@@ -3,8 +3,8 @@ import './BookYourDemoScreen.css';
 import SuccessStoriesBanner from '../General/SuccessStoriesBanner/SuccessStoriesBanner '
 const BookYourDemoScreen = () => {
     return (
-        <div>
-<div className="book-demo-section">
+    <div>
+        <div className="book-demo-section">
             <div className="form-info">
                 <h2>Complete the form below</h2>
                 <p>

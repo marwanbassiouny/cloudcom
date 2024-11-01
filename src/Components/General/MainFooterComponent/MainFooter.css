@@ -4,18 +4,18 @@
   color: #fff;
   padding: 40px;
   width: 100%; 
+  position: relative;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between; 
   flex-wrap: wrap; 
+  padding: 20px;
 }
 
 .footer-section {
-  flex: 1;
   margin: 20px; 
-   
 }
 
 /* Logo and Newsletter Section */
@@ -26,6 +26,7 @@
 }
 .logo-section p{
   text-align: start;
+  font-size: 14px;
 }
 
 .logo-section .logo {
@@ -56,6 +57,8 @@ form {
   border-radius: 0 8px 8px 0;
   cursor: pointer;  
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .send-icon {
@@ -72,7 +75,6 @@ form {
   align-items: center;
   margin: 5px 0;
 }
-
 
 /* Links Section */
 .links-section {
@@ -117,3 +119,25 @@ form {
   color: #A5A5B0;
   margin: 0;
 }
+
+@media (width: 1024px) {
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    flex: 0 0 45%;
+    margin: 10px;
+  }
+  .links-section {
+    justify-content: start;
+  }
+  .footer-bottom {
+    padding: 20px;
+  }
+}
+
+/* Cloud Vector Styling */
+

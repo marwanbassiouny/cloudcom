@@ -1,6 +1,8 @@
 .clients-container {
     text-align: center;
     padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
   }
   
   .clients-container h2 {
@@ -15,12 +17,12 @@
   .clients-container h2::after {
     content: '';
     display: block;
-    width: 200%; /* Increase the width to extend beyond the heading */
+    width: 100%; /* Increase the width to extend beyond the heading */
     height: 2px;
     background-color: #ccc; /* Gray color */
     margin: 10px auto;
     position: relative;
-    left: -50%; /* Adjust to center the line */
+
   }
   
   .clients-logos {

@@ -10,6 +10,8 @@ import linkedin from "../../../Assets/Icons/HomeScreen/MainFooterComponent/linke
 import twitter from "../../../Assets/Icons/HomeScreen/MainFooterComponent/twitter.svg"
 import youtube from "../../../Assets/Icons/HomeScreen/MainFooterComponent/youtube.svg"
 import textContent from '../../../Assets/Data/HomeScreen/MainFooterComponent/MainFooterComponent.json'
+import cloudVectorLeft from "../../../Assets/Images/General/Footer/Vector-1.svg"
+import cloudVectorRight from "../../../Assets/Images/General/Footer/Vector.svg"
 
 const MainFooter = () => {
   return (
@@ -29,6 +31,9 @@ const MainFooter = () => {
             </div>
         </div>
 
+        {/* <img src={cloudVectorLeft} alt="Cloud Vector Left" className="cloud-vector-left" />
+        <img src={cloudVectorRight} alt="Cloud Vector Right" className="cloud-vector-right" /> */}
+
         <div className="footer-section contact-section">
           <p>Get in touch</p>
           <p><img style={{marginRight:"8px",width:"20px"}} src={location} alt="cloudcom logo"/>{textContent.address}</p>
@@ -38,17 +43,21 @@ const MainFooter = () => {
 
         <div className="footer-section links-section">
           <ul>
-            <li>{textContent.OurProduct}</li>
+            <li>{textContent.home}</li>
             <li>{textContent.Who}</li>
-            <li>{textContent.FAQ}</li>
+            <li>{textContent.OurProduct}</li>
+            <li>{textContent.Pricing}</li>
+            <li>{textContent.casestudies}</li>
           </ul>
         </div>
 
         <div className="footer-section links-section">
           <ul>
-            <li>{textContent.Pricing}</li>
             <li>{textContent.Testimonials}</li>
-            <li>{textContent.Contact}</li>
+            <li>{textContent.Reports}</li>
+            <li>{textContent.News}</li>
+            <li>{textContent.Contactus}</li>
+            <li>{textContent.Signup}</li>
           </ul>
         </div>
       </div>

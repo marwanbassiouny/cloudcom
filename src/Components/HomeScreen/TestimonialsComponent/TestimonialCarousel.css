@@ -34,18 +34,19 @@
   margin: 0 auto;
   position: relative; /* Needed for absolute positioning of the image */
   text-align: left;
+  margin-top: 10px;
 }
 
 .testimonial-card-home::before {
   content: "“"; /* Add quote character */
   font-family: Arial, sans-serif;
-  font-size: 100px; /* Adjust size as needed */
-  color: #e0e0e0; /* Light gray color for subtle effect */
+  font-size: 100px; 
+  color: #e0e0e0; 
   position: absolute;
   bottom: 43%;
   right: 15px;
-  z-index: 0; /* Behind other content */
-  opacity: 0.5; /* Slight transparency */
+  z-index: 0; 
+  opacity: 0.5; 
 }
 
 /* Image Positioned on Top Left Edge */
@@ -131,8 +132,8 @@
 }
 
 .line {
-  width: 80%; 
-  height: 2px;  
+  width: 60%; 
+  height: 1px;  
   background-color: #d3d3d3; 
-  margin: 10px 20px; 
+  margin: 35px auto 35px auto;
 }
