@@ -8,7 +8,8 @@
     font-size: 16px;
     display: inline-flex;
     align-items: center;
-  }
+    transition: box-shadow 0.3s ease;
+}
 
 .cloudcom-btn:hover {
     background-color: #0041a6;
@@ -17,4 +18,9 @@
 .arrow {
     margin-left: 10px;
     font-size: 1.2rem;
+}
+
+.glow {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.4), 
+    0 0 20px rgba(0, 0, 255, 0.3);
 }

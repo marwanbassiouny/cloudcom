@@ -11,7 +11,7 @@ const CaseStudyCard = ({ image, companyLogo, title, description, stats, buttonLa
           <h3 className="case-study-title">{title}</h3>
           <img src={companyLogo} alt={`${title} logo`} className="case-study-logo" />
         </div>
-        <p className="case-study-description">{description}</p>
+        <p className="case-study-card-description">{description}</p>
           <div className="case-study-stats">
           {stats && stats.length > 0 && (
               <>
@@ -32,7 +32,8 @@ const CaseStudyCard = ({ image, companyLogo, title, description, stats, buttonLa
               </>
           )}
            
-           <button className="read-more-button">{buttonLabel}</button>
+           {/* <button className="read-more-button">{buttonLabel}</button> */}
+           <a href="/innerCaseStudy" className="read-more-button">{buttonLabel}</a>
         </div>
        
       </div>

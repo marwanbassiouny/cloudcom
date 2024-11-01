@@ -1,38 +1,73 @@
 .topic-example-container {
-    display: flex;
-    flex-direction: column;
-    padding: 100px;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+}
+
+.example-item {
+  display: flex;
+  flex-direction: column; /* Stack text on top of icon for mobile */
+  align-items: center;
+  padding: 20px 0;
+}
+
+.examplePage-text {
+  max-width: 100%; /* Full width for mobile */
+  text-align: left;
+}
+
+.examplePage-text h1 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+.examplePage-text p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0 0;
+  line-height: 1.5;
+}
+
+.example-icon img {
+  width: 200px; /* Smaller icon size for mobile */
+  height: auto;
+  margin-top: 10px; /* Space between text and icon */
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .topic-example-container {
+    padding: 50px;
   }
-  
+
   .example-item {
-    display: flex;
+    flex-direction: row; /* Side-by-side layout for tablet and above */
     justify-content: space-between;
     align-items: center;
+    padding: 30px 0;
+  }
 
-    padding: 20px 0;
+  .examplePage-text {
+    max-width: 50%; /* Half width for text on larger screens */
+    text-align: left;
   }
-  
-  .example-text {
-    max-width: 50%;
-  }
-  
-  .example-text h3 {
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .example-text p {
-    font-size: 1rem;
-    color: #666;
-    margin: 5px 0 0;
-    line-height: 1.5;
-  }
-  
+
   .example-icon img {
-    width: 300px;
-    height: auto;
+    width: 250px; /* Larger icon size for tablet */
   }
-  
+}
+
+/* Desktop and larger screens */
+@media (min-width: 1024px) {
+  .topic-example-container {
+    padding: 100px;
+  }
+
+  .example-icon img {
+    width: 300px; /* Full icon size for desktop */
+  }
+}

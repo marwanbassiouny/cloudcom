@@ -1,6 +1,9 @@
 .data-management-container {
     padding: 50px;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url('../../../Assets/Icons/HomeScreen/DataManagementComponent/backgroundImage.svg'); 
+    background-size: contain; 
+    background-position: center; 
   }
   
   .top-section {
@@ -19,33 +22,38 @@
     align-items: center;
   }
   
-  .left-section {
+  .data-left-section {
     max-width: 50%;
     min-width: 50%;
     text-align: left;         
     align-items: flex-start; 
-    display: flex;
   }
   
-  .left-section h2 {
+  .data-left-section h2 {
     font-size: 1.8rem;
     color: white;
     margin-bottom: 20px;
   }
   
-  .left-section p {
+  .data-left-section p {
     color: white;
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
   
-  .explore-btn {
+  .data-explore-btn {
+    font-weight: bold;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0056D2;
-    color: white;
+    background-color: white;
+    color: #0056D2;
     border-radius: 50px;
     text-decoration: none;
+  }
+
+  .explore-btn-glow {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 10), 
+    0 0 20px rgba(255, 255, 255, 0.3);
   }
   
   .middle-section img {

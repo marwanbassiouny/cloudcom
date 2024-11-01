@@ -36,11 +36,11 @@ const examples = [
 
   return (
     <div>
-      <TopicIntro
+      {/* <TopicIntro
         backgroundImage={introThemeImage}
         title="Our Products"
         breadcrumb="Home ➔ Our Products"
-      />
+      /> */}
       <TopicData
         title="Customer Data Management"
         description="Achieve a 360-degree view of your customers with cloudcom's centralized Customer Data Management module. Synchronize and manage customer data from multiple sources, providing businesses with detailed insights into customer behaviors, preferences, and key attributes like Lifetime Value (LTV), Average Revenue Per User (ARPU), and purchase history."

@@ -15,7 +15,7 @@ const DownloadReports = () => {
                     </div>
                     <button className="download-btn">
                         <span className="download-text">Download</span>
-                        <div className="right-section">
+                        <div className="rep-right-section">
                             <span className="file-size">112 MB</span>
                             <img src={downloadIcon} alt="Download Icon" className="download-icon" />
                         </div>

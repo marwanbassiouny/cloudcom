@@ -43,7 +43,7 @@ function App() {
       <Route path="/blog" element={<BlogSingleScreen />} />
       <Route path="/reports" element={<ReportsScreen />} />
       <Route path="/ContactUs" element={<ContactUsScreen />} />
-      <Route path="/BookYourDemo" element={<BookYourDemoScreen />} />
+      {/* <Route path="/BookYourDemo" element={<BookYourDemoScreen />} /> */}
       <Route path="/packagesAndPrices" element={<PackagesAndPricesScreen />} />
       <Route path="/innerCaseStudy" element={<InnerCaseStudyScreen />} />
       <Route path="/getStarted" element={<GetStartedScreen />} />

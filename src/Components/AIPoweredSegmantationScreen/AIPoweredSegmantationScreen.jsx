@@ -36,11 +36,11 @@ const examples = [
 
   return (
     <div>
-      <TopicIntro
+      {/* <TopicIntro
         backgroundImage={introThemeImage}
         title="Our Products"
         breadcrumb="Home ➔ Our Products"
-      />
+      /> */}
       <TopicData
         title="AI-Powered Segmentation"
         description="Leverage cloudcom's AI-powered segmentation to target the right customers at the right time. Create dynamic segments based on real-time customer behaviors, ensuring your marketing messages reach the right audience for maximum impact."

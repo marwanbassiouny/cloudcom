@@ -17,11 +17,11 @@ const DataManagement = () => {
       {/* Bottom Three Parallel Sections */}
       <div className="bottom-section">
         {/* Left Section: Title and Description */}
-        <div className="left-section">
+        <div className="data-left-section">
           <img src={titleIcon} className=""/>
           <h2>{textContent.headline1}</h2>
           <p>{textContent.description}</p>
-          <a href="#" className="explore-btn">{textContent.exploreButton} ↗</a>
+          <a href="/customerDataManagement" className="data-explore-btn explore-btn-glow" target='_blank'>{textContent.exploreButton} →</a>
         </div>
 
         {/* Middle Section: Image */}

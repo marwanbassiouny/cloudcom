@@ -129,3 +129,10 @@
 .swiper-pagination-bullet-active {
   background-color: #0047ff !important;
 }
+
+.line {
+  width: 80%; 
+  height: 2px;  
+  background-color: #d3d3d3; 
+  margin: 10px 20px; 
+}
