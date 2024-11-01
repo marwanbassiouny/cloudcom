@@ -2,23 +2,23 @@
     background-color: #f9f9f9;
     border-radius: 15px;
     padding: 20px;
-    width: 300px;
+    width: 30%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 5px;
-    position: relative; /* Needed for absolute positioning of the image */
+    position: relative; 
     text-align: left;
   }
   
   .testimonial-card::before {
-    content: "“"; /* Add quote character */
+    content: "“"; 
     font-family: Arial, sans-serif;
-    font-size: 100px; /* Adjust size as needed */
-    color: #e0e0e0; /* Light gray color for subtle effect */
+    font-size: 100px; 
+    color: #e0e0e0; 
     position: absolute;
     bottom: 43%;
     right: 15px;
-    z-index: 0; /* Behind other content */
-    opacity: 0.5; /* Slight transparency */
+    z-index: 0; 
+    opacity: 0.5; 
   }
   
   /* Image Positioned on Top Left Edge */

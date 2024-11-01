@@ -1,5 +1,6 @@
 .intro-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
@@ -41,15 +42,15 @@
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #0056D2;
+    background-color: #0000FF;
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 50px;
   }
   
-  .image-section {
-    width: 40%;
+  .intro-image-section {
+    width: 50%;
   }
   
   .support-image {
@@ -57,5 +58,64 @@
     border-radius: 10px;
   }
 
-  
-  
+  /* Responsive Design */
+@media (max-width: 1024px) {
+  .intro-container {
+      padding: 30px;
+  }
+
+  .highlight-text {
+      font-size: 5rem;
+  }
+
+  .content-section h1 {
+      font-size: 2rem;
+  }
+
+  .content-section p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .content-section, .intro-image-section {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .highlight-text {
+      font-size: 4rem;
+  }
+
+  .content-section h1 {
+      font-size: 1.8rem;
+  }
+
+  .demo-btn {
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight-text {
+      font-size: 3rem;
+  }
+
+  .content-section h1 {
+      font-size: 1.5rem;
+  }
+
+  .content-section p {
+      font-size: 0.9rem;
+  }
+
+  .demo-btn {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+  }
+}
