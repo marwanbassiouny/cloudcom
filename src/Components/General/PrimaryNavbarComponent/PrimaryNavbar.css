@@ -28,6 +28,10 @@
   color: #333;
 }
 
+.navbar-links li a:hover {
+  color: #0056D2; /* Blue color on hover */
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;

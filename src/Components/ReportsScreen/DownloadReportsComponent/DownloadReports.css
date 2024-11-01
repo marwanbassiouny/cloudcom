@@ -54,8 +54,8 @@
     margin-right: auto;
 }
 
-.right-section {
-    display: flex;
+.rep-right-section {
+    display: inline-flex;
     align-items: center;
     gap: 8px;
 }

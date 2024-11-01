@@ -33,6 +33,7 @@ const CaseStudyCard = ({ image, companyLogo, title, description, stats, buttonLa
           )}
            
            <button className="read-more-button">{buttonLabel}</button>
+           {/* <a href="/innerCaseStudy" className="read-more-button">{buttonLabel}</a> */}
         </div>
        
       </div>
