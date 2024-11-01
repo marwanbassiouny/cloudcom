@@ -3,7 +3,6 @@ import  "./TestimonialCard.css"
 
 const ClientTestimonialCard = ({ image, name, job, review, rating }) => {
   return (
-    <div>
       <div className="testimonial-card">
         <img src={image} alt={name} className="testimonial-image" />
         <div className="testimonial-content">
@@ -18,7 +17,6 @@ const ClientTestimonialCard = ({ image, name, job, review, rating }) => {
             <span className="testimonial-job">{job}</span>
         </div>
       </div>
-  </div>
   )
 };
 export default ClientTestimonialCard;

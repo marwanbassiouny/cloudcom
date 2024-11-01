@@ -12,13 +12,15 @@ import CloudComButton from '../CloudComButton/CloudComButton';
 
 const PrimaryNavbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="primary-navbar">
       <div className="navbar-left">
         <a href="/"><img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" /></a>
       </div>
-      <ul className="navbar-links">
+      
+      <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <li><a href="/">Home</a></li>
         <li><a href="/whoWeAre">{textContent.whoAreWe}</a></li>
         <li 
@@ -40,10 +42,17 @@ const PrimaryNavbar = () => {
         </li>
         <li><a href="/packagesAndPrices">{textContent.pricing}</a></li>
         <li><a href="/ClientTestimonials">{textContent.testimonials}</a></li>
+        <li><a href="/reports">{textContent.reports}</a></li>
+        <li><a href="/newsandarticles">{textContent.news}</a></li>
         <li><a href="/ContactUs">{textContent.contactUs}</a></li>
       </ul>
       <div className="navbar-right">
         <CloudComButton text="Signup" link="/getStarted"/>
+      </div>
+      <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
     </nav>
   );

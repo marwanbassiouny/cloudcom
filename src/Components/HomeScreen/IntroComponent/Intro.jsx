@@ -12,7 +12,7 @@ const Intro = () => {
           <p>{textContent.headline3}</p>
           <a href="#" className="demo-btn">{textContent.bookDemo} ↗</a>
         </div>
-        <div className="image-section">
+        <div className="intro-image-section">
           <img src={introImage} alt="Customer Support" className="support-image" />
         </div>
       </div>
