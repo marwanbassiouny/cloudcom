@@ -17,7 +17,7 @@ const TopicExample = ({ examples }) => {
                 <div className="example-icon">
                   <img src={example.icon} alt={example.title} />
                 </div>
-                <div className="example-text">
+                <div className="examplePage-text">
                   <h1>{example.title}</h1>
                   <p>{example.description}</p>
                 </div>

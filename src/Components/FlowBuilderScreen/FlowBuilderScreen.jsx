@@ -36,11 +36,11 @@ const examples = [
 
   return (
     <div>
-      <TopicIntro
+      {/* <TopicIntro
         backgroundImage={introThemeImage}
         title="Our Products"
         breadcrumb="Home ➔ Our Products"
-      />
+      /> */}
       <TopicData
         title="Flow Builder"
         description="Create complex, personalized customer journeys without coding through cloudcom's intelligent automation workflows. Automate customer engagement with predefined drag-and-drop triggers, actions, and conditions, enabling businesses to deliver timely, relevant messages across multiple channels."

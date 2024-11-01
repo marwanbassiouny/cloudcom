@@ -41,13 +41,14 @@ const PrimaryNavbar = () => {
           )}
         </li>
         <li><a href="/packagesAndPrices">{textContent.pricing}</a></li>
+        <li><a href="/caseStudies">Case Studies</a></li>
         <li><a href="/ClientTestimonials">{textContent.testimonials}</a></li>
         <li><a href="/reports">{textContent.reports}</a></li>
         <li><a href="/newsandarticles">{textContent.news}</a></li>
         <li><a href="/ContactUs">{textContent.contactUs}</a></li>
       </ul>
       <div className="navbar-right">
-        <CloudComButton text="Signup" link="/getStarted"/>
+        <CloudComButton text="Signup" link="https://portal.cloudcom.io/login"/>
       </div>
       <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <div className="bar"></div>

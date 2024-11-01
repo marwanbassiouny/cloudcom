@@ -33,6 +33,7 @@ const WhyCloud = () => {
       <p className="why-cloudcom-section-subtitle">
         An all-in-one platform for a fully customized, omnichannel experience, offering seamless integration.
       </p>
+      {/* <div class="line"></div> */}
 
       <Swiper
         modules={[Pagination]}

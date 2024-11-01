@@ -5,6 +5,7 @@
     font-family: Arial, sans-serif;
     justify-content: center ;
     align-items: center;
+    text-align: center;
   }
   
   .paragraph {
@@ -40,7 +41,7 @@
     font-weight: bold;
     color: #333;
     margin-top: 30px;
-    text-align: center;
+    
   }
   
   .blog-image-section {

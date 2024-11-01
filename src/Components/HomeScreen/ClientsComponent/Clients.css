@@ -35,4 +35,9 @@
     max-width: 120px;
     height: auto;
   }
+
+  .client_icon{
+    width: 80px;
+    height: 80px;
+  }
   

@@ -7,16 +7,17 @@
     border-radius: 10px;
   }
   
-  .topic-data-text {
+  .topic-data-page-text {
     max-width: 50%;
+    text-align: left;
   }
   
-  .topic-data-text h2 {
+  .topic-data-page-text h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
   }
   
-  .topic-data-text p {
+  .topic-data-page-text p {
     font-size: 1rem;
     color: #666;
   }

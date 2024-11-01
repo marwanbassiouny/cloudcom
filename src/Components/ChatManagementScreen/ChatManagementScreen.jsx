@@ -36,11 +36,11 @@ const examples = [
 
   return (
     <div>
-      <TopicIntro
+      {/* <TopicIntro
         backgroundImage={introThemeImage}
         title="Our Products"
         breadcrumb="Home ➔ Our Products"
-      />
+      /> */}
       <TopicData
         title="Chat Management"
         description="Ensure no customer inquiry goes unanswered with cloudcom’s 24/7 AI-powered chat management. This system integrates with SMS, WhatsApp, social media, and more to provide real-time support and enhance customer satisfaction."

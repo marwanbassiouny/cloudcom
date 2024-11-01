@@ -42,11 +42,11 @@ const examples = [
 
   return (
     <div>
-      <TopicIntro
+      {/* <TopicIntro
         backgroundImage={introThemeImage}
         title="Our Products"
         breadcrumb="Home ➔ Our Products"
-      />
+      /> */}
       <TopicData
         title="Verify"
         description="cloudcom Verify offers a secure, multi-channel authentication solution that optimizes customer interactions while ensuring seamless, efficient user verification. By utilizing a range of channels, including SMS, WhatsApp, Email, and One-Time Passwords (OTPs), cloudcom Verify enhances the user experience by providing instant and secure access to services. This advanced solution addresses common authentication challenges, such as high costs and user frustration, offering a streamlined alternative for businesses operating in today's digital landscape."

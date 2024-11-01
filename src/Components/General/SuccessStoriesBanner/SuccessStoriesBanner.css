@@ -35,11 +35,12 @@
     color: #fff;
     text-align: left;
     max-width: 50%;
+    margin-top: auto;
 
   }
   
   .banner-title {
-    font-size: 64px;
+    font-size: 50px;
     text-align: left;
     color: white;
     margin-bottom: 15px;

@@ -2,6 +2,7 @@ import React from 'react';
 import './SuccessStories.css';
 import successStoriesImage from '../../../Assets/Images/HomeScreen/SuccessStoriesComponent/SuccessStoriesImage.svg'; 
 import successStoriesIcon from '../../../Assets/Icons/HomeScreen/SuccessStoriesComponent/SuccessStoriesIcon.svg'; 
+import CloudComButton from '../../General/CloudComButton/CloudComButton';
 
 const SuccessStories = () => {
   return (
@@ -36,7 +37,8 @@ const SuccessStories = () => {
               <p>Boosted Retention</p>
             </div>
           </div>
-          <a href="#" className="explore-btn">Explore ↗</a>
+          {/* <a href="#" className="explore-btn">Explore ↗</a> */}
+          <CloudComButton text="Explore" link="https://portal.cloudcom.io/login" glow='glow' />
         </div>
 
         <div className="nav-dots">

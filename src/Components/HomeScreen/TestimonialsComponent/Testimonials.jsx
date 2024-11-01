@@ -56,7 +56,7 @@ const TestimonialCarousel = () => {
     <div className="testimonial-carousel">
       <h2 className="carousel-title">Testimonials</h2>
       <p className="carousel-subtitle">We care about our customer experience too</p>
-
+      <div class="line"></div>
       <Swiper
         modules={[Pagination]} // Use imported modules here
         slidesPerView={1}
