@@ -5,6 +5,14 @@
   "dataManagementService4": "Campaign Manager",
   "dataManagementService5": "AI Segmentation",
   "headline1": "Customer Data Management",
-  "description" : "Achieve a 360-degree view of your customers with cloudcom's centralized Customer Data Management module. Synchronize and manage customer data from multiple sources, providing businesses with detailed insights into customer behaviors, preferences", 
+  "description1" : "Achieve a 360-degree view of your customers with cloudcom's centralized Customer Data Management module. Synchronize and manage customer data from multiple sources, providing businesses with detailed insights into customer behaviors, preferences", 
+  "headline2": "Multi-Channel Campaign Manager",
+  "description2" : "Run effective multi-channel campaigns with cloudcom’s Campaign Manager. Engage customers through SMS, Email, WhatsApp, push notifications, and social media while maintaining a consistent message. Track performance and refine strategies with real-time analytics.", 
+  "headline3": "AI-Powered Segmentation",
+  "description3" : "Leverage cloudcom's AI-powered segmentation to target the right customers at the right time. Create dynamic segments based on real-time customer behaviors, ensuring your marketing messages reach the right audience for maximum impact.", 
+  "headline4": "Chat Management",
+  "description4" : "Ensure no customer inquiry goes unanswered with cloudcom’s 24/7 AI-powered chat management. This system integrates with SMS, WhatsApp, social media, and more to provide real-time support and enhance customer satisfaction.", 
+  "headline5": "Verify",
+  "description5" : "cloudcom Verify offers a secure, multi-channel authentication solution that optimizes customer interactions while ensuring seamless, efficient user verification. By utilizing a range of channels, including SMS, WhatsApp, Email, and One-Time Passwords (OTPs), cloudcom Verify enhances the user experience by providing instant and secure access to services. This advanced solution addresses common authentication challenges, such as high costs and user frustration, offering a streamlined alternative for businesses operating in today's digital landscape.", 
   "exploreButton" : "Explore"
 }
