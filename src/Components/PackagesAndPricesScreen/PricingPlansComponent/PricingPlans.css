@@ -1,195 +1,273 @@
 .pricing-plans-container {
-    position: relative;
-    font-family: Arial, sans-serif;
-  }
-  
-  .background-section {
-    background-image: url('../../../Assets/Icons/PackagesAndPricesScreen/PricingPlansComponent/background.svg');
-    background-size: cover;
-    padding: 40px;
-    color: white;
-    height: 65vh;
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    z-index: 2;
-  }
-  
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.background-section {
+  background-image: url('../../../Assets/Icons/PackagesAndPricesScreen/PricingPlansComponent/background.svg');
+  background-size: cover;
+  padding: 40px;
+  color: white;
+  height: 65vh;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-text {
+  width: 25%;
+  margin-left: 2%;
+}
+
+.pricing-text h3 {
+  color: white;
+}
+
+.pricing-button {
+  background-color: #0000FF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.empty-white-section {
+  background-color: white;
+  height: 65vh;
+}
+
+.pricing-cards {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-55%, 0);
+  display: flex;
+  width: 60%;
+  z-index: 3;
+  height: auto;
+  background-color: white;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.card_plan {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 32%;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.cardTitleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.cardTitle {
+  color: #0000FF;
+  font-weight: bolder;
+  font-size: 27px;
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cardSubTitle {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 5px;
+}
+
+.card_plan h3,
+.card_plan h4 {
+  color: #0000FF;
+}
+
+.card_plan ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 5px 0;
+}
+
+.card_plan li {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.card_plan button {
+  background-color: #D3D3D3;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.card_plan:hover {
+  background-color: #0000FF;
+  color: white;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.card_plan:hover .cardTitle,
+.card_plan:hover .cardSubTitle,
+.card_plan:hover .cardText {
+  color: #ffffff;
+}
+
+.card_plan:hover button {
+  background-color: white;
+  color: #0000FF;
+}
+
+.listContainer {
+  padding: 0;
+  margin: 0;
+}
+
+.cardText {
+  color: #6F6F6F;
+  font-size: 13px;
+}
+
+.listItem {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside;
+}
+
+.tickIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.promoContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.promo {
+  background-color: #0000FF;
+  width: 100px;
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.card_plan:hover .promo {
+  background-color: white;
+  color: #0000FF;
+}
+
+/* Responsive Styling */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
   .pricing-text {
-    width: 25%;
-    margin-left: 2%;
+    width: 40%;
   }
 
-  .pricing-text h3{
-    color : white;
-  }
-
-  .pricing-button {
-    background-color: #0000FF;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .empty-white-section {
-    background-color: white;
-    height: 65vh;
-  }
-  
   .pricing-cards {
-    position: absolute;
-    top: 20%;
-    left: 70%;
-    transform: translate(-55%, 0);
-    display: flex;
-    width: 60%;
-    z-index: 3;
-    height: auto;
-    background-color: white;
-    border-radius: 25px;
-  }
-  
-  .card_plan {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
-    text-align: left;
-    width: 32%;
-    transition: transform 0.3s, background-color 0.3s, color 0.3s;
-    display: flex; 
+    width: 90%;
+    top: 30%;
+    left: 5%;
+    transform: translate(0, 0);
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
   }
-  
-  .cardTitleContainer {
-    display: flex;
-    align-items: center;
+
+  .card_plan {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .cardTitle {
-    color: #0000FF;
-    font-weight: bolder;
-    font-size: 27px;
-    margin-top: 10px;
-    display: inline-block;
-    vertical-align: middle;
+    font-size: 24px;
   }
+}
 
-  .cardSubTitle {
-    display: inline-block;
-    vertical-align: middle;
-    margin : 0px 5px;
-  }
-
-  .card_plan h3 {
-    color: #0000FF;
-  }
-  
-  .card_plan h4 {
-    color: #0000FF;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .card_plan ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 5px 0;
-  }
-  
-  .card_plan li {
-    font-size: 12px;
-    margin: 5px 0;
-  }
-  
-  .card_plan button {
-    background-color: #D3D3D3;
-    color : white;
-    padding: 10px;
-    width: 100%;
-    border-radius: 20px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: auto;
-  }
-  
-  .card_plan:hover {
-    background-color: #0000FF;
-    color: white;
-    transform: translateY(-80px);
-    cursor: pointer;
-  }
-
-  .card_plan:hover .cardTitle {
-    color: #ffffff; 
-  }
-
-  .card_plan:hover .cardSubTitle {
-    color: #ffffff; 
-  }
-
-  .card_plan:hover  .cardText {
-    color: #ffffff; 
-    font-size: 12;
-  }
-  
-  .card_plan:hover button {
-    background-color: white;
-    color: #0000FF;
-  }
-
-  .listContainer {
-    padding: 0;          
-    margin: 0;      
-    }
-
-    .cardText{
-        color: #6F6F6F;
-        font-size: 13px;
-    }
-    
-  .listItem {
-        padding-left: 0;    
-        margin-left: 0;     
-        list-style-position: inside; 
-    }
-
-  .tickIcon{
-    width: 16px;
-    height: 16px;
-    margin-right: 3px;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .promoContainer{
+/* Mobile screens */
+@media (max-width: 768px) {
+  .background-section {
+    height: 50vh;
+    padding: 20px;
     display: flex;
-    justify-content: flex-end; 
-    width: 100%; 
-  }
-
-  .promo{
-    background-color: #0000FF;
-    width: 100px;
-    color: white;
-    font-size: 10px;
-    padding: 5px;
-    border-radius: 25px;
+    justify-content: center;
     text-align: center;
   }
 
-  .card_plan:hover .promo{
-    background-color: white;
-    color: #0000FF;
+  .pricing-text {
+    width: 80%;
   }
 
-  .enterprise {
-    bottom: 0;
+  .pricing-cards {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
   }
+
+  .card_plan {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .promo {
+    width: 80px;
+    font-size: 9px;
+  }
+
+  .card_plan button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .background-section {
+    height: 40vh;
+  }
+
+  .pricing-text {
+    width: 100%;
+  }
+
+  .pricing-cards {
+    padding: 10px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .tickIcon {
+    width: 14px;
+    height: 14px;
+  }
+}

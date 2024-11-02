@@ -7,25 +7,27 @@
 
 .example-item {
   display: flex;
-  flex-direction: column; /* Stack text on top of icon for mobile */
+  flex-direction: column; /* Stack text and icon vertically on mobile */
   align-items: center;
   padding: 20px 0;
 }
 
-.examplePage-text {
+.examplePage-text,
+.example-text {
   max-width: 100%; /* Full width for mobile */
   text-align: left;
 }
 
-.examplePage-text h1 {
+.examplePage-text h1,
+.example-text h1 {
   font-size: 1.5rem;
   color: #333;
   font-weight: bold;
   margin: 0;
-  text-align: left;
 }
 
-.examplePage-text p {
+.examplePage-text p,
+.example-text p {
   font-size: 1rem;
   color: #666;
   margin: 5px 0 0;
@@ -38,10 +40,10 @@
   margin-top: 10px; /* Space between text and icon */
 }
 
-/* Tablet and larger screens */
+/* Tablet screens */
 @media (min-width: 768px) {
   .topic-example-container {
-    padding: 50px;
+    padding: 40px;
   }
 
   .example-item {
@@ -51,23 +53,34 @@
     padding: 30px 0;
   }
 
-  .examplePage-text {
+  .examplePage-text,
+  .example-text {
     max-width: 50%; /* Half width for text on larger screens */
-    text-align: left;
   }
 
   .example-icon img {
-    width: 250px; /* Larger icon size for tablet */
+    width: 250px; /* Larger icon size for tablets */
   }
 }
 
-/* Desktop and larger screens */
+/* Desktop screens */
 @media (min-width: 1024px) {
+  .topic-example-container {
+    padding: 80px;
+  }
+
+  .example-icon img {
+    width: 300px; /* Full icon size for desktop */
+  }
+}
+
+/* Larger desktops */
+@media (min-width: 1440px) {
   .topic-example-container {
     padding: 100px;
   }
 
   .example-icon img {
-    width: 300px; /* Full icon size for desktop */
+    width: 350px;
   }
 }

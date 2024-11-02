@@ -30,13 +30,13 @@ const DataManagement = () => {
         </div>
 
         {/* Right Section: Ellipses */}
-        <div className="right-section">
+        {/* <div className="right-section">
           <img src={blueElipseIcon} className="ellipse"/>
           <img src={whiteElipseIcon} className="ellipse"/>
           <img src={whiteElipseIcon} className="ellipse"/>
           <img src={whiteElipseIcon} className="ellipse"/>
           <img src={whiteElipseIcon} className="ellipse"/>
-        </div>
+        </div> */}
       </div>
     </div>
   );
