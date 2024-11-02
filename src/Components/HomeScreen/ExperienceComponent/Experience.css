@@ -64,6 +64,10 @@
   text-align: center;
   color: #666;
   border-bottom: 1px solid #ccc; /* Bottom border */
+
+}
+
+.stat-item-right {
   border-right: 1px solid #ccc; /* Right border */
 }
 

@@ -21,19 +21,19 @@ const Experience = () => {
   
         {/* Right Section: Stats */}
         <div className="experience-right">
-          <div className="stat-item">
+          <div className="stat-item stat-item-right">
             <h3>{textContent.stat1Headline}</h3>
             <p>{textContent.stat1Text}</p>
           </div>
-          <div className="stat-item">
+          <div className="stat-item stat-item-right">
             <h3>{textContent.stat2Headline}</h3>
             <p>{textContent.stat2Text}</p>
           </div>
-          <div className="stat-item">
+          <div className="stat-item stat-item-right">
             <h3>{textContent.stat3Headline}</h3>
             <p>{textContent.stat3Text}</p>
           </div>
-          <div className="stat-item">
+          <div className="stat-item stat-item-right">
             <h3>{textContent.stat4Headline}</h3>
             <p>{textContent.stat4Text}</p>
           </div>

@@ -24,11 +24,11 @@ const SuccessStories = () => {
           <h3>Gourmet Egypt</h3>
           <p>How Gourmet Egypt Boosted Retention with cloudcom’s CPaaS Solutions</p>
           <div className="stats">
-            <div className="stat-item">
+            <div className="stat-item stat-item-right">
               <h4>22%</h4>
               <p>Boosted Retention</p>
             </div>
-            <div className="stat-item middle-item">
+            <div className="stat-item middle-item stat-item-right">
               <h4>35%</h4>
               <p>Customer Engagement</p>
             </div>
@@ -38,15 +38,15 @@ const SuccessStories = () => {
             </div>
           </div>
           {/* <a href="#" className="explore-btn">Explore ↗</a> */}
-          <CloudComButton text="Explore" link="https://portal.cloudcom.io/login" glow='glow' />
+          <CloudComButton text="Explore" link="/innerCaseStudy" glow='glow' />
         </div>
 
-        {/* <div className="home-nav-dots">
+        <div className="home-nav-dots">
           <span className="dot active"></span>
           <span className="dot"></span>
           <span className="dot"></span>
           <span className="dot"></span>
-        </div> */}
+        </div>
       </div>
     </div>
   );

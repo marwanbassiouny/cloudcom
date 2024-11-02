@@ -6,7 +6,7 @@
   }
   
   .success-stories-container h2 {
-    color: #0056D2;
+    color: #0000FF;
     font-size: 1.8rem;
     margin-bottom: 10px;
   }
@@ -67,7 +67,7 @@
   }
   
   .story-content .stat-item {
-    text-align: center;
+    text-align: left;
     border-bottom: 0px;
   }
   
@@ -84,6 +84,10 @@
   .stat-item p {
     color: #666;
     font-size: 20px;
+  }
+
+  .stat-item-right {
+    border-right: 1px solid #ccc; /* Right border */
   }
   
   .explore-btn {
