@@ -9,11 +9,11 @@ import OurTeamComponent from './OurTeamComponent/OurTeamComponent';
 const WhoAreWeScreen = () => {
   return (
     <div>
-        <TopicIntro
+        {/* <TopicIntro
         backgroundImage={introThemeImage}
         title="Who We Are"
         breadcrumb="Home ➔ Who We Are"
-      />
+      /> */}
         <AboutUs />
         <MissionAndVision />
         <CloudcomHelp />

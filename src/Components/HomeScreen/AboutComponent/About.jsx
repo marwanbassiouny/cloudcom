@@ -2,6 +2,7 @@ import React from 'react';
 import './About.css';
 import aboutImage from '../../../Assets/Icons/HomeScreen/AboutComponent/AboutImage.svg'; // Replace with the actual path to your image
 import textContent from '../../../Assets/Data/HomeScreen/AboutComponent/AboutComponent.json'
+import CloudComButton from '../../General/CloudComButton/CloudComButton';
 
 const About = () => {
   return (
@@ -14,7 +15,8 @@ const About = () => {
             {textContent.subHeadline3}
         </h3>
         <p> {textContent.description} </p>
-        <a href="#" className="read-more-btn">{textContent.readMoreButton} ↗</a>
+        {/* <a href="#" className="read-more-btn">{textContent.readMoreButton} ↗</a> */}
+          <CloudComButton text="Read More" link="/whoWeAre" glow='' />
       </div>
 
       {/* Right Section: Single Image */}

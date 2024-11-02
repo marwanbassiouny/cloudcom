@@ -34,6 +34,7 @@
     overflow: hidden;
     max-width: 700px;
     margin: 0 auto;
+    padding: 5px;
   }
   
   .input-container input {
@@ -55,3 +56,26 @@
     height: 20px;
   }
   
+
+  .gradient-button {
+    background: linear-gradient(45deg, #0000FF, #3497DD); /* Gradient colors */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    width: 60px;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+  
+  .gradient-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .gradient-button:hover {
+    background: linear-gradient(45deg, #3497DD, #0000FF); /* Reverse gradient on hover */
+  }

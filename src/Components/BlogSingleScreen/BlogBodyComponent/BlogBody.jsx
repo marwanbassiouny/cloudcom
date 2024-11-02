@@ -20,7 +20,7 @@ const BlogBody = () => {
         Having already onboarded more than 40 clients across diverse industries & through covering more than 10 countries all over the world in MENA & beyond, cloudcom promises to make a significant impact in the realm of enterprise communication. Furthermore, cloudcom's global reach is reinforced by an extensive network of operators worldwide, ensuring reliable and scalable communication solutions for businesses of all sizes. Through cloudcom, businesses can expect to achieve greater operational efficiency, improved customer satisfaction, enhanced communication strategies, and decreased marketing & infrastructure costs.
       </p>
 
-      <h2>Moreover, cloudcom caters to a diverse range of industries</h2>
+      <h2 className='paragraph_header'>Moreover, cloudcom caters to a diverse range of industries</h2>
 
       <div className="blog-image-section">
         <img src={mainImage} alt="Diverse Industries" className="blog_image" />

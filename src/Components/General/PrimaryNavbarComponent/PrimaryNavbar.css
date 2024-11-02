@@ -5,6 +5,7 @@
   background-color: white;
   padding: 15px 30px;
   box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
   z-index: 1; 
 }
 
@@ -107,4 +108,28 @@
     display: flex;
     align-items: center;
   }
+}
+
+.active-link {
+  color: #0056D2; /* Blue color for active link */
+  font-weight: bold;
+  border-bottom: 2px solid #0056D2; /* Optional: add underline to indicate active link */
+}
+
+.default-icon {
+  display: inline;
+}
+
+/* Hover icon is hidden by default */
+.hover-icon {
+  display: none;
+}
+
+/* When the parent element (menu item) is hovered */
+.menu-item-hover:hover .default-icon {
+  display: none; /* Hide the default icon */
+}
+
+.menu-item-hover:hover .hover-icon {
+  display: inline; /* Show the hover icon */
 }

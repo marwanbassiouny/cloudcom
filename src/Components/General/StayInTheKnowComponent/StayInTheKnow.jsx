@@ -12,7 +12,7 @@ const StayInTheKnow = () => {
         </p>
         <div className="input-container">
           <input type="email" placeholder="Enter your email address" />
-          <button>
+          <button className="gradient-button">
             <img src={ArrowIcon} alt="Send" />
           </button>
         </div>

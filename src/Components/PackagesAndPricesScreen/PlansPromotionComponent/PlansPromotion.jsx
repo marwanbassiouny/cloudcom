@@ -11,8 +11,8 @@ const PlansPromotion = () => {
         <br />
         <br />
         <div className="buttons">
-          <button className="book-demo-btn">Get Started <span>→</span></button>
-          <button className="book-demo-btn">Book a demo <span>→</span></button>
+        <a style={{textDecoration:"none"}} href="/ContactUs" target="_blank"><button className="banner-button">Get Started →</button></a>
+        <a style={{textDecoration:"none"}} href="https://portal.cloudcom.io/login" target="_blank"><button className="banner-button">Book a demo →</button></a>
         </div>
       </div>
     </div>

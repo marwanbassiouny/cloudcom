@@ -60,6 +60,11 @@ const PricingPlans = () => {
         </div>
 
         <div className="card_plan enterprise">
+          <div className='promoContainer'>
+            <div className='promo'>
+              MOST POPULAR
+            </div>
+          </div>
           <div className="cardTitleContainer">
               <h3 className="cardTitle">$89</h3>
               <p className="cardSubTitle">/month</p>

@@ -1,6 +1,7 @@
 .clients-container {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 10px;
+    background-color: white;
     display: flex;
     flex-direction: column;
   }
@@ -17,8 +18,8 @@
   .clients-container h2::after {
     content: '';
     display: block;
-    width: 100%; /* Increase the width to extend beyond the heading */
-    height: 2px;
+    width: 80%; /* Increase the width to extend beyond the heading */
+    height: 1px;
     background-color: #ccc; /* Gray color */
     margin: 10px auto;
     position: relative;
