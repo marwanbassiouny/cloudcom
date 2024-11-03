@@ -22,6 +22,9 @@ import BookYourDemoScreen from './Components/BookYourDemoScreen/BookYourDemoScre
 import PackagesAndPricesScreen from './Components/PackagesAndPricesScreen/PackagesAndPricesScreen';
 import InnerCaseStudyScreen from './Components/InnerCaseStudyScreen/InnerCaseStudyScreen';
 import GetStartedScreen from './Components/GetStartedScreen/GetStartedScreen';
+import RegisterationScreen from './Components/RegisterationSceen/RegisterationSceen';
+import VerificationScreen from './Components/VerificationScreen/VerificationScreen';
+import LoginSceen from './Components/LoginScreen/LoginSceen';
 
 function App() {
   return (
@@ -47,6 +50,9 @@ function App() {
       <Route path="/packagesAndPrices" element={<PackagesAndPricesScreen />} />
       <Route path="/innerCaseStudy" element={<InnerCaseStudyScreen />} />
       <Route path="/getStarted" element={<GetStartedScreen />} />
+      <Route path="/register" element={<RegisterationScreen />} />
+      <Route path="/login" element={<LoginSceen />} />
+      <Route path="/verification" element={<VerificationScreen />} />
     </Routes> 
      <MainFooter/>
     </Router>

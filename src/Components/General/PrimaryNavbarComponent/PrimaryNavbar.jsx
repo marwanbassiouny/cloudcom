@@ -96,7 +96,7 @@ const PrimaryNavbar = () => {
         </li>
       </ul>
       <div className="navbar-right">
-        <CloudComButton text="Signup" link="https://portal.cloudcom.io/login"/>
+        <CloudComButton text="Signup" link="/register"/>
       </div>
       <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <div className="bar"></div>
