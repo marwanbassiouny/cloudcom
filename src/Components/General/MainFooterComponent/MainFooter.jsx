@@ -43,21 +43,21 @@ const MainFooter = () => {
 
         <div className="footer-section links-section">
           <ul>
-            <li>{textContent.home}</li>
-            <li>{textContent.Who}</li>
-            <li>{textContent.OurProduct}</li>
-            <li>{textContent.Pricing}</li>
-            <li>{textContent.casestudies}</li>
+            <li><a href="/">{textContent.home}</a></li>
+            <li><a href="/whoWeAre">{textContent.Who}</a></li>
+            <li><a href="/customerDataManagement">{textContent.OurProduct}</a></li>
+            <li><a href="/packagesAndPrices">{textContent.Pricing}</a></li>
+            <li><a href="/caseStudies">{textContent.casestudies}</a></li>
           </ul>
         </div>
 
         <div className="footer-section links-section">
           <ul>
-            <li>{textContent.Testimonials}</li>
-            <li>{textContent.Reports}</li>
-            <li>{textContent.News}</li>
-            <li>{textContent.Contactus}</li>
-            <li>{textContent.Signup}</li>
+            <li><a href="/ClientTestimonials">{textContent.Testimonials}</a></li>
+            <li><a href="/reports">{textContent.Reports}</a></li>
+            <li><a href="/newsandarticles">{textContent.News}</a></li>
+            <li><a href="/ContactUs">{textContent.Contactus}</a></li>
+            <li><a href="https://portal.cloudcom.io/login">{textContent.Signup}</a></li>
           </ul>
         </div>
       </div>

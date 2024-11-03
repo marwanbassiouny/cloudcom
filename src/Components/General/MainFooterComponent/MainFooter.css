@@ -93,6 +93,13 @@ form {
 
 .links-section ul li {
   margin: 5px 0;
+  
+}
+
+.links-section ul li a {
+  text-decoration: none;
+  color: white;
+  
 }
 
 /* Footer Bottom */
@@ -138,6 +145,41 @@ form {
     padding: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+   .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .social-icons {
+    margin-bottom: 15px;
+  }
+
+  .footer-section {
+    width:43%;
+  }
+  .links-section {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: row !important;
+    padding: 0;
+  }
+  .links-section {
+    width: 40%;
+    justify-content: start;
+  }
+} 
 
 /* Cloud Vector Styling */
 
