@@ -7,19 +7,30 @@ const RegistrationForm = () => {
   return (
     <div className="registration-container">
       <div className="form-card">
-        <img src={logo} alt="Cloudcom Logo" className="logo" />
+        <div className="register-logo-container">
+          <img src={logo} alt="Cloudcom Logo" className="logo" />
+        </div>
+        
         <h2>Let’s Create an account !</h2>
-        <div className="or-divider">OR</div>
-        <hr className="form_divider" />
+        
+        <div className='divider-section'>
+          <div className="line_divider">
+            <hr className="login-divider" />
+            <div className="login-or-divider">OR</div>
+            <hr className="login-divider" />
+          </div>
+        </div>
 
-        <button className="google-signup">
-          <img src={googleIcon} alt="Google icon" /> Sign up with Google
-        </button>
+        <div className="google-register_container">
+          <button className="google-signup">
+            <img src={googleIcon} alt="Google icon" /> Sign up with Google
+          </button>
+        </div>
 
         <form className="registration-form">
           <div className="name-inputs">
-            <input type="text" placeholder="First Name *" required />
-            <input type="text" placeholder="Last Name *" required />
+            <input className='registerInput' type="text" placeholder="First Name *" required />
+            <input className='registerInput'  type="text" placeholder="Last Name *" required />
           </div>
           {/* <PhoneInput
             country={'eg'}
@@ -29,18 +40,15 @@ const RegistrationForm = () => {
             containerClass="phone-input-container"
             countryCodeEditable={false}
           /> */}
-          <input type="email" placeholder="Email *" required />
-          <input type="password" placeholder="Password *" required />
-          <input type="password" placeholder="Confirm Password *" required />
+          <input className='registerInput'  type="email" placeholder="Email *" required />
+          <input className='registerInput'  type="password" placeholder="Password *" required />
+          <input className='registerInput'  type="password" placeholder="Confirm Password *" required />
           <p>
-            By creating an account, you agree to the <a href="#">Terms of use</a> and{' '}
-            <a href="#">Privacy Policy</a>.
+            By creating an account, you agree to the <a className="signup_links" href="#">Terms of use</a> and{' '}
+            <a className="signup_links" href="#">Privacy Policy</a>.
           </p>
           <button className="signup-button" type="submit">SIGNUP</button>
         </form>
-        {/* <p className="login-link">
-          Already have an account? <a href="/login">LOGIN</a>
-        </p> */}
       </div>
     </div>
   );

@@ -17,6 +17,11 @@
     text-align: center;
   }
   
+  .register-logo-container {
+    display: flex;
+    justify-content: flex-start;
+    }
+
   .logo {
     width: 100px;
     margin-bottom: 20px;
@@ -28,33 +33,29 @@
     margin-bottom: 20px;
   }
   
-  .form_divider {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin-bottom: 20px;
+  .google-register_container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
   }
-  
+
   .google-signup {
     background-color: white;
     border: 1px solid #ddd;
     color: #666;
     padding: 10px 20px;
-    width: 100%;
+    width: 70%;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
+    cursor: pointer;
   }
   
   .google-signup img {
     width: 20px;
     margin-right: 10px;
-  }
-  
-  .or-divider {
-    color: #aaa;
-    margin-bottom: 20px;
   }
   
   .registration-form {
@@ -68,14 +69,20 @@
     gap: 10px;
   }
   
-  input[type="text"],
+  .registerInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+  }
+  /* input[type="text"],
   input[type="email"],
   input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-  }
+  } */
   
   .phone-input-container {
     width: 100%;
@@ -118,6 +125,10 @@
   .login-link a {
     color: #0000FF;
     text-decoration: none;
+  }
+  
+  .signup_links{
+    text-decoration: underline;
   }
   
   @media (max-width: 768px) {

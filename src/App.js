@@ -25,6 +25,7 @@ import GetStartedScreen from './Components/GetStartedScreen/GetStartedScreen';
 import RegisterationScreen from './Components/RegisterationSceen/RegisterationSceen';
 import VerificationScreen from './Components/VerificationScreen/VerificationScreen';
 import LoginSceen from './Components/LoginScreen/LoginSceen';
+import ForgotPasswordScreen from './Components/ForgotPasswordScreen/ForgotPasswordScreen';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
       <Route path="/register" element={<RegisterationScreen />} />
       <Route path="/login" element={<LoginSceen />} />
       <Route path="/verification" element={<VerificationScreen />} />
+      <Route path="/forgotPassowrd" element={<ForgotPasswordScreen />} />
     </Routes> 
      <MainFooter/>
     </Router>

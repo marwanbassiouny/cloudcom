@@ -17,6 +17,11 @@
   text-align: center;
 }
 
+.login-logo-container {
+display: flex;
+justify-content: flex-start;
+}
+
 .login-logo {
   width: 100px;
   margin-bottom: 20px;
@@ -28,10 +33,34 @@ h2 {
   margin-bottom: 20px;
 }
 
+.divider-section{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.line_divider {
+  display: flex;  
+  align-items: center; 
+  justify-content: center; 
+  width: 70%;
+}
+
 .login-divider {
+  flex :1;
   border: none;
   border-top: 1px solid #ddd;
-  margin-bottom: 20px;
+  margin : 0px 5px;
+}
+
+.login-or-divider {
+  color: #aaa;
+  font-size: 12px
+}
+
+.google-login{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
 }
 
 .google-login-btn {
@@ -39,12 +68,13 @@ h2 {
   border: 1px solid #ddd;
   color: #666;
   padding: 10px 20px;
-  width: 100%;
+  width: 70%;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .google-login-btn img {
@@ -52,10 +82,7 @@ h2 {
   margin-right: 10px;
 }
 
-.login-or-divider {
-  color: #aaa;
-  margin-bottom: 20px;
-}
+
 
 .login-form {
   display: flex;
@@ -63,12 +90,11 @@ h2 {
   gap: 15px;
 }
 
-input[type="text"],
-input[type="password"] {
+.loginInput {
+  border-radius: 25px;
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
 }
 
 .login-options {
@@ -84,8 +110,15 @@ input[type="password"] {
 
 .forgot-password {
   color: #0000FF;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 14px;
+}
+
+.verificationText{
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  color:black
 }
 
 .verification-options {
