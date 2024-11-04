@@ -1,6 +1,6 @@
 .clients-container {
     text-align: center;
-    padding: 40px 10px;
+    padding: 30px 10%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -12,13 +12,23 @@
     color: #333;
     position: relative;
     display: inline-block;
-    padding-bottom: 10px;
   }
   
+  .scrolling-img-section {
+    overflow: hidden; 
+    position: relative;
+  }
+
+  .scrolling-img{
+    display: inline-block;
+    white-space: nowrap; /* Ensure text stays in one line */
+    animation: scrollText 20s linear infinite; /* Animation for continuous scrolling */
+  }
+
   .clients-container h2::after {
     content: '';
     display: block;
-    width: 80%; /* Increase the width to extend beyond the heading */
+    width: 90%; /* Increase the width to extend beyond the heading */
     height: 1px;
     background-color: #ccc; /* Gray color */
     margin: 10px auto;
@@ -30,7 +40,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     gap: 20px;
   }
   
