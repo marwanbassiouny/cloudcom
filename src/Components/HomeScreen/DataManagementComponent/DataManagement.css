@@ -1,25 +1,46 @@
+
 .data-management-container {
   padding: 50px;
-  background-image: url('../../../Assets/Icons/HomeScreen/DataManagementComponent/backgroundImage.svg'); 
+  background-color: #1E1E1E; 
   background-size: contain; 
   background-position: center;
 }
 
 .top-section {
-  text-align: center;
-  margin-bottom: 40px;
+  overflow: hidden; /* Hide overflow for a smooth scrolling effect */
+  padding: 20px 0; /* Padding for visual spacing */
+  position: relative;
 }
 
-.top-section h1 {
-  font-size: 2rem;
-  color: #ccc;
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap; /* Ensure text stays in one line */
+  animation: scrollText 20s linear infinite; /* Animation for continuous scrolling */
 }
+
+.scrolling-text h1 {
+  font-size: 2.5rem;
+  color: #AEAEAE;
+  margin: 0;
+}
+
+/* Keyframes for Scrolling Text Animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Start from the right of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left of the container */
+  }
+}
+
 
 /* Desktop layout */
 .bottom-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 40px 0 40px;
 }
 
 .data-left-section {
@@ -104,6 +125,7 @@
   .bottom-section {
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 
   .data-left-section {

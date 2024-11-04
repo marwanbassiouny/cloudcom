@@ -23,7 +23,7 @@
 /* Testimonial Card Styles */
 .testimonial-wrapper {
   overflow: visible;
-  padding: 10px; /* Adjust padding as necessary to keep the card within the slide */
+  padding: 10px;
 }
 
 .testimonial-card-home {

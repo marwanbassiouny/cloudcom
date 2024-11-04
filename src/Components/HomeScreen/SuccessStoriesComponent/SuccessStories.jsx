@@ -41,12 +41,12 @@ const SuccessStories = () => {
           <CloudComButton text="Explore" link="/innerCaseStudy" glow='glow' />
         </div>
 
-        <div className="home-nav-dots">
+        {/* <div className="home-nav-dots">
           <span className="dot active"></span>
           <span className="dot"></span>
           <span className="dot"></span>
           <span className="dot"></span>
-        </div>
+        </div> */}
       </div>
     </div>
   );
