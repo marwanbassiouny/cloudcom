@@ -7,7 +7,7 @@ import CaseStudyCards from './CaseStudyCardsComponent/CaseStudyCards';
 
 const InnerCaseStudyScreen = () => {
   return (
-    <div>
+    <div className='casestudyinnerinfo'>
         <CaseStudyIntro />
         <CaseStudyOverview />
         <CaseStudyCharts />
