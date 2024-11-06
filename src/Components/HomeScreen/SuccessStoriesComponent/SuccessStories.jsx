@@ -8,7 +8,7 @@ const SuccessStories = () => {
   return (
     <div className="success-stories-container">
       <h2>Discover the Success Stories</h2>
-      <p className="description">
+      <p className="success-stories-description">
         See how businesses across various industries have transformed their customer engagement with cloudcom’s solutions.
         From increasing retention to driving growth, explore real-world results that highlight the power of personalized,
         omni-channel communication.
@@ -37,16 +37,15 @@ const SuccessStories = () => {
               <p>Boosted Retention</p>
             </div>
           </div>
-          {/* <a href="#" className="explore-btn">Explore ↗</a> */}
           <CloudComButton text="Explore" link="/innerCaseStudy" glow='glow' />
         </div>
-
-        {/* <div className="home-nav-dots">
+        
+        <div className="home-nav-dots">
           <span className="dot active"></span>
           <span className="dot"></span>
           <span className="dot"></span>
           <span className="dot"></span>
-        </div> */}
+        </div>
       </div>
     </div>
   );

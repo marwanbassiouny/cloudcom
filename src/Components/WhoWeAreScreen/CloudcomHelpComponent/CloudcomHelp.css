@@ -39,8 +39,9 @@
 .cloudcom-help__values-section,
 .cloudcom-help__image-section_2,
 .cloudcom-help__values-section_2 {
-  width: 50%;
+  width: 40%;
   padding: 3rem;
+  color: #6F6F6F;
 }
 
 .cloudcom-help__image {

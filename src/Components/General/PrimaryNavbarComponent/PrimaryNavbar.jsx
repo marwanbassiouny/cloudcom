@@ -9,7 +9,6 @@ import aiSegmantationIcon from '../../../Assets/Icons/General/PrimaryNavbarCompo
 import chatManagementIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/chatManagementIcon.svg';
 import flowIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/flowIcon.svg';
 import CloudComButton from '../CloudComButton/CloudComButton';
-
 import CustomerDataManagementIconSelected from '../../../Assets/Icons/General/PrimaryNavbarComponent/CustomerDataManagement_selected.svg';
 import verifyIconSelected from '../../../Assets/Icons/General/PrimaryNavbarComponent/verifyIcon_selected.svg';
 import campaignManagerIconSelected from '../../../Assets/Icons/General/PrimaryNavbarComponent/campaignManagerIcon_selected.svg';

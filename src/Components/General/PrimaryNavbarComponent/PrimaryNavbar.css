@@ -9,6 +9,19 @@
   z-index: 1; 
 }
 
+.navbar-left  {
+  /* padding-left: 50px; */
+  margin-left: 50px;
+}
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  /* padding-right: 50px; */
+}
+
 .navbar-left .Cloudcom_Logo {
   height: 40px;
 }
@@ -57,11 +70,6 @@
   gap: 10px;
 }
 
-.navbar-right {
-  display: flex;
-  align-items: center;
-}
-
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -80,6 +88,10 @@
     flex-direction: row;
     align-items: center;
     padding: 10px 20px;
+  }
+
+  .navbar-left  {
+    margin: 0px 20px;
   }
 
   .navbar-links {

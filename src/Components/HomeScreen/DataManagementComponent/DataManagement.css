@@ -1,8 +1,12 @@
 
 .data-management-container {
   padding: 50px;
-  background-color: #1E1E1E; 
+  /* background-color: #1E1E1E;  */
   background-size: contain; 
+  background-position: center;
+
+  background-image: url("../../../Assets//Icons//HomeScreen//DataManagementComponent/backgroundImage.svg"); 
+  background-size: cover;
   background-position: center;
 }
 

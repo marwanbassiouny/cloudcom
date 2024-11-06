@@ -2,8 +2,12 @@ import React from 'react';
 import './LoginForm.css';
 import googleIcon from '../../../Assets/Icons/RegistrationScreen/RegistrationForm/googleIcon.svg';
 import AuthButton from '../../General/AuthButton/AuthButton';
+import PasswordInput from '../../General/PasswordInput/PasswordInput';
+
 
 const LoginForm = () => {
+
+
   return (
     <div className="login-container">
       <div className="login-form-card">
@@ -22,7 +26,8 @@ const LoginForm = () => {
         </div>
         <form className="login-form">
           <input className="loginInput" type="text" placeholder="User Name" required />
-          <input className="loginInput" type="password" placeholder="Password" required />
+          
+          <PasswordInput />
           <div className="login-options">
             <label className="remember-me">
               <input type="checkbox" /> Remember me

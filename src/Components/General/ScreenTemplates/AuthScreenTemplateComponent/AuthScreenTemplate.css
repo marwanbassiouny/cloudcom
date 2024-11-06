@@ -19,3 +19,45 @@
     }
 }
   
+/*----------------------------------- background elipses --------------------------*/
+.parent-container {
+  position: relative;
+}
+
+.auth-ellipse-1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0%;
+  left: 1150px;
+}
+
+.auth-ellipse-2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10%;
+  right: -1100px;
+}
+
+.auth-ellipse-3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -3%;
+  left: 970px;
+}
+
+.auth-ellipse-4 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 80px;
+  right: -990px;
+}
+
+.ellipse-bottom-left {
+  position: absolute;
+  bottom: -30px;
+  left: 1150px;
+}

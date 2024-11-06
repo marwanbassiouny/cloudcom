@@ -1,6 +1,5 @@
 import React from 'react';
 import introImage from '../../../Assets/Icons/HomeScreen/IntroComponent/IntroImage.svg';
-import textContent from '../../../Assets/Data/HomeScreen/Intro/Intro.json'
 import './Intro.css'
 import CloudComButton from '../../General/CloudComButton/CloudComButton';
 
@@ -10,7 +9,8 @@ const Intro = () => {
         <div className="content-section">
           <h1 class="highlight-text">cloudcom the starting point of</h1>
           <h1 class="gradient-text">Customer Support</h1>
-          <p>{textContent.headline3}</p>
+          <p>Learn. Segment. Connect. Engage. Analyze.</p>
+          <p>Support. Your customer.</p>
           <div className="demo-btn"> 
             <CloudComButton text="Book a Demo" link="https://portal.cloudcom.io/login" glow='glow' />
           </div>
