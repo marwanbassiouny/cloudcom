@@ -1,15 +1,11 @@
 import React from 'react';
-import './RegisterationSceen.css';
 import RegistrationForm from '../RegisterationSceen/RegistrationFormComponent/RegistrationForm';
 import WelcomeComponent from '../RegisterationSceen/WelcomeComponent/Welcome';
-// import RightPart from './RightPart';
+import AuthScreenTemplate from '../General/ScreenTemplates/AuthScreenTemplateComponent/AuthScreenTemplate';
 
 const RegisterationScreen = () => {
   return (
-    <div className="registration-screen">
-      <RegistrationForm />
-      <WelcomeComponent />
-    </div>
+    <AuthScreenTemplate leftPanel={<RegistrationForm />} rightPanel={<WelcomeComponent />}/>
   );
 };
 

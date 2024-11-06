@@ -10,7 +10,7 @@ const LoginWelcome = () => {
         <p>CloudCom The Starting Point of customer engagement</p>
       </div>
       <div className="welcome-image">
-        <img src={welcomeImage} alt="Profile" className="profile-image" />
+        <img src={welcomeImage} alt="Profile" className="login-profile-image" />
       </div>
       <p className="login-text">Don’t have an account? <a href="/login">SIGNUP</a></p>
     </div>

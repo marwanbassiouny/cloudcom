@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background-color: white; */
     padding: 20px;
   }
   
@@ -75,14 +74,6 @@
     border: 1px solid #ddd;
     border-radius: 25px;
   }
-  /* input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  } */
   
   .phone-input-container {
     width: 100%;
@@ -92,28 +83,13 @@
     width: 100% !important;
   }
   
-  .signup-button {
-    background-color: #0000FF;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .signup-button:hover {
-    background-color: #0036cc;
-  }
-  
-  p {
+  .registration-paragrapgh {
     font-size: 12px;
     color: #888;
     margin-top: 20px;
   }
   
-  p a {
+  .registration-paragrapgh a {
     color: #0000FF;
     text-decoration: none;
   }

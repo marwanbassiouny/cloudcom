@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-  width: 80%;
+  width:100%
 }
 
 .login-form-card {
@@ -15,16 +15,6 @@
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-
-.login-logo-container {
-display: flex;
-justify-content: flex-start;
-}
-
-.login-logo {
-  width: 100px;
-  margin-bottom: 20px;
 }
 
 h2 {
@@ -129,20 +119,6 @@ h2 {
 
 .verification-options label {
   font-size: 14px;
-}
-
-.login-button {
-  background-color: #0000FF;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.login-button:hover {
-  background-color: #0036cc;
 }
 
 @media (max-width: 768px) {

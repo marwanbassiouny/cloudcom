@@ -16,14 +16,14 @@ const ContactUsScreen = () => {
             <div className="contactus-right">
                 <form className="contactus-form">
                     <div className="input-group">
-                        <input type="text" name="name" placeholder="Name" />
-                        <input type="email" name="email" placeholder="Email" />
+                        <input className="contactus-input" type="text" name="name" placeholder="Name" />
+                        <input className="contactus-input" type="email" name="email" placeholder="Email" />
                     </div>
                     <div className="input-group">
-                        <input type="text" name="phone" placeholder="Phone Number" />
-                        <input type="text" name="company" placeholder="Company Name" />
+                        <input className="contactus-input" type="text" name="phone" placeholder="Phone Number" />
+                        <input className="contactus-input" type="text" name="company" placeholder="Company Name" />
                     </div>
-                    <textarea name="message" placeholder="Message"></textarea>
+                    <textarea className="contactus-textarea" name="message" placeholder="Message"></textarea>
                     <button type="submit" className="send-button">Send <span className="arrow">&rarr;</span></button>
                 </form>
             </div>

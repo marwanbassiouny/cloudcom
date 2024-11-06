@@ -1,10 +1,10 @@
 import React from 'react';
-import './ForgotPasswordScreen.css';
+import './ResetPasswordScreen.css';
 import illustration from '../../Assets/Icons/ForgotPasswordScreen/ForgotPasswordWelcomeImage.svg';
 import AuthButton from '../General/AuthButton/AuthButton';
 import LogoNavbar from '../General/LogoNavbarComponent/LogoNavbar';
 
-const ForgotPasswordScreen = () => {
+const ResetPasswordScreen = () => {
   return (
     <>
       <LogoNavbar />
@@ -14,20 +14,16 @@ const ForgotPasswordScreen = () => {
           <img src={illustration} alt="Forgot Password Illustration" />
         </div>
         <div className="forgot-password-form">
-          <h2>Forgot Password</h2>
-          <h5>forgot your password ? no worries !</h5>
+          <h2>Reset Password</h2>
           <div className='forgotPasswordCardText'>
-            Enter the email address for your CloudCom account below and we will email you a link to reset your password.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+          sed diam nonummy nibh euismod tincidunt ut laoreet 
           </div>
           <form>
             <input className="loginInput" type="email" placeholder="Email" required />
-            <AuthButton text="Reset Password" link="/resetPassword"/>
+            <input className="loginInput" type="email" placeholder="Email" required />
+            <AuthButton text="Reset Password" link="#"/>
           </form>
-          <div className='action_link'>
-            <p className="sign-in-link">
-                <a href="/login">Go to sign in</a>
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -36,4 +32,4 @@ const ForgotPasswordScreen = () => {
   );
 };
 
-export default ForgotPasswordScreen;
+export default ResetPasswordScreen;

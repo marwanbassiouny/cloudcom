@@ -7,16 +7,9 @@
     background-color: white;
   }
   
-  .logo-section img {
-    width: 120px;
-    margin-bottom: 20px;
-  }
-  
   .verification-content {
     padding: 20px;
     border-radius: 10px;
-    width: 100vb;
-    height: 100vb;
   }
   
   .verification-image {
@@ -28,16 +21,17 @@
     color: #0044FF;
     margin-bottom: 10px;
   }
-  
-  .verification-text {
-    margin: 20px 20px;
-  }
 
+  .checkyourmail-text {
+    margin: 20px 0px 40px 0px;
+    font-size: 12px;
+    width: 100%;
+  }
+  
   .email-address {
     font-weight: bold;
-    margin: 20px 0px;
+    margin-bottom: 20px;
   }
+
   
-
-
   

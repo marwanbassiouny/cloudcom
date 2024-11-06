@@ -1,0 +1,21 @@
+.auth-template-screen {
+  background-color: white;
+  position: relative;
+}
+
+.auth-template-content {
+  display: flex;
+  min-width: 100vw; 
+  min-height: 100vh;
+}
+  
+ .authTempalte-left-section, .authTempalte-right-section {
+    flex : 1
+}
+
+@media (max-width: 768px) {
+    .auth-template-content {
+      flex-direction: column;
+    }
+}
+  

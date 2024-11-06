@@ -1,14 +1,11 @@
 import React from 'react';
-import './LoginSceen.css';
 import LoginForm from './LoginFormComponent/LoginForm';
 import LoginWelcome from './LoginWelcomeComponent/LoginWelcome';
+import AuthScreenTemplate from '../General/ScreenTemplates/AuthScreenTemplateComponent/AuthScreenTemplate';
 
 const LoginSceen = () => {
   return (
-    <div className="registration-screen">
-      <LoginForm />
-      <LoginWelcome />
-    </div>
+    <AuthScreenTemplate leftPanel={<LoginForm />} rightPanel={<LoginWelcome />}/>
   );
 };
 
