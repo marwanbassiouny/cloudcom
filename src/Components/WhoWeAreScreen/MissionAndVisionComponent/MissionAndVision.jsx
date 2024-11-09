@@ -1,8 +1,9 @@
-import React from 'react';
+import {React,useState,useEffect} from 'react';
 import './MissionAndVision.css';
 import mainImage from '../../../Assets/Icons/WhoWeAreScreen/MissionAndVisionComponent/MissonAndVisionIcon.svg';
 
 const MissionAndVision = () => {
+
   return (
     <div className="container">
       <div className="firstCard">

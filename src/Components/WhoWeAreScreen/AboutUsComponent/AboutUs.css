@@ -34,24 +34,53 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
+  padding: 2%;
 }
 
 
 .text-section {
   flex: 1;
-  font-size: 1rem;
-  color: #333;
   line-height: 1.6;
   text-align: left;
+}
+
+.text-section p{
+  font-size: 20px;
+  color: #000000;
 }
 
 .icon-section {
   flex: 1;
   display: flex;
   justify-content: center;
+  position: relative;
+
 }
 
 .illustration {
-  width: 100%;
-  max-width: 200px;
+  width: 65%;  /* Ensure both images take up the same space */
+  transition: transform 1s ease-in-out; /* Smooth transform and opacity transition */
+  backface-visibility: hidden;
+}
+
+
+.img1 {
+  z-index: 2; /* Initially above the other image */
+}
+
+.icon1after {
+  position: absolute;
+  z-index: 1; /* Below initially, icons will "appear" later */
+  opacity: 0; /* Start invisible */
+}
+
+.slide-left {
+ /* Slide the first image to the left */
+  opacity: 0; /* Gradually fade out while sliding left */
+}
+
+.show-icons {
+  opacity: 1; /* Make the second image visible as the first fades out */
+  /* transform: translateX(-20px);  */
 }

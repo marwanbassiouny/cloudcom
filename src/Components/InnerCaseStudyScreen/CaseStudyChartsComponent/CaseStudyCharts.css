@@ -1,18 +1,15 @@
 .case-study-charts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: #F3F0F0;
     align-items: center;
-    justify-content: center;
   }
   
   .chart-container {
-    background-color: white;
     border-radius: 20px;
     padding: 20px;
-    width: 75%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
   }
   
   .chart-container h2 {
@@ -21,7 +18,6 @@
   }
   
   .chart-content {
-
     gap: 10px;
     background-color: #F3F0F0;
    
@@ -32,4 +28,11 @@
     width: 100%;
     margin-top: 10px;
   }
+
+  @media (max-width: 480px) {
+    .case-study-charts {
+     flex-direction: column;
+    }
+  }
+
   

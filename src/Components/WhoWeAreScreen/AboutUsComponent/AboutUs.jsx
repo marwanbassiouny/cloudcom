@@ -1,9 +1,20 @@
-import React from 'react';
+import {React,useState,useEffect} from 'react';
 import './AboutUs.css';
-import icon1 from '../../../Assets/Icons/WhoWeAreScreen/AboutUsComponent/Icon1.svg';
+import icon1 from '../../../Assets/Icons/WhoWeAreScreen/AboutUsComponent/Icon1 before.svg';
+import icon1after from '../../../Assets/Icons/WhoWeAreScreen/AboutUsComponent/Icon1 after.svg';
 import icon2 from '../../../Assets/Icons/WhoWeAreScreen/AboutUsComponent/Icon2.svg'; 
 
 const AboutUs = () => {
+  const [showSecondImage, setShowSecondImage] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowSecondImage((prev) => !prev);
+    }, 2000); // Change every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="about-us-container">
       <h2>About cloudcom</h2>
@@ -20,7 +31,19 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="icon-section">
-            <img src={icon1} alt="Illustration 1" className="illustration" />
+            {/* <img src={icon1} alt="Illustration 1" className="illustration" /> */}
+            <img 
+              src={icon1} 
+              alt="Original" 
+              className={`illustration img1 ${showSecondImage ? 'slide-left' : ''}`} 
+            />
+
+            {/* Image with Icons */}
+            <img 
+              src={icon1after} 
+              alt="With Icons" 
+              className={`illustration icon1after ${showSecondImage ? 'show-icons' : ''}`} 
+            />
           </div>
         </div>
 
