@@ -62,7 +62,7 @@
     flex-wrap: wrap;
 }
 
-input, textarea {
+.contactus-input, .contactus-textarea {
     flex: 1;
     padding: 15px;
     border: 1px solid #ccc;
@@ -70,7 +70,7 @@ input, textarea {
     font-size: 1em;
 }
 
-textarea {
+.contactus-textarea {
     height: 250px;
     resize: none;
     border-radius: 20px;

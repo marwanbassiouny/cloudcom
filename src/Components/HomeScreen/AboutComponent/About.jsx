@@ -14,8 +14,15 @@ const About = () => {
             {textContent.subHeadline2}<br />
             {textContent.subHeadline3}
         </h3>
-        <p> {textContent.description} </p>
-        {/* <a href="#" className="read-more-btn">{textContent.readMoreButton} ↗</a> */}
+        <div className='home-about-text'>
+          <p> Empowering businesses with scalable, secure,  </p>
+          <p> and AI-driven CPaaS solutions, cloudcom enables </p>
+          <p> optimized customer engagement by leveraging  </p>
+          <p> real-time insights and reporting to seamlessly  </p>
+          <p> enhance interactions across all communication </p>
+          <p> channels. Serving businesses across the MENA </p>
+          <p> region, Gulf, LATAM, and beyond.</p>
+        </div>
           <CloudComButton text="Read More" link="/whoWeAre" glow='' />
       </div>
 

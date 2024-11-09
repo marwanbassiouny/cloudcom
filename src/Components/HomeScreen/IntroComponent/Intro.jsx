@@ -1,9 +1,8 @@
 import {React,useState,useEffect} from 'react';
 import introImage from '../../../Assets/Icons/HomeScreen/IntroComponent/IntroImage.svg';
-import textContent from '../../../Assets/Data/HomeScreen/Intro/Intro.json'
 import './Intro.css'
 import CloudComButton from '../../General/CloudComButton/CloudComButton';
-
+import textContent from "../../../Assets/Data/HomeScreen/Intro/Intro.json"
 const textArray = [
   "Customer Support",
   "Customer Engagement",

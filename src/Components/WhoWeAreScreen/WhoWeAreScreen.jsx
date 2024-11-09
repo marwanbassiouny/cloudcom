@@ -17,7 +17,7 @@ const WhoAreWeScreen = () => {
         <AboutUs />
         <MissionAndVision />
         <CloudcomHelp />
-        <OurTeamComponent />
+        {/* <OurTeamComponent /> */}
     </div>
   );
 };

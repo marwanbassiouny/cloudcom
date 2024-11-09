@@ -1,0 +1,37 @@
+.verification-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .verification-content {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .verification-image {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #0044FF;
+    margin-bottom: 10px;
+  }
+
+  .checkyourmail-text {
+    margin: 20px 0px 40px 0px;
+    font-size: 12px;
+    width: 100%;
+  }
+  
+  .email-address {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  
+  

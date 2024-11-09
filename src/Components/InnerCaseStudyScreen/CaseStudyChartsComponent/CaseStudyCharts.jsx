@@ -1,7 +1,7 @@
 import React from 'react';
 import './CaseStudyCharts.css';
-import leftChartImage from '../../../Assets/Icons/InnerCaseStudyScreen/CaseStudyCharts/leftchart.svg';
-import rightChartImage from '../../../Assets/Icons/InnerCaseStudyScreen/CaseStudyCharts/rightchart.svg';
+import leftChartImage from '../../../Assets/Icons/InnerCaseStudyScreen/CaseStudyCharts/leftChart.svg';
+import rightChartImage from '../../../Assets/Icons/InnerCaseStudyScreen/CaseStudyCharts/rightChart.svg';
 
 const CaseStudyCharts = () => {
   return (
