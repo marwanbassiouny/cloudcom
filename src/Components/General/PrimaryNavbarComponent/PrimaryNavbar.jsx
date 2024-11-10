@@ -15,6 +15,7 @@ import campaignManagerIconSelected from '../../../Assets/Icons/General/PrimaryNa
 import aiSegmantationIconSelected from '../../../Assets/Icons/General/PrimaryNavbarComponent/aiSegmantationIcon_selected.svg';
 import chatManagementIconSelected from '../../../Assets/Icons/General/PrimaryNavbarComponent/chatManagementIcon_selected.svg';
 import flowIconSelected from '../../../Assets/Icons/General/PrimaryNavbarComponent/flowIcon_selected.svg';
+import dropdownMenuIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/dropdownMenuIcon.svg';
 
 const PrimaryNavbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -39,7 +40,10 @@ const PrimaryNavbar = () => {
           onMouseLeave={() => setShowDropdown(false)}
           className="dropdown"
         >
-          <a href="#" className={currentPath === '/ourProducts' ? 'active-link' : ''}>{textContent.ourProducts}</a>
+          <a href="#" className={currentPath === '/ourProducts' ? 'active-link' : ''}>
+            {textContent.ourProducts}
+            <img src={dropdownMenuIcon} alt="Dropdown Icon" className={`dropdown-icon ${showDropdown ? 'rotated' : ''}`} />
+          </a>
           {showDropdown && (
             <div className="dropdown-menu">
               <a href="/customerDataManagement" className="menu-item-hover">
