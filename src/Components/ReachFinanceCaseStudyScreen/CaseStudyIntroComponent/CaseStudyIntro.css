@@ -1,0 +1,92 @@
+.case-study-intro {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 30px;
+    justify-content: space-around; 
+  }
+  
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 30%;
+    padding-right: 30px;
+    border-left: 2px solid #d1d1d1;
+  }
+  
+  .case-study-logo {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .client-info {
+    text-align: start;
+    padding-left: 20px;
+   
+  }
+  
+  .client-info p {
+    margin: 10px 5px 10px 5px;
+    font-size: 21px;
+    color: #505A80;
+  }
+  
+  .client-info span {
+    color: #505A80;
+  }
+  
+  .right-section {
+    width: 30%;
+  }
+  
+  .right-section h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .metrics {
+    display: flex;
+    align-items: center;
+  }
+  
+  .metric {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .metric .percentage {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0056d2;
+  }
+  
+  .metric p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .divider {
+    height: 70px;
+    width: 1px;
+    background-color: #d1d1d1;
+    margin: 0 20px;
+  }
+
+  @media (max-width: 820px) {
+    .case-study-intro {
+      flex-direction: column;
+    }
+
+    .case-study-intro .right-section {
+      display: block;
+      width: 100%;
+    }
+
+    .case-study-intro .left-section {
+      width: 100%;
+    }
+  }
+  

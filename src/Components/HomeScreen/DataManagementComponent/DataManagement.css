@@ -11,15 +11,15 @@
 }
 
 .top-section {
-  overflow: hidden; /* Hide overflow for a smooth scrolling effect */
-  padding: 20px 0; /* Padding for visual spacing */
+  overflow: hidden; 
+  padding: 20px 0; 
   position: relative;
 }
 
 .scrolling-text {
   display: inline-block;
-  white-space: nowrap; /* Ensure text stays in one line */
-  animation: scrollText 20s linear infinite; /* Animation for continuous scrolling */
+  white-space: nowrap;
+  animation: scrollText 20s linear infinite; 
 }
 
 .scrolling-text h1 {

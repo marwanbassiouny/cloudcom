@@ -20,6 +20,10 @@
   width: 100%; /* Ensures the text section doesn’t take up too much width */
 }
 
+.text-section p{
+  font-size: 20px;
+}
+
 .firstCard {
   background-color: white;
   border-radius: 10px;
@@ -47,7 +51,7 @@
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 20px;
   color: #333;
   line-height: 1.6;
 }

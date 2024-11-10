@@ -19,7 +19,8 @@ export const caseStudiesData = [
         { value: "22%", label: "Boosted Retention" },
         { value: "35%", label: "Customer Engagement" },
       ],
-      buttonLabel: "Read more →"
+      buttonLabel: "Read more →",
+      link: "/CaseStudy/gourmet"
     },
     {
       id: 2,
@@ -32,7 +33,8 @@ export const caseStudiesData = [
         { value: "32%", label: "Increased Email Open Rates" },
         { value: "25%", label: "Repeat Transactions" },
       ],
-      buttonLabel: "Read more →"
+      buttonLabel: "Read more →",
+      link: "/CaseStudy/reachFinance"
     },
     {
       id: 3,
@@ -44,7 +46,8 @@ export const caseStudiesData = [
       stats: [
         { value: "28%", label: "Increase in Pharmacy Orders" }
       ],
-      buttonLabel: "Read more →"
+      buttonLabel: "Read more →",
+      link: "/CaseStudy/visita"
     },
     {
       id: 4,
@@ -57,7 +60,8 @@ export const caseStudiesData = [
         { value: "22%", label: "Boosted Retention" },
         { value: "35%", label: "Customer Engagement" },
       ],
-      buttonLabel: "Read more →"
+      buttonLabel: "Read more →",
+      link: "/CaseStudy/gourmet"
     },
     // More case study data as needed
   ];

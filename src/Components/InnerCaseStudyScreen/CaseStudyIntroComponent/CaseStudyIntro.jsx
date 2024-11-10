@@ -6,10 +6,10 @@ const CaseStudyIntro = () => {
   return (
     <div className="case-study-intro">
       <div className="left-section">
-        <img src={logo} alt="Gourmet Egypt Logo" className="case-study-logo" />
         <div className="client-info">
-          <p><span>Client</span> Gourmet Egypt</p>
-          <p><span>Year</span> 2024</p>
+          <img src={logo} alt="Gourmet Egypt Logo" className="case-study-logo" />
+          <p><span>Client<br/></span> Gourmet Egypt</p>
+          <p><span>Year<br/></span> 2024</p>
         </div>
       </div>
       <div className="right-section">

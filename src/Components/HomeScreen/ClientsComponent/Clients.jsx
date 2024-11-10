@@ -13,15 +13,18 @@ const Clients = () => {
   return (
     <div className="clients-container">
       <h2>{textContent.clients}</h2>
-      <div className="clients-logos">
-        <img src={client1Icon} alt="client1Icon" className='client_icon' />
-        <img src={client2Icon} alt="client2Icon" className='client_icon'/>
-        <img src={client3Icon} alt="client3Icon" className='client_icon'/>
-        <img src={client4Icon} alt="client4Icon" className='client_icon'/>
-        <img src={client5Icon} alt="client5Icon" className='client_icon'/>
-        <img src={client6Icon} alt="client5Icon" className='client_icon'/>
-        <img src={client7Icon} alt="client5Icon" className='client_icon'/>
+      <div className='scrolling-img-section'>
+        <div className="clients-logos scrolling-img">
+          <img src={client1Icon} alt="client1Icon" className='client_icon' />
+          <img src={client2Icon} alt="client2Icon" className='client_icon'/>
+          <img src={client3Icon} alt="client3Icon" className='client_icon'/>
+          <img src={client4Icon} alt="client4Icon" className='client_icon'/>
+          <img src={client5Icon} alt="client5Icon" className='client_icon'/>
+          <img src={client6Icon} alt="client5Icon" className='client_icon'/>
+          <img src={client7Icon} alt="client5Icon" className='client_icon'/>
+        </div>
       </div>
+      
     </div>
   );
 };

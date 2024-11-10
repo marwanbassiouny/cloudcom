@@ -1,0 +1,38 @@
+.case-study-charts {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #F3F0F0;
+    align-items: center;
+  }
+  
+  .chart-container {
+    border-radius: 20px;
+    padding: 20px;
+    
+  }
+  
+  .chart-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .chart-content {
+    gap: 10px;
+    background-color: #F3F0F0;
+   
+  }
+  
+
+  .chart-image {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 480px) {
+    .case-study-charts {
+     flex-direction: column;
+    }
+  }
+
+  

@@ -1,7 +1,7 @@
 import React from "react";
 import "../CaseStudyScreen.css";
 
-const CaseStudyCard = ({ image, companyLogo, title, description, stats, buttonLabel }) => {
+const CaseStudyCard = ({ image, companyLogo, title, description, stats, buttonLabel, link}) => {
   
   return (
     <div className="case-study-card">
@@ -32,8 +32,8 @@ const CaseStudyCard = ({ image, companyLogo, title, description, stats, buttonLa
               </>
           )}
            
-           {/* <button className="read-more-button">{buttonLabel}</button> */}
-           <a href="/innerCaseStudy" className="read-more-button">{buttonLabel}</a>
+
+           <a href={link} className="read-more-button">{buttonLabel}</a>
         </div>
        
       </div>

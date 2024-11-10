@@ -1,0 +1,34 @@
+.case-study-description {
+    padding: 20px ;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .section{
+    padding: 0 3% 0 3% ;
+  }
+  
+  .section h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .section p {
+    margin: 0.5em 0 1.5em;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .highlighted-text h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2a3d94; /* Darker shade for emphasis */
+  }
+  
+  .highlighted-text p {
+    margin-bottom: 1.5em;
+    color: #333;
+  }
+  

@@ -2,24 +2,54 @@ import {React,useState} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import "./WhyCloud.css";
-import img from "../../../Assets/Images/HomeScreen/WhyCloud/1.png"
+import img from "../../../Assets/Images/HomeScreen/WhyCloud/coding.svg"
+import img2 from "../../../Assets/Images/HomeScreen/WhyCloud/coding Vector.svg"
+import img3 from "../../../Assets/Images/HomeScreen/WhyCloud/channel.svg"
+import img4 from "../../../Assets/Images/HomeScreen/WhyCloud/channel Vector.svg"
+import img5 from "../../../Assets/Images/HomeScreen/WhyCloud/security.svg"
+import img6 from "../../../Assets/Images/HomeScreen/WhyCloud/security Vector.svg"
+import img7 from "../../../Assets/Images/HomeScreen/WhyCloud/Scalability.svg"
+import img8 from "../../../Assets/Images/HomeScreen/WhyCloud/Scalability Vector.svg"
+import img9 from "../../../Assets/Images/HomeScreen/WhyCloud/integration.svg"
+import img10 from "../../../Assets/Images/HomeScreen/WhyCloud/integration Vector.svg"
+
 const cards = [
   {
+    id: 1,
     title: "No coding required",
     description: "Customize your communication workflows effortlessly with no coding.",
-    image: img
+    image: img,
+    icon:img2,
   },
   {
+    id: 2,
     title: "Channel integrations and custom branding",
     description: "Personalize every customer touchpoint for a cohesive brand experience.",
-    image: img
+    image: img3,
+    icon:img4,
   },
   {
+    id: 3,
     title: "Secure & Compliant",
     description: "Focus on delivering great experiences while cloudcom ensures compliance and data security.",
-    image: img
+    image: img5,
+    icon:img6,
+  },
+  {
+    id: 4,
+    title: "Built for Scalability",
+    description: "zero downtime as cloudcom’s infrastructure seamlessly scales to handle growing demands and sudden traffic surges.",
+    image: img7,
+    icon:img8,
+  },
+  {
+    id:5,
+    title: "Flexible Integration",
+    description: "Easily connect with multiple data sources through APIs, SDKs, Webhooks, Databases, and more, ensuring your systems work together seamlessly.",
+    image: img9,
+    icon:img10,
   },
   
 ];
@@ -36,34 +66,52 @@ const WhyCloud = () => {
       {/* <div class="line"></div> */}
 
       <Swiper
-        modules={[Pagination]}
-        pagination={{ clickable: true }}
-        slidesPerView={2} // Show 2 cards per view
-        spaceBetween={30} // Space between cards
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)} // Track active index
-        className="swiper-container-custom"
-      >
-        {cards.map((card, index) => (
-          <SwiperSlide key={index}>
-            <div className={`card ${index === activeIndex || index === activeIndex  ? "card-active" : "card-inactive"}`}>
-              {/* Full View for the Active Card */}
-              {index === activeIndex ? (
-                <>
-                  <h3 className="card-title">{card.title}</h3>
-                  <p className="card-description">{card.description}</p>
-                  <img src={card.image} alt={card.title} className="card-image" />
-                </>
-              ) : (
-                // Minimized View for Inactive Cards
-                <>
-                  <h3 className="card-title minimized-title">{card.title}</h3>
-                  <p className="card-description minimized-description">{card.description}</p>
-                </>
-              )}
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            spaceBetween={30}
+            slidesPerView={2.2} 
+            slidesPerGroup={1}
+            loop={true}
+            onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay]}
+            className="mySwiper whyCloudSwiper"
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 1.2,
+              },
+              768: {
+                slidesPerView: 1.2,
+              },
+              1024: {
+                slidesPerView: 2.2,
+              },
+            }}
+        >
+            {cards.map((card, index) => (
+                <SwiperSlide key={index}>
+                  <div className={`whycloud-card ${activeIndex === index ? 'active' : 'inactive'}`}>
+                    {/* Left Section: Title and Description */}
+                    <div className="whycloud-card-content">
+                    {activeIndex !== index && (
+                      <div className="whycloud-card-icon">
+                        <img src={card.icon} alt="Card Icon" className="whycloud-card-icon-img" />
+                      </div>
+                    )}
+                      <h2 className="whycloud-card-title">{card.title}</h2>
+                      <p className="whycloud-card-details">{card.description}</p>
+                      <div className={`whycloud-card-image-wrapper ${activeIndex === index ? 'active' : ''}`}>
+                        <img src={card.image} alt="Customer Data Management" className="whycloud-card-image" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+            ))}
+        </Swiper>
     </div>
   );
 };

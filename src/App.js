@@ -20,7 +20,6 @@ import ReportsScreen from './Components/ReportsScreen/ReportsScreen';
 import ContactUsScreen from './Components/ContactUsScreen/ContactUsScreen';
 import BookYourDemoScreen from './Components/BookYourDemoScreen/BookYourDemoScreen';
 import PackagesAndPricesScreen from './Components/PackagesAndPricesScreen/PackagesAndPricesScreen';
-import InnerCaseStudyScreen from './Components/InnerCaseStudyScreen/InnerCaseStudyScreen';
 import GetStartedScreen from './Components/GetStartedScreen/GetStartedScreen';
 import RegisterationScreen from './Components/RegisterationSceen/RegisterationSceen';
 import VerificationScreen from './Components/VerificationScreen/VerificationScreen';
@@ -28,7 +27,9 @@ import LoginSceen from './Components/LoginScreen/LoginSceen';
 import ForgotPasswordScreen from './Components/ForgotPasswordScreen/ForgotPasswordScreen';
 import ResetPasswordScreen from './Components/ResetPasswordScreen/ResetPasswordScreen';
 import CheckYourEmailScreen from './Components/CheckYourEmailScreen/CheckYourEmailScreen';
-import LogoNavbar from './Components/General/LogoNavbarComponent/LogoNavbar';
+import GourmetCaseStudyScreen from './Components/InnerCaseStudyScreen/GourmetCaseStudyScreen';
+import VisitaCaseStudyScreen from './Components/VisitaCaseStudyScreen/VisitaCaseStudyScreen';
+import ReachFinanceCaseStudyScreen from './Components/ReachFinanceCaseStudyScreen/ReachFinanceCaseStudyScreen';
 
 function App() {
 
@@ -60,7 +61,9 @@ function App() {
         <Route path="/ContactUs" element={<ContactUsScreen />} />
         {/* <Route path="/BookYourDemo" element={<BookYourDemoScreen />} /> */}
         <Route path="/packagesAndPrices" element={<PackagesAndPricesScreen />} />
-        <Route path="/innerCaseStudy" element={<InnerCaseStudyScreen />} />
+        <Route path="/CaseStudy/gourmet" element={<GourmetCaseStudyScreen />} />
+        <Route path="/CaseStudy/visita" element={<VisitaCaseStudyScreen />} />
+        <Route path="/CaseStudy/reachFinance" element={<ReachFinanceCaseStudyScreen />} />
         <Route path="/getStarted" element={<GetStartedScreen />} />
         <Route path="/register" element={<RegisterationScreen />} />
         <Route path="/login" element={<LoginSceen />} />
