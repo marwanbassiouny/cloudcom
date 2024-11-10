@@ -25,9 +25,10 @@ import acIcon1 from '../../../../Assets/Icons/HomeScreen/IntroComponent/Animatio
 import acIcon2 from '../../../../Assets/Icons/HomeScreen/IntroComponent/Animation/acIcon2.svg';
 
 import peIcon1 from '../../../../Assets/Icons/HomeScreen/IntroComponent/Animation/peIcon1.svg';
-import peIcon2 from '../../../../Assets/Icons/HomeScreen/IntroComponent/Animation/peIcon1.svg';
+import peIcon2 from '../../../../Assets/Icons/HomeScreen/IntroComponent/Animation/peIcon2.svg';
 
 import topIcon from '../../../../Assets/Icons/HomeScreen/IntroComponent/Animation/topIcon.svg';
+import topIcon2 from '../../../../Assets/Icons/HomeScreen/IntroComponent/Animation/topIcon2.svg';
 import bottomIcon from '../../../../Assets/Icons/HomeScreen/IntroComponent/Animation/bottomIcon.svg';
 
 import handIcon from '../../../../Assets/Icons/HomeScreen/IntroComponent/Animation/handIcon.svg';
@@ -48,6 +49,8 @@ const AnimatedIntroImage = () => {
   const [acIconIndex, setAcIconIndex] = useState(0);
   const [peIconIndex, setPeIconIndex] = useState(0);
   
+  const [topIconIndex, setTopIconIndex] = useState(false);
+
   const [tempIcon, setTempIcon] = useState(false);
 
   const promoteLaunchIcons = [
@@ -86,6 +89,12 @@ const AnimatedIntroImage = () => {
     <img src={acIcon2} class="introSectionSVG acIcon2" alt="Ellipse" />,
   ];
 
+  const tobIcons = [
+    <img src={topIcon} class="introSectionSVG tobIcon tobIconScaleAnimation" alt="Ellipse" />,
+    <img src={topIcon} class="introSectionSVG tobIcon tobIconScaleAnimation" alt="Ellipse" />,
+    <img src={topIcon2} class="introSectionSVG tobIcon2" alt="Ellipse" />,
+  ];
+
   const peIcons = [
     <img src={peIcon1} class="introSectionSVG peIcon1 peIconScaleAnimation" alt="Ellipse" />,
     <img src={peIcon1} class="introSectionSVG peIcon1 peIconScaleAnimation" alt="Ellipse" />,
@@ -106,31 +115,14 @@ const AnimatedIntroImage = () => {
 
         setPersonalizeEngagementIndex((prevIndex) => (prevIndex + 1) % 3);
         setPeIconIndex((prevIndex) => (prevIndex + 1) % 3);
+
+        setTopIconIndex((prevIndex) => (prevIndex + 1) % 3);
       }, 2000);
 
-      // setPromoteLaunchIconIndex((prevIndex) => (prevIndex + 1) % 3);
-      // setabandonedCartIconsIndex((prevIndex) => (prevIndex + 1) % 3);
-      // setUpsellIconsIndex((prevIndex) => (prevIndex + 1) % 3);
-      // setPersonalizeEngagementIndex((prevIndex) => (prevIndex + 1) % 3);
     }, 2000); 
 
     return () => clearInterval(interval);
   }, [3]);
-
-  // useEffect(() => {
-
-  //   const interval2 = setInterval(() => {
-  //     // setTimeout(() => {
-        
-  //     // }, 1000);
-  //     // setPllIconIndex((prevIndex) => (prevIndex + 1) % 2);
-  //     // setPllIconIndex((prevIndex) => (prevIndex + 1) % 2);
-  //     // setAcIconIndex((prevIndex) => (prevIndex + 1) % 2);
-  //     // setPeIconIndex((prevIndex) => (prevIndex + 1) % 2);
-  //   }, 6000); 
-
-  //   return () => clearInterval(interval2);
-  // }, [2]);
 
     return (
         <div className="intro-image-section">
@@ -144,7 +136,8 @@ const AnimatedIntroImage = () => {
               {acIcons[acIconIndex]}
               {peIcons[peIconIndex]}
 
-              <img src={topIcon} class="introSectionSVG tobIcon tobIconScaleAnimation" alt="Ellipse" />
+              {tobIcons[topIconIndex]}
+
               <img src={bottomIcon} class="introSectionSVG bottomIcon bottomIconScaleAnimation" alt="Ellipse" />
           
               <img src={handIcon} class="introSectionSVG handIcon handIconAnimation" alt="Ellipse" />

@@ -202,15 +202,15 @@
   .peIcon1 {
     width: 25px;
     height: 25px;
-    top: 240px;
-    right: 27%;
+    top: 230px;
+    right: 15%;
   }
 
   .peIcon2 {
     width: 40px;
     height: 40px;
     top: 240px;
-    right: 20%;
+    right: 13%;
   }
 
   .personalizeEngagemenScaleAnimation {
@@ -248,9 +248,14 @@
   /* ----------------------- top icon --------------- */
   .tobIcon {
     width: 25px;
-    height: 25px;
     top: -15px;
     left: 45%;
+  }
+
+  .tobIcon2 {
+    width: 45px;
+    top: -20px;
+    left: 43%;
   }
 
   .tobIconScaleAnimation {
@@ -277,14 +282,14 @@
   }
 
   .handIconAnimation {
-    animation: handIconAnimation 8s  infinite;
+    animation: handIconAnimation 7.5s  infinite;
   }
 
   @keyframes handIconAnimation {
     0% {
       transform: translateX(0px); 
     }
-    50% {
+    20% {
       transform: translateX(-30px); 
     }
     100% {

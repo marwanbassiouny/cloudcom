@@ -22,11 +22,13 @@ const Experience = () => {
     const incrementInterval = setInterval(() => {
       if (currentNumber < targetNumber) {
         currentNumber += incrementValue;
-        setNumbers((prevNumbers) => {
-          const newNumbers = [...prevNumbers];
-          newNumbers[index] = currentNumber;
-          return newNumbers;
-        });
+        setTimeout(() => {
+          setNumbers((prevNumbers) => {
+            const newNumbers = [...prevNumbers];
+            newNumbers[index] = currentNumber;
+            return newNumbers;
+          });
+        }, 100);
       } else {
         clearInterval(incrementInterval);
       }
