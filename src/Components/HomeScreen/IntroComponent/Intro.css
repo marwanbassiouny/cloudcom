@@ -41,15 +41,6 @@
   .demo-btn {
     margin-top: 50px;
   }
-  
-  .intro-image-section {
-    width: 50%;
-  }
-  
-  .support-image {
-    width: 100%;
-    border-radius: 10px;
-  }
 
   /* Responsive Design */
 @media (max-width: 1024px) {
@@ -76,10 +67,10 @@
       padding: 20px;
   }
 
-  .content-section, .intro-image-section {
-      width: 100%;
-      margin-bottom: 20px;
-  }
+  .content-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
 
   .highlight-text {
       font-size: 4rem;

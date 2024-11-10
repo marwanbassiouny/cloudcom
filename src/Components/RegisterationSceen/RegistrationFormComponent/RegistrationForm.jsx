@@ -34,14 +34,18 @@ const RegistrationForm = () => {
             <input className='registerInput' type="text" placeholder="First Name *" required />
             <input className='registerInput'  type="text" placeholder="Last Name *" required />
           </div>
-          <PhoneInput
-            country={'eg'}
-            value=""
-            placeholder="Phone Number *"
-            inputClass="phone-input"
-            containerClass="phone-input-container"
-            countryCodeEditable={false}
-          />
+          <div className="phone-input-container">
+            <label className="phone-label">Phone Number <span className="required">*</span></label>
+            <PhoneInput
+              country={'eg'}
+              inputClass="phone-input"
+              containerClass="phone-input-wrapper"
+              buttonClass="phone-dropdown-button"
+              dropdownClass="custom-dropdown"
+              onChange={(phone) => console.log(phone)}
+              specialLabel=""
+            />
+          </div>
           <input className='registerInput'  type="email" placeholder="Email *" required />
           <input className='registerInput'  type="password" placeholder="Password *" required />
           <input className='registerInput'  type="password" placeholder="Confirm Password *" required />

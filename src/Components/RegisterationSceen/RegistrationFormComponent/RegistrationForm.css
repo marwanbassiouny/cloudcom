@@ -76,12 +76,63 @@
   }
   
   .phone-input-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.phone-label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: white;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    border-radius: 20px;
+    z-index:1000
+}
+
+.required {
+    color: red;
+}
+
+.phone-input-wrapper {
     width: 100%;
-  }
-  
-  .phone-input {
+}
+
+.phone-input {
     width: 100% !important;
-  }
+    height: 48px !important;
+    border-radius: 20px !important; 
+    border: 1px solid #ccc !important;
+    padding-left: 60px !important; 
+    font-size: 16px !important;
+    outline: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.phone-dropdown-button {
+    background: none !important;
+    border: none !important;
+    border-right: 1px solid #ccc !important; 
+    padding-right: 65px !important;
+    border-radius: 20px 0 0 20px !important; 
+}
+
+
+.phone-input-wrapper .flag-dropdown {
+    margin-left: 10px;
+}
+
+.custom-dropdown {
+    border-radius: 8px !important;
+}
+
+.phone-input:focus {
+    border: 1px solid #0000ff !important; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
   
   .registration-paragrapgh {
     font-size: 12px;

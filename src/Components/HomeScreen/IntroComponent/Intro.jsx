@@ -1,7 +1,7 @@
 import React from 'react';
-import introImage from '../../../Assets/Icons/HomeScreen/IntroComponent/IntroImage.svg';
 import './Intro.css'
 import CloudComButton from '../../General/CloudComButton/CloudComButton';
+import AnimatedIntroImage from './AnimatedIntroImageComponent/AnimatedIntroImage';
 
 const Intro = () => {
     return (
@@ -15,9 +15,7 @@ const Intro = () => {
             <CloudComButton text="Book a Demo" link="https://portal.cloudcom.io/login" glow='glow' />
           </div>
         </div>
-        <div className="intro-image-section">
-          <img src={introImage} alt="Customer Support" className="support-image" />
-        </div>
+       <AnimatedIntroImage />
       </div>
     );
   };

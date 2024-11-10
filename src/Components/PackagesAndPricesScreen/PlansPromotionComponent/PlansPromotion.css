@@ -34,22 +34,18 @@
   gap: 20px;
 }
 
-.banner-button {
-  font-size: 16px;
+.PlansPromotion-banner-button {
+  background: transparent;
+  width: 185px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   padding: 10px 20px;
+  font-size: 16px;
   border-radius: 30px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.banner-button:hover {
-  background-color: #0041a6;
-}
 
 /* Responsive Styles */
 

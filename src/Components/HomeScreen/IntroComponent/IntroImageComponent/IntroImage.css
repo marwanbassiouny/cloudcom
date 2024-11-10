@@ -1,0 +1,21 @@
+.intro-image-section {
+    width: 50%;
+  }
+
+  .support-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  
+  @media (max-width: 768px) {
+  
+    .intro-image-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+  }
+  
+
+  

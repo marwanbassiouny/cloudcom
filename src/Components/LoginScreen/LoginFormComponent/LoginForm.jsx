@@ -6,8 +6,7 @@ import PasswordInput from '../../General/PasswordInput/PasswordInput';
 
 
 const LoginForm = () => {
-
-
+  
   return (
     <div className="login-container">
       <div className="login-form-card">
