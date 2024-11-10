@@ -11,27 +11,27 @@ import {Pagination } from "swiper/modules";
 const testimonials = [
   {
     image: img, // Replace with actual image URL
-    name: "Ali Mahmoud",
-    job: "Any job",
+    name: "Mustafa Gamal, Marketing Director at Fatura",
+    job: "CPaaS – Customer Data Management – WhatsApp Channel",
     rating: 4.5,
     testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore m",
+      "cloudcom’s CPaaS platform has transformed the way we manage our customer data at Fatura. The seamless integration with the WhatsApp channel has allowed us to engage our customers in real time, making our communication more personalized and efficient. Their support team is outstanding, and we’ve seen significant improvements in our customer relationships thanks to cloudcom’s solutions.",
   },
   {
     image: img,
-    name: "Ali Mahmoud",
-    job: "Any job",
+    name: "Mohamed Seif, Commercial Director at Redbull Mobile KSA",
+    job: "CPaaS – Customer Value Management – SMS Channel",
     rating: 4.5,
     testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore m",
+      "Working with CloudCom has been a game-changer for us at Redbull Mobile KSA. Their SMS channel has helped us take our customer value management to the next level. The ability to reach our customers directly and measure engagement has significantly boosted our retention rates. We’re extremely satisfied with the results and the ongoing support from the CloudCom team",
   },
   {
     image: img,
-    name: "Ali Mahmoud",
-    job: "Any job",
+    name: "Mahmoud El Far, CEO at Elfar Market",
+    job: "SMS Channel & OTP Verify",
     rating: 4.5,
     testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore m",
+      "CloudCom’s SMS and OTP verification solutions have been critical for us at Elfar Market. They’ve enabled us to ensure secure and reliable customer interactions, whether for account verification or promotional messaging. The simplicity and effectiveness of their services have made our processes more efficient, and we couldn’t be happier with the results.",
   },
   {
     image: img,
