@@ -2,7 +2,7 @@
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background-color: #F3F0F0;
+    background-color: #f2f0f0;
   }
   
   .success-stories-container h2 {
@@ -22,7 +22,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
     margin: auto;
     width: 80%;
     background-color: white;
@@ -31,7 +33,7 @@
   }
   
   .story-image img {
-    width: 400px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
   }
@@ -39,6 +41,7 @@
   .story-content {
     width: 50%;
     text-align: left;
+    margin-left: 2%;
   }
   
   .logo-image {

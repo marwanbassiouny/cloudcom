@@ -24,8 +24,8 @@ body {
 }
 
 .page_padding_level_1 {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: var(--dynamic-padding);
+  padding-right: var(--dynamic-padding);
 }
 
 .page_padding_level_2 {
@@ -36,4 +36,10 @@ body {
 .page_vertical_padding_level_1{
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.text-no-break-overflow {
+  white-space: nowrap;
+  overflow: hidden; /* Hides overflowed content */
+  text-overflow: ellipsis; /* Adds '...' to indicate overflow */
 }

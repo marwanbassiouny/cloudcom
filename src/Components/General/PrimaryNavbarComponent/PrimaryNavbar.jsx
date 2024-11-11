@@ -20,12 +20,17 @@ import dropdownMenuIcon from '../../../Assets/Icons/General/PrimaryNavbarCompone
 const PrimaryNavbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const currentPath = window.location.pathname; // Current path
-
+  const currentPath = window.location.pathname; 
   return (
     <nav className="primary-navbar page_padding_level_0">
       <div className="navbar-left">
-        <a href="/"><img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" /></a>
+        <a href="/">
+          {/* <picture>
+            <source srcSet="image.webp" type="image/webp" />
+            <img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" />
+          </picture> */}
+          <img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" />
+        </a>
       </div>
       
       <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
@@ -99,7 +104,7 @@ const PrimaryNavbar = () => {
         </li>
       </ul>
       <div className="navbar-right">
-        <CloudComButton text="Signup" link="/register"/>
+        <CloudComButton text="Signup" link="/register" width='140' height='40'/>
       </div>
       <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <div className="bar"></div>

@@ -2,7 +2,13 @@ import React from 'react';
 import './CloudComButton.css';
 import arrowIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/signup.svg';
 
-const CloudComButton = ({ text, link, glow }) => {
+const CloudComButton = ({ text, link, glow, width, height }) => {
+
+  const cloudComBoxStyle = {
+    width: width,  
+    height: height, 
+  };
+
   return (
     <div>
       <a 
@@ -10,6 +16,7 @@ const CloudComButton = ({ text, link, glow }) => {
         className={`cloudcom-btn ${glow ? 'glow' : ''}`} 
         target="_blank" 
         rel="noopener noreferrer"
+        style={cloudComBoxStyle}
       >
         {text}
         <img className="arrow" src={arrowIcon} alt="icon" />

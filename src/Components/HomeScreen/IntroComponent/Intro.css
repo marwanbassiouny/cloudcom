@@ -11,6 +11,9 @@
     width: 60%;
   }
 
+  .intro-subtitle-section {
+    margin-top: 2%;
+  }
 
   @keyframes slide-in-out {
     0% {
@@ -32,7 +35,7 @@
   }
 
   .slide-text {
-    width: 100%;
+    /* width: 100%; */
     transform: translateY(0);
     animation: slide-in-out 3s infinite;
   }
@@ -44,10 +47,10 @@
   }
   
   .highlight-text {
-    font-size: 30px;
+    font-size: 40px;
     color: black;
     line-height: 1.5;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
 
   .gradient-text{
@@ -58,10 +61,9 @@
     color: transparent;
   }
   
-  .content-section p {
+  .intro-sub-title {
     font-size: 24px;
     color: #7C7C84;
-    margin-top: 5%;
   }
   
   .demo-btn {
@@ -82,7 +84,7 @@
       font-size: 2rem;
   }
 
-  .content-section p {
+  .intro-sub-title {
       font-size: 1rem;
   }
 }
@@ -120,7 +122,7 @@
       font-size: 1.5rem;
   }
 
-  .content-section p {
+  .intro-sub-title {
       font-size: 0.9rem;
   }
 

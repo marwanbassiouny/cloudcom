@@ -8,7 +8,7 @@ const StayInTheKnow = () => {
       <div className="blue-section">
         <h2>Stay in the know</h2>
         <p>
-          Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.
+          Stay ahead with CloudCom's insights. Subscribe for updates.
         </p>
         <div className="input-container">
           <input type="email" placeholder="Enter your email address" />

@@ -37,7 +37,7 @@ const SuccessStories = () => {
               <p>Boosted Retention</p>
             </div>
           </div>
-          <CloudComButton text="Explore" link="/innerCaseStudy" glow='glow' />
+          <CloudComButton text="Explore" link="/innerCaseStudy" glow='glow' width='183' height='48' />
         </div>
         
         <div className="home-nav-dots">

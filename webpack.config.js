@@ -19,14 +19,68 @@ module.exports = {
         exclude: /node_modules/, // Do not process node_modules
         use: {
           loader: 'babel-loader',
-        },
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        }
       },
       {
         test: /\.css$/, // Load CSS files
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i, // Load image files
+        test: /\.(png|jpg|jpeg|gif)$/i, // Load image files
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            },
+          },
+          {
+            loader: 'image-webpack-loader', // Compress image files
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              // Optimize png files with pngquant
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              webp: {
+                quality: 75
+              },
+            },
+          },
+        ],
+        type: 'asset/resource',
+      },
+      {
+        test: /\.svg$/i, // Separate loader for SVG files
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(mp4|webm|ogg|avi)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            },
+          },
+        ],
         type: 'asset/resource',
       },
     ],
@@ -46,9 +100,10 @@ module.exports = {
     new CompressionPlugin({
         filename: '[path][base].gz',
         algorithm: 'gzip',
-        test: /\.(js|css|html|svg|mp4)$/,
+        test: /\.(js|css|html|svg|png|mp4)$/,
         threshold: 10240,
         minRatio: 0.8,
+        deleteOriginalAssets: true, 
       }),
     new BundleAnalyzerPlugin(),
   ],
@@ -57,6 +112,8 @@ module.exports = {
     splitChunks: {
       chunks: 'all', // Extract common dependencies into separate files
       name: 'vendors', // Splits third-party modules
+      minSize: 20000, // Minimum size before it splits
+      maxSize: 50000, // Maximum chunk size before it splits again
     },
   minimize: true,
   minimizer: [
@@ -64,6 +121,7 @@ module.exports = {
       terserOptions: {
         compress: {
           drop_console: true, // Drop console statements to further minimize
+          passes: 2, // More passes for better minification
         },
         format: {
           comments: false,

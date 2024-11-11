@@ -4,8 +4,9 @@
   align-items: center;
   background-color: #0000FF; /* Blue color */
   padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   color: white;
+  /* margin-bottom: ; */
 }
 
 /* Left Section */

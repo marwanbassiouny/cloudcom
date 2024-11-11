@@ -7,12 +7,11 @@ import client4Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/clien
 import client5Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/client5.png'
 import client6Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/client6.svg'
 import client7Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/client7.png'
-import textContent from '../../../Assets/Data/HomeScreen/ClientsComponent/ClientsComponent.json'
 
 const Clients = () => {
   return (
     <div className="clients-container">
-      <h2>{textContent.clients}</h2>
+      <p className="clients-section-title">130K+ Client trust in cloudcom</p>
       <div className='scrolling-img-section'>
         <div className="clients-logos scrolling-img">
           <img src={client1Icon} alt="client1Icon" className='client_icon' />

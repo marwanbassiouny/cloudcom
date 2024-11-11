@@ -12,14 +12,14 @@ const SubNavbar = () => {
   return (
     <div className="sub-navbar page_padding_level_1">
       <div className="sub-navbar-left">
-        <span className="phone"><img src={phoneIcon} alt="phoneIcon" /> {textContent.phone}</span>
+        <span className="phone"><img src={phoneIcon} alt="phoneIcon" /> +971 52 729 5941</span>
         <span className="email"><img src={emailIcon} className ="emailIcon" alt="emailIcon" /> {textContent.email}</span>
       </div>
       <div className="sub-navbar-right">
-        <a href="#"><img src={facebookIcon} alt="Facebook" /></a>
-        <a href="#"><img src={linkedinIcon} alt="LinkedIn" /></a>
-        <a href="#"><img src={twitterIcon} alt="Twitter" /></a>
-        <a href="#"><img src={youtubeIcon} alt="YouTube" /></a>
+        <a href='https://www.facebook.com/UseCloudCom' target='_blank'><img src={facebookIcon} alt="Facebook" /></a>
+        <a href='https://www.linkedin.com/company/usecloudcom/about/' target='_blank'><img src={linkedinIcon} alt="LinkedIn" /></a>
+        <a href='https://x.com/UseCloudCom' target='_blank'><img src={twitterIcon} alt="Twitter" /></a>
+        <a href='https://www.youtube.com/@UseCloudCom' target='_blank'><img src={youtubeIcon} alt="YouTube" /></a>
       </div>
     </div>
   );

@@ -1,37 +1,9 @@
 
 import './App.css';
 import CustomerDataManagementScreen from './Components/CustomerDataManagementScreen/CustomerDataManagementScreen';
-import React, { Suspense } from 'react';
+import React, { useEffect , Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-
-// import SubNavbar from './Components/General/SubNavbarComponent/SubNavbar'
-// import PrimaryNavbar from '../src/Components/General/PrimaryNavbarComponent/PrimaryNavbar'
-// import MainFooter from './Components/General/MainFooterComponent/MainFooter'
-// import MultiChannelCampaignManagerScreen from './Components/MultiChannelCampaignManagerScreen/MultiChannelCampaignManagerScreen';
-// import AIPoweredSegmantationScreen from './Components/AIPoweredSegmantationScreen/AIPoweredSegmantationScreen';
-// import ChatManagementScreen from './Components/ChatManagementScreen/ChatManagementScreen';
-// import VerifyScreen from './Components/VerifyScreen/VerifyScreen';
-// import FlowBuilderScreen from './Components/FlowBuilderScreen/FlowBuilderScreen';
-// import WhoAreWeScreen from './Components/WhoWeAreScreen/WhoWeAreScreen';
-// import ClientTestimonialsScreen from './Components/ClientTestimonialsScreen/ClientTestimonialsComponent/ClientTestimonials';
-// import CaseStudyScreen from './Components/CaseStudiesScreen/CaseStudyScreen';
-// import NewsAndArticlesScreenComponent from './Components/NewsAndArticlesScreen/NewsAndArticlesScreenComponent';
-// import BlogSingleScreen from './Components/BlogSingleScreen/BlogSingleScreen';
-// import ReportsScreen from './Components/ReportsScreen/ReportsScreen';
-// import ContactUsScreen from './Components/ContactUsScreen/ContactUsScreen';
-// import BookYourDemoScreen from './Components/BookYourDemoScreen/BookYourDemoScreen';
-// import PackagesAndPricesScreen from './Components/PackagesAndPricesScreen/PackagesAndPricesScreen';
-// import GetStartedScreen from './Components/GetStartedScreen/GetStartedScreen';
-// import RegisterationScreen from './Components/RegisterationSceen/RegisterationSceen';
-// import VerificationScreen from './Components/VerificationScreen/VerificationScreen';
-// import LoginSceen from './Components/LoginScreen/LoginSceen';
-// import ForgotPasswordScreen from './Components/ForgotPasswordScreen/ForgotPasswordScreen';
-// import ResetPasswordScreen from './Components/ResetPasswordScreen/ResetPasswordScreen';
-// import CheckYourEmailScreen from './Components/CheckYourEmailScreen/CheckYourEmailScreen';
-// import GourmetCaseStudyScreen from './Components/InnerCaseStudyScreen/GourmetCaseStudyScreen';
-// import VisitaCaseStudyScreen from './Components/VisitaCaseStudyScreen/VisitaCaseStudyScreen';
-// import ReachFinanceCaseStudyScreen from './Components/ReachFinanceCaseStudyScreen/ReachFinanceCaseStudyScreen';
-// import HomeScreen from './Components/HomeScreen/HomeScreen';
+import LoadingScreen from './Components/LoadingScreen/LoadingScreen';
 
 const HomeScreen = React.lazy(() => import('./Components/HomeScreen/HomeScreen'));
 const SubNavbar = React.lazy(() => import('./Components/General/SubNavbarComponent/SubNavbar'));
@@ -64,6 +36,25 @@ const ReachFinanceCaseStudyScreen = React.lazy(() => import('./Components/ReachF
 
 function App() {
 
+  useEffect(() => {
+    
+    const setDynamicScreenPadding = () => {
+      const paddingDiff = (1440 - 1200) / 2
+      const paddingPercentage = (paddingDiff / 1440) * 100;
+      const screenWidth = window.innerWidth;
+      const calculatedPadding = (paddingPercentage / 100) * screenWidth;
+      document.documentElement.style.setProperty('--dynamic-padding', `${calculatedPadding}px`);
+    };
+
+    setDynamicScreenPadding();
+
+    window.addEventListener('resize', setDynamicScreenPadding);
+
+    return () => {
+      window.removeEventListener('resize', setDynamicScreenPadding);
+    };
+  }, []); 
+
   const location = useLocation();
 
   const unauthenticatedRoutes = ['/login', '/register', '/forgotPassword', '/resetPassword', '/verification', '/checkYourEmail'];
@@ -71,7 +62,7 @@ function App() {
 
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingScreen />}>
 
         {!mainNavbar && <SubNavbar />}
         {!mainNavbar && <PrimaryNavbar />}

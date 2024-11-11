@@ -1,15 +1,18 @@
 .cloudcom-btn {
-    padding: 2px 15px;
+    padding: 2px 10px;
     background-color: #0000FF;
     color: white;
     border: none;
     border-radius: 30px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     display: inline-flex;
     align-items: center;
+    justify-content: space-around;
     transition: box-shadow 0.3s ease;
     cursor : pointer;
+    /* width: 140px;
+    height: 40px; */
 }
 
 .cloudcom-btn:hover {

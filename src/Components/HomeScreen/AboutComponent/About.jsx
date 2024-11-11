@@ -1,34 +1,32 @@
 import React, { useState } from 'react';
 import './About.css';
-import aboutImage from '../../../Assets/Icons/HomeScreen/AboutComponent/AboutImage.svg'; // Replace with the actual path to your image
-import textContent from '../../../Assets/Data/HomeScreen/AboutComponent/AboutComponent.json';
+import aboutImage from '../../../Assets/Icons/HomeScreen/AboutComponent/AboutImage.svg';
 import CloudComButton from '../../General/CloudComButton/CloudComButton';
 import aboutUsVideo from '../../../Assets/Videos/HomeScreen/AboutUsComponent/aboutus.mp4';
 
 const About = () => {
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Function to open the modal
   const openModal = () => {
     setIsModalOpen(true);
   };
 
-  // Function to close the modal
   const closeModal = () => {
     setIsModalOpen(false);
   };
 
   return (
     <div className="about-container page_padding_level_1 page_vertical_padding_level_1">
-      {/* Left Section: Text Content */}
+
       <div className="about-text">
-        <h2>{textContent.headline1}</h2>
+        <h2>About cloudcom</h2>
         <h3>
-          {textContent.subHeadline1}
+          Fueling business growth, retention, 
           <br />
-          {textContent.subHeadline2}
+          and customer lifetime value through
           <br />
-          {textContent.subHeadline3}
+          personalized, omni-channel  communication.
         </h3>
         <div className="home-about-text">
           <p>Empowering businesses with scalable, secure,</p>
@@ -39,7 +37,7 @@ const About = () => {
           <p>channels. Serving businesses across the MENA</p>
           <p>region, Gulf, LATAM, and beyond.</p>
         </div>
-        <CloudComButton text="Read More" link="/whoWeAre" glow="" />
+        <CloudComButton text="Read More" link="/whoWeAre" glow="" width='184' height='40'/>
       </div>
 
       {/* Right Section: Single Image */}

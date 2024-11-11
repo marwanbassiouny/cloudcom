@@ -36,8 +36,8 @@ const MainFooter = () => {
 
         <div className="footer-section contact-section">
           <p>Get in touch</p>
-          <p><img style={{marginRight:"8px",width:"20px"}} src={location} alt="cloudcom logo"/>{textContent.address}</p>
-          <p><img style={{marginRight:"8px",width:"20px"}} src={phone} alt="cloudcom logo"/>{textContent.number}</p>
+          <p><img style={{marginRight:"8px",width:"20px"}} src={location} alt="cloudcom logo"/>OSD01-017, DLC-BC-A3- Dubai South</p>
+          <p><img style={{marginRight:"8px",width:"20px"}} src={phone} alt="cloudcom logo"/>+971 52 729 5941</p>
           <p><img style={{marginRight:"8px",width:"20px"}} src={email} alt="cloudcom logo"/>{textContent.email}</p>
         </div>
 
@@ -64,10 +64,10 @@ const MainFooter = () => {
 
       <div className="footer-bottom">
         <div className="social-icons">
-          <img style={{marginRight:"8px",width:"25px"}} src={facebook} alt="cloudcom logo"/>
-          <img style={{marginRight:"8px",width:"25px"}} src={linkedin} alt="cloudcom logo"/>
-          <img style={{marginRight:"8px",width:"25px"}} src={twitter} alt="cloudcom logo"/>
-          <img style={{marginRight:"8px",width:"25px"}} src={youtube} alt="cloudcom logo"/>
+          <a href='https://www.facebook.com/UseCloudCom' target='_blank'><img style={{marginRight:"8px",width:"25px"}} src={facebook} alt="cloudcom logo"/></a>
+          <a href='https://www.linkedin.com/company/usecloudcom/about/' target='_blank'><img style={{marginRight:"8px",width:"25px"}} src={linkedin} alt="cloudcom logo"/></a>
+          <a href='https://x.com/UseCloudCom' target='_blank'><img style={{marginRight:"8px",width:"25px"}} src={twitter} alt="cloudcom logo"/></a>
+          <a href='https://www.youtube.com/@UseCloudCom' target='_blank'><img style={{marginRight:"8px",width:"25px"}} src={youtube} alt="cloudcom logo"/></a>
         </div>
         <p>© Copyright 2024 - cloudcom</p>
       </div>
