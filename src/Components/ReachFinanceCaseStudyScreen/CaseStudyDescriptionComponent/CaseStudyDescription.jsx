@@ -3,7 +3,7 @@ import './CaseStudyDescription.css';
 
 const CaseStudyDescription = () => {
   return (
-    <div className="case-study-description">
+    <div className="case-study-description page_padding_level_1">
       <div className="section">
         <h3>Automated Campaigns:</h3>
         <p>cloudcom’s Flow Builder triggered automated, personalized follow-ups, reminders, and promotions based on customer actions, resulting in higher engagement and repeat transactions.</p>

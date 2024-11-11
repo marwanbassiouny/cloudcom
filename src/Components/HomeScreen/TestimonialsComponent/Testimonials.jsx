@@ -33,26 +33,28 @@ const testimonials = [
     testimonial:
       "CloudCom’s SMS and OTP verification solutions have been critical for us at Elfar Market. They’ve enabled us to ensure secure and reliable customer interactions, whether for account verification or promotional messaging. The simplicity and effectiveness of their services have made our processes more efficient, and we couldn’t be happier with the results.",
   },
-  {
-    image: img,
-    name: "Ali Mahmoud",
-    job: "Any job",
-    rating: 4.5,
-    testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore m",
-  },
-  {
-    image: img,
-    name: "Ali Mahmoud",
-    job: "Any job",
-    rating: 4.5,
-    testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore m",
-  },
+  // {
+  //   image: img,
+  //   name: "Ali Mahmoud",
+  //   job: "Any job",
+  //   rating: 4.5,
+  //   testimonial:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore m",
+  // },
+  // {
+  //   image: img,
+  //   name: "Ali Mahmoud",
+  //   job: "Any job",
+  //   rating: 4.5,
+  //   testimonial:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore m",
+  // },
 ];
 
 const TestimonialCarousel = () => {
   return (
+    <>
+    {/* <div style={{marginTop: '5%'}}></div> */}
     <div className="testimonial-carousel">
       <h2 className="carousel-title">Testimonials</h2>
       <p className="carousel-subtitle">We care about our customer experience too</p>
@@ -93,6 +95,7 @@ const TestimonialCarousel = () => {
         ))}
       </Swiper>
     </div>
+    </>
   );
 };
 

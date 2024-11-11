@@ -5,7 +5,7 @@ import "./CaseStudyCards.css";
 
 const CaseStudyCards = () => {
   return (
-    <div className="case-studies-section">
+    <div className="case-studies-section page_padding_level_1">
       <div className="case-studies-grid">
         {caseStudiesData.map((study) => (
           <CaseStudyCard key={study.id} {...study} />

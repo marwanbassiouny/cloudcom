@@ -16,7 +16,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div className="about-us-container">
+    <div className="about-us-container page_padding_level_1">
       <h2>About cloudcom</h2>
       <h1>Customer experience <br /> that connects</h1>
       <p className="about-us-description">

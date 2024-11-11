@@ -36,11 +36,11 @@ const examples = [
 
   return (
     <div>
-      <TopicIntro
+      {/* <TopicIntro
         backgroundImage={introThemeImage}
         title="Our Products"
         breadcrumb="Home ➔ Our Products"
-      />
+      /> */}
       <TopicData
         title="Multi-Channel Campaign Manager"
         description="Run effective multi-channel campaigns with cloudcom’s Campaign Manager. Engage customers through SMS, Email, WhatsApp, push notifications, and social media while maintaining a consistent message. Track performance and refine strategies with real-time analytics."

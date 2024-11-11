@@ -10,7 +10,7 @@ import './SubNavbar.css'
 
 const SubNavbar = () => {
   return (
-    <div className="sub-navbar">
+    <div className="sub-navbar page_padding_level_1">
       <div className="sub-navbar-left">
         <span className="phone"><img src={phoneIcon} alt="phoneIcon" /> {textContent.phone}</span>
         <span className="email"><img src={emailIcon} className ="emailIcon" alt="emailIcon" /> {textContent.email}</span>

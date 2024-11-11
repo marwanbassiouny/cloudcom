@@ -23,7 +23,7 @@ const PrimaryNavbar = () => {
   const currentPath = window.location.pathname; // Current path
 
   return (
-    <nav className="primary-navbar">
+    <nav className="primary-navbar page_padding_level_0">
       <div className="navbar-left">
         <a href="/"><img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" /></a>
       </div>

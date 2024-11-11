@@ -19,7 +19,7 @@ const About = () => {
   };
 
   return (
-    <div className="about-container">
+    <div className="about-container page_padding_level_1 page_vertical_padding_level_1">
       {/* Left Section: Text Content */}
       <div className="about-text">
         <h2>{textContent.headline1}</h2>

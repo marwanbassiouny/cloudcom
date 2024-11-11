@@ -4,7 +4,7 @@ import './TopicIntro.css';
 const TopicIntro = ({ backgroundImage, title, breadcrumb }) => {
   return (
     <div
-      className="topic-intro-container"
+      className="topic-intro-container page_padding_level_1"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <h1>{title}</h1>

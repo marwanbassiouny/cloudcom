@@ -3,7 +3,7 @@ import './CaseStudyDescription.css';
 
 const CaseStudyDescription = () => {
   return (
-    <div className="case-study-description">
+    <div className="case-study-description page_padding_level_1">
       <div className="section">
         <h3>Automated Workflows:</h3>
         <p>Using cloudcom’s Flow Builder, Gourmet Egypt set up automated workflows that triggered personalized messages for abandoned carts, post-purchase engagement, and win-back campaigns.</p>

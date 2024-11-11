@@ -1,7 +1,7 @@
 .about-us-container {
   text-align: center;
-  padding: 50px;
-  margin: auto;
+  /* padding: 50px; */
+  padding-top: 2%;
   background-color: #F3F0F0;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .text-section p{
-  font-size: 20px;
+  font-size: 25px;
   color: #000000;
 }
 

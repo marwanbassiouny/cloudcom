@@ -1,7 +1,7 @@
 .topic-example-container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: white;
 }
 
@@ -42,13 +42,14 @@
 
 /* Tablet screens */
 @media (min-width: 768px) {
-  .topic-example-container {
+
+  /* .topic-example-container {
     padding: 40px;
-  }
+  } */
 
   .example-item {
     flex-direction: row; /* Side-by-side layout for tablet and above */
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 30px 0;
   }
@@ -65,9 +66,10 @@
 
 /* Desktop screens */
 @media (min-width: 1024px) {
-  .topic-example-container {
+  
+  /* .topic-example-container {
     padding: 80px;
-  }
+  } */
 
   .example-icon img {
     width: 300px; /* Full icon size for desktop */
@@ -76,9 +78,9 @@
 
 /* Larger desktops */
 @media (min-width: 1440px) {
-  .topic-example-container {
+  /* .topic-example-container {
     padding: 100px;
-  }
+  } */
 
   .example-icon img {
     width: 350px;

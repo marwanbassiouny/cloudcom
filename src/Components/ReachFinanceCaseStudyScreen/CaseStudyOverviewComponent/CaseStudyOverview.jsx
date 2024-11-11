@@ -4,7 +4,7 @@ import overviewImage from '../../../Assets/Icons/InnerCaseStudyScreen/CaseStudyO
 
 const CaseStudyOverview = () => {
   return (
-    <div className="case-study-overview">
+    <div className="case-study-overview page_padding_level_1">
       <section className="overview-section">
         <div className="overview-text">
           <h2>Overview</h2>

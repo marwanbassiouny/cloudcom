@@ -71,7 +71,7 @@ const cards = [
 
 const DataManagement = () => {
   return (
-    <div className="data-management-container">
+    <div className="data-management-container page_padding_level_1">
       {/* Top Section: Grey Text */}
       <div className="top-section">
         <div className="scrolling-text">

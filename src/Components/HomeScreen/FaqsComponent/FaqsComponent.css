@@ -2,7 +2,8 @@
 .faq-section {
   background-image: url('../../../Assets/Images/HomeScreen/FaqsComponent/Frame\ 1000005195.png'); 
   background-size: contain; 
-  background-position: center; 
+  background-position:center; 
+  background-repeat:no-repeat;
   color: white;
   display: flex;
   flex-direction: column;

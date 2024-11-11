@@ -1,7 +1,9 @@
-.container {
+.m_v_container {
   width: 100%;
   background-color: #F5F5F5;
-  padding: 20px;
+  /* padding: 20px; */
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .mission-vision-container {
@@ -20,8 +22,8 @@
   width: 100%; /* Ensures the text section doesn’t take up too much width */
 }
 
-.text-section p{
-  font-size: 20px;
+.text-section .m_v_p_text {
+  font-size: 25px;
 }
 
 .firstCard {

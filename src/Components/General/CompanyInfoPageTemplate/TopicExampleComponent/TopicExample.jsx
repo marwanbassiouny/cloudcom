@@ -7,7 +7,7 @@ const TopicExample = ({ examples }) => {
   let counter = 0;
 
   return (
-    <div className="topic-example-container">
+    <div className="topic-example-container page_padding_level_2">
       {examples.map((example) => {
         ++counter;
         return (

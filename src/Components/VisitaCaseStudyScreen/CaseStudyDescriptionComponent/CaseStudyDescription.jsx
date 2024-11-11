@@ -3,7 +3,7 @@ import './CaseStudyDescription.css';
 
 const CaseStudyDescription = () => {
   return (
-    <div className="case-study-description">
+    <div className="case-study-description page_padding_level_1">
       <div className="section">
         <h3>Automated Workflows:</h3>
         <p>Using Flow Builder, Vezeeta created automated workflows that triggered personalized pharmacy campaigns and reminders based on user behavior, such as browsing specific medication categories.</p>

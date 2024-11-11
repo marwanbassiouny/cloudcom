@@ -3,7 +3,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
+  padding-top: 15px;
+  padding-bottom: 15px;
   box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1; 
@@ -11,7 +13,7 @@
 
 .navbar-left  {
   /* padding-left: 50px; */
-  margin-left: 50px;
+  margin-left: 5%;
 }
 
 
@@ -23,7 +25,7 @@
 }
 
 .navbar-left .Cloudcom_Logo {
-  height: 40px;
+  height: 30px;
 }
 
 .navbar-links {
@@ -33,7 +35,7 @@
 }
 
 .navbar-links li {
-  font-size: 14px;
+  font-size: 12px;
   position: relative;
 }
 

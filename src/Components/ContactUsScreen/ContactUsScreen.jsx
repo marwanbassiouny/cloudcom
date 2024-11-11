@@ -3,7 +3,7 @@ import './ContactUsScreen.css';
 import image from "../../Assets/Images/ContactUsScreen/Background (1).svg"
 const ContactUsScreen = () => {
     return (
-        <div className="contactus-section">
+        <div className="contactus-section page_padding_level_1">
             <div className="contactus-left">
                 <div className="contactus-info">
                     <h2 className="contactus-title">Get In Touch</h2>

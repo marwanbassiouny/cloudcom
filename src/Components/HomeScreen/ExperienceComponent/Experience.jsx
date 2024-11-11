@@ -51,7 +51,7 @@ const Experience = () => {
   };
   
     return (
-      <div className="experience-container">
+      <div className="experience-container page_padding_level_1 page_vertical_padding_level_1">
         {/* Left Section */}
         <div className="experience-left">
           {/* <img src={sixYearsImage} alt="6 Years" className="number-image" /> */}
