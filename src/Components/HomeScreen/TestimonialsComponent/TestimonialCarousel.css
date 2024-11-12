@@ -127,12 +127,12 @@
   margin-top: 35px; /* Add space between cards and pagination */
 }
 
-.swiper-pagination-bullet {
+.testimonial-carousel .swiper-pagination-bullet {
   background-color: #888888 !important;
   opacity: 0.7;
 }
 
-.swiper-pagination-bullet-active {
+.testimonial-carousel .swiper-pagination-bullet-active {
   background-color: #0047ff !important;
 }
 

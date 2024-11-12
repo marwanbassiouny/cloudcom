@@ -142,7 +142,7 @@
 }
 
 /* Pagination Bullet Styling */
-.swiper-pagination {
+.why-cloudcom-section .swiper-pagination {
   position: absolute;       
   top: 35% !important;                
   left: 35% !important;              
@@ -197,7 +197,7 @@
     animation: none; 
   }
 
-  .swiper-pagination {
+  .why-cloudcom-section .swiper-pagination {
     position: absolute;       
     top: 0% !important;                
     left: 1% !important;              
@@ -208,7 +208,7 @@
   .whycloud-card {
       width: 90%;
   }
-  .swiper-pagination {
+  .why-cloudcom-section .swiper-pagination {
     position: absolute;       
     top: 0% !important;                
     left: 1% !important;              
@@ -219,7 +219,7 @@
   .whycloud-card {
       width: 90%;
   }
-  .swiper-pagination {     
+  .why-cloudcom-section .swiper-pagination {     
     top: 25% !important;                         
   }
 }
