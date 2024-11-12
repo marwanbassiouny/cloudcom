@@ -87,7 +87,7 @@
 @media (max-width: 768px) {
   /* Stack text and image sections vertically */
   .mission-vision-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 

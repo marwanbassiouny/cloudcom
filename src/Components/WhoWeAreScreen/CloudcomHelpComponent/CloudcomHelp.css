@@ -129,6 +129,7 @@
 
   .values-list {
     flex-direction: column;
+    gap: 0rem;
   }
 
   .values-list div {

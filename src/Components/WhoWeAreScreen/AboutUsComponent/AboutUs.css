@@ -1,7 +1,6 @@
 .about-us-container {
   text-align: center;
-  /* padding: 50px; */
-  padding-top: 2%;
+  padding: 2% 5%;
   background-color: #F3F0F0;
 }
 
@@ -13,7 +12,6 @@
 
 .about-us-container h1 {
   font-size: 2.5rem;
-  /* font-weight: bold; */
   margin-bottom: 20px;
 }
 
@@ -34,10 +32,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  position: relative;
   padding: 2%;
 }
-
 
 .text-section {
   flex: 1;
@@ -45,7 +41,7 @@
   text-align: left;
 }
 
-.text-section p{
+.text-section p {
   font-size: 25px;
   color: #000000;
 }
@@ -55,32 +51,112 @@
   display: flex;
   justify-content: center;
   position: relative;
-
 }
 
 .illustration {
-  width: 65%;  /* Ensure both images take up the same space */
-  transition: transform 1s ease-in-out; /* Smooth transform and opacity transition */
+  width: 65%;
+  transition: transform 1s ease-in-out;
   backface-visibility: hidden;
 }
 
-
 .img1 {
-  z-index: 2; /* Initially above the other image */
+  z-index: 2;
 }
 
 .icon1after {
   position: absolute;
-  z-index: 1; /* Below initially, icons will "appear" later */
-  opacity: 0; /* Start invisible */
+  z-index: 1;
+  opacity: 0;
 }
 
 .slide-left {
- /* Slide the first image to the left */
-  opacity: 0; /* Gradually fade out while sliding left */
+  opacity: 0;
 }
 
 .show-icons {
-  opacity: 1; /* Make the second image visible as the first fades out */
-  /* transform: translateX(-20px);  */
+  opacity: 1;
+}
+
+/* Responsive styling for tablets */
+@media (max-width: 1024px) {
+  .about-us-container h1 {
+    font-size: 2rem;
+  }
+  
+  .about-us-description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  
+  .row {
+    gap: 15px;
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 3% 5%;
+  }
+  
+  .about-us-container h1 {
+    font-size: 1.8rem;
+    white-space: nowrap;
+  }
+  
+  .about-us-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .row {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .icon-section {
+    order: -1; /* Move icon section above text section */
+    margin-bottom: 10px;
+  }
+  
+  .text-section {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .text-section p {
+    font-size: 1rem;
+  }
+  
+  .illustration {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/* Responsive styling for small mobile screens */
+@media (max-width: 480px) {
+  .about-us-container h1 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+  
+  .about-us-description {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  
+  .text-section p {
+    font-size: 0.9rem;
+  }
+  
+  .illustration {
+    width: 90%;
+    max-width: 250px;
+  }
 }
