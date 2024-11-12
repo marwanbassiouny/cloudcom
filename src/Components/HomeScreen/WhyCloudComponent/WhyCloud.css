@@ -12,8 +12,8 @@
   }
   
   .why-cloudcom-section-subtitle {
-    font-size: 16px;
-    color: #666666;
+    font-size: 20px;
+    color: black;
     margin-bottom: 30px;
   }
   
@@ -46,6 +46,8 @@
 }
 
 .whycloud-card {
+    display: flex;
+    justify-content: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -55,19 +57,22 @@
     opacity: 1;
     position: relative;
     transform: translateY(0);
+    width: 75%;
 }
 
 .whycloud-card.inactive {
-    transform: translateY(300px); /* Move inactive card further down */
-    opacity: 0.6; /* More transparency for inactive cards */
+    transform: translateY(45px);
+    opacity: 0.6;
 }
+
 .whycloud-card.inactive .whycloud-card-image {
  display: none;
 }
 
 .whycloud-card.active {
-    transform: translateY(0); /* Keep active card in its default position */
+    transform: translateY(8%); /* Keep active card in its default position */
     opacity: 1;
+    margin: auto;
 }
 
 .whycloud-card-content {
@@ -103,8 +108,9 @@
 }
 
 .whycloud-card-image-wrapper {
-    margin-top: 20px;
+    margin-top: auto;
     display: flex;
+    padding: 10px;
     justify-content: center;
     opacity: 0;
     animation: slideIn 0.5s ease forwards;
@@ -131,33 +137,27 @@
     }
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .whycloud-card {
-        transform: translateY(0); /* Prevent translate effect on mobile for better UX */
-    }
-
-    .whycloud-card-image-wrapper {
-        animation: none; /* Remove the slide-in animation on mobile for simplicity */
-    }
+.swiper-wrapper{
+  align-items: end !important;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-    .whycloud-card {
-        transform: translateY(0); /* Prevent translate effect on mobile for better UX */
-    }
+/* @media (width: 820px) and (max-width: 1024px) {
+  .whycloud-card {
+      width: 98%; 
 
-    .whycloud-card-image-wrapper {
-        animation: none; /* Remove the slide-in animation on mobile for simplicity */
-    }
-}
+  }
+} */
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .whycloud-card {
-        transform: translateY(0); /* Prevent translate effect on mobile for better UX */
-    }
+@media (max-width:820px) {
+  .whycloud-card {
+      width: 98% !important;
+  }
+
+  .whycloud-card-image-wrapper {
+    animation: none; 
+  }
+
 }
 
 

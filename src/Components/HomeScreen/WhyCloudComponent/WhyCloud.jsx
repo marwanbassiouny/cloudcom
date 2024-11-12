@@ -66,16 +66,16 @@ const WhyCloud = () => {
       {/* <div class="line"></div> */}
 
       <Swiper
-            spaceBetween={30}
+            
             slidesPerView={2.2} 
             slidesPerGroup={1}
-            loop={true}
+            // loop={true}
             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay]}
+            // autoplay={{
+            //   delay: 2500,
+            //   disableOnInteraction: false,
+            // }}
+            // modules={[Autoplay]}
             className="mySwiper whyCloudSwiper"
             breakpoints={{
               320: {
@@ -88,7 +88,7 @@ const WhyCloud = () => {
                 slidesPerView: 1.2,
               },
               1024: {
-                slidesPerView: 2.2,
+                slidesPerView: 2.1,
               },
             }}
         >
