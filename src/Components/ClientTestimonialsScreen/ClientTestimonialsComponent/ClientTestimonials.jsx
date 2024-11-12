@@ -14,7 +14,7 @@ const ClientTestimonialsScreen = () => {
       image: img, // Replace with actual image URL
       review:
         "cloudcom’s CPaaS platform has transformed the way we manage our customer data at Fatura. The seamless integration with the WhatsApp channel has allowed us to engage our customers in real time, making our communication more personalized and efficient. Their support team is outstanding, and we’ve seen significant improvements in our customer relationships thanks to cloudcom’s solutions.",
-      rating: 4.5, // Star rating out of 5
+      rating: 5, // Star rating out of 5
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const ClientTestimonialsScreen = () => {
       image: img,
       review:
         "Working with CloudCom has been a game-changer for us at Redbull Mobile KSA. Their SMS channel has helped us take our customer value management to the next level. The ability to reach our customers directly and measure engagement has significantly boosted our retention rates. We’re extremely satisfied with the results and the ongoing support from the CloudCom team",
-      rating: 4.5,
+      rating: 5,
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const ClientTestimonialsScreen = () => {
       image: img,
       review:
         "CloudCom’s SMS and OTP verification solutions have been critical for us at Elfar Market. They’ve enabled us to ensure secure and reliable customer interactions, whether for account verification or promotional messaging. The simplicity and effectiveness of their services have made our processes more efficient, and we couldn’t be happier with the results.",
-      rating: 4.5,
+      rating: 5,
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ const ClientTestimonialsScreen = () => {
       image: img, // Replace with actual image URL
       review:
         "cloudcom’s CPaaS platform has transformed the way we manage our customer data at Fatura. The seamless integration with the WhatsApp channel has allowed us to engage our customers in real time, making our communication more personalized and efficient. Their support team is outstanding, and we’ve seen significant improvements in our customer relationships thanks to cloudcom’s solutions.",
-      rating: 4.5, // Star rating out of 5
+      rating: 5, // Star rating out of 5
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ const ClientTestimonialsScreen = () => {
       image: img,
       review:
         "Working with CloudCom has been a game-changer for us at Redbull Mobile KSA. Their SMS channel has helped us take our customer value management to the next level. The ability to reach our customers directly and measure engagement has significantly boosted our retention rates. We’re extremely satisfied with the results and the ongoing support from the CloudCom team",
-      rating: 4.5,
+      rating: 5,
     },
     {
       id: 6,
@@ -59,7 +59,7 @@ const ClientTestimonialsScreen = () => {
       image: img,
       review:
         "CloudCom’s SMS and OTP verification solutions have been critical for us at Elfar Market. They’ve enabled us to ensure secure and reliable customer interactions, whether for account verification or promotional messaging. The simplicity and effectiveness of their services have made our processes more efficient, and we couldn’t be happier with the results.",
-      rating: 4.5,
+      rating: 5,
     },
   ];
 

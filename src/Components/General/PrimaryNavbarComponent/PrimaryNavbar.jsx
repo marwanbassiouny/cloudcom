@@ -101,7 +101,7 @@ const PrimaryNavbar = () => {
         </li>
         {/* Signup Button inside the menu for mobile view */}
         {isMenuOpen && (
-          <CloudComButton text="Signup" link="/register" width="140" height="40" />
+          <CloudComButton text="Sign Up" link="/register" width="140" height="40" />
         )}
       </ul>
 
