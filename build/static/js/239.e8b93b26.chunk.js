@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcloudcom=self.webpackChunkcloudcom||[]).push([[239],{239:(c,a,e)=>{e.d(a,{A:()=>s});e(2483);const s=e.p+"static/media/MultiChannelCampaignIcon.674d88e78e0eda0846899012c8a4fd7a.svg"}}]);
+//# sourceMappingURL=239.e8b93b26.chunk.js.map
