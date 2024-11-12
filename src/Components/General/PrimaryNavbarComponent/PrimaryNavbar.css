@@ -94,7 +94,13 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1025px) {
+@media (min-width: 1920px){
+  .navbar-links li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
   .primary-navbar {
     flex-direction: row;
     align-items: center;

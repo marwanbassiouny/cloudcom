@@ -29,17 +29,17 @@
 .cloudcom-help__content,
 .cloudcom-help__content_part2 {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .cloudcom-help__image-section,
 .cloudcom-help__values-section,
 .cloudcom-help__image-section_2,
 .cloudcom-help__values-section_2 {
-  width: 40%;
+  width: 50%;
   padding: 3rem;
   color: #6F6F6F;
 }
@@ -85,6 +85,10 @@
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.section_2-text {
+  font-size: 24px;
 }
 
 /* Responsive Styles */

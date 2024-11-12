@@ -30,6 +30,22 @@ const Clients = () => {
           <img src={client5Icon} alt="client5Icon" className="client_icon" />
           <img src={client6Icon} alt="client6Icon" className="client_icon" />
           <img src={client7Icon} alt="client7Icon" className="client_icon" />
+           {/* Duplicated icons for smooth infinite scroll */}
+           <img src={client1Icon} alt="client1Icon" className="client_icon" />
+          <img src={client2Icon} alt="client2Icon" className="client_icon" />
+          <img src={client3Icon} alt="client3Icon" className="client_icon" />
+          <img src={client4Icon} alt="client4Icon" className="client_icon" />
+          <img src={client5Icon} alt="client5Icon" className="client_icon" />
+          <img src={client6Icon} alt="client6Icon" className="client_icon" />
+          <img src={client7Icon} alt="client7Icon" className="client_icon" />
+           {/* Duplicated icons for smooth infinite scroll */}
+           <img src={client1Icon} alt="client1Icon" className="client_icon" />
+          <img src={client2Icon} alt="client2Icon" className="client_icon" />
+          <img src={client3Icon} alt="client3Icon" className="client_icon" />
+          <img src={client4Icon} alt="client4Icon" className="client_icon" />
+          <img src={client5Icon} alt="client5Icon" className="client_icon" />
+          <img src={client6Icon} alt="client6Icon" className="client_icon" />
+          <img src={client7Icon} alt="client7Icon" className="client_icon" />
         </div>
       </div>
     </div>

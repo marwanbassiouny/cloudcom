@@ -20,7 +20,7 @@
 
 .story-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-top: 10px;
   padding-left: 10px;
@@ -124,6 +124,12 @@
 
 .home-nav-dots .active {
   background-color: #0056D2 !important;
+}
+
+@media (min-width: 1920px) {
+  .stat-item-right {
+    padding-right: 5%;
+  }
 }
 
 /* Horizontal layout for tablets and mobile screens */

@@ -43,6 +43,10 @@
   outline: none;
 }
 
+.contactus-email-input::placeholder{
+  padding-left: 2%;
+}
+
 .input-container button {
   background-color: #007bff;
   border: none;

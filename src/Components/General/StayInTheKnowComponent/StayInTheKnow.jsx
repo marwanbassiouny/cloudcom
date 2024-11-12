@@ -11,7 +11,7 @@ const StayInTheKnow = () => {
           Stay ahead with CloudCom's insights. Subscribe for updates.
         </p>
         <div className="input-container">
-          <input type="email" placeholder="Enter your email address" />
+          <input className='contactus-email-input' type="email" placeholder="Enter your email address" />
           <button className="gradient-button">
             <img src={ArrowIcon} alt="Send" />
           </button>

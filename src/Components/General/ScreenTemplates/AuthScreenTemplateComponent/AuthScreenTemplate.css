@@ -61,3 +61,30 @@
   bottom: -30px;
   left: 1150px;
 }
+
+.divider-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.line_divider {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.login-divider {
+  border: none;
+  border-top: 1px solid #C5C5C5; /* Light gray color for the lines */
+  height: 1px;
+  flex-grow: 1;
+  margin: 0 10px; /* Space around the "OR" text */
+}
+
+.login-or-divider {
+  font-size: 14px; /* Adjust size to match design */
+  color: #C5C5C5; /* Same light gray color for the "OR" text */
+}
