@@ -40,7 +40,6 @@ const About = () => {
         <CloudComButton text="Read More" link="/whoWeAre" glow="" width='184' height='40'/>
       </div>
 
-      {/* Right Section: Single Image */}
       <div className="about-image">
         <img
           onClick={openModal}

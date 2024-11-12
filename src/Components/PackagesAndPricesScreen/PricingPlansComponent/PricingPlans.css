@@ -186,6 +186,10 @@
     width: 40%;
   }
 
+  .empty-white-section{
+    height: 0vh;
+  }
+
   .pricing-cards {
     width: 90%;
     top: 30%;
@@ -212,6 +216,10 @@
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+
+  .empty-white-section{
+    height: 0vh;
   }
 
   .pricing-text {
@@ -252,6 +260,10 @@
 @media (max-width: 480px) {
   .background-section {
     height: 40vh;
+  }
+
+  .empty-white-section{
+    height: 0vh;
   }
 
   .pricing-text {

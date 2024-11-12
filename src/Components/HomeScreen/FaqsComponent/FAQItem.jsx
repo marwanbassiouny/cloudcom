@@ -5,7 +5,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
   return (
     <div className={`faq-item ${isOpen ? "open" : ""}`} onClick={onClick}>
       <div className="faq-question">
-        <h3>{question}</h3>
+        <h3 className='faq-question-text'>{question}</h3>
         <span className="toggle-icon">{isOpen ? "▲" : "▼"}</span>
       </div>
       {/* Render answer only if isOpen is true */}

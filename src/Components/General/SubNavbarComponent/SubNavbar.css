@@ -3,15 +3,22 @@
   justify-content: space-between;
   align-items: center;
   background-color: #0000FF; /* Blue color */
-  padding-top: 10px;
-  /* padding-bottom: 10px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: white;
-  /* margin-bottom: ; */
 }
 
 /* Left Section */
+.sub-navbar-left {
+  display: flex;
+  align-items: center;
+}
+
 .sub-navbar-left span {
+  display: flex;
+  align-items: center;
   margin-right: 20px;
+  font-size: 0.95rem; /* Consistent font size */
 }
 
 .phone img,
@@ -24,15 +31,20 @@
 }
 
 /* Right Section */
-.sub-navbar-right img {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
+.sub-navbar-right {
+  display: flex;
+  align-items: center;
 }
 
 .sub-navbar-right a {
-  color: white;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.sub-navbar-right img {
+  width: 20px;
+  height: 20px;
 }
 
 /* Responsive Styling */
@@ -48,8 +60,11 @@
     font-size: 0.9rem; /* Slightly reduce font size */
   }
 
-  .sub-navbar-right img {
+  .sub-navbar-right a {
     margin-left: 10px;
+  }
+
+  .sub-navbar-right img {
     width: 18px;
     height: 18px;
   }
@@ -66,10 +81,13 @@
     font-size: 0.85rem; /* Smaller font size */
   }
 
+  .sub-navbar-right a {
+    margin-left: 8px;
+  }
+
   .sub-navbar-right img {
     width: 16px;
     height: 16px; /* Smaller icons */
-    margin-left: 8px;
   }
 }
 
@@ -84,9 +102,12 @@
     font-size: 0.8rem;
   }
 
+  .sub-navbar-right a {
+    margin-left: 6px;
+  }
+
   .sub-navbar-right img {
     width: 14px;
     height: 14px;
-    margin-left: 6px;
   }
 }

@@ -83,20 +83,46 @@
 
 /*********************************/
 
-.stat-item {
+.exp-stat-item {
   flex: 1 1 45%; 
   text-align: center;
   box-sizing: border-box;
   padding: 5px;
   border-bottom: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
+  /* border-right: 1px solid #e0e0e0; */
   overflow: hidden;
 }
 
-.stat-item:hover .number {
+.exp-stat-item:hover .number {
   transform: translateY(0);
   animation: slide-up 0.8s ease-in-out ;
   animation-iteration-count: 4;
+}
+
+
+.exp-stat-item-right {
+  border-right: 1px solid #ccc; /* Right border */
+}
+
+.exp-stat-item h3 {
+  font-size: 50px;
+  font-weight: normal;
+}
+.exp-stat-item p {
+  font-size: 20px;
+}
+
+.exp-stat-item:nth-child(2) {
+  border-right: none; /* Remove right border on the top-right item */
+}
+
+.exp-stat-item:nth-child(3),
+.exp-stat-item:nth-child(4) {
+  border-bottom: none; /* Remove bottom border on bottom row items */
+}
+
+.exp-stat-item:nth-child(4) {
+  border-right: none; /* Remove right border on the top-right item */
 }
 
 @keyframes slide-up {
@@ -117,33 +143,11 @@
   }
 }
 
-.stat-item-right {
-  border-right: 1px solid #ccc; /* Right border */
-}
+
 .state-text{
   color:#8B8B8B;
   margin-top: 0;
   font-size: 18px;
-}
-.stat-item h3 {
-  font-size: 50px;
-  font-weight: normal;
-}
-.stat-item p {
-  font-size: 20px;
-}
-
-.stat-item:nth-child(2) {
-  border-right: none; /* Remove right border on the top-right item */
-}
-
-.stat-item:nth-child(3),
-.stat-item:nth-child(4) {
-  border-bottom: none; /* Remove bottom border on bottom row items */
-}
-
-.stat-item:nth-child(4) {
-  border-right: none; /* Remove right border on the top-right item */
 }
 
 @media (max-width: 1024px) {
@@ -177,11 +181,11 @@
     font-size: 16px;
   }
 
-  .stat-item h3 {
+  .exp-stat-item h3 {
     font-size: 40px;
   }
 
-  .stat-item p {
+  .exp-stat-item p {
     font-size: 18px;
   }
 }
@@ -212,11 +216,11 @@
     font-size: 14px;
   }
 
-  .stat-item h3 {
+  .exp-stat-item h3 {
     font-size: 32px;
   }
 
-  .stat-item p {
+  .exp-stat-item p {
     font-size: 16px;
   }
 

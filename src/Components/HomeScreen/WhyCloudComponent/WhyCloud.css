@@ -58,7 +58,7 @@
 }
 
 .whycloud-card.inactive {
-    transform: translateY(400px); /* Move inactive card further down */
+    transform: translateY(300px); /* Move inactive card further down */
     opacity: 0.6; /* More transparency for inactive cards */
 }
 .whycloud-card.inactive .whycloud-card-image {
@@ -86,7 +86,7 @@
 }
 
 .whycloud-card-icon-img {
-  width: 40px; /* Adjust as needed */
+  min-width: 100%;
   height: auto;
 }
 
@@ -123,7 +123,7 @@
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateY(50px); /* Move image up */
+        transform: translateY(50px); 
     }
     100% {
         opacity: 1;

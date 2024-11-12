@@ -21,14 +21,11 @@ const PrimaryNavbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const currentPath = window.location.pathname; 
+
   return (
     <nav className="primary-navbar page_padding_level_0">
       <div className="navbar-left">
         <a href="/">
-          {/* <picture>
-            <source srcSet="image.webp" type="image/webp" />
-            <img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" />
-          </picture> */}
           <img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" />
         </a>
       </div>
@@ -79,7 +76,7 @@ const PrimaryNavbar = () => {
               <a href="/flowBuilder" className="menu-item-hover">
                 <img src={flowIcon} alt="Icon" className="default-icon"/> 
                 <img src={flowIconSelected} alt="Icon" className="hover-icon" />
-                Flow
+                Work Flow
               </a>
             </div>
           )}
@@ -102,11 +99,20 @@ const PrimaryNavbar = () => {
         <li>
           <a href="/ContactUs" className={currentPath === '/ContactUs' ? 'active-link' : ''}>{textContent.contactUs}</a>
         </li>
+        {/* Signup Button inside the menu for mobile view */}
+        {isMenuOpen && (
+          <CloudComButton text="Signup" link="/register" width="140" height="40" />
+        )}
       </ul>
-      <div className="navbar-right">
-        <CloudComButton text="Signup" link="/register" width='140' height='40'/>
-      </div>
-      <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+
+      {/* Signup Button outside the menu for desktop view */}
+      {!isMenuOpen && (
+        <div className="navbar-right">
+          <CloudComButton text="Signup" link="/register" width="140" height="40" />
+        </div>
+      )}
+
+      <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

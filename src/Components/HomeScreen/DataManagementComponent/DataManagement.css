@@ -1,48 +1,46 @@
-
 .data-management-container {
-  background-size: contain; 
+  background-size: contain;
   background-position: center;
-  background-image: url("../../../Assets//Icons//HomeScreen//DataManagementComponent/backgroundImage.svg"); 
+  background-image: url("../../../Assets/Icons/HomeScreen/DataManagementComponent/backgroundImage.svg");
   background-size: cover;
   background-position: center;
-  /* padding-bottom: 2%; */
 }
 
 .top-section {
-  overflow: hidden; 
-  padding: 20px 0; 
+  overflow: hidden;
+  padding: 20px 0;
   position: relative;
 }
 
 .scrolling-text {
-  display: inline-block;
+  display: flex; /* Change to flex for seamless scrolling */
   white-space: nowrap;
-  animation: scrollText 20s linear infinite; 
+  animation: scrollText 20s linear infinite;
 }
 
 .scrolling-text h1 {
   font-size: 2.5rem;
   color: #AEAEAE;
   margin: 0;
+  padding-right: 40px; /* Add some space between duplicated text */
 }
 
 /* Keyframes for Scrolling Text Animation */
 @keyframes scrollText {
   0% {
-    transform: translateX(100%); /* Start from the right of the container */
+    transform: translateX(0); /* Start from the beginning */
   }
   100% {
-    transform: translateX(-100%); /* Move to the left of the container */
+    transform: translateX(-50%); /* Scroll to end of first instance */
   }
 }
-
 
 /* Desktop layout */
 .bottom-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px 0 40px;
+  padding: 0 40px;
 }
 
 .data-left-section {
@@ -75,8 +73,7 @@
 }
 
 .explore-btn-glow {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 
-              0 0 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .middle-section img {
@@ -84,86 +81,38 @@
   border-radius: 10px;
 }
 
-.right-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.ellipse {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-
-/* Tablet screens */
+/* Responsive styles for tablet and mobile */
 @media (max-width: 1024px) {
   .data-management-container {
     padding: 30px;
   }
-
   .top-section h1 {
     font-size: 1.5rem;
   }
-
   .data-left-section {
     max-width: 60%;
   }
-
-  .data-left-section h2 {
-    font-size: 1.6rem;
-  }
-
-  .data-left-section p {
-    font-size: 1rem;
-  }
-
-  .middle-section img {
-    max-width: 80%;
-  }
 }
 
-/* Mobile screens */
 @media (max-width: 768px) {
   .bottom-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     padding: 0;
   }
-
   .data-left-section {
     max-width: 100%;
     text-align: center;
   }
-
-  .data-left-section h2,
-  .data-left-section p {
-    text-align: center;
-  }
-
-  .middle-section {
-    margin-top: 20px;
-  }
-
-  .middle-section img {
-    max-width: 90%;
-  }
-
-  .right-section {
-    display: none; /* Hide the right section on smaller screens if necessary */
-  }
 }
 
-/* Small mobile screens */
 @media (max-width: 480px) {
   .top-section h1 {
     font-size: 1.2rem;
   }
-
   .data-left-section h2 {
     font-size: 1.4rem;
   }
-
   .data-explore-btn {
     padding: 8px 16px;
     font-size: 14px;

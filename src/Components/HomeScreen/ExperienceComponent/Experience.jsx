@@ -116,7 +116,7 @@ const Experience = () => {
           {numbers.map((number, index) => (
             <div
               key={index}
-              className="stat-item stat-item-right"
+              className="exp-stat-item exp-stat-item-right"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             >

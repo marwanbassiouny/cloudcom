@@ -11,8 +11,6 @@
     justify-content: space-around;
     transition: box-shadow 0.3s ease;
     cursor : pointer;
-    /* width: 140px;
-    height: 40px; */
 }
 
 .cloudcom-btn:hover {

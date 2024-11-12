@@ -25,16 +25,16 @@ const SuccessStories = () => {
           <p>How Gourmet Egypt Boosted Retention with cloudcom’s CPaaS Solutions</p>
           <div className="stats">
             <div className="stat-item stat-item-right">
-              <h4>22%</h4>
-              <p>Boosted Retention</p>
+              <h5>22%</h5>
+              <p className='stat-text'>Boosted Retention</p>
             </div>
-            <div className="stat-item middle-item stat-item-right">
-              <h4>35%</h4>
-              <p>Customer Engagement</p>
+            <div className="stat-item middle-item stat-item-right n-stat-item">
+              <h5>35%</h5>
+              <p className='stat-text'>Customer Engagement</p>
             </div>
-            <div className="stat-item">
-              <h4>22%</h4>
-              <p>Boosted Retention</p>
+            <div className="stat-item n-stat-item">
+              <h5>22%</h5>
+              <p className='stat-text'>Boosted Retention</p>
             </div>
           </div>
           <CloudComButton text="Explore" link="/innerCaseStudy" glow='glow' width='183' height='48' />

@@ -101,7 +101,8 @@ module.exports = {
         filename: '[path][base].gz',
         algorithm: 'gzip',
         test: /\.(js|css|html|svg|png|mp4)$/,
-        threshold: 10240,
+        // threshold: 10240,
+        threshold: 5000,
         minRatio: 0.8,
         deleteOriginalAssets: true, 
       }),
@@ -112,8 +113,8 @@ module.exports = {
     splitChunks: {
       chunks: 'all', // Extract common dependencies into separate files
       name: 'vendors', // Splits third-party modules
-      minSize: 20000, // Minimum size before it splits
-      maxSize: 50000, // Maximum chunk size before it splits again
+      minSize: 10000, // Minimum size before it splits
+      maxSize: 25000, // Maximum chunk size before it splits again
     },
   minimize: true,
   minimizer: [

@@ -92,9 +92,16 @@
   /* Stack images and text vertically */
   .cloudcom-help__content,
   .cloudcom-help__content_part2 {
-    flex-direction: column;
     align-items: center;
     padding: 1rem;
+  }
+
+  .cloudcom-help__content{
+    flex-direction: column;
+  }
+
+  .cloudcom-help__content_part2 {
+    flex-direction: column-reverse;
   }
 
   .cloudcom-help__image-section,
