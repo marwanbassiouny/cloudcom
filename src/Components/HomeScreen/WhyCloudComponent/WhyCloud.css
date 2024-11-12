@@ -40,7 +40,7 @@
   /* card style */
 
  .whyCloudSwiper {
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 60px 0;
 }
@@ -57,12 +57,12 @@
     opacity: 1;
     position: relative;
     transform: translateY(0);
-    width: 75%;
+    width: 65%;
 }
 
 .whycloud-card.inactive {
     transform: translateY(45px);
-    opacity: 0.6;
+    width: 90%;
 }
 
 .whycloud-card.inactive .whycloud-card-image {
@@ -141,33 +141,87 @@
   align-items: end !important;
 }
 
-/* Responsive Styles */
-/* @media (width: 820px) and (max-width: 1024px) {
-  .whycloud-card {
-      width: 98%; 
+/* Pagination Bullet Styling */
+.swiper-pagination {
+  position: absolute;       
+  top: 35% !important;                
+  left: 35% !important;              
+}
 
+
+.why-cloudcom-section .swiper-pagination-bullet {
+  width: 30px;                  
+  height: 30px;                 
+  line-height: 30px;            
+  font-size: 16px;              
+  color: black;                
+  background: transparent !important;          
+  text-align: center;           
+  border-radius: 50%;
+  transition: all 0.3s ease; /* Smooth transition for size or background changes */
+}
+
+/* Define the keyframe animation for sliding background */
+@keyframes slideInBackground {
+  0% {
+    background-position: 100% 0;
+    background-color: transparent;
   }
-} */
+  50% {
+    background-position: 50% 50%;
+    background-color: #0000FF;
+  }
+  100% {
+    background-position: 0 0;
+    background-color: #0000FF;
+  }
+}
 
-@media (max-width:820px) {
+.why-cloudcom-section .swiper-pagination-bullet-active {
+  background-color: #0000FF !important;          
+  color: white;                  
+  transform: scale(1.2);
+  opacity: 1;       
+  box-shadow: 0 0 2px #0000FF; /* More noticeable glow for the active bullet */
+  animation: slideInBackground 0.5s ease-in-out; /* Apply the sliding animation */
+}
+
+/* Responsive Styles */
+
+@media (max-width:819px) {
   .whycloud-card {
-      width: 98% !important;
+      width: 98% ;
   }
 
   .whycloud-card-image-wrapper {
     animation: none; 
   }
 
+  .swiper-pagination {
+    position: absolute;       
+    top: 0% !important;                
+    left: 1% !important;              
+  }
 }
 
+@media (min-width: 820px) and (max-width: 1024px) {
+  .whycloud-card {
+      width: 90%;
+  }
+  .swiper-pagination {
+    position: absolute;       
+    top: 0% !important;                
+    left: 1% !important;              
+  }
+}
 
-  /* Pagination Bullet Styling */
-  .swiper-pagination-bullet {
-    background-color: #0047ff;
-    opacity: 0.7;
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .whycloud-card {
+      width: 90%;
   }
-  .swiper-pagination-bullet-active {
-    background-color: #0047ff;
-    opacity: 1;
+  .swiper-pagination {     
+    top: 25% !important;                         
   }
+}
+
   

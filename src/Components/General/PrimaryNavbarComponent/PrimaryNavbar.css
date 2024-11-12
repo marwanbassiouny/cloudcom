@@ -32,7 +32,7 @@
 }
 
 .navbar-links li {
-  font-size: 12px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -94,7 +94,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .primary-navbar {
     flex-direction: row;
     align-items: center;

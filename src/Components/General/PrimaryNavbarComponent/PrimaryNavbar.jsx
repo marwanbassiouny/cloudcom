@@ -126,7 +126,7 @@ const PrimaryNavbar = () => {
 
       <div className="hamburger-menu" onClick={() => {
         // Toggle menu only if on tablet or mobile view
-        if (window.matchMedia('(max-width: 1024px)').matches) {
+        if (window.matchMedia('(max-width: 1025px)').matches) {
           setIsMenuOpen(!isMenuOpen);
         }
       }}>
