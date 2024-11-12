@@ -42,7 +42,7 @@
 }
 
 .navbar-links li a:hover {
-  color: #0056D2; /* Blue color on hover */
+  color: #0056D2;
 }
 
 .dropdown-menu {
@@ -128,7 +128,20 @@
   }
 
   .navbar-right {
-    display: none; /* Hide right section in mobile view */
+    display: none;
+  }
+
+  /* Adjust dropdown menu to one column in mobile view */
+  .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column; /* Set to one column */
+    gap: 10px;
+    padding: 10px;
   }
 
   /* Signup button styling inside burger menu */
@@ -141,25 +154,23 @@
 }
 
 .active-link {
-  color: #0056D2; /* Blue color for active link */
+  color: #0056D2;
   font-weight: bold;
-  border-bottom: 2px solid #0056D2; /* Optional: add underline to indicate active link */
+  border-bottom: 2px solid #0056D2;
 }
 
 .default-icon {
   display: inline;
 }
 
-/* Hover icon is hidden by default */
 .hover-icon {
   display: none;
 }
 
-/* When the parent element (menu item) is hovered */
 .menu-item-hover:hover .default-icon {
-  display: none; /* Hide the default icon */
+  display: none;
 }
 
 .menu-item-hover:hover .hover-icon {
-  display: inline; /* Show the hover icon */
+  display: inline;
 }

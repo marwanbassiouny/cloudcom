@@ -1,10 +1,9 @@
 .about-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   background-color: #FAFAFA;
-  padding: 20px;
 }
 
 .about-text {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './PrimaryNavbar.css';
 import logo from '../../../Assets/Icons/General/PrimaryNavbarComponent/CloudcomLogo.svg';
 import textContent from '../../../Assets/Data/General/PrimaryNavbarComponent/PrimaryNavbarComponent.json';
@@ -20,7 +20,21 @@ import dropdownMenuIcon from '../../../Assets/Icons/General/PrimaryNavbarCompone
 const PrimaryNavbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const currentPath = window.location.pathname; 
+  const currentPath = window.location.pathname;
+
+  // Detect screen size and adjust menu state
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 1024px)'); // Tablet/mobile breakpoint
+    const handleResize = () => {
+      // Only allow the menu to open on tablet and mobile screen sizes
+      if (!mediaQuery.matches) {
+        setIsMenuOpen(false);
+      }
+    };
+    mediaQuery.addEventListener('change', handleResize);
+    handleResize(); // Initial check on component mount
+    return () => mediaQuery.removeEventListener('change', handleResize);
+  }, []);
 
   return (
     <nav className="primary-navbar page_padding_level_0">
@@ -29,7 +43,7 @@ const PrimaryNavbar = () => {
           <img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" />
         </a>
       </div>
-      
+
       <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <li>
           <a href="/" className={currentPath === '/' ? 'active-link' : ''}>Home</a>
@@ -49,13 +63,13 @@ const PrimaryNavbar = () => {
           {showDropdown && (
             <div className="dropdown-menu">
               <a href="/customerDataManagement" className="menu-item-hover">
-                <img src={CustomerDataManagementIcon} alt="Icon" className="default-icon"/>
-                <img src={CustomerDataManagementIconSelected} alt="Icon" className="hover-icon" /> 
+                <img src={CustomerDataManagementIcon} alt="Icon" className="default-icon" />
+                <img src={CustomerDataManagementIconSelected} alt="Icon" className="hover-icon" />
                 Customer Data Management
               </a>
               <a href="/AIPoweredSegmantation" className="menu-item-hover">
-                <img src={aiSegmantationIcon} alt="Icon" className="default-icon"/> 
-                <img src={aiSegmantationIconSelected} alt="Icon" className="hover-icon" /> 
+                <img src={aiSegmantationIcon} alt="Icon" className="default-icon" />
+                <img src={aiSegmantationIconSelected} alt="Icon" className="hover-icon" />
                 AI-Powered Segmentation
               </a>
               <a href="/verify" className="menu-item-hover">
@@ -64,17 +78,17 @@ const PrimaryNavbar = () => {
                 Verify
               </a>
               <a href="/chatManagement" className="menu-item-hover">
-                <img src={chatManagementIcon} alt="Icon" className="default-icon" /> 
-                <img src={chatManagementIconSelected} alt="Icon" className="hover-icon" /> 
+                <img src={chatManagementIcon} alt="Icon" className="default-icon" />
+                <img src={chatManagementIconSelected} alt="Icon" className="hover-icon" />
                 Chat Management
               </a>
               <a href="/multiChannelCampaignManager" className="menu-item-hover">
-                <img src={campaignManagerIcon} alt="Icon" className="default-icon"/> 
+                <img src={campaignManagerIcon} alt="Icon" className="default-icon" />
                 <img src={campaignManagerIconSelected} alt="Icon" className="hover-icon" />
                 Multi-Channel Campaign Manager
               </a>
               <a href="/flowBuilder" className="menu-item-hover">
-                <img src={flowIcon} alt="Icon" className="default-icon"/> 
+                <img src={flowIcon} alt="Icon" className="default-icon" />
                 <img src={flowIconSelected} alt="Icon" className="hover-icon" />
                 Work Flow
               </a>
@@ -99,20 +113,23 @@ const PrimaryNavbar = () => {
         <li>
           <a href="/ContactUs" className={currentPath === '/ContactUs' ? 'active-link' : ''}>{textContent.contactUs}</a>
         </li>
-        {/* Signup Button inside the menu for mobile view */}
         {isMenuOpen && (
           <CloudComButton text="Sign Up" link="/register" width="140" height="40" />
         )}
       </ul>
 
-      {/* Signup Button outside the menu for desktop view */}
       {!isMenuOpen && (
         <div className="navbar-right">
           <CloudComButton text="Signup" link="/register" width="140" height="40" />
         </div>
       )}
 
-      <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <div className="hamburger-menu" onClick={() => {
+        // Toggle menu only if on tablet or mobile view
+        if (window.matchMedia('(max-width: 1024px)').matches) {
+          setIsMenuOpen(!isMenuOpen);
+        }
+      }}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
