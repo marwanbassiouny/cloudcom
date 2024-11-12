@@ -56,6 +56,7 @@ const cards = [
 
 const WhyCloud = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  console.log(window.innerWidth);
 
   return (
     <div className="why-cloudcom-section">
@@ -67,16 +68,24 @@ const WhyCloud = () => {
 
       <Swiper
             
-            slidesPerView={2.2} 
+            slidesPerView={2} 
             slidesPerGroup={1}
-            // loop={true}
+            loop={true}
             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-            // autoplay={{
-            //   delay: 2500,
-            //   disableOnInteraction: false,
-            // }}
-            // modules={[Autoplay]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay,Pagination]}
+            pagination={{
+              clickable: true,
+              type: 'bullets',
+              renderBullet: (index, className) => {
+                return `<span class="${className}">${index + 1}</span>`; // Add numbers inside bullets
+              }
+            }}
             className="mySwiper whyCloudSwiper"
+            
             breakpoints={{
               320: {
                 slidesPerView: 1,

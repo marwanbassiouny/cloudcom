@@ -47,12 +47,13 @@ function App() {
     };
 
     setDynamicScreenPadding();
-
+    console.log(window.innerWidth)
     window.addEventListener('resize', setDynamicScreenPadding);
 
     return () => {
       window.removeEventListener('resize', setDynamicScreenPadding);
     };
+    
   }, []); 
 
   const location = useLocation();

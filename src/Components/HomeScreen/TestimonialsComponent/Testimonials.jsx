@@ -84,10 +84,10 @@ const TestimonialCarousel = () => {
                 slidesPerView: 1,
               },
               820: {
-                slidesPerView: 2,
+                slidesPerView: 3,
               },
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
         }}
       >
