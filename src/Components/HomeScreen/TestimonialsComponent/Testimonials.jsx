@@ -33,22 +33,22 @@ const testimonials = [
     testimonial:
       "CloudCom’s SMS and OTP verification solutions have been critical for us at Elfar Market. They’ve enabled us to ensure secure and reliable customer interactions, whether for account verification or promotional messaging. The simplicity and effectiveness of their services have made our processes more efficient, and we couldn’t be happier with the results.",
   },
-  // {
-  //   image: img, // Replace with actual image URL
-  //   name: "Mustafa Gamal, Marketing Director at Fatura",
-  //   job: "CPaaS – Customer Data Management – WhatsApp Channel",
-  //   rating: 4.5,
-  //   testimonial:
-  //     "cloudcom’s CPaaS platform has transformed the way we manage our customer data at Fatura. The seamless integration with the WhatsApp channel has allowed us to engage our customers in real time, making our communication more personalized and efficient. Their support team is outstanding, and we’ve seen significant improvements in our customer relationships thanks to cloudcom’s solutions.",
-  // },
-  // {
-  //   image: img,
-  //   name: "Mohamed Seif, Commercial Director at Redbull Mobile KSA",
-  //   job: "CPaaS – Customer Value Management – SMS Channel",
-  //   rating: 4.5,
-  //   testimonial:
-  //     "Working with CloudCom has been a game-changer for us at Redbull Mobile KSA. Their SMS channel has helped us take our customer value management to the next level. The ability to reach our customers directly and measure engagement has significantly boosted our retention rates. We’re extremely satisfied with the results and the ongoing support from the CloudCom team",
-  // },
+  {
+    image: img, // Replace with actual image URL
+    name: "Mustafa Gamal, Marketing Director at Fatura",
+    job: "CPaaS – Customer Data Management – WhatsApp Channel",
+    rating: 4.5,
+    testimonial:
+      "cloudcom’s CPaaS platform has transformed the way we manage our customer data at Fatura. The seamless integration with the WhatsApp channel has allowed us to engage our customers in real time, making our communication more personalized and efficient. Their support team is outstanding, and we’ve seen significant improvements in our customer relationships thanks to cloudcom’s solutions.",
+  },
+  {
+    image: img,
+    name: "Mohamed Seif, Commercial Director at Redbull Mobile KSA",
+    job: "CPaaS – Customer Value Management – SMS Channel",
+    rating: 4.5,
+    testimonial:
+      "Working with CloudCom has been a game-changer for us at Redbull Mobile KSA. Their SMS channel has helped us take our customer value management to the next level. The ability to reach our customers directly and measure engagement has significantly boosted our retention rates. We’re extremely satisfied with the results and the ongoing support from the CloudCom team",
+  },
 ];
 
 const TestimonialCarousel = () => {
@@ -66,14 +66,29 @@ const TestimonialCarousel = () => {
         modules={[Pagination]}
         slidesPerView={1}
         spaceBetween={30}
+        autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+        }}
+        // modules={[Autoplay,pagination]}
+        className="mySwiper"
         pagination={{ clickable: true }}
         breakpoints={{
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
+          320: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 1,
+              },
+              820: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
         }}
       >
         {testimonials.map((testimonial, index) => (
