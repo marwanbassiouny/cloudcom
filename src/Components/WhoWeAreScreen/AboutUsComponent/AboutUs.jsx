@@ -18,7 +18,9 @@ const AboutUs = () => {
   return (
     <div className="about-us-container page_padding_level_1">
       <h2>About cloudcom</h2>
-      <h1>Customer experience <br /> that connects</h1>
+      <div className='aboutus-title'>
+         <h1 className='aboutus-title-value'>Customer experience that connects</h1>
+      </div>
       <p className="about-us-description">
         cloudcom is a leading CPaaS (Communication Platform as a Service) provider, empowering businesses across the MENA, Gulf, LATAM regions & beyond, to connect with their customers through seamless, personalized communication.
       </p>

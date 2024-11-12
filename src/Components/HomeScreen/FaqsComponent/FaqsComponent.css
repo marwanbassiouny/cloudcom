@@ -1,7 +1,7 @@
 /* Main FAQ Section Styles */
 .faq-section {
   background-image: url('../../../Assets/Images/HomeScreen/FaqsComponent/Frame\ 1000005195.png'); 
-  background-size: contain; 
+  background-size: cover; 
   background-position:center; 
   background-repeat:no-repeat;
   color: white;
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: Row;
     gap: 15px;
-    margin-top: 35px;
+    margin-top: 15px;
   }
   
   .faq-item {

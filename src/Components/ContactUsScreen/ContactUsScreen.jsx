@@ -6,7 +6,7 @@ const ContactUsScreen = () => {
         <div className="contactus-section page_padding_level_1">
             <div className="contactus-left">
                 <div className="contactus-info">
-                    <h2 className="contactus-title">Get In Touch</h2>
+                    <div className='contactus-title-container'><h2 className="contactus-title">Get In Touch</h2></div>
                     <div className='contactus-subtitle-container'>
                         <h3 className ="contactus-subtitle">Have Any Question?</h3>
                         <h3 className ="contactus-subtitle">Don't Hesitate To Send Us!</h3>

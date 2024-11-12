@@ -42,6 +42,10 @@
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
 }
 
+.contactus-title-container{
+    text-align: left;
+}
+
 .contactus-title {
     color: #0000FF;
     font-size: 1.5em;
@@ -123,6 +127,14 @@
         width: 100%;
     }
 
+    .contactus-info {
+        align-items: center;
+    }
+
+    .contactus-info h3{
+        font-size: 25px;
+        text-align: center;
+    }
     .input-group {
         flex-direction: column;
     }
