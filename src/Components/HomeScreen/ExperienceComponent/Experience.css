@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   gap: 25px;
+  min-width: 50%;
 }
 
 .number-image {

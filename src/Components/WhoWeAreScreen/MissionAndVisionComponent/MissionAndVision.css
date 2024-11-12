@@ -22,8 +22,8 @@
   width: 100%; /* Ensures the text section doesn’t take up too much width */
 }
 
-.text-section .m_v_p_text {
-  font-size: 25px;
+.m_v_p_text {
+  font-size: 20px;
 }
 
 .firstCard {
@@ -65,7 +65,6 @@
 }
 
 .firstCard p {
-  font-size: 1rem;
   color: #333;
   line-height: 1.6;
 }
@@ -113,7 +112,7 @@
 
   .card p,
   .firstCard p {
-    font-size: 0.95rem;
+    font-size: 20px;
   }
 
   .main-image {

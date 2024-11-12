@@ -36,7 +36,7 @@
   }
 
   .faq-question-text{
-    color : black
+    color : white
   }
   
   /* FAQ Item Styles */
@@ -76,7 +76,7 @@
   }
   
   .toggle-icon {
-    font-size: 8px;
+    font-size: 12px;
     color: #ccc;
   }
   
