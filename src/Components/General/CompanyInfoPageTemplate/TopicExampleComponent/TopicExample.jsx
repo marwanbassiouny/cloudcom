@@ -7,11 +7,11 @@ const TopicExample = ({ examples }) => {
   let counter = 0;
 
   return (
-    <div className="topic-example-container page_padding_level_2">
+    <div className="topic-example-container page_padding_level_1">
       {examples.map((example) => {
         ++counter;
         return (
-          <div key={counter} className="example-item">
+          <div key={counter} className={`example-item ${!isOddNumber(counter) ? 'example-item-reverse' : ''}`}>
             {isOddNumber(counter) ? (
               <>
                 <div className="example-icon">

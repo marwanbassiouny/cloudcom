@@ -26,14 +26,14 @@ const AboutUs = () => {
         cloudcom is a leading CPaaS (Communication Platform as a Service) provider, empowering businesses across the MENA, Gulf, LATAM regions & beyond, to connect with their customers through seamless, personalized communication.
       </p>
       
-      <div className="about-us-content">
+      <div className="about-us-content ">
         <div className="row">
           <div className="text-section">
             <p>
               Our platform integrates multi-channel tools—including SMS, WhatsApp, Email, Push notifications, IVR, and social media channels like Facebook Messenger, Instagram—along with AI-driven insights, segmentation and profiling, and real-time reporting.
             </p>
           </div>
-          <div className="icon-section">
+          <div className="icon-section icon-section-1">
             {/* <img src={icon1} alt="Illustration 1" className="illustration" /> */}
             <img 
               src={icon1} 
@@ -51,7 +51,7 @@ const AboutUs = () => {
         </div>
 
         <div className="row reverse">
-          <div className="icon-section">
+          <div className="icon-section .icon-section-2">
             <img src={icon2} alt="Illustration 2" className="illustration" />
           </div>
           <div className="text-section">

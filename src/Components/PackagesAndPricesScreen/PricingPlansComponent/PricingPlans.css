@@ -6,7 +6,8 @@
 .background-section {
   background-image: url('../../../Assets/Icons/PackagesAndPricesScreen/PricingPlansComponent/background.svg');
   background-size: cover;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: white;
   height: 65vh;
   display: flex;
@@ -18,6 +19,7 @@
 .pricing-text {
   width: 25%;
   margin-left: 2%;
+  margin-top: 8%;
 }
 
 .pricing-text h3 {
@@ -50,6 +52,7 @@
   /* z-index: 3; */
   height: auto;
   background-color: white;
+  box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   transition: all 0.3s ease;
 }
@@ -179,6 +182,26 @@
 }
 
 /* Responsive Styling */
+
+@media (min-width: 1920px) {
+  .empty-white-section {
+    height: 45vh;
+  }
+
+  .pricing-cards {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1440px){
+  .empty-white-section {
+    height: 35vh;
+  }
+
+  /* .pricing-cards {
+    height: 700px;
+  } */
+}
 
 /* Tablet screens */
 @media (max-width: 1024px) {

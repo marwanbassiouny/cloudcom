@@ -6,11 +6,13 @@ import downloadIcon from '../../../Assets/Icons/ReportsScreen/DownloadReportsCom
 
 const DownloadReports = () => {
     return (
-        <div className="reports-container">
+        <div className="reports-container page_padding_level_1">
             {[1, 2].map((_, index) => (
                 <div key={index} className="report-card">
                     <div className="report-content">
-                        <img src={pdfIcon} alt="PDF Icon" className="icon" />
+                        <div className='report-icon-container'>
+                            <img src={pdfIcon} alt="PDF Icon" className="icon" />
+                        </div>
                         <p className="report-text">Explore in-depth reports on customer engagement trends and CPaaS innovations.</p>
                     </div>
                     <button className="download-btn">

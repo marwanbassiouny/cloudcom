@@ -37,7 +37,7 @@ const PrimaryNavbar = () => {
   }, []);
 
   return (
-    <nav className="primary-navbar page_padding_level_0">
+    <nav className="primary-navbar page_padding_level_1">
       <div className="navbar-left">
         <a href="/">
           <img src={logo} alt="Cloudcom Logo" className="Cloudcom_Logo" />

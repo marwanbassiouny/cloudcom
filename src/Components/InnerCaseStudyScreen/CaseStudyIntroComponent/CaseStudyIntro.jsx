@@ -1,6 +1,6 @@
 import React from 'react';
 import './CaseStudyIntro.css';
-import logo from '../../../Assets/Icons/InnerCaseStudyScreen/CaseStudyIntro/gourmetIcon.svg';
+import logo from '../../../Assets/Icons/InnerCaseStudyScreen/CaseStudyIntro/gourmeticon.png';
 
 const CaseStudyIntro = () => {
   return (

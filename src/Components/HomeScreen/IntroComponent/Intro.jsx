@@ -4,6 +4,7 @@ import './Intro.css'
 import CloudComButton from '../../General/CloudComButton/CloudComButton';
 import AnimatedIntroImage from './AnimatedIntroImageComponent/AnimatedIntroImage';
 import IntroImage from './IntroImageComponent/IntroImage';
+import HeroSectionSVG from './HeroSectionSVGComponent/HeroSectionSVG';
 
 
 const textArray = [
@@ -39,6 +40,7 @@ const Intro = () => {
         </div>
        {/* <AnimatedIntroImage /> */}
        <IntroImage />
+       {/* <HeroSectionSVG /> */}
       </div>
     );
   };

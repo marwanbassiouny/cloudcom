@@ -1,0 +1,9 @@
+.AssociateMemberBar-cotainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5FF; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+  }

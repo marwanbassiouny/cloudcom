@@ -1,12 +1,12 @@
 import React from 'react';
 import PricingPlans from './PricingPlansComponent/PricingPlans';
-import PlansPromotion from './PlansPromotionComponent/PlansPromotion';
+import PackageAndPricingV2 from './PricingPlansV2Component/PricingPlansV2Component';
 
 const PackagesAndPricesScreen = () => {
   return (
     <div>
         <PricingPlans />
-        <PlansPromotion />
+        <PackageAndPricingV2 />
     </div>
   );
 };

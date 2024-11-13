@@ -1,13 +1,14 @@
 .reports-container {
     display: flex;
     gap: 1.5rem;
-    justify-content: center;
-    padding: 1.5rem;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-top: 1.5rem;
     flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
   }
   
   .report-card {
-    width: 100%;
+    width: 45%;
     max-width: 400px; /* Restrict maximum width for larger screens */
     height: auto;
     background-color: white;
@@ -22,10 +23,14 @@
   
   .report-content {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 0.5rem;
     margin-bottom: 1rem;
     text-align: center;
+  }
+
+  .report-icon-container{
+    margin-right: 2%;
   }
   
   .icon {
@@ -37,6 +42,7 @@
     font-size: 14px;
     color: #333;
     text-align: left;
+    font-weight: bold;
   }
   
   .download-btn {
@@ -74,8 +80,31 @@
     height: 18px;
   }
   
-  /* Responsive Styling */
-  
+  @media (min-width: 1920px) {
+    .report-card {
+      width: 100%;
+      max-width: 48%; 
+  }
+  .report-text {
+    font-size: 25px;
+  }
+
+  .icon{
+    width: 50px;
+  }
+}
+
+  @media (min-width: 1440px) and (max-width : 1920) {
+    .report-card {
+      width: 100%;
+      max-width: 48%; 
+  }
+
+  .report-text {
+    font-size: 20px;
+  }
+}
+
   /* Tablet screens */
   @media (max-width: 1024px) {
     .reports-container {

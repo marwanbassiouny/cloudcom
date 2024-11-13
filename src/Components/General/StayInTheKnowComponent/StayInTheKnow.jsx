@@ -4,7 +4,7 @@ import ArrowIcon from '../../../Assets/Icons/General/StayInTheKnowComponent/arro
 
 const StayInTheKnow = () => {
   return (
-    <div className="outer-container">
+    <div className="outer-container page_padding_level_1">
       <div className="blue-section">
         <h2>Stay in the know</h2>
         <p>

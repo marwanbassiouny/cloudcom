@@ -27,7 +27,7 @@
     height: 80px;
     border-radius: 50%;
     position: absolute;
-    top: -10%; /* Adjust this to control vertical positioning */
+    top: -8%; /* Adjust this to control vertical positioning */
     left: 15px; /* Adjust this to control horizontal positioning */
     border: 3px solid #f9f9f9;
     background-color: #fff;

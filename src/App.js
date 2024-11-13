@@ -4,6 +4,7 @@ import CustomerDataManagementScreen from './Components/CustomerDataManagementScr
 import React, { useEffect , Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import LoadingScreen from './Components/LoadingScreen/LoadingScreen';
+import AssociateMemberBar from './Components/General/AssociateMemberBarComponent/AssociateMemberBar';
 
 const HomeScreen = React.lazy(() => import('./Components/HomeScreen/HomeScreen'));
 const SubNavbar = React.lazy(() => import('./Components/General/SubNavbarComponent/SubNavbar'));
@@ -65,6 +66,7 @@ function App() {
     <>
       <Suspense fallback={<LoadingScreen />}>
 
+        {!mainNavbar && <AssociateMemberBar />}
         {!mainNavbar && <SubNavbar />}
         {!mainNavbar && <PrimaryNavbar />}
         <Routes>

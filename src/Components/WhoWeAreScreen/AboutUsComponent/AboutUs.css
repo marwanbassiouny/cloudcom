@@ -1,6 +1,7 @@
 .about-us-container {
   text-align: center;
-  padding: 2% 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: #F3F0F0;
 }
 
@@ -33,7 +34,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 2%;
+  /* padding: 2%; */
 }
 
 .text-section {
@@ -43,15 +44,22 @@
 }
 
 .text-section p {
-  font-size: 20px;
+  font-size: 24px;
   color: #000000;
 }
 
 .icon-section {
   flex: 1;
   display: flex;
-  justify-content: center;
   position: relative;
+}
+
+.icon-section-1 {
+  justify-content: right;
+}
+
+.icon-section-2 {
+  justify-content: right;
 }
 
 .aboutus-title{

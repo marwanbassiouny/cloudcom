@@ -10,14 +10,14 @@
   z-index: 1;
 }
 
-.navbar-left {
+/* .navbar-left {
   margin-left: 5%;
-}
+} */
 
 .navbar-right {
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .navbar-left .Cloudcom_Logo {
@@ -96,13 +96,13 @@
 /* Responsive Styles */
 @media (min-width: 1920px){
   .navbar-links li {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) and (max-width: 1900px){
   .navbar-links li {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 

@@ -5,8 +5,8 @@ import CloudComButton from '../../General/CloudComButton/CloudComButton'
 
 const PricingPlans = () => {
   return (
-    <div className="pricing-plans-container">
-      <div className="background-section">
+    <div className="pricing-plans-container ">
+      <div className="background-section page_padding_level_1">
         <div className="pricing-text">
           <h3>Packages & Pricing</h3>
           <h1>cloudcom offers </h1>
