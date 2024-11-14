@@ -34,6 +34,10 @@ const Intro = () => {
             <p className="intro-sub-title">Learn. Segment. Connect. Engage. Analyze.</p>
             <p className="intro-sub-title">Support. Your customer.</p>
           </div>
+          <div className='intro-subtitle-section_mobile'>
+            <p className="intro-sub-title">Learn. Segment. Connect. Engage.</p>
+            <p className="intro-sub-title"> Analyze. Support. Your customer.</p>
+          </div>
           <div className="demo-btn"> 
             <CloudComButton text="Book a Demo" link="https://portal.cloudcom.io/login" glow='glow' width='183' height='40' />
           </div>

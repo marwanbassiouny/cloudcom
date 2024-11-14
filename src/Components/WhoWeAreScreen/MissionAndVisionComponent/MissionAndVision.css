@@ -22,10 +22,6 @@
   width: 100%; /* Ensures the text section doesn’t take up too much width */
 }
 
-.m_v_p_text {
-  font-size: 20px;
-}
-
 .firstCard {
   background-color: white;
   border-radius: 10px;

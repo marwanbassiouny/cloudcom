@@ -1,7 +1,7 @@
 import React from "react";
 import ClientTestimonialCard from "../ClientTestimonialCardComponent/TestimonialCard";
 import "./ClientTestimonials.css";
-import img from "../../../Assets/Images/HomeScreen/TestimonialsComponent/Intersect.png"
+import img from "../../../Assets/Images/HomeScreen/TestimonialsComponent/Intersect.svg"
 import SuccessStoriesBanner from "../../General/SuccessStoriesBanner/SuccessStoriesBanner "
 
 const ClientTestimonialsScreen = () => {

@@ -42,13 +42,13 @@ const CloudcomHelp = () => {
 
       <div className="cloudcom-help__content_part2 page_padding_level_1">
         <div className="cloudcom-help__values-section_2">
-          <p className='section_2-text'>
+          <p className='section_2-text page_context_font_size_0'>
           Led by visionaries and communication experts, cloudcom’s leadership is committed to delivering impactful, innovative solutions that shape the future of business communication. With decades of experience in technology and customer engagement, our team works tirelessly to ensure that cloudcom remains at the forefront of CPaaS innovation.
           </p>
         </div>
 
         <div className="cloudcom-help__image-section_2">
-          <img src={imageRight} alt="Cloudcom help visual" className="cloudcom-help__image" />
+          <img src={imageRight} alt="Cloudcom help visual" className="cloudcom-help__image_2" />
         </div>
       </div>
     </div>

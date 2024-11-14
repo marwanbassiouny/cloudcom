@@ -32,6 +32,10 @@
   border-radius: 10px;
 }
 
+.story-image {
+  height: 100%;
+}
+
 .story-image img {
   width: 100%;
   height: auto;

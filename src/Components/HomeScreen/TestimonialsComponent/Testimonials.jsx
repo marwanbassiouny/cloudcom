@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./TestimonialCarousel.css";
-import img from "../../../Assets/Images/HomeScreen/TestimonialsComponent/Intersect.png"
+import img from "../../../Assets/Images/HomeScreen/TestimonialsComponent/Intersect.svg"
 import {Pagination } from "swiper/modules";
 
 // Sample testimonials data

@@ -19,7 +19,6 @@
 }
 
 .topic-data-page-text p {
-  font-size: 1rem;
   color: #666;
 }
 
@@ -42,10 +41,6 @@
     font-size: 1.6rem;
   }
 
-  .topic-data-page-text p {
-    font-size: 0.9rem;
-  }
-
   .topic-data-image img {
     width: 300px;
   }
@@ -54,7 +49,7 @@
 /* Mobile screens */
 @media (max-width: 768px) {
   .topic-data-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     padding: 20px;
   }
@@ -67,10 +62,6 @@
 
   .topic-data-page-text h2 {
     font-size: 1.4rem;
-  }
-
-  .topic-data-page-text p {
-    font-size: 0.9rem;
   }
 
   .topic-data-image img {
@@ -86,10 +77,6 @@
   }
 
   .topic-data-page-text h2 {
-    font-size: 1.5rem;
-  }
-
-  .topic-data-page-text p {
     font-size: 1.5rem;
   }
 

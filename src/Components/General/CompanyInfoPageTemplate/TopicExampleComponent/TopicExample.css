@@ -29,7 +29,6 @@
 
 .examplePage-text p,
 .example-text p {
-  font-size: 2rem;
   color: #666;
   margin: 5px 0 0;
   line-height: 1.5;
@@ -49,15 +48,6 @@
 
   .examplePage-text{
     text-align: center;
-  }
-
-  .example-text p {
-    font-size: 1.5rem;
-  }
-
-  
-  .examplePage-text p {
-    font-size: 1.5rem;
   }
 
   .example-item-reverse {
@@ -99,17 +89,9 @@
   
 
   .example-icon img {
-    width: 300px; /* Full icon size for desktop */
+    width: 400px; /* Full icon size for desktop */
   }
 }
 
-/* Larger desktops */
-@media (min-width: 1440px) {
-  /* .topic-example-container {
-    padding: 100px;
-  } */
 
-  .example-icon img {
-    width: 350px;
-  }
-}
+

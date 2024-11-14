@@ -27,11 +27,16 @@
 }
 
 .client_icon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
+.client_logo_container{
+  width: 200px;
+  height: 80px;
+  padding-right: 40px;
+}
 
 .clients-section-line {
   width: 80%; 

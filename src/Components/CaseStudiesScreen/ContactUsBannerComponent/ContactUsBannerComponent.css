@@ -94,7 +94,7 @@
 
   .contactusbanner-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .banner-button {

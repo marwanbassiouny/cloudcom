@@ -14,38 +14,38 @@ const Clients = () => {
       <p className="clients-section-title">130K+ Client trust in cloudcom</p>
       <div class="clients-section-line"></div>
       <div className="scrolling-img-section">
-        <div className="clients-logos scrolling-img">
-          <img src={client1Icon} alt="client1Icon" className="client_icon" />
-          <img src={client2Icon} alt="client2Icon" className="client_icon" />
-          <img src={client3Icon} alt="client3Icon" className="client_icon" />
-          <img src={client4Icon} alt="client4Icon" className="client_icon" />
-          <img src={client5Icon} alt="client5Icon" className="client_icon" />
-          <img src={client6Icon} alt="client6Icon" className="client_icon" />
-          <img src={client7Icon} alt="client7Icon" className="client_icon" />
+          <div className="clients-logos scrolling-img">
+          <div className='client_logo_container'><img src={client1Icon} alt="client1Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client2Icon} alt="client2Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client3Icon} alt="client3Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client4Icon} alt="client4Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client5Icon} alt="client5Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client6Icon} alt="client6Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client7Icon} alt="client7Icon" className="client_icon" /></div>
           {/* Duplicated icons for smooth infinite scroll */}
-          <img src={client1Icon} alt="client1Icon" className="client_icon" />
-          <img src={client2Icon} alt="client2Icon" className="client_icon" />
-          <img src={client3Icon} alt="client3Icon" className="client_icon" />
-          <img src={client4Icon} alt="client4Icon" className="client_icon" />
-          <img src={client5Icon} alt="client5Icon" className="client_icon" />
-          <img src={client6Icon} alt="client6Icon" className="client_icon" />
-          <img src={client7Icon} alt="client7Icon" className="client_icon" />
+          <div className='client_logo_container'><img src={client1Icon} alt="client1Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client2Icon} alt="client2Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client3Icon} alt="client3Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client4Icon} alt="client4Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client5Icon} alt="client5Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client6Icon} alt="client6Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client7Icon} alt="client7Icon" className="client_icon" /></div>
            {/* Duplicated icons for smooth infinite scroll */}
-           <img src={client1Icon} alt="client1Icon" className="client_icon" />
-          <img src={client2Icon} alt="client2Icon" className="client_icon" />
-          <img src={client3Icon} alt="client3Icon" className="client_icon" />
-          <img src={client4Icon} alt="client4Icon" className="client_icon" />
-          <img src={client5Icon} alt="client5Icon" className="client_icon" />
-          <img src={client6Icon} alt="client6Icon" className="client_icon" />
-          <img src={client7Icon} alt="client7Icon" className="client_icon" />
+          <div className='client_logo_container'><img src={client1Icon} alt="client1Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client2Icon} alt="client2Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client3Icon} alt="client3Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client4Icon} alt="client4Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client5Icon} alt="client5Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client6Icon} alt="client6Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client7Icon} alt="client7Icon" className="client_icon" /></div>
            {/* Duplicated icons for smooth infinite scroll */}
-           <img src={client1Icon} alt="client1Icon" className="client_icon" />
-          <img src={client2Icon} alt="client2Icon" className="client_icon" />
-          <img src={client3Icon} alt="client3Icon" className="client_icon" />
-          <img src={client4Icon} alt="client4Icon" className="client_icon" />
-          <img src={client5Icon} alt="client5Icon" className="client_icon" />
-          <img src={client6Icon} alt="client6Icon" className="client_icon" />
-          <img src={client7Icon} alt="client7Icon" className="client_icon" />
+           <div className='client_logo_container'><img src={client1Icon} alt="client1Icon" className="client_icon" /></div>
+           <div className='client_logo_container'><img src={client2Icon} alt="client2Icon" className="client_icon" /></div>
+           <div className='client_logo_container'><img src={client3Icon} alt="client3Icon" className="client_icon" /></div>
+           <div className='client_logo_container'><img src={client4Icon} alt="client4Icon" className="client_icon" /></div>
+           <div className='client_logo_container'><img src={client5Icon} alt="client5Icon" className="client_icon" /></div>
+           <div className='client_logo_container'><img src={client6Icon} alt="client6Icon" className="client_icon" /></div>
+           <div className='client_logo_container'><img src={client7Icon} alt="client7Icon" className="client_icon" /></div>
         </div>
       </div>
     </div>

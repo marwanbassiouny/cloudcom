@@ -125,7 +125,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-
+        <a href="#" className="get-in-touch-btn-mobile">{textContent.getInTouchButton} ↗</a>
          
       </div>
     );

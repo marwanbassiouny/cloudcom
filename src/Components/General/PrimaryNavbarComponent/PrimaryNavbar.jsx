@@ -120,7 +120,7 @@ const PrimaryNavbar = () => {
 
       {!isMenuOpen && (
         <div className="navbar-right">
-          <CloudComButton text="Signup" link="/register" width="140" height="40" />
+          <CloudComButton text="Sign Up" link="/register" width="140" height="40" />
         </div>
       )}
 

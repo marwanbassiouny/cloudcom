@@ -6,7 +6,7 @@ const TopicData = ({ title, description, image }) => {
     <div className="topic-data-container page_padding_level_1">
       <div className="topic-data-page-text">
         <h2>{title}</h2>
-        <p>{description}</p>
+        <p className='page_context_font_size_0'>{description}</p>
       </div>
       <div className="topic-data-image">
         <img src={image} alt={title} />

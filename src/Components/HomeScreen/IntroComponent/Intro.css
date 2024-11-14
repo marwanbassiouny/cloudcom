@@ -15,6 +15,10 @@
     margin-top: 2%;
   }
 
+  .intro-subtitle-section-mobile{
+    display: none;
+  }
+
   @keyframes slide-in-out {
     0% {
       opacity: 0;
@@ -95,6 +99,15 @@
       padding: 20px;
   }
 
+  .intro-subtitle-section {
+   display: none;
+  }
+
+  .intro-subtitle-section-mobile{
+    display: block;
+  }
+
+
   .content-section {
     width: 100%;
     margin-bottom: 20px;
@@ -110,6 +123,7 @@
 
   .demo-btn {
       padding: 8px 16px;
+      margin-top: 30px;
   }
 }
 

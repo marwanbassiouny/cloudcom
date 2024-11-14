@@ -74,35 +74,39 @@ const DataManagement = () => {
         </div>
       </div>
       <div className="data-management-scroll-container page_padding_level_1">
-        <Swiper
-          spaceBetween={30}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
-          effect="fade"
-          fadeEffect={{ crossFade: true }}
-          modules={[Autoplay, EffectFade, Navigation, Pagination]}
-          className="mySwiper"
-        >
-          {cards.map((card, index) => (
-            <SwiperSlide key={index}>
-              <>
-                <div className="bottom-section">
-                  <div className="data-left-section">
-                    <img src={card.icon} alt="" />
-                    <h2>{card.head}</h2>
-                    <p>{card.paragraph}</p>
-                    <a href="/customerDataManagement" className="data-explore-btn explore-btn-glow" target="_blank" rel="noopener noreferrer">Explore →</a>
+          <div className="bottom-section">
+            <Swiper
+              spaceBetween={30}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              effect="fade"
+              fadeEffect={{ crossFade: true }}
+              modules={[Autoplay, EffectFade, Navigation, Pagination]}
+              className="mySwiper"
+            >
+              {cards.map((card, index) => (
+                <SwiperSlide key={index}>
+                  <>
+                  <div className='bottom-section-container'>
+                    <div className="data-left-section">
+                      <div className='icon_container'>
+                        <img src={card.icon} alt="" className='dm_title_icon' />
+                        <h2>{card.head}</h2>
+                      </div>
+                      <p>{card.paragraph}</p>
+                      <a href="/customerDataManagement" className="data-explore-btn explore-btn-glow" target="_blank" rel="noopener noreferrer">Explore →</a>
+                    </div>
+                    <div className="middle-section">
+                      <img src={card.image} alt="Customer Data Management" className='dm_icon' />
+                    </div>
                   </div>
-                  <div className="middle-section">
-                    <img src={card.image} alt="Customer Data Management" />
-                  </div>
-                </div>
-              </>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+                  </>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
       </div>
     </div>
   );

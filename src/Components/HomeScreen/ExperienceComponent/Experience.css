@@ -52,6 +52,17 @@
   font-weight: bold;
 }
 
+.get-in-touch-btn-mobile{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0000FF;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: none;
+}
+
 .experience-right {
   display: flex;
   flex-wrap: wrap;
@@ -188,6 +199,12 @@
 
   .exp-stat-item p {
     font-size: 18px;
+  }
+  .get-in-touch-btn {
+    display: none;
+  }
+  .get-in-touch-btn-mobile {
+    display: block;
   }
 }
 

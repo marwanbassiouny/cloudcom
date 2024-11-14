@@ -19,14 +19,14 @@ const TopicExample = ({ examples }) => {
                 </div>
                 <div className="examplePage-text">
                   <h1>{example.title}</h1>
-                  <p>{example.description}</p>
+                  <p className='page_context_font_size_0'>{example.description}</p>
                 </div>
               </>
             ) : (
               <>
                 <div className="example-text">
                   <h1>{example.title}</h1>
-                  <p>{example.description}</p>
+                  <p className='page_context_font_size_0'>{example.description}</p>
                 </div>
                 <div className="example-icon">
                   <img src={example.icon} alt={example.title} />

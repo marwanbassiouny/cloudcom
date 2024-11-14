@@ -43,3 +43,13 @@ body {
   overflow: hidden; /* Hides overflowed content */
   text-overflow: ellipsis; /* Adds '...' to indicate overflow */
 }
+
+.page_context_font_size_0 {
+  font-size: 18px;
+}
+
+@media (min-width: 1920px) {
+  .page_context_font_size_0 {
+    font-size: 21px;
+  }
+}

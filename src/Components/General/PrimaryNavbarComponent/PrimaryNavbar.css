@@ -96,7 +96,11 @@
 /* Responsive Styles */
 @media (min-width: 1920px){
   .navbar-links li {
-    font-size: 22px;
+    font-size: 18px;
+  }
+
+  .navbar-links{
+    gap : 20px
   }
 }
 
