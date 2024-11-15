@@ -68,13 +68,13 @@ const WhyCloud = () => {
 
       <Swiper
             
-            slidesPerView={2.4} 
+            slidesPerView={2.1} 
             slidesPerGroup={1}
-            
+            // centeredSlides= {true}
             loop={true}
             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             autoplay={{
-              delay: 2500,
+              delay: 32500,
               disableOnInteraction: false,
             }}
             modules={[Autoplay,Pagination]}
@@ -95,10 +95,13 @@ const WhyCloud = () => {
                 slidesPerView: 1.2,
               },
               768: {
-                slidesPerView: 1.2,
+                slidesPerView: 1.7,
               },
               1024: {
-                slidesPerView: 2.4,
+                slidesPerView: 2.2,
+              },
+              1441: {
+                slidesPerView: 3.1,
               },
             }}
         >
