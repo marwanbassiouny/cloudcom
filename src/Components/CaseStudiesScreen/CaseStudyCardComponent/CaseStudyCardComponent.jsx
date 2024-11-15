@@ -17,13 +17,6 @@ const CaseStudyCard = ({ id, image, companyLogo, title, description, stats, butt
               <div className="case-study-stat">
                 <span className="stat-value">{stats[0].value}</span>
                 <span className="stat-label">
-                  {/* {id === 3
-                    ? (
-                      <>
-                        Increase in <br /> Pharmacy Orders
-                      </>
-                    )
-                    : stats[0].label} */}
                     {stats[0].label}
                 </span>
               </div>
