@@ -68,8 +68,9 @@ const WhyCloud = () => {
 
       <Swiper
             
-            slidesPerView={2} 
+            slidesPerView={2.4} 
             slidesPerGroup={1}
+            
             loop={true}
             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             autoplay={{
@@ -97,7 +98,7 @@ const WhyCloud = () => {
                 slidesPerView: 1.2,
               },
               1024: {
-                slidesPerView: 2.1,
+                slidesPerView: 2.4,
               },
             }}
         >

@@ -57,12 +57,14 @@
     opacity: 1;
     position: relative;
     transform: translateY(0);
-    width: 65%;
+    width: 70%;
+    margin-right:30px !important;
 }
 
 .whycloud-card.inactive {
     transform: translateY(45px);
-    width: 90%;
+    width: 95%;
+    margin-right:0px !important;
 }
 
 .whycloud-card.inactive .whycloud-card-image {
@@ -188,9 +190,20 @@
 
 /* Responsive Styles */
 
+@media (max-width:480px) {
+  .whyCloudSwiper{
+    padding:0
+  }
+  .why-cloudcom-section .swiper-pagination {
+    position: relative !important;       
+    padding-top:50px;      
+  }
+}
+
 @media (max-width:819px) {
   .whycloud-card {
       width: 98% ;
+      margin-right:0px !important;
   }
 
   .whycloud-card-image-wrapper {
