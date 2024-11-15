@@ -46,7 +46,7 @@
   justify-content: space-between;
   /* align-items: center; */
   padding: 0 40px;
-  margin-top: 4%;
+  margin-top: 5%;
 }
 
 .data-left-section {
@@ -116,8 +116,11 @@
 }
 
 @media (max-width: 768px) {
+  .data-management-scroll-container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .bottom-section {
-    margin-top: 5%;
     padding: 0px 0px;
   }
   .bottom-section-container {
@@ -147,9 +150,9 @@
     width: 40px;                 
     height: 40px;
   }
-  /* .middle-section img {
-    max-width: 90%; 
-  } */
+  .middle-section {
+    min-width: 100%; 
+  }
 }
 
 @media (max-width: 480px) {

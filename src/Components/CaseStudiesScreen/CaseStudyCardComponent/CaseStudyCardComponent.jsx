@@ -1,8 +1,7 @@
 import React from "react";
 import "../CaseStudyScreen.css";
 
-const CaseStudyCard = ({ image, companyLogo, title, description, stats, buttonLabel, link}) => {
-  
+const CaseStudyCard = ({ id, image, companyLogo, title, description, stats, buttonLabel, link }) => {
   return (
     <div className="case-study-card">
       <img src={image} alt={title} className="case-study-image" />
@@ -12,30 +11,38 @@ const CaseStudyCard = ({ image, companyLogo, title, description, stats, buttonLa
           <img src={companyLogo} alt={`${title} logo`} className="case-study-logo" />
         </div>
         <p className="case-study-card-description">{description}</p>
-          <div className="case-study-stats">
+        <div className="case-study-stats">
           {stats && stats.length > 0 && (
-              <>
-               <div className="case-study-stat">
+            <>
+              <div className="case-study-stat">
                 <span className="stat-value">{stats[0].value}</span>
-                <span className="stat-label">{stats[0].label}</span>
+                <span className="stat-label">
+                  {/* {id === 3
+                    ? (
+                      <>
+                        Increase in <br /> Pharmacy Orders
+                      </>
+                    )
+                    : stats[0].label} */}
+                    {stats[0].label}
+                </span>
               </div>
               {stats.length > 1 && (
                 <>
-                <div className="case-study-divider"></div>
-                <div className="case-study-stat">
-                  <span className="stat-value">{stats[1].value}</span>
-                  <span className="stat-label">{stats[1].label}</span>
-                </div>
+                  <div className="case-study-divider"></div>
+                  <div className="case-study-stat">
+                    <span className="stat-value">{stats[1].value}</span>
+                    <span className="stat-label">{stats[1].label}</span>
+                  </div>
                 </>
               )}
-              
-              </>
+            </>
           )}
-           
 
-           <a href={link} className="read-more-button">{buttonLabel}</a>
+          <a href={link} className="read-more-button">
+            {buttonLabel}
+          </a>
         </div>
-       
       </div>
     </div>
   );

@@ -44,7 +44,7 @@ export const caseStudiesData = [
       title: "Vezeeta",
       description: "How Vezeeta Achieved a 28% Increase in Pharmacy Orders Using cloudcom's Omnichannel Communication",
       stats: [
-        { value: "28%", label: "Increase in Pharmacy Orders" }
+        { value: "28%", label: `Increase in Pharmacy Orders` }
       ],
       buttonLabel: "Read more →",
       link: "/CaseStudy/visita"
