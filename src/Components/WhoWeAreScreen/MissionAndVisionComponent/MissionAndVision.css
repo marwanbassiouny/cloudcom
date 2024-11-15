@@ -73,6 +73,15 @@
   max-width: 50%; 
 }
 
+.image-section-mobile {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; 
+  display: none;
+}
+
 .main-image {
   width: 100%;
   max-width: 450px;
@@ -113,6 +122,14 @@
 
   .main-image {
     max-width: 100%; /* Image takes full width on smaller screens */
+  }
+
+  .image-section-mobile{
+    display: block;
+  }
+
+  .image-section{
+    display: none;
   }
 }
 

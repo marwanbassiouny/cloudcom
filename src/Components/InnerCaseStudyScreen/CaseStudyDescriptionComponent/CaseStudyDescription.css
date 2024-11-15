@@ -33,3 +33,20 @@
     color: #333;
   }
   
+  @media (max-width: 768px) {
+    .overview-section {
+      flex-direction: column-reverse;
+      padding: 1%;
+      align-items: flex-start;
+    }
+    .overview-text {
+      width: 100%;
+      color:#333;
+      text-align: center;
+    }
+    
+    .overview-image {
+      width: 100%;
+      text-align: center;
+    }
+  }

@@ -1,4 +1,4 @@
-import {React,useState,useEffect} from 'react';
+import {React} from 'react';
 import './MissionAndVision.css';
 import mainImage from '../../../Assets/Icons/WhoWeAreScreen/MissionAndVisionComponent/MissonAndVisionIcon.svg';
 
@@ -6,6 +6,9 @@ const MissionAndVision = () => {
 
   return (
     <div className="m_v_container page_padding_level_1">
+      <div className="image-section-mobile">
+          <img src={mainImage} alt="Purpose, Mission, Vision Illustration" className="main-image" />
+        </div>
       <div className="firstCard">
           <h3>Purpose</h3>
           <p className='page_context_font_size_0'>
