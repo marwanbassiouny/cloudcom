@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcloudcom=self.webpackChunkcloudcom||[]).push([[574],{574:(c,a,e)=>{e.d(a,{A:()=>s});e(2483);const s=e.p+"static/media/ChatManagementIcon.ca60076b01502c49c64e0b4a95b21607.svg"}}]);
-//# sourceMappingURL=574.176eb818.chunk.js.map

@@ -184,22 +184,25 @@
 /* Responsive Styling */
 
 @media (min-width: 1920px) {
+  .background-section {
+    height: 50vh;
+  }
   .empty-white-section {
     height: 45vh;
   }
 
   .pricing-cards {
-    height: 700px;
+    height: 550px;
   }
 }
 
 @media (max-width: 1440px){
   .empty-white-section {
-    height: 35vh;
+    height: 40vh;
   }
 
   /* .pricing-cards {
-    height: 700px;
+    height: 570px;
   } */
 }
 
@@ -283,6 +286,7 @@
 @media (max-width: 480px) {
   .background-section {
     height: 50vh;
+    align-items: center;
   }
 
   .empty-white-section{
