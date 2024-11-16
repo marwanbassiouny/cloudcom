@@ -55,7 +55,7 @@ const About = () => {
               <span className="close" onClick={closeModal}>
                 &times;
               </span>
-              <video controls>
+              <video controls autoPlay>
                 <source src={aboutUsVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

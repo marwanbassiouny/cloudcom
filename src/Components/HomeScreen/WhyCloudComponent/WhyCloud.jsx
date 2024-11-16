@@ -65,7 +65,7 @@ const WhyCloud = () => {
         An all-in-one platform for a fully customized, omnichannel experience, offering seamless integration.
       </p>
       {/* <div class="line"></div> */}
-
+      <div class="clients-section-line"></div>
       <Swiper
             
             slidesPerView={2.1} 

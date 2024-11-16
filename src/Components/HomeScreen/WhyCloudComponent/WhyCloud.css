@@ -9,6 +9,7 @@
     font-size: 24px;
     color: #0000FF;
     margin-bottom: 10px;
+    margin-top: 2%;
   }
   
   .why-cloudcom-section-subtitle {
@@ -62,7 +63,10 @@
  .whyCloudSwiper {
     width: 100%;
     margin: auto;
-    padding: 60px 0;
+    padding-top: 20px;
+    padding-right: 0p;
+    padding-left: 0px;
+    padding-bottom: 60px;
 }
 
 .whycloud-card {
@@ -77,8 +81,8 @@
     opacity: 1;
     position: relative;
     transform: translateY(0);
-    width: calc(90% - 25px);
-    margin-right:30px !important;
+    width: calc(98% - 25px);
+    /* margin-right:30px !important; */
 }
 
 .whycloud-card.inactive {
@@ -261,11 +265,23 @@
 
 @media (min-width: 1024px) and (max-width: 1440px) {
   .whycloud-card {
-      width: 90%;
+    width: calc(98% - 25px);
   }
   .why-cloudcom-section .swiper-pagination {     
     top: 25% !important;   
     left: 30% !important;                         
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .whycloud-card-title {
+      font-size: 18px;
+  }
+
+  .whycloud-card-details{
+    font-size: 16px;
   }
   
 }

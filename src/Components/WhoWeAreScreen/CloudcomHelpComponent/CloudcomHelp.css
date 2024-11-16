@@ -40,12 +40,23 @@
 .cloudcom-help__image-section_2,
 .cloudcom-help__values-section_2 {
   width: 50%;
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   color: #6F6F6F;
+}
+
+
+.cloudcom-help__image-section_2{
+  display: flex;
+  justify-content: flex-end;
+}
+.cloudcom-help__values-section_2{
+  padding-right: 5%;
 }
 
 .cloudcom-help__image {
   width: 100%;
+  padding-right: 5%;
 }
 
 .cloudcom-help__image_2 {
@@ -116,9 +127,21 @@
     padding: 1rem;
   }
 
+  .cloudcom-help__values-section_2{
+    text-align: center;
+  }
+
+  .cloudcom-help__image {
+    padding-right: 0;
+  }
+
+  .cloudcom-help__image-section_2{
+    justify-content: center;
+  }
+
   /* Adjust the header text size on smaller screens */
   .cloudcom-help__header h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   /* Adjust card padding for smaller screens */

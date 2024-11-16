@@ -12,7 +12,7 @@ const SuccessStoriesBanner = () => {
             <p className="banner-description">
               See how our customers have transformed their communication strategies with cloudcom.
             </p>
-            <a style={{textDecoration:"none"}} href="/casestudies" target="_blank"><button className="banner-button">Case Studies →</button></a>
+            <a style={{textDecoration:"none"}} href="/casestudies" target="_blank"><button className="banner-button">Case Studies ⟶</button></a>
           </div>
         </div>
         <div className="pagination-dots">
