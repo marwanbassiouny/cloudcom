@@ -154,3 +154,11 @@
     height: 400px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .testimonial-card-home {
+    height: 550px;
+    margin-top: 10%;
+  }
+}

@@ -282,7 +282,7 @@
 /* Small mobile screens */
 @media (max-width: 480px) {
   .background-section {
-    height: 40vh;
+    height: 50vh;
   }
 
   .empty-white-section{

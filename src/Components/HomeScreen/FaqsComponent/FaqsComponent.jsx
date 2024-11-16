@@ -17,11 +17,11 @@ const FAQSection = () => {
       <div className="faq-header">
         <h2>F.A.Q s</h2>
         <h1>Do You Have Questions?</h1>
-        <p>
+        {/* <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
           volutpat. Ut wisi.
-        </p>
+        </p> */}
       </div>
       <div className="faq-list">
         <FAQItem

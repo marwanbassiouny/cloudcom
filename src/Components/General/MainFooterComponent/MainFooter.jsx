@@ -35,7 +35,7 @@ const MainFooter = () => {
         <img src={cloudVectorRight} alt="Cloud Vector Right" className="cloud-vector-right" /> */}
 
         <div className="footer-section contact-section">
-          <p>Get in touch</p>
+          <h4>Get in touch</h4>
           <p><img style={{marginRight:"8px",width:"20px"}} src={location} alt="cloudcom logo"/>OSD01-017, DLC-BC-A3- Dubai South</p>
           <p><img style={{marginRight:"8px",width:"20px"}} src={phone} alt="cloudcom logo"/>+971 52 729 5941</p>
           <p><img style={{marginRight:"8px",width:"20px"}} src={email} alt="cloudcom logo"/>{textContent.email}</p>

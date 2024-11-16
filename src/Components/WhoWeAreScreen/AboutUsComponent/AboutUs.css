@@ -106,10 +106,10 @@
     font-size: 2rem;
   }
   
-  .about-us-description {
+  /* .about-us-description {
     font-size: 1rem;
     max-width: 90%;
-  }
+  } */
   
   .row {
     gap: 15px;
@@ -159,7 +159,7 @@
   }
   
   .text-section p {
-    font-size: 1rem;
+    font-size: 18px;
   }
   
   .illustration {
@@ -176,13 +176,13 @@
   }
   
   .about-us-description {
-    font-size: 0.9rem;
+    font-size: 18px;
     padding: 0 10px;
   }
 
-  .text-section p {
+  /* .text-section p {
     font-size: 0.9rem;
-  }
+  } */
   
   .illustration {
     width: 90%;

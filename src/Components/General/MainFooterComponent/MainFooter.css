@@ -147,6 +147,9 @@ form {
 }
 
 @media (max-width: 768px) {
+  .contact-section p {
+    font-size: 14px;
+  }
   .footer-content {
     flex-direction: row;
     align-items: flex-start;
@@ -163,7 +166,7 @@ form {
   }
 
   .footer-section {
-    width:43%;
+    width:80%;
   }
   .links-section {
     justify-content: start;

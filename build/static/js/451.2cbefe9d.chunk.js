@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcloudcom=self.webpackChunkcloudcom||[]).push([[451],{9451:(c,e,d)=>{d.d(e,{A:()=>a});d(2483);const a=d.p+"static/media/AIPoweredSegmantaionScreen.8575d1fecf407c9ac8d9cd1dc82acd60.svg"}}]);
-//# sourceMappingURL=451.2cbefe9d.chunk.js.map
