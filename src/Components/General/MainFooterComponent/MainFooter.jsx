@@ -15,7 +15,7 @@ import cloudVectorRight from "../../../Assets/Images/General/Footer/Vector.svg"
 
 const MainFooter = () => {
   return (
-    <footer className="footer">
+    <footer className="footer page_padding_level_1">
       <div className="footer-content">
         <div className="footer-section ">
             <div className="logo-section">

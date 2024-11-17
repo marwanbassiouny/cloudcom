@@ -15,7 +15,7 @@
     margin-top: 2%;
   }
 
-  .intro-subtitle-section-mobile{
+  .intro_subtitle_section_mobile{
     display: none;
   }
 
@@ -103,7 +103,7 @@
    display: none;
   }
 
-  .intro-subtitle-section-mobile{
+  .intro_subtitle_section_mobile{
     display: block;
   }
 

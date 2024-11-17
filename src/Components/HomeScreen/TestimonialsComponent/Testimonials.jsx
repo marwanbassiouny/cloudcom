@@ -61,7 +61,7 @@ const TestimonialCarousel = () => {
         <p className="carousel-subtitle">We care about our customer experience too</p>
       </div>
       <div class="line"></div>
-      <div className="page_padding_level_1">
+      <div className="testimonial_parent_container page_padding_level_1">
       <Swiper
         modules={[Pagination]}
         slidesPerView={1}

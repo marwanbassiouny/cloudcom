@@ -161,4 +161,11 @@
     height: 550px;
     margin-top: 15%;
   }
+  .testimonial_parent_container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .testimonial-quote{
+    font-size: 15px;
+  }
 }

@@ -2,7 +2,8 @@
 .footer {
   background-color: #1b1b1b;
   color: #fff;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%; 
   position: relative;
 }
@@ -109,6 +110,7 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 40px;
 }
 
 .social-icons {
@@ -148,7 +150,7 @@ form {
 
 @media (max-width: 768px) {
   .contact-section p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .footer-content {
     flex-direction: row;
@@ -159,6 +161,7 @@ form {
     flex-direction: column;
     text-align: center;
     gap: 15px;
+    padding-left: 0px;
   }
 
   .social-icons {
