@@ -74,7 +74,7 @@ const WhyCloud = () => {
             loop={true}
             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             autoplay={{
-              delay: 32500,
+              delay: 2500,
               disableOnInteraction: false,
             }}
             modules={[Autoplay,Pagination]}
