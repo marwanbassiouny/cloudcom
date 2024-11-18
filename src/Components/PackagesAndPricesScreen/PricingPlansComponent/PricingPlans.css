@@ -138,6 +138,33 @@
   color: #0000FF;
 }
 
+/*------------------------------- enterprise */
+.enterprise {
+  background-color: #0000FF;
+  color: white;
+  transform: translateY(-80px);
+  cursor: pointer;
+}
+
+.enterprise .cardTitle,
+.enterprise .cardSubTitle,
+.enterprise .cardText {
+  color: #ffffff;
+}
+
+.enterprise button {
+  background-color: white;
+  color: #0000FF;
+}
+
+.enterprise .promo {
+  background-color: white;
+  color: #0000FF;
+}
+
+
+
+
 .listContainer {
   padding: 0;
   margin: 0;
@@ -200,12 +227,24 @@
 
 @media (max-width: 1440px){
   .empty-white-section {
-    height: 30vh;
+    height: 45vh;
   }
 
-  /* .pricing-cards {
-    height: 570px;
-  } */
+  .background-section {
+    padding-top: 0px;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 1360px){
+  .empty-white-section {
+    height: 40vh;
+  }
+
+  .background-section {
+    padding-top: 0px;
+    height: 70vh;
+  }
 }
 
 /* Tablet screens */
