@@ -1,9 +1,32 @@
-import React from 'react';
+import {React,useState} from 'react';
 import './PricingPlans.css';
 import tickIcon from '../../../Assets/Icons/PackagesAndPricesScreen/PricingPlansComponent/tickIcon.svg';
 import CloudComButton from '../../General/CloudComButton/CloudComButton'
 
 const PricingPlans = () => {
+
+  const [selectedCardIndex, setSelectedCardIndex] = useState(2); // State to track the default selected card (Enterprise card)
+  const [hoveredCardIndex, setHoveredCardIndex] = useState(null); // State to track which card is hovered
+
+  // Handler for mouse enter - set the hovered card index
+  const handleMouseEnter = (index) => {
+    setHoveredCardIndex(index); // Set hover state to the index of the card being hovered
+  };
+
+  // Handler for mouse leave - reset the hovered card index
+  const handleMouseLeave = () => {
+    setHoveredCardIndex(null); // Reset hover state when mouse leaves
+  };
+
+  // Determine which card should have the 'enterprise' class
+  const getCardClass = (index) => {
+    if (hoveredCardIndex !== null) {
+      return hoveredCardIndex === index ? 'enterprise' : ''; // Apply 'enterprise' to hovered card
+    }
+    return selectedCardIndex === index ? 'enterprise' : ''; // Otherwise, apply 'enterprise' to the default selected card
+  };
+
+  
   return (
     <div className="pricing-plans-container ">
       <div className="background-section page_padding_level_1">
@@ -20,7 +43,9 @@ const PricingPlans = () => {
       <div className="empty-white-section"></div>
 
       <div className="pricing-cards">
-        <div className="card_plan essential">
+        <div       className={`card_plan essential ${getCardClass(0)}`} // Use getCardClass to determine if the enterprise class should be applied
+          onMouseEnter={() => handleMouseEnter(0)}
+          onMouseLeave={handleMouseLeave}>
           <div className="cardTitleContainer">
             <h3 className="cardTitle">$40</h3>
             <p className="cardSubTitle">/month</p>
@@ -39,7 +64,9 @@ const PricingPlans = () => {
           <button>Choose plan</button>
         </div>
 
-        <div className="card_plan pro">
+        <div className={`card_plan pro ${getCardClass(1)}`} // Use getCardClass to determine if the enterprise class should be applied
+          onMouseEnter={() => handleMouseEnter(1)}
+          onMouseLeave={handleMouseLeave}>
           <div className="cardTitleContainer">
             <h3 className="cardTitle">$54</h3>
             <p className="cardSubTitle">/month</p>
@@ -59,7 +86,9 @@ const PricingPlans = () => {
           <button>Choose plan</button>
         </div>
 
-        <div className="card_plan enterprise">
+        <div className={`card_plan  ${getCardClass(2)}`} // Use getCardClass to determine if the enterprise class should be applied
+          onMouseEnter={() => handleMouseEnter(2)}
+          onMouseLeave={handleMouseLeave}>
           <div className='promoContainer'>
             <div className='promo'>
               MOST POPULAR
