@@ -255,7 +255,7 @@
   }
   .why-cloudcom-section .swiper-pagination {
     position: absolute;       
-    top: 0% !important;                
+    top: -5% !important;                
     left: 1% !important;              
   }
   .why-cloudcom-section .swiper-slide-prev{

@@ -1,11 +1,25 @@
-import React from 'react';
+import {React, useState } from 'react';
 import './CloudcomHelp.css';
 import imageLeft from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/help.svg'
 import imageRight from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/help2.svg'
 import tickIcon from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/tick.svg';
+import cloudcomHelpVideo from '../../../Assets/Videos/WhoWeAreScreen/CloudcomHelpComponent/cloudcomHelpVideo.mp4';
+
 
 const CloudcomHelp = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
+    <>
     <div className="cloudcom-help">
       
       <div className="cloudcom-help__header">
@@ -48,10 +62,32 @@ const CloudcomHelp = () => {
         </div>
 
         <div className="cloudcom-help__image-section_2">
-          <img src={imageRight} alt="Cloudcom help visual" className="cloudcom-help__image_2" />
+          <img src={imageRight} onClick={openModal}  alt="Cloudcom help visual" className="cloudcom-help__image_2" />
+
+          {/* Modal for Video */}
+          {isModalOpen && (
+            <div className={`modal ${isModalOpen ? 'open' : ''}`} onClick={closeModal}>
+              <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                <span className="close" onClick={closeModal}>
+                  &times;
+                </span>
+                <video controls autoPlay>
+                  <source src={cloudcomHelpVideo} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                {/* Add a "Cancel" button below the video */}
+                <button className="cancel-button" onClick={closeModal}>
+                  Cancel
+                </button>
+              </div>
+            </div>
+          )}
+        
         </div>
       </div>
+
     </div>
+    </>
   );
 };
 

@@ -2,9 +2,9 @@ import React from 'react';
 import TopicData from '../General/CompanyInfoPageTemplate/TopicDataComponent/TopicData';
 import TopicExample from '../General/CompanyInfoPageTemplate/TopicExampleComponent/TopicExample';
 import exampleAnimation1 from '../../Assets/Icons/CustomerDataManagementScreen/Example1Animation.mp4';
-import logoIcon2 from '../../Assets/Icons/CustomerDataManagementScreen/ExampleIcon2.svg';
-import logoIcon3 from '../../Assets/Icons/CustomerDataManagementScreen/ExampleIcon3.svg';
-import logoIcon4 from '../../Assets/Icons/CustomerDataManagementScreen/ExampleIcon4.svg';
+import exampleAnimation2 from '../../Assets/Icons/CustomerDataManagementScreen/Example2Animation.mp4';
+import exampleAnimation3 from '../../Assets/Icons/CustomerDataManagementScreen/Example3Animation.mp4';
+import exampleAnimation4 from '../../Assets/Icons/CustomerDataManagementScreen/Example4Animation.mp4';
 import dataSectionAnimation from '../../Assets/Icons/CustomerDataManagementScreen/customerDataManagementIntro.mp4';
 
 const CustomerDataManagementScreen = () => {
@@ -17,20 +17,20 @@ const examples = [
       description: 'Gain a full understanding of customer behaviors and preferences for more targeted engagement.',
     },
     {
-      animation: logoIcon2,
-      isIcon : true,
+      animation: exampleAnimation2,
+      isIcon : false,
       title: 'Data Synchronization',
       description: 'Effortlessly unify data from multiple sources to ensure consistent customer information.',
     },
     {
-      animation: logoIcon3,
-      isIcon : true,
+      animation: exampleAnimation3,
+      isIcon : false,
       title: 'Actionable Insights',
       description: 'Identify key metrics like LTV and ARPU to tailor marketing efforts and increase ROI.',
     },
     {
-      animation: logoIcon4,
-      isIcon : true,
+      animation: exampleAnimation4,
+      isIcon : false,
       title: 'Improved Targeting',
       description: 'Use detailed customer profiles to enhance personalization and drive better marketing outcomes.',
     },

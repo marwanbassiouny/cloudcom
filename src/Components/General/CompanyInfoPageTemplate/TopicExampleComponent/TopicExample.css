@@ -19,6 +19,14 @@
   text-align: center;
 }
 
+/* .example-text{
+  margin-left: 10%;
+} */
+
+.examplePage-text {
+  margin-left: 10%;
+}
+
 .examplePage-text h1,
 .example-text h1 {
   font-size: 28px;
@@ -71,7 +79,7 @@
 
   .examplePage-text,
   .example-text {
-    max-width: 50%; /* Half width for text on larger screens */
+    max-width: 40%; /* Half width for text on larger screens */
   }
 
   .example-icon img {

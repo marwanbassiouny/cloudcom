@@ -10,56 +10,55 @@ const TopicExample = ({ examples }) => {
     <div className="topic-example-container page_padding_level_1">
       {examples.map((example) => {
         ++counter;
+        const isOdd = isOddNumber(counter);
+        const shouldShowImage = example.isIcon; // Check based on each example item
+
         return (
-          <div key={counter} className={`example-item ${!isOddNumber(counter) ? 'example-item-reverse' : ''}`}>
-            {isOddNumber(counter) ? (
+          <div key={counter} className={`example-item ${!isOdd ? 'example-item-reverse' : ''}`}>
+            {isOdd ? (
               <>
                 <div className="example-icon">
-                  {
-                    examples.isIcon && <img src={example.animation} alt={example.title} />
-                  } 
-                  {
-                    !examples.isIcon && 
-                    <video   
+                  {shouldShowImage ? (
+                    <img src={example.animation} alt={example.title} />
+                  ) : (
+                    <video
                       autoPlay
                       loop
                       muted
-                      playsInline 
-                      className='topicDataAnimation'
-                      >
-                        <source src={example.animation} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                  }
+                      playsInline
+                      className="topicDataAnimation"
+                    >
+                      <source src={example.animation} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  )}
                 </div>
                 <div className="examplePage-text">
                   <h1>{example.title}</h1>
-                  <p className='page_context_font_size_0'>{example.description}</p>
+                  <p className="page_context_font_size_0">{example.description}</p>
                 </div>
               </>
             ) : (
               <>
                 <div className="example-text">
                   <h1>{example.title}</h1>
-                  <p className='page_context_font_size_0'>{example.description}</p>
+                  <p className="page_context_font_size_0">{example.description}</p>
                 </div>
                 <div className="example-icon">
-                  {
-                    examples.isIcon && <img src={example.animation} alt={example.title} />
-                  } 
-                  {
-                    !examples.isIcon && 
-                    <video   
+                  {shouldShowImage ? (
+                    <img src={example.animation} alt={example.title} />
+                  ) : (
+                    <video
                       autoPlay
                       loop
                       muted
-                      playsInline 
-                      className='topicDataAnimation'
-                      >
-                        <source src={example.animation} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                  }
+                      playsInline
+                      className="topicDataAnimation"
+                    >
+                      <source src={example.animation} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  )}
                 </div>
               </>
             )}

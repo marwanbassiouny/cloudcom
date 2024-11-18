@@ -1,0 +1,58 @@
+.intro-image-section {
+    width: 50%;
+  }
+
+  .support-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  
+  .HeroSectionAnimation {
+    width: 540px;
+    height: 500px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    padding-bottom : 10px
+  }
+
+
+@media (max-width: 1920px) {
+  .HeroSectionAnimation {
+    width: 700px;
+    height: 500px;
+  }
+}
+
+/* Tablet screens */
+@media (max-width: 1440px) {
+  .HeroSectionAnimation {
+    width: 600px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+
+  .intro-image-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+  .HeroSectionAnimation {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .HeroSectionAnimation {
+    min-width: 350px;
+    height: 350px;
+  }
+}
+  
+
+  

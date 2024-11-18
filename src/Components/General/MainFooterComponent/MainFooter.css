@@ -1,6 +1,9 @@
 /* Footer Container */
 .footer {
-  background-color: #1b1b1b;
+  /* background-color: #1b1b1b; */
+  background-image: url("../../../Assets/Images/General/Footer/FooterBackground.svg"); 
+  background-size: cover;
+  background-position: center;
   color: #fff;
   padding-top: 40px;
   padding-bottom: 40px;
