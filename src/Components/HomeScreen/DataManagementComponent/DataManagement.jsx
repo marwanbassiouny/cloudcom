@@ -1,11 +1,11 @@
 import React from 'react';
 import './DataManagement.css';
-import dataManagementImage from '../../../Assets/Icons/HomeScreen/DataManagementComponent/DataManagementImage.svg';
-import MultiChannelCampaignIcon from '../../../Assets/Icons/MultiChannelCampaignManagerScreen/MultiChannelCampaignIcon.svg'; 
-import AiPowered from '../../../Assets/Icons/AIPoweredSegmantationScreen/AIPoweredSegmantaionScreen.svg'; 
-import ChatManagement from '../../../Assets/Icons/ChatManagementScreen/ChatManagementIcon.svg';  
-import Verify from '../../../Assets/Icons/VerifyScreen/verifyScreen.svg'; 
-import workflow from '../../../Assets/Icons/FlowBuilderScreen/flowBuilderIcon.svg'; 
+import customerDataManagementAnimation from '../../../Assets/Icons/HomeScreen/DataManagementComponent/customerDataManagementAnimation.mp4';
+import MultiChannelCampaignAnimation from '../../../Assets/Icons/HomeScreen/DataManagementComponent/MultiChannelCampaignAnimation.mp4'; 
+import AiPoweredAnimation from '../../../Assets/Icons/HomeScreen/DataManagementComponent/AiPoweredAnimation.mp4'; 
+import ChatManagementAnimation from '../../../Assets/Icons/HomeScreen/DataManagementComponent/ChatManagementAnimation.mp4';  
+import VerifyAnimation from '../../../Assets/Icons/HomeScreen/DataManagementComponent/VerifyAnimation.mp4'; 
+import flowBuilderAnimation from '../../../Assets/Icons/HomeScreen/DataManagementComponent/flowBuilderAnimation.mp4'; 
 import textContent from '../../../Assets/Data/HomeScreen/DataManagementComponent/DataManagement.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import titleIcon1 from '../../../Assets/Icons/HomeScreen/DataManagementComponent/titleIcon1.svg'; 
@@ -23,37 +23,37 @@ import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 const cards = [
   {
-    image: dataManagementImage,
+    animation: customerDataManagementAnimation,
     head: `${textContent.headline1}`,
     paragraph: `${textContent.description1}`,
     icon: titleIcon1,
   },
   {
-    image: MultiChannelCampaignIcon,
+    animation: MultiChannelCampaignAnimation,
     head: `${textContent.headline2}`,
     paragraph: `${textContent.description2}`,
     icon: titleIcon2,
   },
   {
-    image: AiPowered,
+    animation: AiPoweredAnimation,
     head: `${textContent.headline3}`,
     paragraph: `${textContent.description3}`,
     icon: titleIcon3,
   },
   {
-    image: ChatManagement,
+    animation: ChatManagementAnimation,
     head: `${textContent.headline4}`,
     paragraph: `${textContent.description4}`,
     icon: titleIcon4,
   },
   {
-    image: Verify,
+    animation: VerifyAnimation,
     head: `${textContent.headline5}`,
     paragraph: `${textContent.description5}`,
     icon: titleIcon5,
   },
   {
-    image: workflow,
+    animation: flowBuilderAnimation,
     head: `${textContent.headline6}`,
     paragraph: `${textContent.description6}`,
     icon: titleIcon6,
@@ -78,7 +78,7 @@ const DataManagement = () => {
             <Swiper
               spaceBetween={30}
               autoplay={{
-                delay: 1500,
+                delay: 12000,
                 disableOnInteraction: false,
               }}
               effect="fade"
@@ -99,7 +99,16 @@ const DataManagement = () => {
                       <a href="/customerDataManagement" className="data-explore-btn explore-btn-glow" target="_blank" rel="noopener noreferrer">Explore →</a>
                     </div>
                     <div className="middle-section">
-                      <img src={card.image} alt="Customer Data Management" className='dm_icon' />
+                      {/* <img src={card.animation} alt="Customer Data Management" className='dm_icon' /> */}
+                      <video   
+                        autoPlay
+                        loop
+                        muted
+                        playsInline 
+                        className='dataIconAnimation dm_icon'>
+                          <source src={card.animation} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                   </div>
                   </>

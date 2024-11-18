@@ -6,6 +6,9 @@ import image5 from "../../Assets/Images/CaseStudyScreen/gourmetlogo.png"
 import image6 from "../../Assets/Images/CaseStudyScreen/Vezeeta-Logo 3.png"
 import image7 from "../../Assets/Images/CaseStudyScreen/reachlogo.png"
 
+import successStoriesImage_gourmet from '../../Assets/Images/HomeScreen/SuccessStoriesComponent/SuccessStoriesImage_gourmet.svg';
+import SuccessStoriesImage_reach from '../../Assets/Images/HomeScreen/SuccessStoriesComponent/SuccessStoriesImage_reach.png';
+import SuccessStoriesImage_visita from '../../Assets/Images/HomeScreen/SuccessStoriesComponent/SuccessStoriesImage_visita.png';
 
 export const caseStudiesData = [
     {
@@ -13,6 +16,7 @@ export const caseStudiesData = [
       company: "Gourmet Egypt",
       companyLogo: image5,
       image: image1, 
+      homePageImage : successStoriesImage_gourmet,
       title: "Gourmet Egypt",
       description: "How Gourmet Egypt Boosted Retention with cloudcom’s CPaaS Solutions",
       stats: [
@@ -27,6 +31,7 @@ export const caseStudiesData = [
       company: "Reach Finance",
       companyLogo: image7,
       image: image2,
+      homePageImage : SuccessStoriesImage_reach,
       title: "Reach Finance",
       description: "How Reach Finance Increased with cloudcom’s Omnichannel Messaging Solutions",
       stats: [
@@ -41,6 +46,7 @@ export const caseStudiesData = [
       company: "Vezeeta",
       companyLogo: image6,
       image: image3,
+      homePageImage : SuccessStoriesImage_visita,
       title: "Vezeeta",
       description: "How Vezeeta Achieved a 28% Increase in Pharmacy Orders Using cloudcom's Omnichannel Communication",
       stats: [
@@ -55,6 +61,7 @@ export const caseStudiesData = [
       company: "Gourmet Egypt",
       companyLogo: image5, 
       image: image4, 
+      homePageImage : successStoriesImage_gourmet,
       title: "Gourmet Egypt",
       description: "How Gourmet Egypt Boosted Retention with cloudcom’s CPaaS Solutions",
       stats: [

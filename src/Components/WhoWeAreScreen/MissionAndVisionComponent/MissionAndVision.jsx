@@ -37,6 +37,7 @@ const MissionAndVision = () => {
         <div className="image-section">
           <img src={mainImage} alt="Purpose, Mission, Vision Illustration" className="main-image" />
         </div>
+
       </div>
     </div>
   );

@@ -45,11 +45,11 @@ body {
 }
 
 .page_context_font_size_0 {
-  font-size: 18px;
+  font-size: 22px; /* 21 */
 }
 
 @media (min-width: 1920px) {
   .page_context_font_size_0 {
-    font-size: 21px;
+    font-size: 24px; /* 21 */
   }
 }

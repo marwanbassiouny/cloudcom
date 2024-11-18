@@ -1,7 +1,8 @@
 .data-management-container {
   background-size: contain;
   background-position: center;
-  background-image: url("../../../Assets/Icons/HomeScreen/DataManagementComponent/backgroundImage.svg");
+  /* background-image: url("../../../Assets/Icons/HomeScreen/DataManagementComponent/backgroundImage.svg"); */
+  background-color: #1E1E1E;
   background-size: cover;
   background-position: center;
 }
@@ -95,11 +96,25 @@
   height: 50px;
 }
 
+.dataIconAnimation {
+  width: 540px;
+  height: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  padding-bottom : 10px
+}
+
 
 @media (min-width: 1024px) and (max-width: 1920px) {
   .middle-section img {
     min-width: 600px;
     border-radius: 10px;
+  }
+
+  .dataIconAnimation {
+    width: 640px;
+    height: 500px;
   }
 }
 
@@ -161,6 +176,11 @@
   .middle-section img{
     width: 100%;
   }
+
+  .dataIconAnimation {
+    width: 100%;
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -169,7 +189,8 @@
     padding: 0 10px; /* Add padding for mobile screen readability */
   }
   .data-left-section h2 {
-    font-size: 1.4rem;
+    font-size: 21px;
+    margin-top:2%
   }
   .data-left-section p {
     font-size: 0.9rem;
@@ -182,4 +203,8 @@
     max-width: 100%; 
     height: auto;
   } */
+
+  .dataIconAnimation {
+    min-width: 370px;
+  }
 }

@@ -2,10 +2,7 @@
 import {React,useState,useEffect} from 'react';
 import './Intro.css'
 import CloudComButton from '../../General/CloudComButton/CloudComButton';
-import AnimatedIntroImage from './AnimatedIntroImageComponent/AnimatedIntroImage';
-import IntroImage from './IntroImageComponent/IntroImage';
-import HeroSectionSVG from './HeroSectionSVGComponent/HeroSectionSVG';
-
+import HeroSectionAnimation from './HeroSectionAnimationComponent/HeroSectionAnimation';
 
 const textArray = [
   "Customer Support",
@@ -26,7 +23,7 @@ const Intro = () => {
   }, []);
 
     return (
-      <div className="intro-container page_padding_level_1 page_vertical_padding_level_1">
+      <div className="intro-container page_padding_level_1">
         <div className="content-section">
           <p className="highlight-text text-no-break-overflow">cloudcom the starting point of</p>  
           <p key={currentIndex} className="highlight-text slide-text gradient-text text-no-break-overflow">{textArray[currentIndex]}</p>
@@ -42,9 +39,7 @@ const Intro = () => {
             <CloudComButton text="Book a Demo" link="https://portal.cloudcom.io/login" glow='glow' width='183' height='40' />
           </div>
         </div>
-       {/* <AnimatedIntroImage /> */}
-       <IntroImage />
-       {/* <HeroSectionSVG /> */}
+       <HeroSectionAnimation />
       </div>
     );
   };

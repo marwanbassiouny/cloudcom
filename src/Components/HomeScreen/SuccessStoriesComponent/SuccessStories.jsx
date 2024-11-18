@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './SuccessStories.css';
-import successStoriesImage from '../../../Assets/Images/HomeScreen/SuccessStoriesComponent/SuccessStoriesImage.svg'; 
-import successStoriesIcon from '../../../Assets/Icons/HomeScreen/SuccessStoriesComponent/SuccessStoriesIcon.svg'; 
+// import successStoriesImage from '../../../Assets/Images/HomeScreen/SuccessStoriesComponent/SuccessStoriesImage.svg'; 
+// import successStoriesIcon from '../../../Assets/Icons/HomeScreen/SuccessStoriesComponent/SuccessStoriesIcon.svg'; 
 import CloudComButton from '../../General/CloudComButton/CloudComButton';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -41,7 +41,7 @@ const SuccessStories = () => {
           <SwiperSlide key={index}>
                 <div className="story-section">
                   <div className="story-image">
-                    <img src={successStoriesImage} alt="Gourmet Egypt Store" />
+                    <img src={casestudy.homePageImage} alt="Gourmet Egypt Store" />
                   </div>
 
                   <div className="story-content">

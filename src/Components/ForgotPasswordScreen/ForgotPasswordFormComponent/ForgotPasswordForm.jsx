@@ -11,7 +11,7 @@ const ForgotPasswordForm = () => {
         Enter the email address for your CloudCom account below and we will email you a link to reset your password.
       </div>
       <form>
-        <input className="loginInput" type="email" placeholder="Email" required />
+        <input className="forgotPasswordInput" type="email" placeholder="Email" required />
         <AuthButton text="Reset Password" link="/resetPassword"/>
       </form>
       <div className='action_link'>
