@@ -15,7 +15,22 @@ const TopicExample = ({ examples }) => {
             {isOddNumber(counter) ? (
               <>
                 <div className="example-icon">
-                  <img src={example.icon} alt={example.title} />
+                  {
+                    examples.isIcon && <img src={example.animation} alt={example.title} />
+                  } 
+                  {
+                    !examples.isIcon && 
+                    <video   
+                      autoPlay
+                      loop
+                      muted
+                      playsInline 
+                      className='topicDataAnimation'
+                      >
+                        <source src={example.animation} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                  }
                 </div>
                 <div className="examplePage-text">
                   <h1>{example.title}</h1>
@@ -29,7 +44,22 @@ const TopicExample = ({ examples }) => {
                   <p className='page_context_font_size_0'>{example.description}</p>
                 </div>
                 <div className="example-icon">
-                  <img src={example.icon} alt={example.title} />
+                  {
+                    examples.isIcon && <img src={example.animation} alt={example.title} />
+                  } 
+                  {
+                    !examples.isIcon && 
+                    <video   
+                      autoPlay
+                      loop
+                      muted
+                      playsInline 
+                      className='topicDataAnimation'
+                      >
+                        <source src={example.animation} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                  }
                 </div>
               </>
             )}
