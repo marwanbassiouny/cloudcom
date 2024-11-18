@@ -26,7 +26,11 @@ const Intro = () => {
       <div className="intro-container page_padding_level_1">
         <div className="content-section">
           <p className="highlight-text text-no-break-overflow">cloudcom the starting point of</p>  
-          <p key={currentIndex} className="highlight-text slide-text gradient-text text-no-break-overflow">{textArray[currentIndex]}</p>
+           <div className="slide-container">
+            <p key={currentIndex} className="highlight-text slide-text gradient-text text-no-break-overflow">
+              {textArray[currentIndex]}
+            </p>
+          </div>
           <div className='intro-subtitle-section'>
             <p className="intro-sub-title">Learn. Segment. Connect. Engage. Analyze.</p>
             <p className="intro-sub-title">Support. Your customer.</p>
