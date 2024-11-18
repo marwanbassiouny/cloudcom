@@ -37,11 +37,17 @@
       transform: translateY(-100%);
     }
   }
+  .slide-container {
+    overflow: hidden; 
+    height: 55px; 
+    position: relative; 
+  }
 
   .slide-text {
-    /* width: 100%; */
-
-    animation: slide-in-out 3s infinite;
+    position: absolute; 
+    width: 100%; 
+    transform-origin: bottom; 
+    animation: slide-in-out 2.5s infinite;
   }
   
 

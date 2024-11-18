@@ -7,7 +7,7 @@ const CaseStudyIntro = () => {
     <div className="case-study-intro">
       <div className="left-section">
         <div className="client-info">
-          <img src={logo} alt="Gourmet Egypt Logo" className="case-study-logo" />
+          <img src={logo} alt="Gourmet Egypt Logo" className="case-study-logo-reach" />
           <p><span>Client<br/></span> Reach Finance</p>
           <p><span>Year<br/></span> 2024</p>
         </div>
