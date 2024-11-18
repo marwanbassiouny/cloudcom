@@ -125,4 +125,7 @@ h2 {
   .login-form-card {
     padding: 20px;
   }
+  .login-container {
+    min-height: 0vh;
+  }
 }
