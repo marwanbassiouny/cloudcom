@@ -72,7 +72,7 @@ const SuccessStories = () => {
                       className={`dot ${activeIndex === dotIndex ? 'active' : ''}`}
                       onClick={() => {
                         if (swiperRef.current) {
-                          swiperRef.current.slideTo(dotIndex); // Ensure swiperRef is not null before calling slideTo
+                          swiperRef.current.slideTo(dotIndex); 
                         }
                       }}
                     ></span>
