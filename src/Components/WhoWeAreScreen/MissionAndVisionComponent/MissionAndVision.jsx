@@ -1,9 +1,19 @@
-import {React} from 'react';
+import {React, useState } from 'react';
 import './MissionAndVision.css';
 import mainImage from '../../../Assets/Icons/WhoWeAreScreen/MissionAndVisionComponent/MissonAndVisionIcon.svg';
+import cloudcomHelpVideo from '../../../Assets/Videos/WhoWeAreScreen/CloudcomHelpComponent/cloudcomHelpVideo.mp4';
+
 
 const MissionAndVision = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className="m_v_container page_padding_level_1">
       <div className="image-section-mobile">
@@ -35,7 +45,26 @@ const MissionAndVision = () => {
         </div>
 
         <div className="image-section">
-          <img src={mainImage} alt="Purpose, Mission, Vision Illustration" className="main-image" />
+          <img src={mainImage} onClick={openModal} alt="Purpose, Mission, Vision Illustration" className="main-image" />
+
+          {/* Modal for Video */}
+          {isModalOpen && (
+            <div className={`modal ${isModalOpen ? 'open' : ''}`} onClick={closeModal}>
+              <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                <span className="close" onClick={closeModal}>
+                  &times;
+                </span>
+                <video controls autoPlay>
+                  <source src={cloudcomHelpVideo} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                {/* Add a "Cancel" button below the video */}
+                <button className="cancel-button" onClick={closeModal}>
+                  Cancel
+                </button>
+              </div>
+            </div>
+          )}
         </div>
 
       </div>

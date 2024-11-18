@@ -1,22 +1,12 @@
 import {React, useState } from 'react';
 import './CloudcomHelp.css';
-import imageLeft from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/help.svg'
-import imageRight from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/help2.svg'
+import helpSectionAnimation from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/helpSectionAnimation.mp4'
+import helpSectionAnimation2 from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/helpSectionAnimation2.mp4'
 import tickIcon from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/tick.svg';
-import cloudcomHelpVideo from '../../../Assets/Videos/WhoWeAreScreen/CloudcomHelpComponent/cloudcomHelpVideo.mp4';
-
 
 const CloudcomHelp = () => {
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
   return (
     <>
@@ -30,7 +20,16 @@ const CloudcomHelp = () => {
 
       <div className="cloudcom-help__content page_padding_level_1">
         <div className="cloudcom-help__image-section">
-          <img src={imageLeft} alt="Cloudcom help visual" className="cloudcom-help__image" />
+          {/* <img src={imageLeft} alt="Cloudcom help visual" className="cloudcom-help__image" /> */}
+          <video   
+          autoPlay
+          loop
+          muted
+          playsInline 
+          className='topicDataAnimation cloudcom-help__image'>
+            <source src={helpSectionAnimation} type="video/mp4" />
+              Your browser does not support the video tag.
+          </video>
         </div>
 
         <div className="cloudcom-help__values-section">
@@ -62,27 +61,15 @@ const CloudcomHelp = () => {
         </div>
 
         <div className="cloudcom-help__image-section_2">
-          <img src={imageRight} onClick={openModal}  alt="Cloudcom help visual" className="cloudcom-help__image_2" />
-
-          {/* Modal for Video */}
-          {isModalOpen && (
-            <div className={`modal ${isModalOpen ? 'open' : ''}`} onClick={closeModal}>
-              <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                <span className="close" onClick={closeModal}>
-                  &times;
-                </span>
-                <video controls autoPlay>
-                  <source src={cloudcomHelpVideo} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                {/* Add a "Cancel" button below the video */}
-                <button className="cancel-button" onClick={closeModal}>
-                  Cancel
-                </button>
-              </div>
-            </div>
-          )}
-        
+          <video   
+          autoPlay
+          loop
+          muted
+          playsInline 
+          className='topicDataAnimation'>
+            <source src={helpSectionAnimation2} type="video/mp4" />
+              Your browser does not support the video tag.
+          </video>
         </div>
       </div>
 

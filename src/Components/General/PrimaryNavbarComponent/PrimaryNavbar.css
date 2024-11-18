@@ -53,7 +53,7 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   padding: 10px 15px;
   border-radius: 8px;
-  width: 500px;
+  width: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;

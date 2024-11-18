@@ -2,35 +2,35 @@ import React from 'react';
 import TopicData from '../General/CompanyInfoPageTemplate/TopicDataComponent/TopicData';
 import TopicExample from '../General/CompanyInfoPageTemplate/TopicExampleComponent/TopicExample';
 import MultiChannelCampaignAnimation from '../../Assets/Icons/MultiChannelCampaignManagerScreen/MultiChannelCampaignAnimation.mp4'
-import logoIcon1 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleIcon1.svg';
-import logoIcon2 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleIcon2.svg';
-import logoIcon3 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleIcon3.svg';
-import logoIcon4 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleIcon4.svg';
+import logoIcon1 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleAnimation1.mp4';
+import logoIcon2 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleAnimation2.mp4';
+import logoIcon3 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleAnimation3.mp4';
+import logoIcon4 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleAnimation4.mp4';
 
 const MultiChannelCampaignManagerScreen = () => {
  
 const examples = [
     {
       animation: logoIcon1,
-      isIcon : true,
+      isIcon : false,
       title: 'Consistency',
       description: 'Ensure your brand message is consistent across all channels, boosting engagement and recognition.',
     },
     {
       animation: logoIcon2,
-      isIcon : true,
+      isIcon : false,
       title: 'Real-Time Insights',
       description: 'Make data-driven decisions with real-time analytics that help optimize campaign performance on the fly.',
     },
     {
       animation: logoIcon3,
-      isIcon : true,
+      isIcon : false,
       title: 'Scalability',
       description: 'Run campaigns of any size—from small, targeted efforts to large-scale outreach—without compromising efficiency.',
     },
     {
       animation: logoIcon4,
-      isIcon : true,
+      isIcon : false,
       title: 'Cost-Effective',
       description: 'Streamline your campaign management process to reduce operational costs and improve ROI.',
     },

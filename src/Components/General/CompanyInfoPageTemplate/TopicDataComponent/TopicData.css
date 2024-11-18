@@ -9,7 +9,8 @@
 .topic-data-page-text {
   max-width: 50%;
   text-align: left;
-  margin-top: 8%;
+  padding-top: 6%;
+  padding-bottom: 4%;
 }
 
 .topic-data-page-text h2 {
@@ -89,6 +90,7 @@
   }
 
   .topicDataAnimation {
-    min-width: 400px;
+    min-width: 100%;
+    height: 330px;
   }
 }

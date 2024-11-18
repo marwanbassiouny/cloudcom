@@ -1,7 +1,7 @@
 import React from 'react';
 import './TopicData.css';
 
-const TopicData = ({ title, description, animation, isIcon }) => {
+const TopicData = ({ title, description, animation }) => {
   return (
     <div className="topic-data-container page_padding_level_1">
       <div className="topic-data-page-text">
@@ -9,7 +9,6 @@ const TopicData = ({ title, description, animation, isIcon }) => {
         <p className='page_context_font_size_0'>{description}</p>
       </div>
       <div className="topic-data-image">
-           {/* <img src={image} alt={title} className='topicDataAnimation'/> */}
           <video   
           autoPlay
           loop

@@ -1,27 +1,16 @@
-import {React,useState,useEffect} from 'react';
+import {React} from 'react';
 import './AboutUs.css';
-import icon1 from '../../../Assets/Icons/WhoWeAreScreen/AboutUsComponent/Icon1 before.svg';
-import icon1after from '../../../Assets/Icons/WhoWeAreScreen/AboutUsComponent/Icon1 after.svg';
-import icon2 from '../../../Assets/Icons/WhoWeAreScreen/AboutUsComponent/Icon2.svg'; 
+import Icon1Animation from '../../../Assets/Icons/WhoWeAreScreen/AboutUsComponent/Icon1Animation.mp4';
+import Icon2Animation from '../../../Assets/Icons/WhoWeAreScreen/AboutUsComponent/Icon2Animation.mp4';
 
 const AboutUs = () => {
-  const [showSecondImage, setShowSecondImage] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowSecondImage((prev) => !prev);
-    }, 2000); // Change every 3 seconds
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <>
       <div className='about-us-title-container page_padding_level_1'>
         <h2>About cloudcom</h2>
           <div className='aboutus-title'>
-            <h1 className='aboutus-title-value'>Customer experience</h1>
-            <h1 className='aboutus-title-value'>that connects</h1>
+            <h1 className='aboutus-title-value'>Customer experience that connects</h1>
           </div>
           <p className="about-us-description page_context_font_size_0">
             cloudcom is a leading CPaaS (Communication Platform as a Service) provider, empowering businesses across the MENA, Gulf, LATAM regions & beyond, to connect with their customers through seamless, personalized communication.
@@ -36,25 +25,31 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="icon-section icon-section-1">
-              {/* <img src={icon1} alt="Illustration 1" className="illustration" /> */}
-              <img 
-                src={icon1} 
-                alt="Original" 
-                className={`illustration img1 ${showSecondImage ? 'slide-left' : ''}`} 
-              />
-
-              {/* Image with Icons */}
-              <img 
-                src={icon1after} 
-                alt="With Icons" 
-                className={`illustration icon1after ${showSecondImage ? 'show-icons' : ''}`} 
-              />
+              <video   
+                autoPlay
+                loop
+                muted
+                playsInline 
+                className={`topicDataAnimation  img1 `} 
+                >
+                  <source src={Icon1Animation} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
           </div>
 
           <div className="row reverse">
             <div className="icon-section .icon-section-2">
-              <img src={icon2} alt="Illustration 2" className="illustration" />
+              <video   
+                autoPlay
+                loop
+                muted
+                playsInline 
+                className={`topicDataAnimation  img1 `} 
+                >
+                  <source src={Icon2Animation} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div className="text-section page_context_font_size_0">
               <p>
