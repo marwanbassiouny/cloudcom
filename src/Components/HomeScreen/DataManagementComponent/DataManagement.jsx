@@ -27,36 +27,42 @@ const cards = [
     head: `${textContent.headline1}`,
     paragraph: `${textContent.description1}`,
     icon: titleIcon1,
+    link : '/customerDataManagement'
   },
   {
     animation: MultiChannelCampaignAnimation,
     head: `${textContent.headline2}`,
     paragraph: `${textContent.description2}`,
     icon: titleIcon2,
+    link : '/multiChannelCampaignManager'
   },
   {
     animation: AiPoweredAnimation,
     head: `${textContent.headline3}`,
     paragraph: `${textContent.description3}`,
     icon: titleIcon3,
+    link : '/AIPoweredSegmantation'
   },
   {
     animation: ChatManagementAnimation,
     head: `${textContent.headline4}`,
     paragraph: `${textContent.description4}`,
     icon: titleIcon4,
+    link : '/chatManagement'
   },
   {
     animation: VerifyAnimation,
     head: `${textContent.headline5}`,
     paragraph: `${textContent.description5}`,
     icon: titleIcon5,
+    link : '/verify'
   },
   {
     animation: flowBuilderAnimation,
     head: `${textContent.headline6}`,
     paragraph: `${textContent.description6}`,
     icon: titleIcon6,
+    link : '/flowBuilder'
   },
 ];
 
@@ -96,7 +102,7 @@ const DataManagement = () => {
                         <h2>{card.head}</h2>
                       </div>
                       <p>{card.paragraph}</p>
-                      <a href="/customerDataManagement" className="data-explore-btn explore-btn-glow" target="_blank" rel="noopener noreferrer">Explore →</a>
+                      <a href={card.link} className="data-explore-btn explore-btn-glow" target="_blank" rel="noopener noreferrer">Explore →</a>
                     </div>
                     <div className="middle-section">
                       {/* <img src={card.animation} alt="Customer Data Management" className='dm_icon' /> */}
