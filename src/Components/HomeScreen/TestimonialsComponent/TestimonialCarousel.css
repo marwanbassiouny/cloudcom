@@ -179,7 +179,7 @@
 
 @media (max-width: 768px) {
   .testimonial-card-home {
-    height: 330px;
+    height: 365px;
     margin-top: 2%;
   }
   .testimonial_parent_container {
@@ -193,7 +193,7 @@
 
 @media (max-width: 480px) {
   .testimonial-card-home {
-    height: 540px;
+    height: auto;
     margin-top: 15%;
   }
   .testimonial_parent_container {
@@ -205,9 +205,9 @@
   }
 }
 
-@media (max-width:380px) {
+@media (max-width:400px) {
   .testimonial-card-home {
-    height: 675px;
+    height: auto;
     margin-top: 14%;
   }
 }

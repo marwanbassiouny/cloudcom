@@ -1,7 +1,7 @@
-import { React, useState, useEffect, useRef } from 'react';
+import { React, useState, useRef } from 'react';
 import './Experience.css';
-import textContent from '../../../Assets/Data/HomeScreen/ExperienceComponent/ExperienceComponent.json'
-import videoSrc from '../../../Assets/Icons/HomeScreen/ExperienceComponent/experience video.mov'; 
+import textContent from '../../../Assets/Data/HomeScreen/ExperienceComponent/ExperienceComponent.json';
+import videoSrc from '../../../Assets/Icons/HomeScreen/ExperienceComponent/experience video.mov';
 
 const Experience = () => {
   const initialNumber = 120;
@@ -10,68 +10,47 @@ const Experience = () => {
 
   // Create a state for each number to track its current value
   const [numbers, setNumbers] = useState([initialNumber, initialNumber, initialNumber, initialNumber]);
-  const [hasAnimated, setHasAnimated] = useState(false);
-  const experienceSectionRef = useRef(null);
+  const [incrementIntervals, setIncrementIntervals] = useState(Array(4).fill(null));
 
-  // Function to handle increment number animation
-  const startAnimation = () => {
-    let currentNumbers = [...numbers];
-    let animationInProgress = true;
+  // Function to handle hover and increment number
+  const handleMouseEnter = (index) => {
+    clearInterval(incrementIntervals[index]); // Clear any previous interval on new hover
+
+    let currentNumber = initialNumber;
 
     const incrementInterval = setInterval(() => {
-      if (!animationInProgress) {
-        clearInterval(incrementInterval);
-        return;
-      }
-
-      let allReachedTarget = true;
-      currentNumbers = currentNumbers.map((currentNumber) => {
-        if (currentNumber < targetNumber) {
-          allReachedTarget = false;
-          return currentNumber + incrementValue;
-        }
-        return currentNumber;
-      });
-
-      setNumbers(currentNumbers);
-
-      if (allReachedTarget) {
-        animationInProgress = false;
+      if (currentNumber < targetNumber) {
+        currentNumber += incrementValue;
+        setTimeout(() => {
+          setNumbers((prevNumbers) => {
+            const newNumbers = [...prevNumbers];
+            newNumbers[index] = currentNumber;
+            return newNumbers;
+          });
+        },);
+      } else {
         clearInterval(incrementInterval);
       }
-    }, 200); // Adjusted the speed to be relatively fast but noticeable
+    }, 800);
+
+    const newIntervals = [...incrementIntervals];
+    newIntervals[index] = incrementInterval;
+    setIncrementIntervals(newIntervals);
   };
 
-  // IntersectionObserver to detect when the section is in the viewport
-  useEffect(() => {
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          startAnimation();
-          setHasAnimated(true);
-        }
-      });
-    };
+  // Reset number to initial value on mouse leave
+  const handleMouseLeave = (index) => {
+    clearInterval(incrementIntervals[index]); // Clear the interval when leaving
 
-    const observerOptions = {
-      root: null, // Use the viewport as the container
-      threshold: 0.5, // Trigger when 50% of the section is visible
-    };
-
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-    if (experienceSectionRef.current) {
-      observer.observe(experienceSectionRef.current);
-    }
-
-    return () => {
-      if (experienceSectionRef.current) {
-        observer.unobserve(experienceSectionRef.current);
-      }
-    };
-  }, [hasAnimated]);
+    setNumbers((prevNumbers) => {
+      const newNumbers = [...prevNumbers];
+      newNumbers[index] = initialNumber;
+      return newNumbers;
+    });
+  };
 
   return (
-    <div ref={experienceSectionRef} className="experience-container page_padding_level_1 page_vertical_padding_level_1">
+    <div className="experience-container page_padding_level_1 page_vertical_padding_level_1">
       {/* Left Section */}
       <div className="experience-left">
         <div className="video-mask-container">
@@ -115,11 +94,13 @@ const Experience = () => {
       </div>
 
       {/* Right Section: Stats */}
-      <div className="experience-right">   
+      <div className="experience-right">
         {numbers.map((number, index) => (
           <div
             key={index}
             className="exp-stat-item exp-stat-item-right"
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={() => handleMouseLeave(index)}
           >
             <h3 className="number">{number}K+</h3>
             <p className="state-text">{textContent[`stat${index + 1}Text`]}</p>

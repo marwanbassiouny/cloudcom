@@ -134,11 +134,11 @@
     max-width: 100%; /* Image takes full width on smaller screens */
   }
 
-  .image-section-mobile{
+  .image-section{
     display: block;
   }
 
-  .image-section{
+  .image-section-mobile{
     display: none;
   }
 }

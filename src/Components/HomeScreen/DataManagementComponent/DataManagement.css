@@ -170,6 +170,7 @@
     height: 40px;
   }
   .middle-section {
+    text-align: center;
     min-width: 100%; 
   }
 
