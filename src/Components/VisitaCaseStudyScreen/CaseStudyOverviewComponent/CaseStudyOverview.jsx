@@ -1,6 +1,6 @@
 import React from 'react';
 import './CaseStudyOverview.css';
-import overviewImage from '../../../Assets/Icons/InnerCaseStudyScreen/CaseStudyOverview/overviewImage.svg';
+import overviewImage from '../../../Assets/Images/HomeScreen/SuccessStoriesComponent/SuccessStoriesImage_visita.png';
 
 const CaseStudyOverview = () => {
   return (

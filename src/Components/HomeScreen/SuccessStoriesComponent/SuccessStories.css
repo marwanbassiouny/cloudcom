@@ -43,7 +43,7 @@
 }
 
 .story-content {
-  width: 50%;
+  width: 55%;
   text-align: left;
   margin-left: 2%;
 }
@@ -144,11 +144,12 @@
   }
 }
 
-/* @media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .story-content p {
-    margin-right: 1%;
+    font-size: 15px;
   }
-} */
+
+}
 
 /* Horizontal layout for tablets and mobile screens */
 @media (max-width: 1024px) {
@@ -168,10 +169,10 @@
     margin-bottom: 20px;
   }
 
-  /* Change navigation dots to horizontal layout on smaller screens */
+  
   .home-nav-dots {
-    flex-direction: row; /* Switch to horizontal layout */
-    gap: 15px; /* Adjust spacing between dots */
+    flex-direction: row; 
+    gap: 15px; 
   }
 }
 
@@ -195,7 +196,7 @@
   }
 
   .stat-text {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .explore-btn {
@@ -236,7 +237,11 @@
   }
 
   .story-image img {
-    height: 400px;
+    height: 100%;
+  }
+
+  .story-content .stat-item {
+    text-align: center;
   }
 
 }
