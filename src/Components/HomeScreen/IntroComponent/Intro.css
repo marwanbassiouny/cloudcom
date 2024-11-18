@@ -40,7 +40,7 @@
 
   .slide-text {
     /* width: 100%; */
-    transform: translateY(0);
+
     animation: slide-in-out 3s infinite;
   }
   

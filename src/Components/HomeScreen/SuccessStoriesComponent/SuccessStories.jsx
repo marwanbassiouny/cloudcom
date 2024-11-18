@@ -34,7 +34,7 @@ const SuccessStories = () => {
               disableOnInteraction: false,
         }}
         loop={true}
-        // className="mySwiper"
+        className="mySwiper"
 
       >
         {caseStudiesData.slice(0, 3).map((casestudy, index) => (
@@ -62,7 +62,7 @@ const SuccessStories = () => {
                         <p className='stat-text'>{casestudy.stats[1].label}</p>
                       </div>
                     </div>
-                    <CloudComButton text="Explore" link="/innerCaseStudy" glow='glow' width='183' height='48' />
+                    <CloudComButton text="Explore" link={`${casestudy.link}`} glow='glow' width='183' height='48' />
                   </div>
                   
                   <div className="home-nav-dots">
@@ -72,7 +72,7 @@ const SuccessStories = () => {
                       className={`dot ${activeIndex === dotIndex ? 'active' : ''}`}
                       onClick={() => {
                         if (swiperRef.current) {
-                          swiperRef.current.slideTo(dotIndex); // Ensure swiperRef is not null before calling slideTo
+                          swiperRef.current.slideTo(dotIndex); 
                         }
                       }}
                     ></span>

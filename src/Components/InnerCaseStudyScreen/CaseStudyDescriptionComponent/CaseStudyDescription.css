@@ -33,7 +33,7 @@
     color: #333;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
     .overview-section {
       flex-direction: column-reverse;
       padding: 1%;
@@ -42,7 +42,7 @@
     .overview-text {
       width: 100%;
       color:#333;
-      text-align: center;
+      text-align: left;
     }
     
     .overview-image {

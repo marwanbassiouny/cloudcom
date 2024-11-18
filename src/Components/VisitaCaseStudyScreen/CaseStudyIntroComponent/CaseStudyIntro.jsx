@@ -1,6 +1,6 @@
 import React from 'react';
 import './CaseStudyIntro.css';
-import logo from '../../../Assets/Icons/InnerCaseStudyScreen/CaseStudyIntro/gourmeticon.png';
+import logo from '../../../Assets/Images/CaseStudyScreen/Vezeeta-Logo 3.png';
 
 const CaseStudyIntro = () => {
   return (

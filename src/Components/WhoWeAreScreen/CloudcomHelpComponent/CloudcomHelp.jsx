@@ -1,11 +1,71 @@
-import {React, useState } from 'react';
+import {React, useState,useEffect } from 'react';
 import './CloudcomHelp.css';
 import helpSectionAnimation from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/helpSectionAnimation.mp4'
 import helpSectionAnimation2 from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/helpSectionAnimation2.mp4'
 import tickIcon from '../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/tick.svg';
 
 const CloudcomHelp = () => {
+  const words = ["learn", "segment", "engage", "analyze"];
+  const finalText = "At cloudcom, and connect with your clients";
+  const [currentText, setCurrentText] = useState(`At Cloudcom, we help you ${words[0]}`);
+  const [fadeIn, setFadeIn] = useState(true);
+  const [step, setStep] = useState(0); // Track which step we're on
 
+
+
+
+  useEffect(() => {
+    // Timer to control the fade-out and fade-in effect
+    const timer = setTimeout(() => {
+      setFadeIn(false); // Fade out the current text
+
+      setTimeout(() => {
+        // Determine the next text to show
+        if (step < words.length - 1) {
+          // Show next word in the list
+          setCurrentText(`At Cloudcom, we help you ${words[step + 1]}`);
+          setStep(step + 1);
+        } else if (step === words.length - 1) {
+          // After the last word, show the final text
+          setCurrentText(finalText);
+          setStep(step + 1);
+        } else {
+          // Restart from the beginning
+          setCurrentText(`At Cloudcom, we help you ${words[0]}`);
+          setStep(0);
+        }
+        setFadeIn(true); // Fade in the new text
+      }, 500); // Fade out duration (0.5 seconds)
+    }, 2500); // Keep the text visible for 2.5 seconds
+
+    return () => clearTimeout(timer); // Clean up timer on unmount
+  }, [step]);
+
+  // Render the text, styling specific words
+  const renderText = () => {
+    if (step < words.length) {
+      // Highlight every word in the words array when it's displayed
+      const currentWord = words[step];
+      return (
+        <>
+          At Cloudcom, we help you <span className="highlighted">{currentWord}</span>
+        </>
+      );
+    } else if (step === words.length) {
+      // When showing the final text, highlight the word "connect"
+      const parts = finalText.split(" ");
+      return (
+        <>
+          {parts.map((word, index) => (
+            <span key={index} className={word.toLowerCase() === "connect" ? "highlighted" : ""}>
+              {word}{" "}
+            </span>
+          ))}
+        </>
+      );
+    }
+    return currentText;
+  };
 
 
   return (
@@ -14,8 +74,9 @@ const CloudcomHelp = () => {
       
       <div className="cloudcom-help__header">
         <h2>
-          At Cloudcom, we help you <span className="learn">learn</span>
+          <span className={`learn ${fadeIn ? "fade-in" : "fade-out"}`}>{renderText()}</span>
         </h2>
+        {/* at cloudcom,and connect with your clients */}
       </div>
 
       <div className="cloudcom-help__content page_padding_level_1">
