@@ -9,15 +9,15 @@ const CloudcomHelp = () => {
   const finalText = "At cloudcom, and connect with your clients";
   const [currentText, setCurrentText] = useState(`At Cloudcom, we help you ${words[0]}`);
   const [fadeIn, setFadeIn] = useState(true);
-  const [step, setStep] = useState(0); // Track which step we're on
+  const [step, setStep] = useState(0); 
 
 
 
 
   useEffect(() => {
-    // Timer to control the fade-out and fade-in effect
+    
     const timer = setTimeout(() => {
-      setFadeIn(false); // Fade out the current text
+      setFadeIn(false); 
 
       setTimeout(() => {
         // Determine the next text to show
@@ -34,17 +34,17 @@ const CloudcomHelp = () => {
           setCurrentText(`At Cloudcom, we help you ${words[0]}`);
           setStep(0);
         }
-        setFadeIn(true); // Fade in the new text
-      }, 500); // Fade out duration (0.5 seconds)
-    }, 2500); // Keep the text visible for 2.5 seconds
+        setFadeIn(true); 
+      }, 250); 
+    }, 1800); 
 
-    return () => clearTimeout(timer); // Clean up timer on unmount
+    return () => clearTimeout(timer); 
   }, [step]);
 
   // Render the text, styling specific words
   const renderText = () => {
     if (step < words.length) {
-      // Highlight every word in the words array when it's displayed
+      
       const currentWord = words[step];
       return (
         <>
