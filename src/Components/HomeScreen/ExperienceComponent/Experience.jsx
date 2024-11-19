@@ -1,4 +1,4 @@
-import { React, useState, useRef } from 'react';
+import { React, useState, useEffect, useRef } from 'react';
 import './Experience.css';
 import textContent from '../../../Assets/Data/HomeScreen/ExperienceComponent/ExperienceComponent.json';
 import videoSrc from '../../../Assets/Icons/HomeScreen/ExperienceComponent/experience video.mov';
@@ -6,51 +6,63 @@ import videoSrc from '../../../Assets/Icons/HomeScreen/ExperienceComponent/exper
 const Experience = () => {
   const initialNumber = 120;
   const targetNumber = 160;
-  const incrementValue = 10;
+  const incrementValue = 2; // Smaller increments for slower animation
+  const animationSpeed = 40; // Milliseconds delay between increments for slower animation
 
-  // Create a state for each number to track its current value
   const [numbers, setNumbers] = useState([initialNumber, initialNumber, initialNumber, initialNumber]);
-  const [incrementIntervals, setIncrementIntervals] = useState(Array(4).fill(null));
+  const sectionRef = useRef(null);
+  const hasAnimated = useRef(false); // To ensure animation runs only once
 
-  // Function to handle hover and increment number
-  const handleMouseEnter = (index) => {
-    clearInterval(incrementIntervals[index]); // Clear any previous interval on new hover
+  // Function to animate numbers
+  const animateNumbers = () => {
+    if (hasAnimated.current) return; // Prevent re-animation
+    hasAnimated.current = true;
 
-    let currentNumber = initialNumber;
+    numbers.forEach((_, index) => {
+      let currentNumber = initialNumber;
 
-    const incrementInterval = setInterval(() => {
-      if (currentNumber < targetNumber) {
-        currentNumber += incrementValue;
-        setTimeout(() => {
+      const incrementInterval = setInterval(() => {
+        if (currentNumber < targetNumber) {
+          currentNumber += incrementValue;
           setNumbers((prevNumbers) => {
             const newNumbers = [...prevNumbers];
             newNumbers[index] = currentNumber;
             return newNumbers;
           });
-        },);
-      } else {
-        clearInterval(incrementInterval);
-      }
-    }, 800);
-
-    const newIntervals = [...incrementIntervals];
-    newIntervals[index] = incrementInterval;
-    setIncrementIntervals(newIntervals);
-  };
-
-  // Reset number to initial value on mouse leave
-  const handleMouseLeave = (index) => {
-    clearInterval(incrementIntervals[index]); // Clear the interval when leaving
-
-    setNumbers((prevNumbers) => {
-      const newNumbers = [...prevNumbers];
-      newNumbers[index] = initialNumber;
-      return newNumbers;
+        } else {
+          clearInterval(incrementInterval);
+        }
+      }, animationSpeed);
     });
   };
 
+  // Intersection Observer to detect when the section is in the viewport
+  useEffect(() => {
+    const section = sectionRef.current;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateNumbers();
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of the section is visible
+    );
+
+    if (section) observer.observe(section);
+
+    return () => {
+      if (section) observer.unobserve(section);
+    };
+  }, []);
+
   return (
-    <div className="experience-container page_padding_level_1 page_vertical_padding_level_0">
+    <div
+      className="experience-container page_padding_level_1 page_vertical_padding_level_0"
+      ref={sectionRef}
+    >
       {/* Left Section */}
       <div className="experience-left">
         <div className="video-mask-container">
@@ -96,12 +108,7 @@ const Experience = () => {
       {/* Right Section: Stats */}
       <div className="experience-right">
         {numbers.map((number, index) => (
-          <div
-            key={index}
-            className="exp-stat-item exp-stat-item-right"
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={() => handleMouseLeave(index)}
-          >
+          <div key={index} className="exp-stat-item exp-stat-item-right">
             <h3 className="number">{number}K+</h3>
             <p className="state-text">{textContent[`stat${index + 1}Text`]}</p>
           </div>
