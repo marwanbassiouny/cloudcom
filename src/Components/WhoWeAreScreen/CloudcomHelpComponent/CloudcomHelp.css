@@ -25,8 +25,12 @@
   text-align: center;
 }
 
+.cloudcom-help__header .highlighted {
+  transition: opacity 1s ease-in-out; 
+}
+
 .cloudcom-help__header .learn {
-  transition: opacity 0.5s ease-in-out; 
+  transition: opacity 1s ease-in-out; 
 }
 
 .highlighted {
@@ -219,4 +223,3 @@
   object-fit: cover;
   padding-bottom : 10px
 }
-

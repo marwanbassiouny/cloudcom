@@ -103,10 +103,10 @@ const DataManagement = () => {
       <div className="top-section">
         <div className="scrolling-text">
           <h1>
-            {textContent.dataManagementService1} <span> · </span> {textContent.dataManagementService2}{' '}
-            <span> · </span> {textContent.dataManagementService3} <span> · </span>{' '}
-            {textContent.dataManagementService4} <span> · </span> {textContent.dataManagementService5}{' '}
-            <span> · </span> {textContent.dataManagementService6}
+            {textContent.dataManagementService1} <span>&nbsp; · &nbsp;</span> {textContent.dataManagementService2}{' '}
+            <span>&nbsp; · &nbsp;</span> {textContent.dataManagementService3} <span>&nbsp; · &nbsp;</span>{' '}
+            {textContent.dataManagementService4} <span>&nbsp; · &nbsp;</span> {textContent.dataManagementService5}{' '}
+            <span>&nbsp; · &nbsp;</span> {textContent.dataManagementService6}
           </h1>
           <h1>
             {/* Duplicate for seamless scrolling */}
@@ -121,13 +121,14 @@ const DataManagement = () => {
         <div className="bottom-section">
           <Swiper
             spaceBetween={30}
-            autoplay={{
-              delay: 25000,
-              disableOnInteraction: false,
-            }}
+            
             effect="fade"
             fadeEffect={{ crossFade: true }}
-            modules={[Autoplay, EffectFade, Navigation, Pagination]}
+            
+            pagination={{
+              clickable: true, // Enable pagination dots globally
+            }}
+            modules={[EffectFade, Pagination]}
             className="mySwiper"
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           >

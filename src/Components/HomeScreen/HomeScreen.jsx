@@ -15,7 +15,6 @@ import ContactUsScreen from '../ContactUsScreen/ContactUsScreen';
 const HomeScreen = () => {
   return (
     <div>
-     
       <Intro />
       <Clients />
       <About />
@@ -27,7 +26,6 @@ const HomeScreen = () => {
       <FaqsComponent/>
       {/* <WaitingListComponent/> */}
       <ContactUsScreen />
-
     </div>
   );
 };

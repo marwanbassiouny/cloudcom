@@ -35,8 +35,8 @@ const CloudcomHelp = () => {
           setStep(0);
         }
         setFadeIn(true); 
-      }, 250); 
-    }, 1800); 
+      }, 850); 
+    }, 1500); 
 
     return () => clearTimeout(timer); 
   }, [step]);
@@ -48,7 +48,7 @@ const CloudcomHelp = () => {
       const currentWord = words[step];
       return (
         <>
-          At Cloudcom, we help you <span className="highlighted">{currentWord}</span>
+          At Cloudcom, we help you <span className={`highlighted ${fadeIn ? "fade-in" : "fade-out"}`}>{currentWord}</span>
         </>
       );
     } else if (step === words.length) {
@@ -57,7 +57,7 @@ const CloudcomHelp = () => {
       return (
         <>
           {parts.map((word, index) => (
-            <span key={index} className={word.toLowerCase() === "connect" ? "highlighted" : ""}>
+            <span key={index} className={word.toLowerCase() === "connect" ? `highlighted fade-in` : ""}>
               {word}{" "}
             </span>
           ))}
@@ -74,7 +74,7 @@ const CloudcomHelp = () => {
       
       <div className="cloudcom-help__header">
         <h2>
-          <span className={`learn ${fadeIn ? "fade-in" : "fade-out"}`}>{renderText()}</span>
+          <span className={`learn`}>{renderText()}</span>
         </h2>
         {/* at cloudcom,and connect with your clients */}
       </div>

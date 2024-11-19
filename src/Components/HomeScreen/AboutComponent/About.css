@@ -157,7 +157,7 @@
   }
 
   .about-image .profile-img {
-    max-width: 80%; /* Scale down for tablet */
+    max-width: 95%; /* Scale down for tablet */
     height: auto;
   }
 }
