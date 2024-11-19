@@ -50,7 +50,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="experience-container page_padding_level_1 page_vertical_padding_level_1">
+    <div className="experience-container page_padding_level_1 page_vertical_padding_level_0">
       {/* Left Section */}
       <div className="experience-left">
         <div className="video-mask-container">

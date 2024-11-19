@@ -70,14 +70,14 @@
 
 @media (max-width: 480px) {
   .loading-spinner {
-    width: 80%;
-    /* height: 30px; */
+    width: 40px;
+    height: 40px;
     border-width: 4px;
   }
   .loading-logo {
-    width: 60px;
+    width: 200px;
   }
   .loading-text {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 }

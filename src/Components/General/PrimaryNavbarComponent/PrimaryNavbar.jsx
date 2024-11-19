@@ -63,33 +63,33 @@ const PrimaryNavbar = () => {
           {showDropdown && (
             <div className="dropdown-menu">
               <a href="/customerDataManagement" className="menu-item-hover">
-                <img src={CustomerDataManagementIcon} alt="Icon" className="default-icon" />
-                <img src={CustomerDataManagementIconSelected} alt="Icon" className="hover-icon" />
+                <img src={CustomerDataManagementIcon} alt="Icon" className="default-icon" loading="lazy" />
+                <img src={CustomerDataManagementIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 Customer Data Management
               </a>
               <a href="/AIPoweredSegmantation" className="menu-item-hover">
-                <img src={aiSegmantationIcon} alt="Icon" className="default-icon" />
-                <img src={aiSegmantationIconSelected} alt="Icon" className="hover-icon" />
+                <img src={aiSegmantationIcon} alt="Icon" className="default-icon" loading="lazy" />
+                <img src={aiSegmantationIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 AI-Powered Segmentation
               </a>
               <a href="/verify" className="menu-item-hover">
-                <img src={verifyIcon} alt="Verify Icon" className="default-icon" />
-                <img src={verifyIconSelected} alt="Verify Icon Blue" className="hover-icon" />
+                <img src={verifyIcon} alt="Verify Icon" className="default-icon" loading="lazy"/>
+                <img src={verifyIconSelected} alt="Verify Icon Blue" className="hover-icon" loading="lazy"/>
                 Verify
               </a>
               <a href="/chatManagement" className="menu-item-hover">
-                <img src={chatManagementIcon} alt="Icon" className="default-icon" />
-                <img src={chatManagementIconSelected} alt="Icon" className="hover-icon" />
+                <img src={chatManagementIcon} alt="Icon" className="default-icon" loading="lazy"/>
+                <img src={chatManagementIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 Chat Management
               </a>
               <a href="/multiChannelCampaignManager" className="menu-item-hover">
-                <img src={campaignManagerIcon} alt="Icon" className="default-icon" />
-                <img src={campaignManagerIconSelected} alt="Icon" className="hover-icon" />
+                <img src={campaignManagerIcon} alt="Icon" className="default-icon" loading="lazy"/>
+                <img src={campaignManagerIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 Multi-Channel Campaign Manager
               </a>
               <a href="/flowBuilder" className="menu-item-hover">
-                <img src={flowIcon} alt="Icon" className="default-icon" />
-                <img src={flowIconSelected} alt="Icon" className="hover-icon" />
+                <img src={flowIcon} alt="Icon" className="default-icon" loading="lazy"/>
+                <img src={flowIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 Work Flow
               </a>
             </div>

@@ -17,7 +17,7 @@ const About = () => {
   };
 
   return (
-    <div className="about-container page_padding_level_1 page_vertical_padding_level_1">
+    <div className="about-container page_padding_level_1 page_vertical_padding_level_0">
 
       <div className="about-text">
         <h2>About cloudcom</h2>

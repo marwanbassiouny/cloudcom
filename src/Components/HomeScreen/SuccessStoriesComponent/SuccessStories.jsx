@@ -16,7 +16,7 @@ const SuccessStories = () => {
   const limitedCaseStudies = caseStudiesData.slice(0, 3);
 
   return (
-    <div className="success-stories-container">
+    <div className="success-stories-container page_vertical_padding_level_0">
        <h2>Discover the Success Stories</h2>
       <p className="success-stories-description">
         See how businesses across various industries have transformed their customer engagement with cloudcom’s solutions.
@@ -41,11 +41,11 @@ const SuccessStories = () => {
           <SwiperSlide key={index}>
                 <div className="story-section">
                   <div className="story-image">
-                    <img src={casestudy.homePageImage} alt="Gourmet Egypt Store" />
+                    <img src={casestudy.homePageImage} alt="Gourmet Egypt Store" loading="lazy" />
                   </div>
 
                   <div className="story-content">
-                    <img src={casestudy.companyLogo} alt="Gourmet Egypt Logo" className="logo-image" />
+                    <img src={casestudy.companyLogo} alt="Gourmet Egypt Logo" className="logo-image" loading="lazy"/>
                     <h3>{casestudy.title}</h3>
                     <p>{casestudy.description}</p>
                     <div className="stats">

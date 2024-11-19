@@ -59,7 +59,7 @@ const WhyCloud = () => {
   console.log(window.innerWidth);
 
   return (
-    <div className="why-cloudcom-section">
+    <div className="why-cloudcom-section page_vertical_padding_level_0">
       <h2 className="why-cloudcom-section-title">Why cloudcom?</h2>
       <p className="why-cloudcom-section-subtitle">
         An all-in-one platform for a fully customized, omnichannel experience, offering seamless integration.
@@ -112,13 +112,13 @@ const WhyCloud = () => {
                     <div className="whycloud-card-content">
                     {activeIndex !== index && (
                       <div className="whycloud-card-icon">
-                        <img src={card.icon} alt="Card Icon" className="whycloud-card-icon-img" />
+                        <img src={card.icon} alt="Card Icon" className="whycloud-card-icon-img" loading="lazy"/>
                       </div>
                     )}
                       <h2 className="whycloud-card-title">{card.title}</h2>
                       <p className="whycloud-card-details">{card.description}</p>
                       <div className={`whycloud-card-image-wrapper ${activeIndex === index ? 'active' : ''}`}>
-                        <img src={card.image} alt="Customer Data Management" className="whycloud-card-image" />
+                        <img src={card.image} alt="Customer Data Management" className="whycloud-card-image" loading="lazy"/>
                       </div>
                     </div>
                   </div>

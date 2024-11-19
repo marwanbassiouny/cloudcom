@@ -55,7 +55,7 @@ const TestimonialCarousel = () => {
   return (
     <>
     {/* <div style={{marginTop: '5%'}}></div> */}
-    <div className="testimonial-carousel">
+    <div className="testimonial-carousel page_vertical_padding_level_0">
       <div className="carousel-title-container">
         <h2 className="carousel-title">Testimonials</h2>
         <p className="carousel-subtitle">We care about our customer experience too</p>
@@ -95,7 +95,7 @@ const TestimonialCarousel = () => {
           <SwiperSlide key={index}>
                 <div className="testimonial-wrapper">
                   <div className="testimonial-card-home">
-                    <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+                    <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" loading="lazy"/>
                     <div className="testimonial-content">
                       <p className="testimonial-quote">“{testimonial.testimonial}”</p>
                       <div className="testimonial-info">

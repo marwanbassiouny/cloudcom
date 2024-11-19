@@ -217,7 +217,7 @@
     height: 100%;
   }
   .empty-white-section {
-    height: 60vh;
+    height: 40vh;
   }
 
   .pricing-cards {
@@ -227,7 +227,19 @@
 
 @media (max-width: 1440px){
   .empty-white-section {
-    height: 60vh;
+    height: 50vh;
+  }
+
+  .background-section {
+    padding-top: 0px;
+    height: 100%;
+  }
+
+}
+
+@media (max-width: 1430px){
+  .empty-white-section {
+    height: 80vh;
   }
 
   .background-section {

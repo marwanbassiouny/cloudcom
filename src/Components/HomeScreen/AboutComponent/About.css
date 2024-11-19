@@ -136,7 +136,7 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    /* padding: 30px; */
   }
 
   .about-text, .about-image {
@@ -165,7 +165,7 @@
 /* Mobile screens */
 @media (max-width: 768px) {
   .about-container {
-    padding: 20px;
+    /* padding: 20px; */
     align-items: center;
   }
 

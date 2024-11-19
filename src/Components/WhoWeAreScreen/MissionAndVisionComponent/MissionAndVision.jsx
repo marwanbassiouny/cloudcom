@@ -17,7 +17,25 @@ const MissionAndVision = () => {
   return (
     <div className="m_v_container page_padding_level_1 page_vertical_padding_level_0">
       <div className="image-section-mobile">
-          <img src={mainImage} alt="Purpose, Mission, Vision Illustration" className="main-image" />
+          <img src={mainImage} onClick={openModal} alt="Purpose, Mission, Vision Illustration" className="main-image" />
+          {/* Modal for Video */}
+          {isModalOpen && (
+            <div className={`modal ${isModalOpen ? 'open' : ''}`} onClick={closeModal}>
+              <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                <span className="close" onClick={closeModal}>
+                  &times;
+                </span>
+                <video controls autoPlay>
+                  <source src={cloudcomHelpVideo} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                {/* Add a "Cancel" button below the video */}
+                <button className="cancel-button" onClick={closeModal}>
+                  Cancel
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       <div className="firstCard">
           <h3>Purpose</h3>

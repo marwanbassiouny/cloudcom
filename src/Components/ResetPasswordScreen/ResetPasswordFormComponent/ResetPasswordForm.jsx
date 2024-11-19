@@ -11,8 +11,8 @@ const ResetPasswordForm = () => {
       sed diam nonummy nibh euismod tincidunt ut laoreet 
       </div>
       <form>
-        <input className="loginInput" type="email" placeholder="Email" required />
-        <input className="loginInput" type="email" placeholder="Email" required />
+        <input className="resetPasswordInput" type="email" placeholder="Email" required />
+        <input className="resetPasswordInput" type="email" placeholder="Email" required />
         <AuthButton text="Reset Password" link="#"/>
       </form>
     </div>

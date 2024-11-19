@@ -19,6 +19,20 @@
     display: none;
   }
 
+
+  .slide-container {
+    overflow: hidden; 
+    height: 60px; 
+    position: relative; 
+  }
+
+  .slide-text {
+    position: absolute; 
+    width: 100%; 
+    transform-origin: bottom; 
+    animation: slide-in-out 2.5s infinite;
+  }
+  
   @keyframes slide-in-out {
     0% {
       opacity: 0;
@@ -37,18 +51,7 @@
       transform: translateY(-100%);
     }
   }
-  .slide-container {
-    overflow: hidden; 
-    height: 60px; 
-    position: relative; 
-  }
 
-  .slide-text {
-    position: absolute; 
-    width: 100%; 
-    transform-origin: bottom; 
-    animation: slide-in-out 2.5s infinite;
-  }
   
 
   .content-section h1 {

@@ -13,7 +13,7 @@ const ContactUsScreen = () => {
                     </div>
                 </div>
                 <div className="contactus-info-img">
-                    <img src={image} alt="contactus illustration" className="contactus-image" />
+                    <img src={image} alt="contactus illustration" className="contactus-image" loading="lazy"/>
                 </div>
             </div>
             <div className="contactus-right">

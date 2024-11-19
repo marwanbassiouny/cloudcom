@@ -2,7 +2,8 @@
 .testimonial-carousel {
   text-align: center;
   background-color: white;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .carousel-title-container{
@@ -153,9 +154,9 @@
   .testimonial-card-home {
     height: 550px;
   }
-  .testimonial-carousel .swiper{
+  /* .testimonial-carousel .swiper{
     padding: 30px;
-  }
+  } */
 
   .line {
     width: 60%; 

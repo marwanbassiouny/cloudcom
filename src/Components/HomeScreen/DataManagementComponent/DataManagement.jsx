@@ -84,7 +84,7 @@ const DataManagement = () => {
             <Swiper
               spaceBetween={30}
               autoplay={{
-                delay: 12000,
+                delay: 5000,
                 disableOnInteraction: false,
               }}
               effect="fade"
@@ -99,9 +99,9 @@ const DataManagement = () => {
                     <div className="data-left-section">
                       <div className='icon_container'>
                         <img src={card.icon} alt="" className='dm_title_icon' />
-                        <h2>{card.head}</h2>
+                        <h3 className='cardHead_title'>{card.head}</h3>
                       </div>
-                      <p>{card.paragraph}</p>
+                      <p className='cardParagraph'>{card.paragraph}</p>
                       <a href={card.link} className="data-explore-btn explore-btn-glow" target="_blank" rel="noopener noreferrer">Explore →</a>
                     </div>
                     <div className="middle-section">

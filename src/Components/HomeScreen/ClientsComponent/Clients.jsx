@@ -41,13 +41,13 @@ const Clients = () => {
       <div className="clients-section-line"></div>
       <div className="scrolling-img-section" ref={scrollContainerRef}>
         <div className="clients-logos">
-          <div className='client_logo_container'><img src={client1Icon} alt="client1Icon" className="client_icon" /></div>
-          <div className='client_logo_container'><img src={client2Icon} alt="client2Icon" className="client_icon" /></div>
-          <div className='client_logo_container'><img src={client3Icon} alt="client3Icon" className="client_icon" /></div>
-          <div className='client_logo_container'><img src={client4Icon} alt="client4Icon" className="client_icon" /></div>
-          <div className='client_logo_container'><img src={client5Icon} alt="client5Icon" className="client_icon" /></div>
-          <div className='client_logo_container'><img src={client6Icon} alt="client6Icon" className="client_icon" /></div>
-          <div className='client_logo_container'><img src={client7Icon} alt="client7Icon" className="client_icon" /></div>
+          <div className='client_logo_container'><img src={client1Icon} alt="client1Icon" className="client_icon" loading="lazy"/></div>
+          <div className='client_logo_container'><img src={client2Icon} alt="client2Icon" className="client_icon" loading="lazy"/></div>
+          <div className='client_logo_container'><img src={client3Icon} alt="client3Icon" className="client_icon" loading="lazy"/></div>
+          <div className='client_logo_container'><img src={client4Icon} alt="client4Icon" className="client_icon" loading="lazy"/></div>
+          <div className='client_logo_container'><img src={client5Icon} alt="client5Icon" className="client_icon" loading="lazy"/></div>
+          <div className='client_logo_container'><img src={client6Icon} alt="client6Icon" className="client_icon" loading="lazy"/></div>
+          <div className='client_logo_container'><img src={client7Icon} alt="client7Icon" className="client_icon" loading="lazy"/></div>
         </div>
       </div>
     </div>

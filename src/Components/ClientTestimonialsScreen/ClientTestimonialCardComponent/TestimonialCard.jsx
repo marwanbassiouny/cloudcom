@@ -4,7 +4,7 @@ import  "./TestimonialCard.css"
 const ClientTestimonialCard = ({ image, name, job, review, rating }) => {
   return (
       <div className="testimonial-card">
-        <img src={image} alt={name} className="testimonial-image" />
+        <img src={image} alt={name} className="testimonial-image" loading="lazy"/>
         <div className="testimonial-content">
             <p className="testimonial-quote">“{review}”</p>
             <div className="testimonial-info">

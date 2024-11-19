@@ -1,6 +1,6 @@
 .success-stories-container {
   width: 100%;
-  padding: 60px 0;
+  /* padding: 60px 0; */
   text-align: center;
   background-color: #f2f0f0;
 }
@@ -8,14 +8,14 @@
 .success-stories-container h2 {
   color: #0000FF;
   font-size: 1.8rem;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .success-stories-description {
   font-size: 20px;
   color: black;
   max-width: 700px;
-  margin: 0 auto 30px;
+  margin: 0 auto 60px;
 }
 
 .story-section {
@@ -212,9 +212,9 @@
     padding: 0 15px; /* Adjust padding for very small screens */
   }
 
-  .success-stories-container {
+  /* .success-stories-container {
     padding: 30px 0;
-  }
+  } */
 
   .story-section {
     padding: 10px;
