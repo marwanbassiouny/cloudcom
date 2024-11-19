@@ -10,7 +10,7 @@
     background-color: white;
     border-radius: 15px;
     padding: 30px;
-    max-width: 500px;
+    max-width: 70%;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -161,8 +161,13 @@
   @media (max-width: 768px) {
     .form-card {
       padding: 20px;
+      max-width: 100%;
     }
   
+    h2 {
+      font-size: 20px;
+    }
+
     .name-inputs {
       flex-direction: column;
     }

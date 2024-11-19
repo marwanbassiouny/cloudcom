@@ -47,7 +47,8 @@ const examples = [
     <div>
       <TopicData
         title="Verify"
-        description="Enrich your users with secure frictionless authentication experience, eliminate passwords entirely with our silent Password-less Authentication solution. In the era of cyber threats are increasingly sophisticated, now you can strengthen security with cloudcom Multi-channel OTP 2FA, provide robust protection against unauthorized access and activities"
+        description="Enrich your users with secure frictionless authentication experience, eliminate passwords entirely with our silent Password-less Authentication solution.
+	In the era of cyber threats are increasingly sophisticated, now you can strengthen security with cloudcom Multi-channel OTP 2FA, provide robust protection against unauthorized access and activities."
         animation={verifyScreenAnimation}
       />
       <TopicExample examples={examples} />

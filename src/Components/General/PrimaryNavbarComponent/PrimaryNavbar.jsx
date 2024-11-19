@@ -90,7 +90,7 @@ const PrimaryNavbar = () => {
               <a href="/flowBuilder" className="menu-item-hover">
                 <img src={flowIcon} alt="Icon" className="default-icon" loading="lazy"/>
                 <img src={flowIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
-                Work Flow
+                Flow-Builder
               </a>
             </div>
           )}

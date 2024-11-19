@@ -40,7 +40,7 @@ const examples = [
     <div>
       <TopicData
         title="Flow Builder"
-        description="Create complex, personalized customer journeys without coding through cloudcom's intelligent automation workflows. Automate customer engagement with predefined drag-and-drop triggers, actions, and conditions, enabling businesses to deliver timely, relevant messages across multiple channels."
+        description="Create complex, personalized customer journeys No-Code through cloudcom's intelligent automation workflows. Automate customer engagement with predefined drag-and-drop triggers, actions, and conditions, enabling businesses to deliver timely, relevant messages across multiple channels."
         animation={flowBuilderAnimation}
       />
       <TopicExample examples={examples} />
