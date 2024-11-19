@@ -168,12 +168,16 @@
     max-width: 100%;
     margin-bottom: 20px;
   }
-
   
   .home-nav-dots {
     flex-direction: row; 
     gap: 15px; 
   }
+
+  .story-content .stats {
+    justify-content: center;
+  }
+  
 }
 
 /* Mobile screens */
@@ -203,6 +207,7 @@
     padding: 8px 16px;
     font-size: 14px;
   }
+
 }
 
 /* Small mobile screens */

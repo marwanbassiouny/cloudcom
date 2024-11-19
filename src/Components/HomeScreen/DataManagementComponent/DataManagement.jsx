@@ -122,7 +122,7 @@ const DataManagement = () => {
           <Swiper
             spaceBetween={30}
             autoplay={{
-              delay: 5000,
+              delay: 25000,
               disableOnInteraction: false,
             }}
             effect="fade"
