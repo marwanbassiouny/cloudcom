@@ -33,10 +33,16 @@ body {
   padding-right: 15%;
 }
 
+.page_vertical_padding_level_0{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .page_vertical_padding_level_1{
     padding-top: 5%;
     padding-bottom: 5%;
 }
+
 
 .text-no-break-overflow {
   white-space: nowrap;

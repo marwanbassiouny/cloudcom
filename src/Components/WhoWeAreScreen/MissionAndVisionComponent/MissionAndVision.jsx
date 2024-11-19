@@ -15,7 +15,7 @@ const MissionAndVision = () => {
     setIsModalOpen(false);
   };
   return (
-    <div className="m_v_container page_padding_level_1">
+    <div className="m_v_container page_padding_level_1 page_vertical_padding_level_0">
       <div className="image-section-mobile">
           <img src={mainImage} alt="Purpose, Mission, Vision Illustration" className="main-image" />
         </div>

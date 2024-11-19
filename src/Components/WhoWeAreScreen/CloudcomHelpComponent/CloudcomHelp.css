@@ -68,8 +68,6 @@
 .cloudcom-help__image-section_2,
 .cloudcom-help__values-section_2 {
   width: 50%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   color: #6F6F6F;
 }
 
@@ -77,6 +75,8 @@
 .cloudcom-help__image-section_2{
   display: flex;
   justify-content: flex-end;
+  /* padding-top: 3rem;
+  padding-bottom: 3rem; */
 }
 .cloudcom-help__values-section_2{
   padding-right: 5%;
@@ -190,5 +190,19 @@
   .values-list div {
     width: 100%;
   }
+}
+
+@media (max-width: 1920px) {
+  .cloudcomHelpDataAnimation {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.cloudcomHelpDataAnimation {
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  padding-bottom : 10px
 }
 

@@ -79,7 +79,7 @@ const CloudcomHelp = () => {
         {/* at cloudcom,and connect with your clients */}
       </div>
 
-      <div className="cloudcom-help__content page_padding_level_1">
+      <div className="cloudcom-help__content page_padding_level_1 page_vertical_padding_level_0">
         <div className="cloudcom-help__image-section">
           {/* <img src={imageLeft} alt="Cloudcom help visual" className="cloudcom-help__image" /> */}
           <video   
@@ -87,7 +87,7 @@ const CloudcomHelp = () => {
           loop
           muted
           playsInline 
-          className='topicDataAnimation cloudcom-help__image'>
+          className='cloudcomHelpDataAnimation cloudcom-help__image'>
             <source src={helpSectionAnimation} type="video/mp4" />
               Your browser does not support the video tag.
           </video>
@@ -114,7 +114,7 @@ const CloudcomHelp = () => {
       </div>
 
 
-      <div className="cloudcom-help__content_part2 page_padding_level_1">
+      <div className="cloudcom-help__content_part2 page_padding_level_1 page_vertical_padding_level_0">
         <div className="cloudcom-help__values-section_2">
           <p className='section_2-text page_context_font_size_0'>
           Led by visionaries and communication experts, cloudcom’s leadership is committed to delivering impactful, innovative solutions that shape the future of business communication. With decades of experience in technology and customer engagement, our team works tirelessly to ensure that cloudcom remains at the forefront of CPaaS innovation.
@@ -127,7 +127,7 @@ const CloudcomHelp = () => {
           loop
           muted
           playsInline 
-          className='topicDataAnimation'>
+          className='cloudcomHelpDataAnimation'>
             <source src={helpSectionAnimation2} type="video/mp4" />
               Your browser does not support the video tag.
           </video>
