@@ -1,6 +1,4 @@
 import image1 from "../../Assets/Images/CaseStudyScreen/gourmet-teaser.png"
-import image2 from "../../Assets/Images/CaseStudyScreen/Mask group.png"
-import image3 from "../../Assets/Images/CaseStudyScreen/vezeeta.png"
 import image4 from "../../Assets/Images/CaseStudyScreen/gourmet-teaser.png"
 import image5 from "../../Assets/Images/CaseStudyScreen/gourmetlogo.png"
 import image6 from "../../Assets/Images/CaseStudyScreen/Vezeeta-Logo 3.png"

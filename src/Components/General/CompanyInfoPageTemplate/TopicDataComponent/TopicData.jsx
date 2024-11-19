@@ -14,6 +14,7 @@ const TopicData = ({ title, description, animation }) => {
           loop
           muted
           playsInline 
+          loading="lazy"
           className='topicDataAnimation'>
             <source src={animation} type="video/mp4" />
               Your browser does not support the video tag.
