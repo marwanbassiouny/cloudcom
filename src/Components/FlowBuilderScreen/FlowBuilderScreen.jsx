@@ -2,35 +2,35 @@ import React from 'react';
 import TopicData from '../General/CompanyInfoPageTemplate/TopicDataComponent/TopicData';
 import TopicExample from '../General/CompanyInfoPageTemplate/TopicExampleComponent/TopicExample';
 import flowBuilderAnimation from '../../Assets/Icons/FlowBuilderScreen/flowBuilderAnimation.mp4'
-import logoIcon1 from '../../Assets/Icons/FlowBuilderScreen/ExampleIcon1.svg';
-import logoIcon2 from '../../Assets/Icons/FlowBuilderScreen/ExampleIcon2.svg';
-import logoIcon3 from '../../Assets/Icons/FlowBuilderScreen/ExampleIcon3.svg';
-import logoIcon4 from '../../Assets/Icons/FlowBuilderScreen/ExampleIcon4.svg';
+import Example1Animation from '../../Assets/Icons/FlowBuilderScreen/Example1Animation.mp4';
+import Example2Animation from '../../Assets/Icons/FlowBuilderScreen/Example2Animation.mp4';
+import Example3Animation from '../../Assets/Icons/FlowBuilderScreen/Example3Animation.mp4';
+import Example4Animation from '../../Assets/Icons/FlowBuilderScreen/Example4Animation.mp4';
 
 const FlowBuilderScreen = () => {
  
 const examples = [
     {
-      animation: logoIcon1,
-      isIcon : true,
+      animation: Example1Animation,
+      isIcon : false,
       title: 'Automated Workflows',
       description: 'Free up resources by automating customer engagement processes like onboarding, retention, and upselling.',
     },
     {
-      animation: logoIcon2,
-      isIcon : true,
+      animation: Example2Animation,
+      isIcon : false,
       title: 'Enhanced Personalization',
       description: 'Deliver personalized messages based on real-time customer interactions.',
     },
     {
-      animation: logoIcon3,
-      isIcon : true,
+      animation: Example3Animation,
+      isIcon : false,
       title: 'Multi-Channel Engagement',
       description: 'Reach customers on their preferred channels, whether via SMS, Email, WhatsApp, or Push Notifications.',
     },
     {
-      animation: logoIcon4,
-      isIcon : true,
+      animation: Example4Animation,
+      isIcon : false,
       title: 'Increased Retention',
       description: 'Keep customers engaged throughout their journey, improving loyalty and lifetime value.',
     }

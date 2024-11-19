@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column; /* Stack text and icon vertically on mobile */
   align-items: center;
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 
 .examplePage-text,
@@ -48,6 +48,10 @@
   margin-top: 10px; /* Space between text and icon */
 }
 
+.example-item-reverse {
+  background-color: #F9F9F9;
+}
+
 @media (max-width: 480px) {
 
   .examplePage-text{
@@ -74,7 +78,7 @@
     flex-direction: row; /* Side-by-side layout for tablet and above */
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    /* padding: 30px 0; */
   }
 
   .examplePage-text,

@@ -7,14 +7,14 @@ const TopicExample = ({ examples }) => {
   let counter = 0;
 
   return (
-    <div className="topic-example-container page_padding_level_1">
+    <div className="topic-example-container ">
       {examples.map((example) => {
         ++counter;
         const isOdd = isOddNumber(counter);
         const shouldShowImage = example.isIcon; // Check based on each example item
 
         return (
-          <div key={counter} className={`example-item ${!isOdd ? 'example-item-reverse' : ''}`}>
+          <div key={counter} className={`page_padding_level_1 example-item ${!isOdd ? 'example-item-reverse' : ''}`}>
             {isOdd ? (
               <>
                 <div className="example-icon">

@@ -2,35 +2,35 @@ import React from 'react';
 import TopicData from '../General/CompanyInfoPageTemplate/TopicDataComponent/TopicData';
 import TopicExample from '../General/CompanyInfoPageTemplate/TopicExampleComponent/TopicExample';
 import ChatManagementAnimation from '../../Assets/Icons/ChatManagementScreen/ChatManagementAnimation.mp4'
-import logoIcon1 from '../../Assets/Icons/ChatManagementScreen/ExampleIcon1.svg';
-import logoIcon2 from '../../Assets/Icons/ChatManagementScreen/ExampleIcon2.svg';
-import logoIcon3 from '../../Assets/Icons/ChatManagementScreen/ExampleIcon3.svg';
-import logoIcon4 from '../../Assets/Icons/ChatManagementScreen/ExampleIcon4.svg';
+import Example1Animation from '../../Assets/Icons/ChatManagementScreen/Example1Animation.mp4';
+import Example2Animation from '../../Assets/Icons/ChatManagementScreen/Example2Animation.mp4';
+import Example3Animation from '../../Assets/Icons/ChatManagementScreen/Example3Animation.mp4';
+import Example4Animation from '../../Assets/Icons/ChatManagementScreen/Example4Animation.mp4';
 
 const ChatManagementScreen = () => {
  
 const examples = [
     {
-      animation: logoIcon1,
-      isIcon : true,
+      animation: Example1Animation,
+      isIcon : false,
       title: 'Always-On Support',
       description: 'Provide 24/7 support to your customers, ensuring timely responses even outside of business hours.',
     },
     {
-      animation: logoIcon2,
-      isIcon : true,
+      animation: Example2Animation,
+      isIcon : false,
       title: 'Increased Customer Satisfaction',
       description: 'Address customer inquiries instantly, reducing wait times and improving the overall experience.',
     },
     {
-      animation: logoIcon3,
-      isIcon : true,
+      animation: Example3Animation,
+      isIcon : false,
       title: 'Efficient Operations',
       description: 'Use AI-driven chat management to handle high volumes of queries without overwhelming your support team.',
     },
     {
-      animation: logoIcon4,
-      isIcon : true,
+      animation: Example4Animation,
+      isIcon : false,
       title: 'Seamless Integration',
       description: 'Consolidate inquiries from all channels into one platform for easier management and faster responses.',
     },
