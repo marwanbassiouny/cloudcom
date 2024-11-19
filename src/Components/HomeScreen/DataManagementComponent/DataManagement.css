@@ -1,3 +1,11 @@
+
+.data-management-scroll-container .swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+  background-color: #0000FF;
+}
+
+
 .data-management-container {
   background-size: contain;
   background-position: center;
@@ -132,6 +140,7 @@
   .middle-section img{
     width: 350px;
   }
+
 }
 
 @media (max-width: 768px) {

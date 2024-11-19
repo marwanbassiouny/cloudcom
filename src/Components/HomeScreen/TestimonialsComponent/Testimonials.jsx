@@ -80,13 +80,13 @@ const TestimonialCarousel = () => {
               640: {
                 slidesPerView: 1,
               },
-              768: {
-                slidesPerView: 1,
+              769: {
+                slidesPerView: 2,
               },
               820: {
                 slidesPerView: 2,
               },
-              1080: {
+              1081: {
                 slidesPerView: 3,
               },
         }}
