@@ -2,12 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './PrimaryNavbar.css';
 import logo from '../../../Assets/Icons/General/PrimaryNavbarComponent/CloudcomLogo.svg';
 import textContent from '../../../Assets/Data/General/PrimaryNavbarComponent/PrimaryNavbarComponent.json';
-import CustomerDataManagementIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/CustomerDataManagement.svg';
-import verifyIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/verifyIcon.svg';
-import campaignManagerIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/campaignManagerIcon.svg';
-import aiSegmantationIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/aiSegmantationIcon.svg';
-import chatManagementIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/chatManagementIcon.svg';
-import flowIcon from '../../../Assets/Icons/General/PrimaryNavbarComponent/flowIcon.svg';
 import CloudComButton from '../CloudComButton/CloudComButton';
 import CustomerDataManagementIconSelected from '../../../Assets/Icons/General/PrimaryNavbarComponent/CustomerDataManagement_selected.svg';
 import verifyIconSelected from '../../../Assets/Icons/General/PrimaryNavbarComponent/verifyIcon_selected.svg';
@@ -19,6 +13,7 @@ import dropdownMenuIcon from '../../../Assets/Icons/General/PrimaryNavbarCompone
 
 const PrimaryNavbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showResouresDropdown, setShowResourcesDropdown] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const currentPath = window.location.pathname;
 
@@ -63,52 +58,54 @@ const PrimaryNavbar = () => {
           {showDropdown && (
             <div className="dropdown-menu">
               <a href="/customerDataManagement" className="menu-item-hover">
-                <img src={CustomerDataManagementIcon} alt="Icon" className="default-icon" loading="lazy" />
                 <img src={CustomerDataManagementIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 Customer Data Management
               </a>
               <a href="/AIPoweredSegmantation" className="menu-item-hover">
-                <img src={aiSegmantationIcon} alt="Icon" className="default-icon" loading="lazy" />
                 <img src={aiSegmantationIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 AI-Powered Segmentation
               </a>
               <a href="/verify" className="menu-item-hover">
-                <img src={verifyIcon} alt="Verify Icon" className="default-icon" loading="lazy"/>
                 <img src={verifyIconSelected} alt="Verify Icon Blue" className="hover-icon" loading="lazy"/>
                 Verify
               </a>
               <a href="/chatManagement" className="menu-item-hover">
-                <img src={chatManagementIcon} alt="Icon" className="default-icon" loading="lazy"/>
                 <img src={chatManagementIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 Chat Management
               </a>
               <a href="/multiChannelCampaignManager" className="menu-item-hover">
-                <img src={campaignManagerIcon} alt="Icon" className="default-icon" loading="lazy"/>
                 <img src={campaignManagerIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 Multi-Channel Campaign Manager
               </a>
               <a href="/flowBuilder" className="menu-item-hover">
-                <img src={flowIcon} alt="Icon" className="default-icon" loading="lazy"/>
                 <img src={flowIconSelected} alt="Icon" className="hover-icon" loading="lazy"/>
                 Flow-Builder
               </a>
             </div>
           )}
         </li>
+
+        <li
+          onMouseEnter={() => setShowResourcesDropdown(true)}
+          onMouseLeave={() => setShowResourcesDropdown(false)}
+          className="dropdown"
+        >
+          <a href="#" className={currentPath === '/ourProducts' ? 'active-link' : ''}>
+            Resources
+            <img src={dropdownMenuIcon} alt="Dropdown Icon" className={`dropdown-icon ${showResouresDropdown ? 'rotated' : ''}`} />
+          </a>
+          {showResouresDropdown && (
+            <div className="resources-dropdown-menu">
+              <a href="/caseStudies" className={currentPath === '/caseStudies' ? 'secondDropDownLink active-link' : 'secondDropDownLink'}>Case Studies</a>
+              <a href="/ClientTestimonials" className={currentPath === '/ClientTestimonials' ? 'secondDropDownLink active-link' : 'secondDropDownLink'}>{textContent.testimonials}</a>
+              <a href="/reports" className={currentPath === '/reports' ? 'secondDropDownLink active-link' : 'secondDropDownLink'}>{textContent.reports}</a>
+              <a href="/newsandarticles" className={currentPath === '/newsandarticles' ? 'secondDropDownLink active-link' : 'secondDropDownLink'}>{textContent.news}</a>
+            </div>
+          )}
+        </li>
+
         <li>
           <a href="/packagesAndPrices" className={currentPath === '/packagesAndPrices' ? 'active-link' : ''}>{textContent.pricing}</a>
-        </li>
-        <li>
-          <a href="/caseStudies" className={currentPath === '/caseStudies' ? 'active-link' : ''}>Case Studies</a>
-        </li>
-        <li>
-          <a href="/ClientTestimonials" className={currentPath === '/ClientTestimonials' ? 'active-link' : ''}>{textContent.testimonials}</a>
-        </li>
-        <li>
-          <a href="/reports" className={currentPath === '/reports' ? 'active-link' : ''}>{textContent.reports}</a>
-        </li>
-        <li>
-          <a href="/newsandarticles" className={currentPath === '/newsandarticles' ? 'active-link' : ''}>{textContent.news}</a>
         </li>
         <li>
           <a href="/ContactUs" className={currentPath === '/ContactUs' ? 'active-link' : ''}>{textContent.contactUs}</a>

@@ -15,7 +15,7 @@ const DownloadReports = () => {
                         </div>
                         <p className="report-text">Explore in-depth reports on customer engagement trends and CPaaS innovations.</p>
                     </div>
-                    <button className="download-btn">
+                    <button className="product_button_glow download-btn">
                         <span className="download-text">Download</span>
                         <div className="rep-right-section">
                             <span className="file-size">112 MB</span>

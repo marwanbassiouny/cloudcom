@@ -6,7 +6,7 @@ const AuthButton = ({ text, link }) => {
     <div className='authBtnContainer'>
       <a 
         href={link} 
-        className="auth-button"
+        className="product_button_glow auth-button"
         rel="noopener noreferrer"
       >
         {text}

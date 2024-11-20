@@ -66,9 +66,12 @@
   line-height: 1.5;
   /* font-weight: bold; */
 }
-
-.gradient-text{
-  background: linear-gradient(to right, #55AEFF, #727BFF, #0000FF); /* Define your gradient colors */
+.gradient-text {
+  background: linear-gradient(to right, 
+    #55AEFF 8%,   /* Light blue starts at 0% */
+    #727BFF 55%,  /* Intermediate blue starts at 40% */
+    #0000FF 100%   /* Dark blue starts at 80% */
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

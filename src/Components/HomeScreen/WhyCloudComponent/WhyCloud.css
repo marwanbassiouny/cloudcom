@@ -83,12 +83,13 @@
     position: relative;
     transform: translateY(0);
     width: calc(98% - 25px);
+    /* width: calc(95% - 25px); */
     /* margin-right:30px !important; */
 }
 
 .whycloud-card.inactive {
     transform: translateY(45px);
-    width: 97%;
+    width: 90%;
     display: flex;
     height: 300px;
     justify-content: start;
@@ -102,6 +103,7 @@
 .whycloud-card.active {
     transform: translateY(8%); /* Keep active card in its default position */
     opacity: 1;
+    width: 80%;
 }
 
 .whycloud-card-content {

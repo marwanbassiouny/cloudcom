@@ -32,7 +32,7 @@ const CaseStudyCard = ({ id, image, companyLogo, title, description, stats, butt
             </>
           )}
 
-          <a href={link} className="read-more-button">
+          <a href={link} className="product_button_glow read-more-button">
             {buttonLabel}
           </a>
         </div>

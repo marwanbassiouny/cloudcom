@@ -27,7 +27,7 @@ const ContactUsScreen = () => {
                         <input className="contactus-input" type="text" name="company" placeholder="Company Name" />
                     </div>
                     <textarea className="contactus-textarea" name="message" placeholder="Message"></textarea>
-                    <button type="submit" className="send-button">Send <span className="arrow">&rarr;</span></button>
+                    <button type="submit" className="product_button_glow send-button">Send <span className="arrow">&rarr;</span></button>
                 </form>
             </div>
         </div>

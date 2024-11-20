@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './DataManagement.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 
 import customerDataManagementAnimation from '../../../Assets/Icons/HomeScreen/DataManagementComponent/customerDataManagementAnimation.mp4';
 import MultiChannelCampaignAnimation from '../../../Assets/Icons/HomeScreen/DataManagementComponent/MultiChannelCampaignAnimation.mp4';
@@ -68,11 +68,12 @@ const cards = [
 
 const DataManagement = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const videoRefs = React.useRef([]);
+  const swiperRef = useRef(null); // Reference to the Swiper instance
+  const videoRefs = useRef([]);
 
   useEffect(() => {
     // Pause all videos and reset
-    videoRefs.current.forEach((video, index) => {
+    videoRefs.current.forEach((video) => {
       if (video) {
         video.pause();
         video.currentTime = 0;
@@ -99,7 +100,11 @@ const DataManagement = () => {
   }, [activeIndex]);
 
   return (
-    <div className="data-management-container">
+    <div
+      className="data-management-container"
+      onMouseEnter={() => swiperRef.current?.autoplay.stop()} // Stop autoplay on hover
+      onMouseLeave={() => swiperRef.current?.autoplay.start()} // Resume autoplay when mouse leaves
+    >
       <div className="top-section">
         <div className="scrolling-text">
           <h1>
@@ -109,7 +114,6 @@ const DataManagement = () => {
             <span>&nbsp; · &nbsp;</span> {textContent.dataManagementService6}
           </h1>
           <h1>
-            {/* Duplicate for seamless scrolling */}
             {textContent.dataManagementService1} <span> · </span> {textContent.dataManagementService2}{' '}
             <span> · </span> {textContent.dataManagementService3} <span> · </span>{' '}
             {textContent.dataManagementService4} <span> · </span> {textContent.dataManagementService5}{' '}
@@ -120,15 +124,18 @@ const DataManagement = () => {
       <div className="data-management-scroll-container page_padding_level_1">
         <div className="bottom-section">
           <Swiper
+            onSwiper={(swiper) => (swiperRef.current = swiper)} // Properly attach Swiper instance to the ref
             spaceBetween={30}
-            
             effect="fade"
             fadeEffect={{ crossFade: true }}
-            
             pagination={{
-              clickable: true, // Enable pagination dots globally
+              clickable: true,
             }}
-            modules={[EffectFade, Pagination]}
+            autoplay={{
+              delay: 6000, // Delay in milliseconds
+              disableOnInteraction: false, // Continue autoplay after manual swipe
+            }}
+            modules={[EffectFade, Pagination, Autoplay]}
             className="mySwiper"
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           >

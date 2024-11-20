@@ -70,3 +70,9 @@ textarea:focus {
     box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Optional glow effect */
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
+
+
+.product_button_glow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.4), 
+    0 0 20px rgba(0, 0, 255, 0.3);
+}

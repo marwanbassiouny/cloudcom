@@ -101,7 +101,7 @@ const Experience = () => {
             {textContent.description1}<br />
             {textContent.description2}
           </p>
-          <a href="/ContactUs" className="get-in-touch-btn">{textContent.getInTouchButton} ↗</a>
+          <a href="/ContactUs" className="product_button_glow get-in-touch-btn">{textContent.getInTouchButton} ↗</a>
         </div>
       </div>
 
@@ -114,7 +114,7 @@ const Experience = () => {
           </div>
         ))}
       </div>
-      <a href="/ContactUs" className="get-in-touch-btn-mobile">{textContent.getInTouchButton} ↗</a>
+      <a href="/ContactUs" className="product_button_glow get-in-touch-btn-mobile">{textContent.getInTouchButton} ↗</a>
     </div>
   );
 };
