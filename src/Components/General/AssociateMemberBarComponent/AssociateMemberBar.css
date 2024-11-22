@@ -2,18 +2,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E5E5FF;
+  background-color: red;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
-  height: 50px;
+  height: 30px;
   border: 2px solid red; /* Add red border */
   position: relative; /* To position the close button */
 }
 
 .GSMA_logo_image {
-  width: 90px;
-  height: 40px;
+  width: 120px;
+  height: 50px;
 }
 
 .close-button {
