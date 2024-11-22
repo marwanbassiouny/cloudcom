@@ -6,6 +6,7 @@ import Example1Animation from '../../Assets/Icons/FlowBuilderScreen/Example1Anim
 import Example2Animation from '../../Assets/Icons/FlowBuilderScreen/Example2Animation.mp4';
 import Example3Animation from '../../Assets/Icons/FlowBuilderScreen/Example3Animation.mp4';
 import Example4Animation from '../../Assets/Icons/FlowBuilderScreen/Example4Animation.mp4';
+import PackageAndPricingV2 from '../PackagesAndPricesScreen/PricingPlansV2Component/PricingPlansV2Component';
 
 const FlowBuilderScreen = () => {
  
@@ -44,6 +45,7 @@ const examples = [
         animation={flowBuilderAnimation}
       />
       <TopicExample examples={examples} />
+      <PackageAndPricingV2 />
     </div>
   );
 };

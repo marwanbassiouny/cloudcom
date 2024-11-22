@@ -60,7 +60,7 @@
   .registration-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
   }
   
   .name-inputs {
@@ -138,6 +138,7 @@
     font-size: 12px;
     color: #888;
     margin-top: 20px;
+    margin-bottom: 15px;
   }
   
   .registration-paragrapgh a {

@@ -7,6 +7,7 @@ import Example2Animation from '../../Assets/Icons/VerifyScreen/Example2Animation
 import Example3Animation from '../../Assets/Icons/VerifyScreen/Example3Animation.mp4';
 import Example4Animation from '../../Assets/Icons/VerifyScreen/Example4Animation.mp4';
 import Example5Animation from '../../Assets/Icons/VerifyScreen/Example5Animation.mp4';
+import PackageAndPricingV2 from '../PackagesAndPricesScreen/PricingPlansV2Component/PricingPlansV2Component';
 
 const VerifyScreen = () => {
  
@@ -52,6 +53,7 @@ const examples = [
         animation={verifyScreenAnimation}
       />
       <TopicExample examples={examples} />
+      <PackageAndPricingV2 />
     </div>
   );
 };

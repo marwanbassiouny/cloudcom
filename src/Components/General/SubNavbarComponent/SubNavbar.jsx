@@ -13,7 +13,7 @@ const SubNavbar = () => {
     <div className="sub-navbar page_padding_level_1">
       <div className="sub-navbar-left">
         <span className="phone"><img src={phoneIcon} alt="phoneIcon" /> +971 52 729 5941</span>
-        <span className="email"><img src={emailIcon} className ="emailIcon" alt="emailIcon" /> {textContent.email}</span>
+        <span className="email"><a className='subnav_email_link' href='mailto:info@cloudcom.io' target='_blank' rel="noopener noreferrer"><img src={emailIcon} className ="emailIcon" alt="emailIcon" /> {textContent.email}</a></span>
       </div>
       <div className="sub-navbar-right">
         <a href='https://www.facebook.com/UseCloudCom' target='_blank'><img src={facebookIcon} alt="Facebook" /></a>

@@ -201,6 +201,11 @@
   border-bottom: 2px solid #0056D2;
 }
 
+.resourceDD-active-link {
+  color: #0000FF;
+  font-weight: bold;
+}
+
 .default-icon {
   display: inline;
 }

@@ -9,7 +9,7 @@ const PackageAndPricingV2 = () => {
         <div className='PackageAndPricing-text-container'><p>Learn. Segment. Connect. Engage. Analyze. Support. Your customer.</p></div>
         <div className="contactusbanner-buttons">
             <a style={{textDecoration:"none"}} href="/ContactUs" target="_blank"><button className="banner-button">Get Started ⟶</button></a>
-            <a style={{textDecoration:"none"}} href="https://portal.cloudcom.io/login" target="_blank"><button className="banner-button">Book a demo ⟶</button></a>
+            <a style={{textDecoration:"none"}} href="https://outlook.office365.com/owa/calendar/cloudcomdemocall1@arpuplus.com/bookings/" target="_blank"><button className="banner-button">Book a demo ⟶</button></a>
         </div>
         </div>
   </div>

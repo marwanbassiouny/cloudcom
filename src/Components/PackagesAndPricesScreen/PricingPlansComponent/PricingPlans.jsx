@@ -61,7 +61,7 @@ const PricingPlans = () => {
             <li className='listItem'><img src={tickIcon} alt="tick" className="tickIcon" />User Role Management</li>
             <li className='listItem'><img src={tickIcon} alt="tick" className="tickIcon" />24/7 Support</li>
           </ul>
-          <button>Choose plan</button>
+          <a href='/contactUs' className='pricing_plan_link'>Choose plan</a>
         </div>
 
         <div className={`card_plan pro ${getCardClass(1)}`} // Use getCardClass to determine if the enterprise class should be applied
@@ -83,7 +83,7 @@ const PricingPlans = () => {
             <li className='listItem'><img src={tickIcon} alt="tick" className="tickIcon" />Advanced Analytics.</li>
             <li className='listItem'><img src={tickIcon} alt="tick" className="tickIcon" />Customer Data Managment.</li>
           </ul>
-          <button>Choose plan</button>
+          <a href='/contactUs' className='pricing_plan_link'>Choose plan</a>
         </div>
 
         <div className={`card_plan  ${getCardClass(2)}`} // Use getCardClass to determine if the enterprise class should be applied
@@ -114,7 +114,7 @@ const PricingPlans = () => {
               <li className='listItem'><img src={tickIcon} alt="tick" className="tickIcon" />Social Media Channels.</li>
               <li className='listItem'><img src={tickIcon} alt="tick" className="tickIcon" />Shopify Integration.</li>
             </ul>
-            <button>Choose plan</button>
+            <a href='/contactUs' className='pricing_plan_link'>Choose plan</a>
         </div>
       </div>
     </div>

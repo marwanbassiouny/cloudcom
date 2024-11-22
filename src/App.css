@@ -71,6 +71,13 @@ textarea:focus {
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
+input.special_input:hover, 
+input.special_input:focus {
+    border-color: initial; /* Reset to default border color */
+    box-shadow: none; /* Remove box shadow */
+    transition: none; /* Remove transition effects if necessary */
+}
+
 
 .product_button_glow:hover {
   box-shadow: 0 0 10px rgba(0, 0, 255, 0.4), 

@@ -6,6 +6,7 @@ import exampleAnimation2 from '../../Assets/Icons/CustomerDataManagementScreen/E
 import exampleAnimation3 from '../../Assets/Icons/CustomerDataManagementScreen/Example3Animation.mp4';
 import exampleAnimation4 from '../../Assets/Icons/CustomerDataManagementScreen/Example4Animation.mp4';
 import dataSectionAnimation from '../../Assets/Icons/CustomerDataManagementScreen/customerDataManagementIntro.mp4';
+import PackageAndPricingV2 from '../PackagesAndPricesScreen/PricingPlansV2Component/PricingPlansV2Component';
 
 const CustomerDataManagementScreen = () => {
  
@@ -44,6 +45,7 @@ const examples = [
         animation={dataSectionAnimation}
       />
       <TopicExample examples={examples} />
+      <PackageAndPricingV2 />
     </div>
   );
 };

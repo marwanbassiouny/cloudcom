@@ -6,6 +6,7 @@ import logoIcon1 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/Exam
 import logoIcon2 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleAnimation2.mp4';
 import logoIcon3 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleAnimation3.mp4';
 import logoIcon4 from '../../Assets/Icons/MultiChannelCampaignManagerScreen/ExampleAnimation4.mp4';
+import PackageAndPricingV2 from '../PackagesAndPricesScreen/PricingPlansV2Component/PricingPlansV2Component';
 
 const MultiChannelCampaignManagerScreen = () => {
  
@@ -44,6 +45,7 @@ const examples = [
         animation={MultiChannelCampaignAnimation}
       />
       <TopicExample examples={examples} />
+      <PackageAndPricingV2 />
     </div>
   );
 };

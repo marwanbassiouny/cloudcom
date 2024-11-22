@@ -6,6 +6,8 @@ import ExampleAnimation1 from '../../Assets/Icons/AIPoweredSegmantationScreen/Ex
 import ExampleAnimation2 from '../../Assets/Icons/AIPoweredSegmantationScreen/ExampleAnimation2.mp4';
 import ExampleAnimation3 from '../../Assets/Icons/AIPoweredSegmantationScreen/ExampleAnimation3.mp4';
 import ExampleAnimation4 from '../../Assets/Icons/AIPoweredSegmantationScreen/ExampleAnimation4.mp4';
+import PlansPromotion from '../PackagesAndPricesScreen/PlansPromotionComponent/PlansPromotion';
+import PackageAndPricingV2 from '../PackagesAndPricesScreen/PricingPlansV2Component/PricingPlansV2Component';
 
 const AIPoweredSegmantationScreen = () => {
  
@@ -44,6 +46,7 @@ const examples = [
         animation={AIPoweredSegmantaionAnimation}
       />
       <TopicExample examples={examples} />
+      <PackageAndPricingV2 />
     </div>
   );
 };

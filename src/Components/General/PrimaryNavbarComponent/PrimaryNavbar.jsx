@@ -96,10 +96,10 @@ const PrimaryNavbar = () => {
           </a>
           {showResouresDropdown && (
             <div className="resources-dropdown-menu">
-              <a href="/caseStudies" className={currentPath === '/caseStudies' ? 'secondDropDownLink active-link' : 'secondDropDownLink'}>Case Studies</a>
-              <a href="/ClientTestimonials" className={currentPath === '/ClientTestimonials' ? 'secondDropDownLink active-link' : 'secondDropDownLink'}>{textContent.testimonials}</a>
-              <a href="/reports" className={currentPath === '/reports' ? 'secondDropDownLink active-link' : 'secondDropDownLink'}>{textContent.reports}</a>
-              <a href="/newsandarticles" className={currentPath === '/newsandarticles' ? 'secondDropDownLink active-link' : 'secondDropDownLink'}>{textContent.news}</a>
+              <a href="/caseStudies" className={currentPath === '/caseStudies' ? 'secondDropDownLink resourceDD-active-link' : 'secondDropDownLink'}>Case Studies</a>
+              <a href="/ClientTestimonials" className={currentPath === '/ClientTestimonials' ? 'secondDropDownLink resourceDD-active-link' : 'secondDropDownLink'}>{textContent.testimonials}</a>
+              <a href="/reports" className={currentPath === '/reports' ? 'secondDropDownLink resourceDD-active-link' : 'secondDropDownLink'}>{textContent.reports}</a>
+              <a href="/newsandarticles" className={currentPath === '/newsandarticles' ? 'secondDropDownLink resourceDD-active-link' : 'secondDropDownLink'}>{textContent.news}</a>
             </div>
           )}
         </li>

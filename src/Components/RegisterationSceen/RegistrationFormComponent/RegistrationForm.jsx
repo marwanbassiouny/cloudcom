@@ -5,6 +5,7 @@ import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
 import AuthButton from '../../General/AuthButton/AuthButton';
 import LogoNavbar from '../../General/LogoNavbarComponent/LogoNavbar';
+import AuthInput from '../../General/AuthInput/AuthInput';
 
 const RegistrationForm = () => {
   return (
@@ -31,8 +32,26 @@ const RegistrationForm = () => {
 
         <form className="registration-form">
           <div className="name-inputs">
-            <input className='registerInput' type="text" placeholder="First Name *" required />
-            <input className='registerInput'  type="text" placeholder="Last Name *" required />
+            {/* <input className='registerInput' type="text" placeholder="First Name *" required /> */}
+            {/* <input className='registerInput'  type="text" placeholder="Last Name *" required /> */}
+            <AuthInput
+              className='registerInput'
+              label="First Name"
+              type="text"
+              name=""
+              value={''}
+              onChange={(e) => {console.log()}}
+              required
+            />
+            <AuthInput
+              className='registerInput'
+              label="Last Name"
+              type="text"
+              name=""
+              value={''}
+              onChange={(e) => {console.log()}}
+              required
+            />
           </div>
           <div className="phone-input-container">
             <label className="phone-label">Phone Number <span className="required">*</span></label>
@@ -46,9 +65,36 @@ const RegistrationForm = () => {
               specialLabel=""
             />
           </div>
-          <input className='registerInput'  type="email" placeholder="Email *" required />
-          <input className='registerInput'  type="password" placeholder="Password *" required />
-          <input className='registerInput'  type="password" placeholder="Confirm Password *" required />
+          {/* <input className='registerInput'  type="email" placeholder="Email *" required /> */}
+          <AuthInput
+              className='registerInput'
+              label="Email"
+              type="email"
+              name=""
+              value={''}
+              onChange={(e) => {console.log()}}
+              required
+            />
+          {/* <input className='registerInput'  type="password" placeholder="Password *" required /> */}
+          <AuthInput
+              className='registerInput'
+              label="Password"
+              type="password"
+              name=""
+              value={''}
+              onChange={(e) => {console.log()}}
+              required
+            />
+          {/* <input className='registerInput'  type="password" placeholder="Confirm Password *" required /> */}
+          <AuthInput
+              className='registerInput'
+              label="Confirm Password"
+              type="password"
+              name=""
+              value={''}
+              onChange={(e) => {console.log()}}
+              required
+            />
           <p className='registration-paragrapgh'>
             By creating an account, you agree to the <a className="signup_links" href="#">Terms of use</a> and{' '}
             <a className="signup_links" href="#">Privacy Policy</a>.

@@ -5,50 +5,26 @@ import videoSrc from '../../../Assets/Icons/HomeScreen/ExperienceComponent/exper
 
 const Experience = () => {
   const initialNumber = 120;
-  const targetNumber = 160;
-  const incrementValue = 2; // Smaller increments for slower animation
-  const animationSpeed = 40; // Milliseconds delay between increments for slower animation
-
-  const [numbers, setNumbers] = useState([initialNumber, initialNumber, initialNumber, initialNumber]);
+  const targetNumber = 160; // Target number for animation
+  const [currentNumbers, setCurrentNumbers] = useState(Array(4).fill(initialNumber));
+  const [isAnimating, setIsAnimating] = useState(false);
   const sectionRef = useRef(null);
-  const hasAnimated = useRef(false); // To ensure animation runs only once
+  const hasAnimated = useRef(false);
 
-  // Function to animate numbers
-  const animateNumbers = () => {
-    if (hasAnimated.current) return; // Prevent re-animation
-    hasAnimated.current = true;
-
-    numbers.forEach((_, index) => {
-      let currentNumber = initialNumber;
-
-      const incrementInterval = setInterval(() => {
-        if (currentNumber < targetNumber) {
-          currentNumber += incrementValue;
-          setNumbers((prevNumbers) => {
-            const newNumbers = [...prevNumbers];
-            newNumbers[index] = currentNumber;
-            return newNumbers;
-          });
-        } else {
-          clearInterval(incrementInterval);
-        }
-      }, animationSpeed);
-    });
-  };
-
-  // Intersection Observer to detect when the section is in the viewport
+  // Trigger the animation when the section comes into view
   useEffect(() => {
     const section = sectionRef.current;
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateNumbers();
+          if (entry.isIntersecting && !hasAnimated.current) {
+            hasAnimated.current = true; // Ensure it animates only once
+            startAnimation();
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      { threshold: 1.0 }
     );
 
     if (section) observer.observe(section);
@@ -57,6 +33,27 @@ const Experience = () => {
       if (section) observer.unobserve(section);
     };
   }, []);
+
+  const startAnimation = () => {
+    setIsAnimating(true); // Start the spinning animation
+
+    let animationInterval = setInterval(() => {
+      setCurrentNumbers((prevNumbers) => {
+        const updatedNumbers = prevNumbers.map((num) => {
+          if (num < targetNumber) {
+            // return Math.min(num + 10, targetNumber); // Increment by 10 until reaching 160
+            return num + 10 // Increment by 10 until reaching 160
+          }
+          return num;
+        });
+        if (updatedNumbers.every((num) => num === targetNumber)) {
+          clearInterval(animationInterval); // Stop the animation when all numbers reach 160
+          setIsAnimating(false); // Stop spinning
+        }
+        return updatedNumbers;
+      });
+    }, 250); // Adjust the speed of increment (300ms per spin)
+  };
 
   return (
     <div
@@ -107,9 +104,25 @@ const Experience = () => {
 
       {/* Right Section: Stats */}
       <div className="experience-right">
-        {numbers.map((number, index) => (
+        {currentNumbers.map((number, index) => (
           <div key={index} className="exp-stat-item exp-stat-item-right">
-            <h3 className="number">{number}K+</h3>
+            <div
+              className={`number-container ${
+                isAnimating ? 'spinning' : ''
+              }`}
+            >
+              {isAnimating ? (
+                <div className="spinning-numbers">
+                  {Array(10)
+                    .fill()
+                    .map((_, i) => (
+                      <div key={i}>{number + 10}K+</div>
+                    ))}
+                </div>
+              ) : (
+                <div className="final-number">{number}K+</div>
+              )}
+            </div>
             <p className="state-text">{textContent[`stat${index + 1}Text`]}</p>
           </div>
         ))}

@@ -1,0 +1,48 @@
+.floating-input-container {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  .floating-input {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, padding-top 0.3s ease;
+  }
+  
+  .floating-input:focus {
+    border-color: #0000ff;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+  }
+  
+  /* Floating label styling */
+  .floating-label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 16px;
+    color: #888;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  /* When input is focused or has a value */
+  .floating-input-container.focused .floating-label {
+    top: -2px;
+    font-size: 16px;
+    color: gray;
+    background-color: white;
+    padding: 0 3px;
+    border-radius: 5px;
+  }
+  
+  /* Required asterisk */
+  .required {
+    color: red;
+  }
+  

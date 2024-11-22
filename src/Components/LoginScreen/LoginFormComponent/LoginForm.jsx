@@ -3,6 +3,7 @@ import './LoginForm.css';
 import googleIcon from '../../../Assets/Icons/RegistrationScreen/RegistrationForm/googleIcon.svg';
 import AuthButton from '../../General/AuthButton/AuthButton';
 import PasswordInput from '../../General/PasswordInput/PasswordInput';
+import AuthInput from '../../General/AuthInput/AuthInput';
 
 
 const LoginForm = () => {
@@ -24,9 +25,28 @@ const LoginForm = () => {
           </button>
         </div>
         <form className="login-form">
-          <input className="loginInput" type="text" placeholder="User Name" required />
+          {/* <input className="loginInput" type="text" placeholder="User Name" required /> */}
+          <AuthInput
+              className='loginInput'
+              label="User Name"
+              type="text"
+              name=""
+              value={''}
+              onChange={(e) => {console.log()}}
+              required
+            />
+
+            <AuthInput
+              className='loginInput'
+              label="Password"
+              type="password"
+              name=""
+              value={''}
+              onChange={(e) => {console.log()}}
+              required
+            />
           
-          <PasswordInput />
+          {/* <PasswordInput /> */}
           <div className="login-options">
             <label className="remember-me">
               <input type="checkbox" /> Remember me

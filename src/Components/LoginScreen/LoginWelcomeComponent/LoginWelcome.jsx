@@ -12,7 +12,7 @@ const LoginWelcome = () => {
       <div className="welcome-image">
         <img src={welcomeImage} alt="Profile" className="login-profile-image" />
       </div>
-      <p className="login-text">Don’t have an account? <a href="/login">SIGNUP</a></p>
+      <p className="login-text">Don’t have an account? <a href="/register">SIGNUP</a></p>
     </div>
   );
 };

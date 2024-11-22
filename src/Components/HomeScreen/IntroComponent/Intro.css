@@ -68,10 +68,15 @@
 }
 .gradient-text {
   background: linear-gradient(to right, 
-    #55AEFF 8%,   /* Light blue starts at 0% */
-    #727BFF 55%,  /* Intermediate blue starts at 40% */
-    #0000FF 100%   /* Dark blue starts at 80% */
-  );
+  /* #FFFFFF 0%,    
+  #F4F4FF 20%,     */
+  /* #D9DAFF 60%,    */
+  #A1A2FF 20%,    
+  #575DFF 60%,    /* Deeper blue at 80% */
+  #3234FF 70%    /* Dark blue at 100% */
+);
+
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -47,6 +47,11 @@
   height: 20px;
 }
 
+.subnav_email_link{
+  text-decoration: none;
+  color:white
+}
+
 /* Responsive Styling */
 
 /* Tablet screens */
