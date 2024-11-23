@@ -6,6 +6,7 @@ import PhoneInput from 'react-phone-input-2';
 import AuthButton from '../../General/AuthButton/AuthButton';
 import LogoNavbar from '../../General/LogoNavbarComponent/LogoNavbar';
 import AuthInput from '../../General/AuthInput/AuthInput';
+import PasswordInput from '../../General/PasswordInput/PasswordInput';
 
 const RegistrationForm = () => {
   return (
@@ -32,8 +33,6 @@ const RegistrationForm = () => {
 
         <form className="registration-form">
           <div className="name-inputs">
-            {/* <input className='registerInput' type="text" placeholder="First Name *" required /> */}
-            {/* <input className='registerInput'  type="text" placeholder="Last Name *" required /> */}
             <AuthInput
               className='registerInput'
               label="First Name"
@@ -65,7 +64,6 @@ const RegistrationForm = () => {
               specialLabel=""
             />
           </div>
-          {/* <input className='registerInput'  type="email" placeholder="Email *" required /> */}
           <AuthInput
               className='registerInput'
               label="Email"
@@ -75,26 +73,8 @@ const RegistrationForm = () => {
               onChange={(e) => {console.log()}}
               required
             />
-          {/* <input className='registerInput'  type="password" placeholder="Password *" required /> */}
-          <AuthInput
-              className='registerInput'
-              label="Password"
-              type="password"
-              name=""
-              value={''}
-              onChange={(e) => {console.log()}}
-              required
-            />
-          {/* <input className='registerInput'  type="password" placeholder="Confirm Password *" required /> */}
-          <AuthInput
-              className='registerInput'
-              label="Confirm Password"
-              type="password"
-              name=""
-              value={''}
-              onChange={(e) => {console.log()}}
-              required
-            />
+          <PasswordInput label="Password" />
+          <PasswordInput label="Confirm Password" />
           <p className='registration-paragrapgh'>
             By creating an account, you agree to the <a className="signup_links" href="#">Terms of use</a> and{' '}
             <a className="signup_links" href="#">Privacy Policy</a>.

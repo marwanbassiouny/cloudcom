@@ -22,13 +22,20 @@
   /* Floating label styling */
   .floating-label {
     position: absolute;
-    top: 50%;
     left: 15px;
     font-size: 16px;
     color: #888;
     pointer-events: none;
     transform: translateY(-50%);
     transition: all 0.3s ease;
+  }
+
+  .textarea-floating-label {
+    top: 30%;
+  }
+
+  .input-floating-label {
+    top: 50%;
   }
   
   /* When input is focused or has a value */

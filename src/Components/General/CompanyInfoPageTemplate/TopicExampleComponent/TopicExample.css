@@ -54,6 +54,11 @@
 
 @media (max-width: 480px) {
 
+  .example-item{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .examplePage-text{
     text-align: center;
   }

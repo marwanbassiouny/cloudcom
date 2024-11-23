@@ -12,7 +12,7 @@ const SubNavbar = () => {
   return (
     <div className="sub-navbar page_padding_level_1">
       <div className="sub-navbar-left">
-        <span className="phone"><img src={phoneIcon} alt="phoneIcon" /> +971 52 729 5941</span>
+        <span className="phone"><a href="tel:+971527295941" className="subnav_phone_link"><img src={phoneIcon} alt="phoneIcon" /> +971 52 729 5941</a></span>
         <span className="email"><a className='subnav_email_link' href='mailto:info@cloudcom.io' target='_blank' rel="noopener noreferrer"><img src={emailIcon} className ="emailIcon" alt="emailIcon" /> {textContent.email}</a></span>
       </div>
       <div className="sub-navbar-right">

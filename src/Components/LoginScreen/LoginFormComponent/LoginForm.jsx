@@ -36,7 +36,7 @@ const LoginForm = () => {
               required
             />
 
-            <AuthInput
+            {/* <AuthInput
               className='loginInput'
               label="Password"
               type="password"
@@ -44,9 +44,10 @@ const LoginForm = () => {
               value={''}
               onChange={(e) => {console.log()}}
               required
-            />
+            /> */}
           
-          {/* <PasswordInput /> */}
+          <PasswordInput label="Password" />
+          
           <div className="login-options">
             <label className="remember-me">
               <input type="checkbox" /> Remember me

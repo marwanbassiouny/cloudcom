@@ -50,13 +50,19 @@ body {
   text-overflow: ellipsis; /* Adds '...' to indicate overflow */
 }
 
-.page_context_font_size_0 {
-  font-size: 21px; /* 21 */
-}
+/* .page_context_font_size_0 {
+  font-size: 21px; 
+} */
 
-@media (min-width: 1920px) {
+@media (max-width: 1920px) {
   .page_context_font_size_0 {
     font-size: 21px; /* 21 */
+  }
+}
+
+@media (max-width: 768px) {
+  .page_context_font_size_0 {
+    font-size: 18px; /* 21 */
   }
 }
 

@@ -62,13 +62,13 @@
 .contactus-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
 .input-group {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .contactus-input, .contactus-textarea {
@@ -80,7 +80,7 @@
 }
 
 .contactus-textarea {
-    height: 250px;
+    height: 100px;
     resize: none;
     border-radius: 20px;
 }
