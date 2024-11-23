@@ -7,16 +7,16 @@ import tickIcon from "../../../Assets/Icons/WhoWeAreScreen/CloudcomHelp/tick.svg
 const CloudcomHelp = () => {
   const words = ["learn", "segment", "engage", "analyze", "and connect with your clients"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [fadeIn, setFadeIn] = useState(true);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setFadeIn(false);
+      setIsAnimating(true);
 
       setTimeout(() => {
         setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length); // Cycle through words
-        setFadeIn(true);
-      }, 500); // Time for fade-out animation
+        setIsAnimating(false);
+      }, 500); // Time for swipe-out animation
     }, 2000); // Time each word stays visible
 
     return () => clearTimeout(timer);
@@ -58,8 +58,8 @@ const CloudcomHelp = () => {
           {currentWordIndex !== words.length - 1 && (
             <h2>
               <span
-                className={`animated-word highlighted ${
-                  fadeIn ? "fade-in" : "fade-out"
+                className={`animated-word swipe blue-word ${
+                  isAnimating ? "swipe-out" : "swipe-in"
                 }`}
               >
                 {words[currentWordIndex]}
