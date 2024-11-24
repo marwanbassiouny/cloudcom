@@ -1,6 +1,6 @@
 import React from 'react';
 import './LoginWelcome.css';
-import welcomeImage from '../../../Assets/Icons/RegistrationScreen/WelcomeComponent/welcomeImage.svg';
+import welcomeImage from '../../../Assets/Icons/RegistrationScreen/WelcomeComponent/welcomeImage.png';
 
 const LoginWelcome = () => {
   return (

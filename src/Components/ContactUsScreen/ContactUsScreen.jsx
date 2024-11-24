@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactUsScreen.css';
-import image from "../../Assets/Images/ContactUsScreen/Background (1).svg"
+import image from "../../Assets/Images/ContactUsScreen/Background (1).png"
 import AuthInput from '../General/AuthInput/AuthInput';
 const ContactUsScreen = () => {
     return (

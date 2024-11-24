@@ -4,15 +4,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import "./WhyCloud.css";
-import img from "../../../Assets/Images/HomeScreen/WhyCloud/coding.svg"
+import img from "../../../Assets/Images/HomeScreen/WhyCloud/coding.png"
 import img2 from "../../../Assets/Images/HomeScreen/WhyCloud/coding Vector.svg"
-import img3 from "../../../Assets/Images/HomeScreen/WhyCloud/channel.svg"
+import img3 from "../../../Assets/Images/HomeScreen/WhyCloud/channel.png"
 import img4 from "../../../Assets/Images/HomeScreen/WhyCloud/channel Vector.svg"
-import img5 from "../../../Assets/Images/HomeScreen/WhyCloud/security.svg"
+import img5 from "../../../Assets/Images/HomeScreen/WhyCloud/security.png"
 import img6 from "../../../Assets/Images/HomeScreen/WhyCloud/security Vector.svg"
-import img7 from "../../../Assets/Images/HomeScreen/WhyCloud/Scalability.svg"
+import img7 from "../../../Assets/Images/HomeScreen/WhyCloud/Scalability.png"
 import img8 from "../../../Assets/Images/HomeScreen/WhyCloud/Scalability Vector.svg"
-import img9 from "../../../Assets/Images/HomeScreen/WhyCloud/integration.svg"
+import img9 from "../../../Assets/Images/HomeScreen/WhyCloud/integration.png"
 import img10 from "../../../Assets/Images/HomeScreen/WhyCloud/integration Vector.svg"
 
 const cards = [

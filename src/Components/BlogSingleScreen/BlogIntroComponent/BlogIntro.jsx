@@ -5,7 +5,7 @@ import FacebookIcon from '../../../Assets/Icons/BlogSingleScreen/facebook.svg';
 import LinkedinIcon from '../../../Assets/Icons/BlogSingleScreen/linkedin.svg';
 import TwitterIcon from '../../../Assets/Icons/BlogSingleScreen/twitter.svg';
 import EmailIcon from '../../../Assets/Icons/BlogSingleScreen/email.svg';
-import IntroImage from '../../../Assets/Images/BlogSingleScreen/blog1.svg';
+import IntroImage from '../../../Assets/Images/BlogSingleScreen/blog1.png';
 
 const BlogIntro = () => {
     return (

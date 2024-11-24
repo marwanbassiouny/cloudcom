@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './About.css';
-import aboutImage from '../../../Assets/Icons/HomeScreen/AboutComponent/AboutImage.svg';
+import aboutImage from '../../../Assets/Icons/HomeScreen/AboutComponent/AboutImage.png';
 import CloudComButton from '../../General/CloudComButton/CloudComButton';
 import aboutUsVideo from '../../../Assets/Videos/HomeScreen/AboutUsComponent/aboutus.mp4';
 

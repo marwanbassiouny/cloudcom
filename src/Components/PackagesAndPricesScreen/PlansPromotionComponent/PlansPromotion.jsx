@@ -1,6 +1,6 @@
 import React from 'react';
 import './PlansPromotion.css';
-import backgroundImage from '../../../Assets/Icons/PackagesAndPricesScreen/PlansPromotionComponent/background.svg';
+import backgroundImage from '../../../Assets/Icons/PackagesAndPricesScreen/PlansPromotionComponent/background.png';
 
 const PlansPromotion = () => {
   return (

@@ -1,6 +1,6 @@
 import {React, useState } from 'react';
 import './MissionAndVision.css';
-import mainImage from '../../../Assets/Icons/WhoWeAreScreen/MissionAndVisionComponent/MissonAndVisionIcon.svg';
+import mainImage from '../../../Assets/Icons/WhoWeAreScreen/MissionAndVisionComponent/MissonAndVisionIcon.png';
 import cloudcomHelpVideo from '../../../Assets/Videos/WhoWeAreScreen/CloudcomHelpComponent/cloudcomHelpVideo.mp4';
 
 

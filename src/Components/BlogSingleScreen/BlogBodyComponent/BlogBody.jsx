@@ -1,6 +1,6 @@
 import React from 'react';
 import './BlogBody.css';
-import mainImage from '../../../Assets/Images/BlogSingleScreen/blog2.svg';
+import mainImage from '../../../Assets/Images/BlogSingleScreen/blog2.png';
 
 const BlogBody = () => {
   return (

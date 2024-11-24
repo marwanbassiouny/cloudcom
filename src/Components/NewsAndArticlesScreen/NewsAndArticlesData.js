@@ -1,6 +1,4 @@
-import img from "../../Assets/Images/NewsAndArticlesScreen/newsandarticles.png"
-import img2 from "../../Assets/Images/NewsAndArticlesScreen/newsandarticles2.png"
-import img3 from "../../Assets/Images/NewsAndArticlesScreen/newsandarticles3.svg"
+import img3 from "../../Assets/Images/NewsAndArticlesScreen/newsandarticles3.png"
 
 export const newsArticles = [
 

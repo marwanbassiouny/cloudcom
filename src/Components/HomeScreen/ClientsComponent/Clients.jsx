@@ -5,7 +5,7 @@ import client2Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/clien
 import client3Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/client3.png';
 import client4Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/client4.png';
 import client5Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/client5.png';
-import client6Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/client6.svg';
+import client6Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/client6.png';
 import client7Icon from '../../../Assets/Icons/HomeScreen/ClientsComponent/client7.png';
 
 const Clients = () => {
