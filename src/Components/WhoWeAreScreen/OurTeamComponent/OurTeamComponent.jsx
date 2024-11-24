@@ -1,6 +1,6 @@
 import React from 'react';
 import './OurTeamComponent.css';
-import teamMemberImage from '../../../Assets/Icons/WhoWeAreScreen/OurTeamComponent/teamMember.svg'
+// import teamMemberImage from '../../../Assets/Icons/WhoWeAreScreen/OurTeamComponent/teamMember.svg'
 
 const teamMembers = [
   {
@@ -31,7 +31,7 @@ const OurTeamComponent = () => {
       <div className="team-cards">
         {teamMembers.map((member, index) => (
           <div key={index} className={`team-card ${member.active ? 'active' : ''}`}>
-            <img src={teamMemberImage} alt={member.name} className="team-image" />
+            {/* <img src={teamMemberImage} alt={member.name} className="team-image" /> */}
             <h4 className="team-name">{member.name}</h4>
             <p className="team-role">{member.role}</p>
             <p className="team-description">{member.description}</p>

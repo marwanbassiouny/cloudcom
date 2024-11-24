@@ -8,12 +8,13 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: false,
   entry: './src/index.js', // Entry point for your React app
   output: {
     path: path.resolve(__dirname, 'dist'), // Output directory for bundled files
     filename: 'bundle.[contenthash].js', // Output filename with hash for caching
     clean: true, // Clean up previous files in 'dist' before building
+    assetModuleFilename: 'assets/[name].[contenthash][ext]', // Place all assets in a single 'assets' folder
   },
   module: {
     rules: [
@@ -32,61 +33,10 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/i, // Load image files
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            },
-          },
-          {
-            loader: 'image-webpack-loader', // Compress image files
-            options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 65
-              },
-              optipng: { enabled: true },
-              // Optimize png files with pngquant
-              pngquant: {
-                quality: [0.65, 0.90],
-                speed: 4
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-              webp: {
-                quality: 75
-              },
-            },
-          },
-        ],
-        type: 'asset/resource',
+        test: /\.(png|jpg|jpeg|gif|svg|mp4|webm|ogg|avi|mov)$/i, // Combine images, videos, and SVGs
+        type: 'asset/resource', // Use Webpack's asset modules
       },
-      {
-        test: /\.svg$/i, // Separate loader for SVG files
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(mp4|webm|ogg|avi)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            },
-          },
-        ],
-        type: 'asset/resource',
-      },
+
     ],
   },
   resolve: {
@@ -107,9 +57,8 @@ module.exports = {
     new CompressionPlugin({
         filename: '[path][base].gz',
         algorithm: 'gzip',
-        test: /\.(js|css|html|svg|png|mp4)$/,
-        // threshold: 10240,
-        threshold: 5000,
+        test: /\.(js|css|html|svg|png|mp4|mov)$/i,
+        threshold: 2000,
         minRatio: 0.8,
         deleteOriginalAssets: true, 
       }),
@@ -123,21 +72,21 @@ module.exports = {
       minSize: 10000, // Minimum size before it splits
       maxSize: 25000, // Maximum chunk size before it splits again
     },
-  minimize: true,
-  minimizer: [
-    new TerserPlugin({
-      terserOptions: {
-        compress: {
-          drop_console: true, // Drop console statements to further minimize
-          passes: 2, // More passes for better minification
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          compress: {
+            drop_console: true, // Drop console statements to further minimize
+            passes: 2, // More passes for better minification
+          },
+          format: {
+            comments: false,
+          },
         },
-        format: {
-          comments: false,
-        },
-      },
-      extractComments: false,
-    }),
-    new CssMinimizerPlugin(),
-  ],
+        extractComments: false,
+      }),
+      new CssMinimizerPlugin(),
+    ],
   },
 };

@@ -32,7 +32,7 @@
 }
 
 .navbar-links li {
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
 }
 
@@ -118,7 +118,7 @@
 /* Responsive Styles */
 @media (min-width: 1920px){
   .navbar-links li {
-    font-size: 26px;
+    font-size: 18px;
   }
 
   .navbar-links{
@@ -130,11 +130,6 @@
   }
 }
 
-@media (min-width: 1440px) and (max-width: 1900px){
-  .navbar-links li {
-    font-size: 18px;
-  }
-}
 
 @media (max-width: 1024px) {
   .primary-navbar {
@@ -192,6 +187,10 @@
     justify-content: flex-start;
     width: 100%;
     color: white;
+  }
+
+  .navbar-links li {
+    font-size: 16px;
   }
 }
 

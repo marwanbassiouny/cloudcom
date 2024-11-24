@@ -1,7 +1,7 @@
 import { React, useState, useEffect, useRef } from 'react';
 import './Experience.css';
 import textContent from '../../../Assets/Data/HomeScreen/ExperienceComponent/ExperienceComponent.json';
-import videoSrc from '../../../Assets/Icons/HomeScreen/ExperienceComponent/experience video.mov';
+import videoSrc from '../../../Assets/Icons/HomeScreen/ExperienceComponent/experiencevideo.mov';
 
 const Experience = () => {
   const initialNumber = 120;

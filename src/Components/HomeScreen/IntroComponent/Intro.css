@@ -30,7 +30,7 @@
   position: absolute; 
   width: 100%; 
   transform-origin: bottom; 
-  animation: slide-in-out 2.5s infinite;
+  animation: slide-in-out 4s infinite;
 }
 
 @keyframes slide-in-out {

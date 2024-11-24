@@ -5,13 +5,18 @@ const AuthInput = ({
   label, // Label text for the input
   type = 'text', // Default input type
   name, // Input name
-  value, // Controlled value
+  // value, // Controlled value
   onChange, // onChange handler
   required = false, // Optional required flag
   isTextArea = false,
 }) => {
   const [isFocused, setIsFocused] = useState(false);
+  const [value, setValue] = useState('');
 
+  const handleInputChange = (e) => {
+    setValue(e.target.value)
+  };
+  
   return (
     <div className={`floating-input-container ${isFocused || value ? 'focused' : ''}`}>
       <label htmlFor={name} className={`floating-label ${isTextArea ? 'floating-label textarea-floating-label' : 'input-floating-label'}`}>
@@ -28,7 +33,7 @@ const AuthInput = ({
         className="floating-input"
         onFocus={() => setIsFocused(true)} 
         onBlur={() => setIsFocused(false)} 
-        onChange={onChange} 
+        onChange={handleInputChange} 
       />
       }
       {

@@ -18,44 +18,41 @@ const FAQSection = () => {
       <div className="faq-list">
         <div className="faq-column">
           <FAQItem
-            question="How can I access cloudcom capabilities?"
+            question="CPaaS Stands for?"
             answer={
               <ul>
                 <li>
-                  Contact us, choose your plan, then create your account on
-                  cloudcom.io/login
+                  CPaaS is a cloud-based platform, which enables businesses to build realtime communications via multiple channels on their applications for end-consumers without building a backend infrastructure.
                 </li>
-                <li>Sync customer attributes and start engaging.</li>
               </ul>
             }
             isOpen={activeIndex === 0}
             onClick={() => toggleFAQ(0)}
           />
           <FAQItem
-            question="CPaaS Stands For?"
-            answer={<p>Communication Platform As A Service</p>}
+            question="How can cloudcom help me?"
+            answer={<p>Increase customer engagement, speed up personalized communication, decrease operational cost.
+                Make better business decision through all-in-one platform</p>}
             isOpen={activeIndex === 2}
             onClick={() => toggleFAQ(2)}
           />
         </div>
         <div className="faq-column">
           <FAQItem
-            question="How Can cloudcom Help Me?"
+            question="Do you have Two-way messaging?"
             answer={
               <ul>
                 <li>
-                  Build fast customer communication across channels (SMS, Email,
-                  etc.).
+                Yes, two-way messaging is part of our platform over SMS, WhatsApp, Instagram and Messenger.
                 </li>
-                <li>Make better business decisions through all-in-one platform.</li>
               </ul>
             }
             isOpen={activeIndex === 1}
             onClick={() => toggleFAQ(1)}
           />
           <FAQItem
-            question="How can I access cloudcom capabilities?"
-            answer={<p>Communication Platform As A Service</p>}
+            question="Can the cloudcom be customized for my business needs?"
+            answer={<p>Yes, our platform is highly customizable; you'll have the ability to configure workflows, templates, and messaging strategies based on your business needs.</p>}
             isOpen={activeIndex === 3}
             onClick={() => toggleFAQ(3)}
           />
